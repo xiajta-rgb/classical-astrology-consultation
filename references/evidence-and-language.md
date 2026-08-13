@@ -4,11 +4,13 @@
 
 Assign each proposed conclusion one level:
 
-- **A — strong**: two or more independent testimonies, including at least one house/ruler link; no major unresolved contradiction.
-- **B — tendency**: one main testimony plus one auxiliary testimony, or a meaningful testimony constrained by a contrary factor.
-- **C — unconfirmed**: isolated weak testimony, missing degree/house data, or a question outside the available technique.
+- **S — structural conclusion**: at least two independent primary testimonies, no major unresolved counter-testimony, and chart data adequate for the claim.
+- **A — strong tendency**: one primary testimony plus one independent supporting testimony, with limitations disclosed.
+- **B — single-point tendency**: a real testimony, but not enough for a stable conclusion.
+- **C — auxiliary possibility**: weak/secondary testimony only; never use it as a standalone conclusion.
+- **N/A — unjudgeable**: missing data or technique makes the claim unavailable.
 
-Never upgrade a conclusion because it sounds plausible. Downgrade when exact degrees, applying/separating status, sect condition, or house data are missing.
+Never upgrade a conclusion because it sounds plausible. Downgrade when exact degrees, applying/separating status, sect condition, Ascendant boundary, house data, or chart system are missing. A single underlying fact must count once, even if it appears in multiple descriptions.
 
 ## Four-part reasoning card
 
@@ -29,20 +31,22 @@ Ask “Would this survive if I swapped in another chart?” If yes, add the exac
 
 | Level | Preferred wording |
 |---|---|
-| A | 明确表现为；这是本命最强的；可以直接判断 |
-| B | 明显倾向于；更容易表现为；存在较强可能 |
-| C | 可能涉及；只能作为辅助判断；本命盘不足以确认；需要精确度数/行运才能判断 |
+| S | 明确表现为；这是本命最强的结构之一；可以直接判断 |
+| A | 明显倾向于；更容易表现为；存在较强可能 |
+| B | 可能涉及；倾向有限；不能单独下结论 |
+| C | 只能作为辅助判断；需要更多交叉证据 |
+| N/A | 本命盘无法确认；需要精确度数/行运/择时/现实资料 |
 
 ## Fixed response skeleton
 
 ```markdown
 ## 核心判断
-1. [claim]（A/B/C）
-2. [claim]（A/B/C）
+1. [claim]（S/A/B/C/N/A）
+2. [claim]（S/A/B/C/N/A）
 
 ## 证据结构
-- 判断 1：Evidence → Rule → Inference → Conclusion
-- 判断 2：Evidence → Rule → Inference → Conclusion
+- 判断 1：Evidence → Rule → Inference → Counter-test → Conclusion
+- 判断 2：Evidence → Rule → Inference → Counter-test → Conclusion
 
 ## 结构性优势
 - [mechanism tied to chart]
@@ -70,3 +74,5 @@ Ask “Would this survive if I swapped in another chart?” If yes, add the exac
 - Generic self-help language without chart evidence.
 - Event dates from natal placements alone.
 - Medical, legal, investment, or property guarantees.
+- “Mutual reception” without reception type, direction, and an applying connection.
+- Treating a debilitated planet as automatically bad or a dignified planet as automatically good.

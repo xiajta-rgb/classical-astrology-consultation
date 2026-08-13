@@ -7,16 +7,16 @@ Returns non-zero when generic-advice phrases are found or evidence markers are a
 from __future__ import annotations
 
 import argparse
-import re
-import sys
 from pathlib import Path
 
 BLOCKLIST = (
     "不断成长", "找到平衡", "发挥优势", "提高认知", "保持稳定", "抓住机会",
     "长期主义", "不要过度焦虑", "人生会经历变化", "相信自己", "突破舒适区",
+    "你适合动态发展", "你要学会放下", "你需要更稳定", "你需要提升自己",
 )
 EVIDENCE_MARKERS = ("Evidence:", "证据", "宫主", "宫位", "相位")
-CERTAINTY_MARKERS = ("A级", "B级", "C级", "A-level", "B-level", "C-level", "明确表现为", "本命盘无法确认")
+CERTAINTY_MARKERS = ("S级", "A级", "B级", "C级", "N/A", "S-level", "A-level", "B-level", "C-level", "明确表现为", "本命盘无法确认")
+LAYER_MARKERS = ("结构性", "结构含义", "咨询建议", "Astrology fact", "Structural meaning")
 
 
 def main() -> int:
@@ -32,6 +32,8 @@ def main() -> int:
         findings.append("no chart-evidence marker found")
     if not any(marker in text for marker in CERTAINTY_MARKERS):
         findings.append("no certainty/boundary marker found")
+    if not any(marker in text for marker in LAYER_MARKERS):
+        findings.append("no astrology-to-structure-to-advice layer marker found")
     if findings:
         print("FAIL")
         print("\n".join(f"- {item}" for item in findings))
