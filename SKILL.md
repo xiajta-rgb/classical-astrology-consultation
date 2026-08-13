@@ -18,22 +18,23 @@ Prioritize astrological evidence over fluent prose. Do not replace chart structu
 1. Default to classical astrology. Use this order unless the user explicitly requests another tradition:
    `houses → house rulers → essential dignity → placement → aspects → reception/mutual reception → sect → angularity/cadency → Lot of Fortune → annual profections → transits`.
 2. Treat houses 1, 2, 4, 5, 6, 7, 8, 10 and 11, their rulers, ruler placement and dignity, angularity, benefic/malefic condition, and aspects as primary evidence. Reception, mutual reception, Lot of Fortune, profection lord and dispositorship chains are secondary. Uranus, Neptune and Pluto are auxiliary only; never let modern outers overrule the classical structure.
-3. Validate the chart before judging it. Record zodiac, house system, birth-time precision, location, degrees, Ascendant boundary risk, and day/night sect. If the Ascendant is at 0°/29°–30° or the house system is unclear, branch the analysis or downgrade confidence; do not silently treat a cusp-sensitive chart as exact.
+3. Validate the chart before judging it. Record zodiac, house system, birth-time precision, location, degrees, Ascendant boundary risk, and day/night sect. Determine sect from the Sun’s position relative to the horizon, not from a sign or an assumed clock time. If the Ascendant is at 0°/29°–30° or the house system is unclear, branch the analysis or downgrade confidence; do not silently treat a cusp-sensitive chart as exact.
 4. Separate fact extraction from interpretation. Build a `Chart Facts` inventory before explaining anything. Do not write personality or life conclusions while facts are still being extracted.
 5. Route each question through a house-responsibility matrix. Do not make a strong claim without calling the houses that actually govern the question. See [references/house-matrix.md](references/house-matrix.md).
 6. Do not collapse a house into one modern keyword. List the relevant traditional significations first, generate at least two competing hypotheses, then use additional rulers, occupants, aspects, dignity, Lot of Fortune, and timing to select a leading interpretation. Preserve unresolved alternatives as B/C-level possibilities.
-7. Analyze every relevant planet in two separate dimensions: (a) what house(s) it rules and where it is placed; (b) how capable it is of delivering those matters. Check essential dignity, sect, angularity, speed, visibility, combustion, retrogradation, reception, applying aspects, and malefic/benefic condition when data permits. “Dignified” is not synonymous with “good”, and “debilitated” is not synonymous with “failure”.
+7. Analyze every relevant planet in two separate dimensions: (a) what house(s) it rules and where it is placed; (b) how capable it is of delivering those matters. Check essential dignity, sect, angularity, speed, visibility, combustion, retrogradation, reception, applying aspects, and malefic/benefic condition when data permits. Apply sect as a weight modifier: in a day chart Jupiter is the in-sect benefic and Saturn the in-sect malefic; in a night chart Venus is the in-sect benefic and Mars the in-sect malefic. Do not erase other testimonies or turn sect into a binary good/bad switch. “Dignified” is not synonymous with “good”, and “debilitated” is not synonymous with “failure”.
 8. Treat reception as typed data, not as a generic positive bond. Record domicile/exaltation/triplicity/term/face reception, direction, and whether an applying aspect actually connects the planets. Do not call a one-way reception “mutual reception”.
-9. For every material conclusion, show `fact → rule → intermediate inference → conclusion`. A single placement cannot carry an entire-life conclusion.
-10. Grade conclusions with the S/A/B/C/N/A scale in [references/evidence-and-language.md](references/evidence-and-language.md).
-11. Always record both supporting and limiting testimonies. Actively search for at least one counter-testimony before finalizing a claim. Do not count the same underlying fact repeatedly as independent evidence.
-12. Run anti-generalization and value checks before finalizing each important sentence:
+9. Keep classical and modern layers separate. The seven visible planets establish rulership, essential dignity, sect, primary house judgments, and core evidence scores. Uranus, Neptune, Pluto, Chiron, asteroids, nodes, and modern-only aspects may be mentioned only after the classical judgment, labeled auxiliary, and never used to overturn or independently upgrade a classical conclusion.
+10. For every material conclusion, show `fact → rule → intermediate inference → conclusion`. A single placement cannot carry an entire-life conclusion.
+11. Grade conclusions with the S/A/B/C/N/A scale in [references/evidence-and-language.md](references/evidence-and-language.md).
+12. Always record both supporting and limiting testimonies. Actively search for at least one counter-testimony before finalizing a claim. Do not count the same underlying fact repeatedly as independent evidence.
+13. Run anti-generalization and value checks before finalizing each important sentence:
    - **Swap-chart test**: would this still be true for many other charts? If yes, delete it or make it chart-specific.
    - **Uniqueness test**: why does this wording follow from this chart’s particular house-ruler chain?
-13. Describe mechanisms and observable behavior, not moralized personality judgments. Prefer “个人判断更容易通过项目产出进入职业领域” over “你很有洞察力”; prefer “组织授权与资源统筹需要后天建立” over “你不够自信”.
-14. Keep certainty calibrated. Never turn “可能” into “一定”, one symbol into an “人生主线”, or an astrology inference into a practical fact.
-15. Distinguish **natal judgment** (what the chart signifies) from **consulting advice** (what the person may choose to do). Advice must be derived from earlier testimonies, not pasted-in life coaching.
-16. Respect technical boundaries. Natal charts can describe structural tendencies; age-specific claims require profections; year/month/event claims require appropriate timing techniques; a specific house purchase or investment outcome cannot be confirmed from natal placements alone.
+14. Describe mechanisms and observable behavior, not moralized personality judgments. Prefer “个人判断更容易通过项目产出进入职业领域” over “你很有洞察力”; prefer “组织授权与资源统筹需要后天建立” over “你不够自信”.
+15. Keep certainty calibrated. Never turn “可能” into “一定”, one symbol into an “人生主线”, or an astrology inference into a practical fact.
+16. Distinguish **natal judgment** (what the chart signifies) from **consulting advice** (what the person may choose to do). Advice must be derived from earlier testimonies, not pasted-in life coaching.
+17. Respect technical boundaries. Natal charts can describe structural tendencies; age-specific claims require profections; year/month/event claims require appropriate timing techniques; a specific house purchase or investment outcome cannot be confirmed from natal placements alone.
 
 ## Required workflow
 
@@ -143,3 +144,4 @@ Astrology is an interpretive framework, not a guarantee of events or a substitut
 - [references/house-matrix.md](references/house-matrix.md): theme-to-house responsibility matrix and technical boundaries.
 - [references/evidence-and-language.md](references/evidence-and-language.md): evidence scoring, anti-generalization tests, certainty vocabulary, and output template.
 - [references/judgment-algorithm.md](references/judgment-algorithm.md): hypothesis competition, planetary-state audit, counter-evidence, and duplicate-testimony controls.
+- [references/sect-and-planetary-layers.md](references/sect-and-planetary-layers.md): day/night sect weighting and classical-versus-modern evidence hierarchy.

@@ -17,6 +17,8 @@ BLOCKLIST = (
 EVIDENCE_MARKERS = ("Evidence:", "证据", "宫主", "宫位", "相位")
 CERTAINTY_MARKERS = ("S级", "A级", "B级", "C级", "N/A", "S-level", "A-level", "B-level", "C-level", "明确表现为", "本命盘无法确认")
 LAYER_MARKERS = ("结构性", "结构含义", "咨询建议", "Astrology fact", "Structural meaning")
+SECT_MARKERS = ("日夜盘", "昼夜盘", "sect", "日盘", "夜盘", "无法确认昼夜盘")
+LAYERING_MARKERS = ("古典七曜", "现代辅助", "辅助征象", "现代外行星", "classical seven")
 
 
 def main() -> int:
@@ -34,6 +36,10 @@ def main() -> int:
         findings.append("no certainty/boundary marker found")
     if not any(marker in text for marker in LAYER_MARKERS):
         findings.append("no astrology-to-structure-to-advice layer marker found")
+    if not any(marker in text for marker in SECT_MARKERS):
+        findings.append("no sect/day-night marker found")
+    if not any(marker in text for marker in LAYERING_MARKERS):
+        findings.append("no classical-versus-modern evidence-layer marker found")
     if findings:
         print("FAIL")
         print("\n".join(f"- {item}" for item in findings))
