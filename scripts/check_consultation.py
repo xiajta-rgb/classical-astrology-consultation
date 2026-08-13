@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+"""Lightweight QA for a draft classical astrology consultation.
+
+Usage: python check_consultation.py draft.md
+Returns non-zero when generic-advice phrases are found or evidence markers are absent.
+"""
+from __future__ import annotations
+
+import argparse
+import re
+import sys
+from pathlib import Path
+
+BLOCKLIST = (
+    "不断成长", "找到平衡", "发挥优势", "提高认知", "保持稳定", "抓住机会",
+    "长期主义", "不要过度焦虑", "人生会经历变化", "相信自己", "突破舒适区",
+)
+EVIDENCE_MARKERS = ("Evidence:", "证据", "宫主", "宫位", "相位")
+CERTAINTY_MARKERS = ("A级", "B级", "C级", "A-level", "B-level", "C-level", "明确表现为", "本命盘无法确认")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("draft", type=Path)
+    args = parser.parse_args()
+    text = args.draft.read_text(encoding="utf-8")
+    findings = []
+    for phrase in BLOCKLIST:
+        if phrase in text:
+            findings.append(f"generic phrase: {phrase}")
+    if not any(marker in text for marker in EVIDENCE_MARKERS):
+        findings.append("no chart-evidence marker found")
+    if not any(marker in text for marker in CERTAINTY_MARKERS):
+        findings.append("no certainty/boundary marker found")
+    if findings:
+        print("FAIL")
+        print("\n".join(f"- {item}" for item in findings))
+        return 1
+    print("PASS: evidence and certainty markers found; no blocklisted generic phrase detected")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

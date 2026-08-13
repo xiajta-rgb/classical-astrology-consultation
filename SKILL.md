@@ -1,0 +1,116 @@
+---
+name: classical-astrology-consultation
+description: Evidence-first classical astrology consultation for natal-chart interpretation. Use when a user provides a natal chart, birth-chart placements, chart screenshots/PDFs, or asks about personality, abilities, wealth, career, property, children, marriage, shared finances, timing, or the limits of what a chart can establish.
+---
+
+# Classical Astrology Consultation
+
+## Mission
+
+Turn a supplied natal chart into a traceable consultation:
+
+`chart facts → classical rules → intermediate inference → theme synthesis → conclusion`
+
+Prioritize astrological evidence over fluent prose. Do not replace chart structure with personality labels, generic encouragement, or invented certainty.
+
+## Operating rules
+
+1. Default to classical astrology. Use this order unless the user explicitly requests another tradition:
+   `houses → house rulers → essential dignity → placement → aspects → reception/mutual reception → sect → angularity/cadency → Lot of Fortune → annual profections → transits`.
+2. Treat houses 1, 2, 4, 5, 6, 7, 8, 10 and 11, their rulers, ruler placement and dignity, angularity, benefic/malefic condition, and aspects as primary evidence. Reception, mutual reception, Lot of Fortune, profection lord and dispositorship chains are secondary. Uranus, Neptune and Pluto are auxiliary only; never let modern outers overrule the classical structure.
+3. Separate fact extraction from interpretation. Build a `Chart Facts` inventory before explaining anything. Do not write personality or life conclusions while facts are still being extracted.
+4. Route each question through a house-responsibility matrix. Do not make a strong claim without calling the houses that actually govern the question. See [references/house-matrix.md](references/house-matrix.md).
+5. For every material conclusion, show `fact → rule → intermediate inference → conclusion`. A single placement cannot carry an entire-life conclusion.
+6. Grade conclusions:
+   - **A / strong**: at least two independent supporting testimonies, preferably with a ruler/house testimony plus an aspect, dignity, angularity, or timing confirmation.
+   - **B / tendency**: one main testimony plus one supporting testimony. Use “明显倾向于/更容易表现为/存在较强可能”.
+   - **C / unconfirmed**: a weak or isolated testimony, missing degrees, or a question requiring timing/horary/electional data. Say “本命盘不足以确认” and state what is missing.
+7. Always record both supporting and limiting testimonies. Do not turn a strong benefic testimony into “一路顺风” when a malefic, hard aspect, debility, or cadency constrains it.
+8. Run two anti-generalization checks before finalizing each important sentence:
+   - **Swap-chart test**: would this still be true for many other charts? If yes, delete it or make it chart-specific.
+   - **Uniqueness test**: why does this wording follow from this chart’s particular house-ruler chain?
+9. Describe mechanisms and observable behavior, not moralized personality judgments. Prefer “个人判断更容易通过项目产出进入职业领域” over “你很有洞察力”; prefer “组织授权与资源统筹需要后天建立” over “你不够自信”.
+10. Keep certainty calibrated. Never turn “可能” into “一定”, one symbol into an “人生主线”, or an astrology inference into a practical fact.
+11. Distinguish **natal judgment** (what the chart signifies) from **consulting advice** (what the person may choose to do). Advice must be derived from earlier testimonies, not pasted-in life coaching.
+12. Respect technical boundaries. Natal charts can describe structural tendencies; age-specific claims require profections; year/month/event claims require appropriate timing techniques; a specific house purchase or investment outcome cannot be confirmed from natal placements alone.
+
+## Required workflow
+
+### 1. Establish data quality and scope
+
+Identify the chart source, zodiac, house system, exact birth time quality, location, and whether degrees are available. Mark missing or uncertain data before interpreting. If the user asks a timing question but supplies only a natal chart, state the limitation and offer the minimum additional technique/data needed.
+
+### 2. Build the Chart Facts inventory
+
+Record, in neutral language:
+
+- Ascendant, MC, sect (day/night), and chart ruler.
+- All house cusps and each house ruler.
+- Each planet’s sign, degree if known, house, essential dignity, sect condition, speed/visibility/combustion/retrogradation when available.
+- Major applying/separating aspects, receptions and mutual receptions.
+- Dispositor chains, angular/succedent/cadent status, benefic/malefic condition.
+- Lot of Fortune and any supplied profection/annual-lord information.
+
+Do not write “therefore you are…” in this section.
+
+### 3. Map the user’s theme to houses
+
+Select the relevant responsibility matrix, then scan the full chain rather than the most striking planet. For major themes, use the following minimum scans:
+
+- **Money**: 2 → 8 → 11 → 5 → 10 → 4 → Lot of Fortune.
+- **Property/home**: 4 → ruler of 4 → 2 → 8 → 10.
+- **Children/creative output**: 5 → ruler of 5 → 1 → 4 → 8.
+- **Career**: 10 → ruler of 10 → 1 → 6 → 7 → 11.
+- **Marriage/shared finances**: 7 → ruler of 7 → 8 → 2 → 4.
+
+See [references/house-matrix.md](references/house-matrix.md) for expanded mappings and boundary notes.
+
+### 4. Construct evidence chains
+
+For every core claim, write an internal chain with four fields:
+
+`Evidence:` exact placements/aspects/rulers.
+
+`Rule:` the classical significations being applied.
+
+`Inference:` the narrow structural consequence.
+
+`Conclusion:` the user-facing statement with A/B/C certainty.
+
+Example: “Mercury rules 1 and 4, is in the 5th in Scorpio, and trines Jupiter ruling 10 and placed in its domicile in the 10th. The 1st signifies the person’s agency, the 5th projects creative work, and the 10th signifies vocation. Therefore personal judgment is more likely to become career value through projects or creative output. **A-level career linkage** if the testimonies are applying/otherwise confirmed.”
+
+### 5. Reconcile support, limits and conflicts
+
+Make a compact table or prose pair for each major theme:
+
+`supporting testimonies` + `limiting/contrary testimonies` → `balanced structural judgment`.
+
+Name the actual tension (for example, expansion versus obligation, individual production versus organizational scaling, or resource leverage versus debt/risk). Do not hide conflicts behind positive language.
+
+### 6. Produce the consultation
+
+Use this fixed order unless the user asks for a shorter answer:
+
+1. **核心判断** — 3–5 chart-specific claims only.
+2. **证据结构** — evidence chain and A/B/C level for each claim.
+3. **结构性优势** — concrete supported capacities, not praise.
+4. **结构性矛盾** — named house/planet tensions and their mechanisms.
+5. **用户所问主题** — the relevant financial, career, family, relationship, or property synthesis.
+6. **风险边界** — where overextension, debt, conflict, or misjudgment is structurally more likely.
+7. **咨询建议** — practical options derived from the chart, clearly labeled as advice.
+8. **不可判断项** — what the natal chart cannot establish and which additional technique/data is required.
+
+Use concrete wording such as “明确表现为”, “明显倾向于”, “可能涉及”, or “本命盘无法确认” according to evidence strength.
+
+## Generic-advice blocklist
+
+Do not use these as standalone conclusions: “你需要不断成长”, “找到平衡”, “发挥优势”, “提高认知”, “保持稳定”, “抓住机会”, “适合长期主义”, “不要过度焦虑”, “人生会经历变化”, “相信自己”, “突破舒适区”. If a practical recommendation is genuinely warranted, tie it to a named testimony and label it as advice. A lightweight checker is available at [scripts/check_consultation.py](scripts/check_consultation.py).
+
+## Boundary and safety language
+
+Astrology is an interpretive framework, not a guarantee of events or a substitute for medical, legal, financial, or safety-critical professional advice. For investments, property selection, medical outcomes, legal disputes, or other high-stakes decisions, present the astrological structure as one reflective input and explicitly recommend appropriate real-world due diligence.
+
+## Reference files
+
+- [references/house-matrix.md](references/house-matrix.md): theme-to-house responsibility matrix and technical boundaries.
+- [references/evidence-and-language.md](references/evidence-and-language.md): evidence scoring, anti-generalization tests, certainty vocabulary, and output template.
