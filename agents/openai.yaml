@@ -1,0 +1,6 @@
+interface:
+  display_name: "Classical Astrology Consultation"
+  short_description: "Evidence-first classical astrology consultation with traceable chart reasoning"
+  default_prompt: "Use $classical-astrology-consultation to analyze a natal chart with traceable evidence, graded certainty, and explicit limits."
+policy:
+  allow_implicit_invocation: true
