@@ -1,0 +1,1144 @@
+{
+  "version": "EVIDENCE-WEIGHT-0.1",
+  "status": "candidate",
+  "rule_version_gate": "locked",
+  "rule_version_lock": {
+    "terms": true,
+    "triplicity": true,
+    "faces": true,
+    "reception": true,
+    "aspect": true
+  },
+  "version_gate_blockers": [],
+  "source_conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "locked",
+      "values": {
+        "terms": "egyptian"
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "locked",
+      "values": {
+        "triplicity": "dorotheus_style_three_rulers"
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "locked",
+      "values": {
+        "reception": "direction_plus_connection_required",
+        "aspect": "application_separation_required"
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    }
+  ],
+  "cards": [
+    {
+      "topic": "self_decision",
+      "raw_evidence_count": 7,
+      "unique_evidence_count": 3,
+      "shared_evidence_count": 4,
+      "effective_evidence_weight": 5.0,
+      "independent_groups": [
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "火星的状态包含果宫落点",
+          "火星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "火星的状态包含果宫落点",
+          "火星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_10_RULER_PLACEMENT",
+        "STATE_月亮"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "money_income",
+      "raw_evidence_count": 15,
+      "unique_evidence_count": 6,
+      "shared_evidence_count": 9,
+      "effective_evidence_weight": 10.5,
+      "independent_groups": [
+        "aspect_validation",
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "aspect_validation",
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R21",
+          "status": "auxiliary",
+          "layer": "secondary_technical",
+          "limit": "practice article; historical claims require cross-checking"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R21:practice article; historical claims require cross-checking",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 4,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "火星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "火星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_2_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_10_RULER_PLACEMENT",
+        "HOUSE_11_RULER_PLACEMENT",
+        "STATE_太阳",
+        "STATE_金星",
+        "STATE_火星"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R21",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [
+        "reception_condition"
+      ],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "shared_resources",
+      "raw_evidence_count": 9,
+      "unique_evidence_count": 3,
+      "shared_evidence_count": 6,
+      "effective_evidence_weight": 6.0,
+      "independent_groups": [
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "土星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "土星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_2_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "STATE_土星",
+        "STATE_太阳"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "career_public_role",
+      "raw_evidence_count": 16,
+      "unique_evidence_count": 6,
+      "shared_evidence_count": 10,
+      "effective_evidence_weight": 11.0,
+      "independent_groups": [
+        "aspect_validation",
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "aspect_validation",
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R21",
+          "status": "auxiliary",
+          "layer": "secondary_technical",
+          "limit": "practice article; historical claims require cross-checking"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R21:practice article; historical claims require cross-checking",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_10_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_6_RULER_PLACEMENT",
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_11_RULER_PLACEMENT",
+        "STATE_火星",
+        "STATE_月亮",
+        "STATE_木星",
+        "STATE_土星",
+        "STATE_金星"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R21",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [
+        "reception_condition"
+      ],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "relationship_family",
+      "raw_evidence_count": 12,
+      "unique_evidence_count": 5,
+      "shared_evidence_count": 7,
+      "effective_evidence_weight": 8.5,
+      "independent_groups": [
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "土星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "土星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "STATE_土星",
+        "STATE_金星",
+        "STATE_月亮"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "creation_children",
+      "raw_evidence_count": 14,
+      "unique_evidence_count": 6,
+      "shared_evidence_count": 8,
+      "effective_evidence_weight": 10.0,
+      "independent_groups": [
+        "aspect_validation",
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "aspect_validation",
+        "dignity_candidate_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R21",
+          "status": "auxiliary",
+          "layer": "secondary_technical",
+          "limit": "practice article; historical claims require cross-checking"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R21:practice article; historical claims require cross-checking",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "火星的状态包含果宫落点",
+          "土星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "STATE_火星",
+        "STATE_月亮",
+        "STATE_金星",
+        "STATE_土星"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R21",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [
+        "reception_condition"
+      ],
+      "source_quality": "mixed_layers"
+    },
+    {
+      "topic": "pressure_risk",
+      "raw_evidence_count": 13,
+      "unique_evidence_count": 8,
+      "shared_evidence_count": 5,
+      "effective_evidence_weight": 10.5,
+      "independent_groups": [
+        "aspect_validation",
+        "house_rulership",
+        "planetary_state",
+        "reception_validation",
+        "rulership_candidate"
+      ],
+      "independent_source_clusters": [
+        "aspect_validation",
+        "dignity_candidate_rules",
+        "house_responsibility",
+        "planetary_state_rules",
+        "reception_validation"
+      ],
+      "grade_cap": "B",
+      "natural_grade_cap": "A",
+      "source_upgrade_eligibility": "limited",
+      "source_profiles": [
+        {
+          "source_id": "Chart_Facts",
+          "status": "per_chart",
+          "layer": "chart_data",
+          "limit": "must retain raw input and settings"
+        },
+        {
+          "source_id": "R01",
+          "status": "auxiliary",
+          "layer": "primary_translation",
+          "limit": "historical translation, not a modern critical edition"
+        },
+        {
+          "source_id": "R19",
+          "status": "verified",
+          "layer": "primary_translation_excerpt",
+          "limit": "web excerpt and translation; not the complete Arabic text"
+        },
+        {
+          "source_id": "R21",
+          "status": "auxiliary",
+          "layer": "secondary_technical",
+          "limit": "practice article; historical claims require cross-checking"
+        },
+        {
+          "source_id": "R25",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "teaching article; dignity tables are historically contested"
+        },
+        {
+          "source_id": "R26",
+          "status": "verified",
+          "layer": "secondary_technical",
+          "limit": "practice article containing later explanatory material"
+        },
+        {
+          "source_id": "house-matrix",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "operational synthesis, not a historical source"
+        },
+        {
+          "source_id": "judgment-algorithm",
+          "status": "internal",
+          "layer": "internal_rule",
+          "limit": "governance layer, not independent historical evidence"
+        }
+      ],
+      "source_limits": [
+        "Chart_Facts:must retain raw input and settings",
+        "R01:historical translation, not a modern critical edition",
+        "R19:web excerpt and translation; not the complete Arabic text",
+        "R21:practice article; historical claims require cross-checking",
+        "R25:teaching article; dignity tables are historically contested",
+        "R26:practice article containing later explanatory material",
+        "house-matrix:operational synthesis, not a historical source",
+        "judgment-algorithm:governance layer, not independent historical evidence"
+      ],
+      "publication_reasons": [
+        "source_qualification_limited",
+        "shared_evidence_discount",
+        "structural_counter_test_present",
+        "observation_uncollected"
+      ],
+      "counter_test_summary": {
+        "count": 3,
+        "types": [
+          "structural_counter_test"
+        ],
+        "items": [
+          "土星的状态包含果宫落点",
+          "水星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ],
+        "data_limits": [],
+        "structural_limits": [
+          "土星的状态包含果宫落点",
+          "水星的状态包含果宫落点",
+          "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+        ]
+      },
+      "observation_summary": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "count": 0,
+        "tombstone_count": 0,
+        "relations": [],
+        "competing_observation_ids": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "version_gate": "locked",
+      "version_gate_blockers": [],
+      "shared_evidence_ids": [
+        "HOUSE_6_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_2_RULER_PLACEMENT",
+        "STATE_木星",
+        "STATE_土星"
+      ],
+      "source_ids": [
+        "Chart_Facts",
+        "R01",
+        "R19",
+        "R21",
+        "R25",
+        "R26",
+        "house-matrix",
+        "judgment-algorithm"
+      ],
+      "source_layers": [
+        "chart_data",
+        "internal_rule",
+        "primary_translation",
+        "primary_translation_excerpt",
+        "secondary_technical"
+      ],
+      "source_conflict_clusters": [
+        "reception_condition"
+      ],
+      "source_quality": "mixed_layers"
+    }
+  ],
+  "evidence_frequency": {
+    "HOUSE_1_RULER_PLACEMENT": 4,
+    "HOUSE_5_RULER_PLACEMENT": 3,
+    "HOUSE_10_RULER_PLACEMENT": 3,
+    "STATE_月亮": 4,
+    "RECEPTION_self_decision_2_月亮_金星": 1,
+    "RECEPTION_self_decision_6_木星_月亮": 1,
+    "CANDIDATE_self_decision": 1,
+    "HOUSE_2_RULER_PLACEMENT": 3,
+    "HOUSE_4_RULER_PLACEMENT": 4,
+    "HOUSE_8_RULER_PLACEMENT": 5,
+    "HOUSE_11_RULER_PLACEMENT": 2,
+    "STATE_太阳": 2,
+    "STATE_金星": 4,
+    "STATE_火星": 3,
+    "ASPECT_money_income_1_水星_火星_六合": 1,
+    "RECEPTION_money_income_1_太阳_火星": 1,
+    "RECEPTION_money_income_2_月亮_金星": 1,
+    "RECEPTION_money_income_3_水星_火星": 1,
+    "RECEPTION_money_income_4_金星_木星": 1,
+    "CANDIDATE_money_income": 1,
+    "HOUSE_7_RULER_PLACEMENT": 3,
+    "STATE_土星": 5,
+    "RECEPTION_shared_resources_1_太阳_火星": 1,
+    "RECEPTION_shared_resources_7_土星_金星": 1,
+    "CANDIDATE_shared_resources": 1,
+    "HOUSE_6_RULER_PLACEMENT": 2,
+    "STATE_木星": 2,
+    "ASPECT_career_public_role_1_水星_火星_六合": 1,
+    "RECEPTION_career_public_role_1_太阳_火星": 1,
+    "RECEPTION_career_public_role_2_月亮_金星": 1,
+    "RECEPTION_career_public_role_3_水星_火星": 1,
+    "RECEPTION_career_public_role_4_金星_木星": 1,
+    "CANDIDATE_career_public_role": 1,
+    "RECEPTION_relationship_family_2_月亮_金星": 1,
+    "RECEPTION_relationship_family_4_金星_木星": 1,
+    "RECEPTION_relationship_family_6_木星_月亮": 1,
+    "RECEPTION_relationship_family_7_土星_金星": 1,
+    "CANDIDATE_relationship_family": 1,
+    "ASPECT_creation_children_1_水星_火星_六合": 1,
+    "RECEPTION_creation_children_1_太阳_火星": 1,
+    "RECEPTION_creation_children_2_月亮_金星": 1,
+    "RECEPTION_creation_children_3_水星_火星": 1,
+    "RECEPTION_creation_children_4_金星_木星": 1,
+    "CANDIDATE_creation_children": 1,
+    "HOUSE_12_RULER_PLACEMENT": 1,
+    "STATE_水星": 1,
+    "ASPECT_pressure_risk_1_水星_火星_六合": 1,
+    "RECEPTION_pressure_risk_3_水星_火星": 1,
+    "RECEPTION_pressure_risk_4_金星_木星": 1,
+    "RECEPTION_pressure_risk_5_火星_水星": 1,
+    "RECEPTION_pressure_risk_6_木星_月亮": 1,
+    "CANDIDATE_pressure_risk": 1
+  },
+  "rule": "unique evidence=1.0; evidence reused across topics=0.5; shared evidence alone cannot upgrade to A/S; auxiliary/registered/unregistered source limits cap grade at B"
+}

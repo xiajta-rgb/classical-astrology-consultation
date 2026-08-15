@@ -1,0 +1,3352 @@
+{
+  "chart_id": "ephh-19961111-2225",
+  "metadata": {
+    "chart_id": "ephh-19961111-2225",
+    "source": "local_ephh_project",
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "sect": "night",
+    "sect_source": "inferred_from_ephh_sun_house",
+    "sect_confidence": "low",
+    "degrees_available": true,
+    "ascendant_boundary_risk": "high",
+    "rule_versions": {
+      "terms": "egyptian",
+      "triplicity": "dorotheus_style_three_rulers",
+      "faces": "chaldean",
+      "reception": "direction_plus_connection_required",
+      "aspect": "application_separation_required"
+    },
+    "rule_version_lock": {
+      "terms": true,
+      "triplicity": true,
+      "faces": true,
+      "reception": true,
+      "aspect": true
+    },
+    "missing_contract_fields": []
+  },
+  "chart_facts": {
+    "provenance": {
+      "placements": "user_declared_unrecomputed",
+      "cusps": "user_declared_unrecomputed",
+      "aspect_claims": "user_declared_sector_validated",
+      "rulership_fly_ins": "computed_traditional_from_declared_cusps",
+      "reception_validation": "computed_from_declared_signs_and_locked_rule_version",
+      "planetary_state": "computed_from_declared_signs_houses_with_provisional_zodiac",
+      "rulership_candidates": "computed_from_declared_cusp_signs_and_locked_dignity_versions"
+    },
+    "placements": {
+      "太阳": {
+        "sign": "天蝎",
+        "degree": 19.48,
+        "ecl_lon": 229.48,
+        "ecl_lat": 0.0,
+        "house": 4,
+        "speed": 1.006239,
+        "is_retrograde": false
+      },
+      "月亮": {
+        "sign": "天蝎",
+        "degree": 24.83,
+        "ecl_lon": 234.8255,
+        "ecl_lat": 3.7981,
+        "house": 4,
+        "speed": 13.709961,
+        "is_retrograde": false
+      },
+      "水星": {
+        "sign": "天蝎",
+        "degree": 25.18,
+        "ecl_lon": 235.1766,
+        "ecl_lat": -0.7436,
+        "house": 4,
+        "speed": 1.568087,
+        "is_retrograde": false
+      },
+      "金星": {
+        "sign": "天秤",
+        "degree": 15.92,
+        "ecl_lon": 195.9156,
+        "ecl_lat": 1.7723,
+        "house": 3,
+        "speed": 1.22309,
+        "is_retrograde": false
+      },
+      "火星": {
+        "sign": "处女",
+        "degree": 6.68,
+        "ecl_lon": 156.6791,
+        "ecl_lat": 1.7664,
+        "house": 2,
+        "speed": 0.529571,
+        "is_retrograde": false
+      },
+      "木星": {
+        "sign": "摩羯",
+        "degree": 14.59,
+        "ecl_lon": 284.5928,
+        "ecl_lat": -0.2719,
+        "house": 6,
+        "speed": 0.178066,
+        "is_retrograde": false
+      },
+      "土星": {
+        "sign": "白羊",
+        "degree": 1.03,
+        "ecl_lon": 1.0315,
+        "ecl_lat": -2.5469,
+        "house": 9,
+        "speed": -0.037791,
+        "is_retrograde": true
+      },
+      "天王": {
+        "sign": "水瓶",
+        "degree": 1.09,
+        "ecl_lon": 301.0901,
+        "ecl_lat": -0.5816,
+        "house": 7,
+        "speed": 0.027126,
+        "is_retrograde": false
+      },
+      "海王": {
+        "sign": "摩羯",
+        "degree": 25.33,
+        "ecl_lon": 295.3343,
+        "ecl_lat": 0.4433,
+        "house": 6,
+        "speed": 0.019572,
+        "is_retrograde": false
+      },
+      "冥王": {
+        "sign": "射手",
+        "degree": 2.47,
+        "ecl_lon": 242.4674,
+        "ecl_lat": 12.3869,
+        "house": 5,
+        "speed": 0.038829,
+        "is_retrograde": false
+      },
+      "北交": {
+        "sign": "天秤",
+        "degree": 7.38,
+        "ecl_lon": 187.3781,
+        "ecl_lat": 0.0,
+        "house": 3,
+        "speed": -0.108259,
+        "is_retrograde": false
+      },
+      "婚神": {
+        "sign": "白羊",
+        "degree": 5.66,
+        "ecl_lon": 5.6574,
+        "ecl_lat": -12.7246,
+        "house": 9,
+        "speed": -0.033766,
+        "is_retrograde": false
+      },
+      "南交": {
+        "sign": "白羊",
+        "degree": 7.38,
+        "ecl_lon": 7.3781,
+        "ecl_lat": 0.0,
+        "house": 9,
+        "speed": -0.108259,
+        "is_retrograde": false
+      },
+      "福点": {
+        "sign": "巨蟹",
+        "degree": 24.22,
+        "ecl_lon": 114.2209,
+        "ecl_lat": 0.0,
+        "house": 12,
+        "speed": 0.0,
+        "is_retrograde": false
+      },
+      "凯龙": {
+        "sign": "天秤",
+        "degree": 24.47,
+        "ecl_lon": 204.4734,
+        "ecl_lat": -0.8424,
+        "house": 4,
+        "speed": 0.137177,
+        "is_retrograde": false
+      }
+    },
+    "cusps": {
+      "1": "巨蟹",
+      "2": "狮子",
+      "3": "处女",
+      "4": "天秤",
+      "5": "天蝎",
+      "6": "射手",
+      "7": "摩羯",
+      "8": "水瓶",
+      "9": "双鱼",
+      "10": "白羊",
+      "11": "金牛",
+      "12": "双子"
+    },
+    "rulership_fly_ins": [
+      {
+        "house": 1,
+        "cusp_sign": "巨蟹",
+        "ruler": "月亮",
+        "ruler_house": 4
+      },
+      {
+        "house": 2,
+        "cusp_sign": "狮子",
+        "ruler": "太阳",
+        "ruler_house": 4
+      },
+      {
+        "house": 3,
+        "cusp_sign": "处女",
+        "ruler": "水星",
+        "ruler_house": 4
+      },
+      {
+        "house": 4,
+        "cusp_sign": "天秤",
+        "ruler": "金星",
+        "ruler_house": 3
+      },
+      {
+        "house": 5,
+        "cusp_sign": "天蝎",
+        "ruler": "火星",
+        "ruler_house": 2
+      },
+      {
+        "house": 6,
+        "cusp_sign": "射手",
+        "ruler": "木星",
+        "ruler_house": 6
+      },
+      {
+        "house": 7,
+        "cusp_sign": "摩羯",
+        "ruler": "土星",
+        "ruler_house": 9
+      },
+      {
+        "house": 8,
+        "cusp_sign": "水瓶",
+        "ruler": "土星",
+        "ruler_house": 9
+      },
+      {
+        "house": 9,
+        "cusp_sign": "双鱼",
+        "ruler": "木星",
+        "ruler_house": 6
+      },
+      {
+        "house": 10,
+        "cusp_sign": "白羊",
+        "ruler": "火星",
+        "ruler_house": 2
+      },
+      {
+        "house": 11,
+        "cusp_sign": "金牛",
+        "ruler": "金星",
+        "ruler_house": 3
+      },
+      {
+        "house": 12,
+        "cusp_sign": "双子",
+        "ruler": "水星",
+        "ruler_house": 4
+      }
+    ],
+    "supplied_fly_ins": {},
+    "supplied_fly_in_duplicates": [],
+    "supplied_fly_in_conflicts": [],
+    "supplied_reception_duplicates": [],
+    "supplied_reception_validation": {
+      "supported_domicile_claims": 0,
+      "unsupported_domicile_claims": [],
+      "mutual_missing_reverse": [],
+      "version": "direction_plus_connection_required",
+      "connection_audit": [],
+      "connection_status_counts": {},
+      "connection_required_unmet": []
+    },
+    "supplied_aspect_duplicates": [],
+    "supplied_aspect_reverse_duplicates": [],
+    "expected_domicile_receptions": [
+      {
+        "direction": "太阳->火星",
+        "type": "domicile_reception",
+        "from_sign": "天蝎",
+        "to_sign": "处女"
+      },
+      {
+        "direction": "月亮->火星",
+        "type": "domicile_reception",
+        "from_sign": "天蝎",
+        "to_sign": "处女"
+      },
+      {
+        "direction": "水星->火星",
+        "type": "domicile_reception",
+        "from_sign": "天蝎",
+        "to_sign": "处女"
+      },
+      {
+        "direction": "火星->水星",
+        "type": "domicile_reception",
+        "from_sign": "处女",
+        "to_sign": "天蝎"
+      },
+      {
+        "direction": "木星->土星",
+        "type": "domicile_reception",
+        "from_sign": "摩羯",
+        "to_sign": "白羊"
+      },
+      {
+        "direction": "土星->火星",
+        "type": "domicile_reception",
+        "from_sign": "白羊",
+        "to_sign": "处女"
+      }
+    ],
+    "mutual_domicile_pairs": [
+      [
+        "水星",
+        "火星"
+      ]
+    ],
+    "aspect_validation": [
+      {
+        "planet1": "北交",
+        "planet2": "南交",
+        "type": "冲",
+        "angle": 180.0,
+        "orb": 0.0,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 180.0,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "polarity",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "天王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 0.06,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 59.94,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "水星",
+        "planet2": "海王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 0.16,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 60.16,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "福点",
+        "planet2": "凯龙",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 0.25,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 90.25,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "水星",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 0.35,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 0.35,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "海王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 0.51,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 60.51,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "福点",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 0.6,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 120.6,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "海王",
+        "planet2": "凯龙",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 0.86,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 90.86,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "水星",
+        "planet2": "福点",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 0.96,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 120.96,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "海王",
+        "planet2": "福点",
+        "type": "冲",
+        "angle": 180.0,
+        "orb": 1.11,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 178.89,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "polarity",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "金星",
+        "planet2": "木星",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 1.32,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 88.68,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "冥王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 1.38,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 58.62,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "冥王",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 1.44,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 118.56,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "北交",
+        "planet2": "婚神",
+        "type": "冲",
+        "angle": 180.0,
+        "orb": 1.72,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 178.28,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "polarity",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "婚神",
+        "planet2": "南交",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 1.72,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 1.72,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "冥王",
+        "planet2": "婚神",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 3.19,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 123.19,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "火星",
+        "planet2": "冥王",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 4.21,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 85.79,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "婚神",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 4.57,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 64.57,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "婚神",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 4.63,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 4.63,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "太阳",
+        "planet2": "福点",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 4.74,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 115.26,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "太阳",
+        "planet2": "木星",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 4.89,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 55.11,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "冥王",
+        "planet2": "北交",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 4.91,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 55.09,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "冥王",
+        "planet2": "南交",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 4.91,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 124.91,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "太阳",
+        "planet2": "月亮",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 5.35,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 5.35,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "太阳",
+        "planet2": "水星",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 5.7,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 5.7,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "海王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 5.7,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 65.7,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "海王",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 5.76,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 5.76,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "太阳",
+        "planet2": "海王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 5.85,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 65.85,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "水星",
+        "planet2": "土星",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 5.85,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 125.85,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "水星",
+        "planet2": "天王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 5.91,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 65.91,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "土星",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 6.21,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 126.21,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "天王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 6.26,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 66.26,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "北交",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 6.29,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 113.71,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "南交",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 6.29,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 66.29,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "北交",
+        "type": "冲",
+        "angle": 180.0,
+        "orb": 6.35,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 173.65,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "polarity",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "南交",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 6.35,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 6.35,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "凯龙",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 6.62,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 96.62,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "土星",
+        "planet2": "福点",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 6.81,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 113.19,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "天王",
+        "planet2": "福点",
+        "type": "冲",
+        "angle": 180.0,
+        "orb": 6.87,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 173.13,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "polarity",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "海王",
+        "planet2": "冥王",
+        "type": "六合",
+        "angle": 60.0,
+        "orb": 7.13,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 52.87,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "木星",
+        "planet2": "北交",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 7.21,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 97.21,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "木星",
+        "planet2": "南交",
+        "type": "刑",
+        "angle": 90.0,
+        "orb": 7.21,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 82.79,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "friction",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "水星",
+        "planet2": "冥王",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 7.29,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 7.29,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "月亮",
+        "planet2": "冥王",
+        "type": "合",
+        "angle": 0.0,
+        "orb": 7.64,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "auxiliary_context",
+        "separation": 7.64,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "merge_neutral",
+        "delivery_status": "unknown_without_motion"
+      },
+      {
+        "planet1": "火星",
+        "planet2": "木星",
+        "type": "拱",
+        "angle": 120.0,
+        "orb": 7.91,
+        "applying": null,
+        "motion_status": "unknown_without_motion_policy",
+        "source": "computed_from_ephh_ecliptic_longitudes",
+        "evidence_layer": "classical_core",
+        "separation": 127.91,
+        "status": "exact",
+        "support_level": "degree_confirmed",
+        "aspect_character": "flow",
+        "delivery_status": "unknown_without_motion"
+      }
+    ],
+    "planetary_state": {
+      "sect": "night",
+      "sect_source": "inferred_from_ephh_sun_house",
+      "sect_confidence": "low",
+      "rule_versions": {
+        "terms": "egyptian",
+        "triplicity": "dorotheus_style_three_rulers",
+        "faces": "chaldean",
+        "reception": "direction_plus_connection_required",
+        "aspect": "application_separation_required"
+      },
+      "version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "planets": [
+        {
+          "planet": "太阳",
+          "layer": "classical",
+          "sign": "天蝎",
+          "house": 4,
+          "essential_dignity": [],
+          "triplicity": {
+            "element": "水",
+            "day": "金星",
+            "night": "火星",
+            "participating": "月亮"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "木星",
+            "version": "egyptian",
+            "interval": [
+              19,
+              24
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "太阳",
+            "version": "chaldean",
+            "interval": [
+              10,
+              20
+            ]
+          },
+          "sect": "out_of_sect",
+          "angularity": "angular",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 1.006239,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "月亮",
+          "layer": "classical",
+          "sign": "天蝎",
+          "house": 4,
+          "essential_dignity": [
+            "fall",
+            "triplicity_participating"
+          ],
+          "triplicity": {
+            "element": "水",
+            "day": "金星",
+            "night": "火星",
+            "participating": "月亮"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "土星",
+            "version": "egyptian",
+            "interval": [
+              24,
+              30
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "金星",
+            "version": "chaldean",
+            "interval": [
+              20,
+              30
+            ]
+          },
+          "sect": "in_sect",
+          "angularity": "angular",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 13.709961,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "水星",
+          "layer": "classical",
+          "sign": "天蝎",
+          "house": 4,
+          "essential_dignity": [],
+          "triplicity": {
+            "element": "水",
+            "day": "金星",
+            "night": "火星",
+            "participating": "月亮"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "土星",
+            "version": "egyptian",
+            "interval": [
+              24,
+              30
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "金星",
+            "version": "chaldean",
+            "interval": [
+              20,
+              30
+            ]
+          },
+          "sect": "variable",
+          "angularity": "angular",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 1.568087,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "金星",
+          "layer": "classical",
+          "sign": "天秤",
+          "house": 3,
+          "essential_dignity": [
+            "domicile"
+          ],
+          "triplicity": {
+            "element": "风",
+            "day": "土星",
+            "night": "水星",
+            "participating": "木星"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "木星",
+            "version": "egyptian",
+            "interval": [
+              14,
+              21
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "土星",
+            "version": "chaldean",
+            "interval": [
+              10,
+              20
+            ]
+          },
+          "sect": "in_sect",
+          "angularity": "cadent",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 1.22309,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "火星",
+          "layer": "classical",
+          "sign": "处女",
+          "house": 2,
+          "essential_dignity": [
+            "triplicity_participating"
+          ],
+          "triplicity": {
+            "element": "土",
+            "day": "金星",
+            "night": "月亮",
+            "participating": "火星"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "水星",
+            "version": "egyptian",
+            "interval": [
+              0,
+              7
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "太阳",
+            "version": "chaldean",
+            "interval": [
+              0,
+              10
+            ]
+          },
+          "sect": "in_sect",
+          "angularity": "succedent",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 0.529571,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "木星",
+          "layer": "classical",
+          "sign": "摩羯",
+          "house": 6,
+          "essential_dignity": [
+            "fall"
+          ],
+          "triplicity": {
+            "element": "土",
+            "day": "金星",
+            "night": "月亮",
+            "participating": "火星"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "金星",
+            "version": "egyptian",
+            "interval": [
+              14,
+              22
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "火星",
+            "version": "chaldean",
+            "interval": [
+              10,
+              20
+            ]
+          },
+          "sect": "out_of_sect",
+          "angularity": "cadent",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": 0.178066,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "土星",
+          "layer": "classical",
+          "sign": "白羊",
+          "house": 9,
+          "essential_dignity": [
+            "fall",
+            "triplicity_participating"
+          ],
+          "triplicity": {
+            "element": "火",
+            "day": "太阳",
+            "night": "木星",
+            "participating": "土星"
+          },
+          "term": {
+            "status": "term",
+            "ruler": "木星",
+            "version": "egyptian",
+            "interval": [
+              0,
+              6
+            ]
+          },
+          "face": {
+            "status": "face",
+            "ruler": "火星",
+            "version": "chaldean",
+            "interval": [
+              0,
+              10
+            ]
+          },
+          "sect": "out_of_sect",
+          "angularity": "cadent",
+          "confidence": "degree_ready",
+          "zodiac_confidence": "high",
+          "motion_visibility": {
+            "speed": -0.037791,
+            "speed_status": "declared",
+            "is_retrograde": true,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "天王",
+          "layer": "auxiliary",
+          "sign": "水瓶",
+          "house": 7,
+          "motion_visibility": {
+            "speed": 0.027126,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "海王",
+          "layer": "auxiliary",
+          "sign": "摩羯",
+          "house": 6,
+          "motion_visibility": {
+            "speed": 0.019572,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "冥王",
+          "layer": "auxiliary",
+          "sign": "射手",
+          "house": 5,
+          "motion_visibility": {
+            "speed": 0.038829,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "北交",
+          "layer": "auxiliary",
+          "sign": "天秤",
+          "house": 3,
+          "motion_visibility": {
+            "speed": -0.108259,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "婚神",
+          "layer": "auxiliary",
+          "sign": "白羊",
+          "house": 9,
+          "motion_visibility": {
+            "speed": -0.033766,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "南交",
+          "layer": "auxiliary",
+          "sign": "白羊",
+          "house": 9,
+          "motion_visibility": {
+            "speed": -0.108259,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "福点",
+          "layer": "auxiliary",
+          "sign": "巨蟹",
+          "house": 12,
+          "motion_visibility": {
+            "speed": 0.0,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        },
+        {
+          "planet": "凯龙",
+          "layer": "auxiliary",
+          "sign": "天秤",
+          "house": 4,
+          "motion_visibility": {
+            "speed": 0.137177,
+            "speed_status": "declared",
+            "is_retrograde": false,
+            "retrograde_status": "declared",
+            "visibility": null,
+            "visibility_status": "unknown_due_to_missing_visibility"
+          }
+        }
+      ]
+    },
+    "rulership_candidates": {
+      "version": "RULERSHIP-CANDIDATES-0.1",
+      "sect": "night",
+      "sect_source": "inferred_from_ephh_sun_house",
+      "sect_confidence": "low",
+      "rule_versions": {
+        "terms": "egyptian",
+        "faces": "chaldean",
+        "triplicity": "dorotheus_style_three_rulers"
+      },
+      "houses": [
+        {
+          "house": 1,
+          "place": {
+            "sign": "巨蟹",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "月亮",
+          "traditional_ruler_house": 4,
+          "candidates": [
+            {
+              "planet": "月亮",
+              "claims": [
+                "domicile",
+                "triplicity_participating"
+              ],
+              "claim_count": 2
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "exaltation"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 2,
+          "place": {
+            "sign": "狮子",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "太阳",
+          "traditional_ruler_house": 4,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "太阳",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 3,
+          "place": {
+            "sign": "处女",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "水星",
+          "traditional_ruler_house": 4,
+          "candidates": [
+            {
+              "planet": "月亮",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "水星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 4,
+          "place": {
+            "sign": "天秤",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "金星",
+          "traditional_ruler_house": 3,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "exaltation"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "水星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "金星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 5,
+          "place": {
+            "sign": "天蝎",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "火星",
+          "traditional_ruler_house": 2,
+          "candidates": [
+            {
+              "planet": "月亮",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "domicile",
+                "triplicity_night"
+              ],
+              "claim_count": 2
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 6,
+          "place": {
+            "sign": "射手",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "木星",
+          "traditional_ruler_house": 6,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "domicile",
+                "triplicity_night"
+              ],
+              "claim_count": 2
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 7,
+          "place": {
+            "sign": "摩羯",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "土星",
+          "traditional_ruler_house": 9,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "月亮",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "exaltation",
+                "triplicity_participating"
+              ],
+              "claim_count": 2
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 8,
+          "place": {
+            "sign": "水瓶",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "土星",
+          "traditional_ruler_house": 9,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "水星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 9,
+          "place": {
+            "sign": "双鱼",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "木星",
+          "traditional_ruler_house": 6,
+          "candidates": [
+            {
+              "planet": "月亮",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "金星",
+              "claims": [
+                "exaltation"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 10,
+          "place": {
+            "sign": "白羊",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "火星",
+          "traditional_ruler_house": 2,
+          "candidates": [
+            {
+              "planet": "土星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "太阳",
+              "claims": [
+                "exaltation"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "木星",
+              "claims": [
+                "triplicity_night"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 11,
+          "place": {
+            "sign": "金牛",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "金星",
+          "traditional_ruler_house": 3,
+          "candidates": [
+            {
+              "planet": "月亮",
+              "claims": [
+                "exaltation",
+                "triplicity_night"
+              ],
+              "claim_count": 2
+            },
+            {
+              "planet": "火星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "金星",
+              "claims": [
+                "domicile"
+              ],
+              "claim_count": 1
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        },
+        {
+          "house": 12,
+          "place": {
+            "sign": "双子",
+            "degree": null
+          },
+          "traditional_domicile_ruler": "水星",
+          "traditional_ruler_house": 4,
+          "candidates": [
+            {
+              "planet": "木星",
+              "claims": [
+                "triplicity_participating"
+              ],
+              "claim_count": 1
+            },
+            {
+              "planet": "水星",
+              "claims": [
+                "domicile",
+                "triplicity_night"
+              ],
+              "claim_count": 2
+            }
+          ],
+          "candidate_claim_detail": {
+            "term_ruler": null,
+            "term_interval": null,
+            "face_ruler": null,
+            "face_interval": null,
+            "unavailable_claim_types": [
+              "term",
+              "face"
+            ]
+          },
+          "status": "provisional_sign_only",
+          "selection_rule": "retain claims by dignity; do not sum them into a single fortune score"
+        }
+      ],
+      "topics": {
+        "self_decision": {
+          "houses": [
+            1
+          ],
+          "places": [
+            {
+              "house": 1,
+              "traditional_domicile_ruler": "月亮",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "domicile",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "月亮"
+          ],
+          "candidate_planets": [
+            "月亮",
+            "木星",
+            "火星"
+          ],
+          "competing_candidate_planets": [
+            "木星",
+            "火星"
+          ],
+          "conflict_houses": [
+            1
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "money_income": {
+          "houses": [
+            2,
+            11,
+            10
+          ],
+          "places": [
+            {
+              "house": 2,
+              "traditional_domicile_ruler": "太阳",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "太阳",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 11,
+              "traditional_domicile_ruler": "金星",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "exaltation",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "金星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 10,
+              "traditional_domicile_ruler": "火星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "太阳",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "太阳",
+            "火星",
+            "金星"
+          ],
+          "candidate_planets": [
+            "土星",
+            "太阳",
+            "月亮",
+            "木星",
+            "火星",
+            "金星"
+          ],
+          "competing_candidate_planets": [
+            "土星",
+            "月亮",
+            "木星"
+          ],
+          "conflict_houses": [
+            2,
+            10,
+            11
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "shared_resources": {
+          "houses": [
+            8,
+            7,
+            2
+          ],
+          "places": [
+            {
+              "house": 8,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 7,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "exaltation",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 2,
+              "traditional_domicile_ruler": "太阳",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "太阳",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "土星",
+            "太阳"
+          ],
+          "candidate_planets": [
+            "土星",
+            "太阳",
+            "月亮",
+            "木星",
+            "水星",
+            "火星"
+          ],
+          "competing_candidate_planets": [
+            "月亮",
+            "木星",
+            "水星",
+            "火星"
+          ],
+          "conflict_houses": [
+            2,
+            7,
+            8
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "career_public_role": {
+          "houses": [
+            10,
+            1,
+            6,
+            7,
+            11
+          ],
+          "places": [
+            {
+              "house": 10,
+              "traditional_domicile_ruler": "火星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "太阳",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 1,
+              "traditional_domicile_ruler": "月亮",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "domicile",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 6,
+              "traditional_domicile_ruler": "木星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "domicile",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 7,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "exaltation",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 11,
+              "traditional_domicile_ruler": "金星",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "exaltation",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "金星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "土星",
+            "月亮",
+            "木星",
+            "火星",
+            "金星"
+          ],
+          "candidate_planets": [
+            "土星",
+            "太阳",
+            "月亮",
+            "木星",
+            "火星",
+            "金星"
+          ],
+          "competing_candidate_planets": [
+            "太阳"
+          ],
+          "conflict_houses": [
+            1,
+            6,
+            7,
+            10,
+            11
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "relationship_family": {
+          "houses": [
+            7,
+            4,
+            1,
+            8
+          ],
+          "places": [
+            {
+              "house": 7,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "exaltation",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 4,
+              "traditional_domicile_ruler": "金星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "金星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 1,
+              "traditional_domicile_ruler": "月亮",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "domicile",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 8,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "土星",
+            "月亮",
+            "金星"
+          ],
+          "candidate_planets": [
+            "土星",
+            "月亮",
+            "木星",
+            "水星",
+            "火星",
+            "金星"
+          ],
+          "competing_candidate_planets": [
+            "木星",
+            "水星",
+            "火星"
+          ],
+          "conflict_houses": [
+            1,
+            4,
+            7,
+            8
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "creation_children": {
+          "houses": [
+            5,
+            1,
+            4,
+            8
+          ],
+          "places": [
+            {
+              "house": 5,
+              "traditional_domicile_ruler": "火星",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "domicile",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 1,
+              "traditional_domicile_ruler": "月亮",
+              "candidates": [
+                {
+                  "planet": "月亮",
+                  "claims": [
+                    "domicile",
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 2
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "火星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 4,
+              "traditional_domicile_ruler": "金星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "exaltation"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "金星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 8,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "土星",
+            "月亮",
+            "火星",
+            "金星"
+          ],
+          "candidate_planets": [
+            "土星",
+            "月亮",
+            "木星",
+            "水星",
+            "火星",
+            "金星"
+          ],
+          "competing_candidate_planets": [
+            "木星",
+            "水星"
+          ],
+          "conflict_houses": [
+            1,
+            4,
+            5,
+            8
+          ],
+          "status": "competing_candidates",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        },
+        "pressure_risk": {
+          "houses": [
+            6,
+            8,
+            12
+          ],
+          "places": [
+            {
+              "house": 6,
+              "traditional_domicile_ruler": "木星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "domicile",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 8,
+              "traditional_domicile_ruler": "土星",
+              "candidates": [
+                {
+                  "planet": "土星",
+                  "claims": [
+                    "domicile"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "triplicity_night"
+                  ],
+                  "claim_count": 1
+                }
+              ],
+              "status": "provisional_sign_only"
+            },
+            {
+              "house": 12,
+              "traditional_domicile_ruler": "水星",
+              "candidates": [
+                {
+                  "planet": "木星",
+                  "claims": [
+                    "triplicity_participating"
+                  ],
+                  "claim_count": 1
+                },
+                {
+                  "planet": "水星",
+                  "claims": [
+                    "domicile",
+                    "triplicity_night"
+                  ],
+                  "claim_count": 2
+                }
+              ],
+              "status": "provisional_sign_only"
+            }
+          ],
+          "traditional_domicile_rulers": [
+            "土星",
+            "木星",
+            "水星"
+          ],
+          "candidate_planets": [
+            "土星",
+            "木星",
+            "水星"
+          ],
+          "competing_candidate_planets": [],
+          "conflict_houses": [
+            6,
+            8,
+            12
+          ],
+          "status": "domicile_only_candidate_set",
+          "selection_rule": "report the disagreement and missing discriminators; do not select a winner by claim_count"
+        }
+      },
+      "rule": "traditional domicile ruler remains the responsibility-chain anchor; other dignities are candidate claims, not additive points"
+    }
+  },
+  "topic_coverage": {
+    "self_decision": {
+      "houses": [
+        1
+      ],
+      "covered": [
+        1
+      ],
+      "status": "available"
+    },
+    "money_income": {
+      "houses": [
+        2,
+        11,
+        10
+      ],
+      "covered": [
+        2,
+        11,
+        10
+      ],
+      "status": "available"
+    },
+    "shared_resources": {
+      "houses": [
+        8,
+        7,
+        2
+      ],
+      "covered": [
+        8,
+        7,
+        2
+      ],
+      "status": "available"
+    },
+    "career_public_role": {
+      "houses": [
+        10,
+        1,
+        6,
+        7,
+        11
+      ],
+      "covered": [
+        10,
+        1,
+        6,
+        7,
+        11
+      ],
+      "status": "available"
+    },
+    "relationship_family": {
+      "houses": [
+        7,
+        4,
+        1,
+        8
+      ],
+      "covered": [
+        7,
+        4,
+        1,
+        8
+      ],
+      "status": "available"
+    },
+    "creation_children": {
+      "houses": [
+        5,
+        1,
+        4,
+        8
+      ],
+      "covered": [
+        5,
+        1,
+        4,
+        8
+      ],
+      "status": "available"
+    },
+    "pressure_risk": {
+      "houses": [
+        6,
+        8,
+        12
+      ],
+      "covered": [
+        6,
+        8,
+        12
+      ],
+      "status": "available"
+    }
+  },
+  "responsibility_chains": {
+    "topics": {
+      "self_decision": {
+        "houses": [
+          1
+        ],
+        "path": [
+          {
+            "house": 1,
+            "ruler": "月亮",
+            "ruler_house": 4
+          }
+        ],
+        "unique_rulers": [
+          "月亮"
+        ],
+        "within_topic_reused_rulers": [],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "money_income": {
+        "houses": [
+          2,
+          11,
+          10
+        ],
+        "path": [
+          {
+            "house": 2,
+            "ruler": "太阳",
+            "ruler_house": 4
+          },
+          {
+            "house": 11,
+            "ruler": "金星",
+            "ruler_house": 3
+          },
+          {
+            "house": 10,
+            "ruler": "火星",
+            "ruler_house": 2
+          }
+        ],
+        "unique_rulers": [
+          "太阳",
+          "火星",
+          "金星"
+        ],
+        "within_topic_reused_rulers": [],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "shared_resources": {
+        "houses": [
+          8,
+          7,
+          2
+        ],
+        "path": [
+          {
+            "house": 8,
+            "ruler": "土星",
+            "ruler_house": 9
+          },
+          {
+            "house": 7,
+            "ruler": "土星",
+            "ruler_house": 9
+          },
+          {
+            "house": 2,
+            "ruler": "太阳",
+            "ruler_house": 4
+          }
+        ],
+        "unique_rulers": [
+          "土星",
+          "太阳"
+        ],
+        "within_topic_reused_rulers": [
+          "土星"
+        ],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "career_public_role": {
+        "houses": [
+          10,
+          1,
+          6,
+          7,
+          11
+        ],
+        "path": [
+          {
+            "house": 10,
+            "ruler": "火星",
+            "ruler_house": 2
+          },
+          {
+            "house": 1,
+            "ruler": "月亮",
+            "ruler_house": 4
+          },
+          {
+            "house": 6,
+            "ruler": "木星",
+            "ruler_house": 6
+          },
+          {
+            "house": 7,
+            "ruler": "土星",
+            "ruler_house": 9
+          },
+          {
+            "house": 11,
+            "ruler": "金星",
+            "ruler_house": 3
+          }
+        ],
+        "unique_rulers": [
+          "土星",
+          "月亮",
+          "木星",
+          "火星",
+          "金星"
+        ],
+        "within_topic_reused_rulers": [],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "relationship_family": {
+        "houses": [
+          7,
+          4,
+          1,
+          8
+        ],
+        "path": [
+          {
+            "house": 7,
+            "ruler": "土星",
+            "ruler_house": 9
+          },
+          {
+            "house": 4,
+            "ruler": "金星",
+            "ruler_house": 3
+          },
+          {
+            "house": 1,
+            "ruler": "月亮",
+            "ruler_house": 4
+          },
+          {
+            "house": 8,
+            "ruler": "土星",
+            "ruler_house": 9
+          }
+        ],
+        "unique_rulers": [
+          "土星",
+          "月亮",
+          "金星"
+        ],
+        "within_topic_reused_rulers": [
+          "土星"
+        ],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "creation_children": {
+        "houses": [
+          5,
+          1,
+          4,
+          8
+        ],
+        "path": [
+          {
+            "house": 5,
+            "ruler": "火星",
+            "ruler_house": 2
+          },
+          {
+            "house": 1,
+            "ruler": "月亮",
+            "ruler_house": 4
+          },
+          {
+            "house": 4,
+            "ruler": "金星",
+            "ruler_house": 3
+          },
+          {
+            "house": 8,
+            "ruler": "土星",
+            "ruler_house": 9
+          }
+        ],
+        "unique_rulers": [
+          "土星",
+          "月亮",
+          "火星",
+          "金星"
+        ],
+        "within_topic_reused_rulers": [],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      },
+      "pressure_risk": {
+        "houses": [
+          6,
+          8,
+          12
+        ],
+        "path": [
+          {
+            "house": 6,
+            "ruler": "木星",
+            "ruler_house": 6
+          },
+          {
+            "house": 8,
+            "ruler": "土星",
+            "ruler_house": 9
+          },
+          {
+            "house": 12,
+            "ruler": "水星",
+            "ruler_house": 4
+          }
+        ],
+        "unique_rulers": [
+          "土星",
+          "木星",
+          "水星"
+        ],
+        "within_topic_reused_rulers": [],
+        "deduplication": "same ruler is one planetary dependency; house responsibility remains separately visible"
+      }
+    },
+    "cross_topic_ruler_index": {
+      "月亮": [
+        "career_public_role",
+        "creation_children",
+        "relationship_family",
+        "self_decision"
+      ],
+      "太阳": [
+        "money_income",
+        "shared_resources"
+      ],
+      "金星": [
+        "career_public_role",
+        "creation_children",
+        "money_income",
+        "relationship_family"
+      ],
+      "火星": [
+        "career_public_role",
+        "creation_children",
+        "money_income"
+      ],
+      "土星": [
+        "career_public_role",
+        "creation_children",
+        "pressure_risk",
+        "relationship_family",
+        "shared_resources"
+      ],
+      "木星": [
+        "career_public_role",
+        "pressure_risk"
+      ],
+      "水星": [
+        "pressure_risk"
+      ]
+    },
+    "cross_topic_shared_rulers": [
+      "土星",
+      "太阳",
+      "月亮",
+      "木星",
+      "火星",
+      "金星"
+    ],
+    "rule": "house chains are retained; repeated planetary state is discounted once when scoring cross-topic evidence"
+  },
+  "sensitive_topic_gates": {
+    "self_decision": "standard_structural_language",
+    "money_income": "standard_structural_language",
+    "shared_resources": "financial_due_diligence_required",
+    "career_public_role": "standard_structural_language",
+    "relationship_family": "no_deterministic_relationship_or_family_outcome",
+    "creation_children": "G2_context_only_no_reproductive_outcome",
+    "pressure_risk": "G1_no_medical_or_mortality_claim"
+  },
+  "observations": {},
+  "observation_validation": {
+    "status": "not_collected",
+    "count": 0,
+    "active_count": 0,
+    "tombstone_count": 0,
+    "findings": [],
+    "observations": {},
+    "sensitive_dictionary_version": "SENSITIVE-0.3",
+    "sensitive_dictionary_status": "configured",
+    "sensitive_dictionary_audit": {
+      "previous_version": "SENSITIVE-0.2",
+      "change_note": "新增英文术语、空格/连字符归一化和寿命/自伤隐喻；保留既有中文类别。",
+      "changed_categories": [
+        "mortality",
+        "self_harm",
+        "medical",
+        "violence_crime",
+        "reproduction",
+        "sexual_identity",
+        "curse_possession",
+        "addiction"
+      ]
+    }
+  },
+  "release_gate": {
+    "fact_inventory_ready": true,
+    "natal_interpretation_ready": false,
+    "publishable": false,
+    "blockers": [],
+    "warnings": [
+      "ascendant_boundary_risk_high"
+    ],
+    "decision": "hold"
+  }
+}

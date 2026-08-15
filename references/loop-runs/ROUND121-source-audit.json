@@ -1,0 +1,55 @@
+{
+  "findings": [],
+  "conflict_clusters": [
+    "terms_version",
+    "triplicity_version",
+    "reception_condition",
+    "modern_validity"
+  ],
+  "conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "locked",
+      "values": {
+        "terms": "egyptian"
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "locked",
+      "values": {
+        "triplicity": "dorotheus_style_three_rulers"
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "locked",
+      "values": {
+        "reception": "direction_plus_connection_required",
+        "aspect": "application_separation_required"
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    }
+  ],
+  "version_gate": "publish",
+  "version_gate_blockers": [],
+  "card_source_profiles": [],
+  "source_count": 25,
+  "registry_fingerprint": "8885a3b76c699fa0c99b00dd226aabc3cab106aeb1d8486088536f1b850c8e2f",
+  "status": "pass"
+}

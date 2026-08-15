@@ -1,0 +1,40 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/interpretation-modules/registry.json",
+      "bytes": 11507,
+      "sha256": "175925e634e97750aebaf01cef9be46a5896285262c5abbc3ecca7b1f019ee00"
+    },
+    {
+      "path": "references/interpretation-priority.md",
+      "bytes": 1908,
+      "sha256": "bb78b4284f89eed224767109a40e21695f922c12cb19e4bd39af77e30a9cdbd3"
+    },
+    {
+      "path": "references/loop-runs/ROUND125-SALIENCE-INTERPRETATION.json",
+      "bytes": 21455,
+      "sha256": "67586565c46b87b98df6523ba8fd9fa69aa86f7119315bbffb7c14b638e4f020"
+    },
+    {
+      "path": "references/loop-runs/ROUND125-SALIENCE-INTERPRETATION.md",
+      "bytes": 9628,
+      "sha256": "3596a38366458d592c1ab932b9695c139ca5a24d4292df1b82df636ba83bb3a6"
+    },
+    {
+      "path": "references/loop-runs/ROUND125-SALIENCE-STATUS.md",
+      "bytes": 1764,
+      "sha256": "2f1ae5446bf8418580418e4dcc267347c48c152e737c02785f42b899b1afa6ec"
+    },
+    {
+      "path": "scripts/build_modular_interpretation.py",
+      "bytes": 11306,
+      "sha256": "c9e518b71a6075521861ea10e70179cf8e39013c4c62a787cef28c671189793b"
+    },
+    {
+      "path": "scripts/check_modular_interpretation.py",
+      "bytes": 1710,
+      "sha256": "79fe73b581c2b29111a668aa8caf6d6f94f81244f74b5ab14dcfa786db67b5b1"
+    }
+  ]
+}

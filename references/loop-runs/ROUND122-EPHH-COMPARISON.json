@@ -1,0 +1,61 @@
+{
+  "round": 122,
+  "subject": "1996-11-11 22:25 Asia/Shanghai, 芦淞区行政区中心",
+  "authoritative_engine_for_this_run": "local_ephh",
+  "comparison_only": ["user_supplied_no_degree_fixture", "cet_public_endpoint"],
+  "location": {
+    "lat": 27.8065115,
+    "lon": 113.2582282,
+    "source": "Nominatim administrative centroid",
+    "precision_status": "not_exact_birth_address"
+  },
+  "material_differences": [
+    {
+      "field": "Moon.house",
+      "user_fixture": 5,
+      "local_ephh": 4,
+      "cet_comparison": 5,
+      "reason_status": "house_cusp_or_engine_difference_unresolved",
+      "decision": "do_not_silently_merge"
+    },
+    {
+      "field": "Mercury.house",
+      "user_fixture": 5,
+      "local_ephh": 4,
+      "cet_comparison": 5,
+      "reason_status": "house_cusp_or_engine_difference_unresolved",
+      "decision": "do_not_silently_merge"
+    },
+    {
+      "field": "Saturn.motion",
+      "user_fixture": "unknown",
+      "local_ephh": {"speed": -0.037791, "is_retrograde": true},
+      "cet_comparison": {"speed": "not_returned", "is_retrograde": false},
+      "reason_status": "CET lacks motion evidence",
+      "decision": "local_ephh_declared_motion_only"
+    },
+    {
+      "field": "North_Node.longitude",
+      "user_fixture": "unknown",
+      "local_ephh": 187.3781,
+      "cet_comparison": 187.2727,
+      "reason_status": "node_variant_not_explicitly_locked",
+      "decision": "retain_engine_specific_values"
+    },
+    {
+      "field": "Chiron",
+      "user_fixture": "sign_and_house_only",
+      "local_ephh": "extra_point_from_same Swiss Ephemeris JD and cusps",
+      "cet_comparison": "available",
+      "reason_status": "not in ephh core PLANETS list",
+      "decision": "label_as_extra_point"
+    }
+  ],
+  "release_gate": {
+    "fact_inventory_ready": true,
+    "natal_interpretation_ready": false,
+    "publishable": false,
+    "decision": "hold",
+    "warnings": ["ascendant_boundary_risk_high"]
+  }
+}
