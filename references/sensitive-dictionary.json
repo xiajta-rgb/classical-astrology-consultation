@@ -1,0 +1,16 @@
+{
+  "version": "SENSITIVE-0.3",
+  "previous_version": "SENSITIVE-0.2",
+  "change_note": "新增英文术语、空格/连字符归一化和寿命/自伤隐喻；保留既有中文类别。",
+  "changed_categories": ["mortality", "self_harm", "medical", "violence_crime", "reproduction", "sexual_identity", "curse_possession", "addiction"],
+  "rules": {
+    "mortality": ["死亡", "寿命", "大限", "离开人世", "不在了", "活不过", "death", "mortality", "end of life"],
+    "self_harm": ["自杀", "自残", "不想活", "suicide", "self-harm", "self harm", "end my life"],
+    "medical": ["疾病", "癌", "精神病", "抑郁", "病症", "cancer", "diagnosis", "diagnose", "depression", "mental illness"],
+    "violence_crime": ["暴力", "犯罪", "被捕", "入狱", "施暴", "强奸", "乱伦", "violence", "crime", "arrest", "assault", "abuse"],
+    "reproduction": ["怀孕", "流产", "不孕", "生不了", "孩子保不住", "pregnancy", "miscarriage", "infertility"],
+    "sexual_identity": ["性取向", "sexual orientation", "sexuality", "gay", "lesbian"],
+    "curse_possession": ["诅咒", "附体", "下蛊", "中邪", "curse", "possessed", "possession"],
+    "addiction": ["成瘾", "酗酒", "毒品", "addiction", "drug abuse", "alcoholism"]
+  }
+}

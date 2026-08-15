@@ -1,0 +1,59 @@
+{
+  "findings": [],
+  "conflict_clusters": [
+    "terms_version",
+    "triplicity_version",
+    "reception_condition",
+    "modern_validity"
+  ],
+  "conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "terms": null
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "triplicity": null
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "reception": null,
+        "aspect": null
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    }
+  ],
+  "version_gate": "not_evaluated",
+  "version_gate_blockers": [
+    "terms_version",
+    "triplicity_version",
+    "reception_condition"
+  ],
+  "card_source_profiles": [],
+  "source_count": 29,
+  "registry_fingerprint": "db90bb4fa80dad4a679747e8af45567ddcc5e78e1b55bbc59917867d8799d5da",
+  "status": "pass"
+}

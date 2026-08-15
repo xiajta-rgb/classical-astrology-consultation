@@ -1,0 +1,391 @@
+{
+  "version": "SOURCE-REGISTRY-0.1",
+  "sources": {
+    "R01": {
+      "layer": "primary_translation",
+      "work": "Ptolemy, Tetrabiblos",
+      "version": "J. M. Ashmand English translation",
+      "locator": "Book III chapters V, XI-XVII; Book IV chapters V and IX; Project Gutenberg 70850",
+      "url": "https://www.gutenberg.org/files/70850/70850-h/70850-h.htm",
+      "status": "auxiliary",
+      "limits": "historical translation, not a modern critical edition",
+      "fulltext_status": "retrieved_and_method_read"
+    },
+    "R02": {
+      "layer": "primary_translation",
+      "work": "Vettius Valens, Anthologies",
+      "version": "Mark T. Riley preliminary translation",
+      "locator": "Skyscript Riley edition",
+      "url": "https://www.skyscript.co.uk/valens_riley.html",
+      "status": "auxiliary",
+      "limits": "translator marks rendering as preliminary/unperfected"
+    },
+    "R03": {
+      "layer": "primary_translation_excerpt",
+      "work": "Masha'allah, On Eclipses and Planetary Conjunctions",
+      "version": "translation record; edition to be rechecked",
+      "locator": "quote-insight-cards QI-005",
+      "status": "registered",
+      "limits": "source chain and edition require verification; not an upgrade source"
+    },
+  "R09": {
+      "layer": "modern_history",
+      "work": "Barton, Ancient Astrology",
+      "version": "bibliographic lead",
+      "locator": "quote-insight-cards QI-101",
+      "status": "registered",
+    "limits": "draft research lead; no rule upgrade until full text and locator are verified",
+    "alternative_paths": ["library_catalog_and_interlibrary_loan", "publisher_or_author_bibliography", "independent_primary_history_source"],
+    "upgrade_stop_condition": "no_historical_claim_upgrade_without_edition_and_page_locator"
+    },
+    "R10": {
+      "layer": "modern_history",
+      "work": "Beck, A Brief History of Ancient Astrology",
+      "version": "bibliographic lead",
+      "locator": "quote-insight-cards QI-102",
+      "status": "registered",
+    "limits": "draft research lead; no rule upgrade until full text and locator are verified",
+    "alternative_paths": ["library_catalog_and_interlibrary_loan", "publisher_or_author_bibliography", "independent_primary_history_source"],
+    "upgrade_stop_condition": "no_historical_claim_upgrade_without_edition_and_page_locator"
+    },
+    "R11": {
+      "layer": "modern_history",
+      "work": "Lehoux, Observation and prediction in ancient astrology",
+      "version": "bibliographic lead",
+      "locator": "quote-insight-cards QI-103",
+      "status": "registered",
+    "limits": "draft research lead; no rule upgrade until full text and locator are verified",
+    "alternative_paths": ["library_catalog_and_interlibrary_loan", "publisher_or_author_bibliography", "independent_primary_history_source"],
+    "upgrade_stop_condition": "no_historical_claim_upgrade_without_edition_and_page_locator"
+    },
+    "R12": {
+      "layer": "modern_history",
+      "work": "Kassell, Stars, spirits, signs",
+      "version": "bibliographic lead",
+      "locator": "quote-insight-cards QI-104",
+      "status": "registered",
+    "limits": "draft research lead; no rule upgrade until full text and locator are verified",
+    "alternative_paths": ["library_catalog_and_interlibrary_loan", "publisher_or_author_bibliography", "independent_primary_history_source"],
+    "upgrade_stop_condition": "no_historical_claim_upgrade_without_edition_and_page_locator"
+    },
+    "R16": {
+      "layer": "secondary_technical",
+      "work": "The Classical Basis of Antiscia and Contra-antiscia",
+      "version": "Deborah Houlding, Skyscript",
+      "locator": "historical overview and Firmicus references",
+      "url": "https://www.skyscript.co.uk/antiscia.html",
+      "status": "auxiliary",
+      "limits": "practice article; return to primary texts for rule upgrades"
+    },
+    "R19": {
+      "layer": "primary_translation_excerpt",
+      "work": "Masha'allah, On Reception",
+      "version": "Benjamin Dykes translation excerpt",
+      "locator": "Chapter 1, What is reception?",
+      "url": "https://www.skyscript.co.uk/masha_allah_receptions.html",
+      "status": "verified",
+      "limits": "web excerpt and translation; not the complete Arabic text"
+    },
+    "R21": {
+      "layer": "secondary_technical",
+      "work": "The Classical Origin and Traditional Use of Aspects",
+      "version": "Deborah Houlding, Skyscript",
+      "locator": "application, separation, planetary orbs",
+      "url": "https://www.skyscript.co.uk/aspects.html",
+      "status": "auxiliary",
+      "limits": "practice article; historical claims require cross-checking"
+    },
+    "R22": {
+      "layer": "secondary_technical",
+      "work": "Ptolemy's Terms & Conditions",
+      "version": "Deborah Houlding, Skyscript",
+      "locator": "Egyptian/Ptolemaic terms transmission overview",
+      "url": "https://www.skyscript.co.uk/terms.html",
+      "status": "verified",
+      "limits": "terms remain version-sensitive"
+    },
+    "R25": {
+      "layer": "secondary_technical",
+      "work": "Ptolemy's Table of Essential Dignity Explained",
+      "version": "Deborah Houlding, Skyscript",
+      "locator": "essential versus accidental dignity",
+      "url": "https://www.skyscript.co.uk/dignities.html",
+      "status": "verified",
+      "limits": "teaching article; dignity tables are historically contested"
+    },
+    "R26": {
+      "layer": "secondary_technical",
+      "work": "The Classical Use of Triplicities",
+      "version": "Deborah Houlding, Skyscript",
+      "locator": "three-ruler scheme and sect priority",
+      "url": "https://www.skyscript.co.uk/triplicities.html",
+      "status": "verified",
+      "limits": "practice article containing later explanatory material"
+    },
+    "R17": {
+      "layer": "secondary_technical",
+      "work": "Fortuna, Spirit and the Lunation Cycle",
+      "version": "research lead",
+      "locator": "quote-insight-cards QI-008",
+      "status": "registered",
+      "limits": "formula and sect conventions require edition-level verification"
+    },
+    "R20": {
+      "layer": "secondary_technical",
+      "work": "Finding Fortuna",
+      "version": "research lead",
+      "locator": "quote-insight-cards QI-008",
+      "status": "registered",
+      "limits": "formula dispute remains unresolved; not a standalone rule source"
+    },
+    "R23": {
+      "layer": "medical_history",
+      "work": "Hippocrates, Humours and Temperament-Theory",
+      "version": "historical context lead",
+      "locator": "quote-insight-cards QI-012",
+      "status": "registered",
+      "limits": "historical medical context only; never a modern diagnosis source"
+    },
+    "R24": {
+      "layer": "secondary_technical",
+      "work": "traditional longevity terminology lead",
+      "version": "bibliographic lead",
+      "locator": "research-ledger pending source card",
+      "status": "registered",
+      "limits": "unverified lead; prohibited from deterministic longevity claims"
+    },
+    "R08": {
+      "layer": "modern_empirical",
+      "work": "Carlson, A double-blind test of astrology",
+      "version": "Nature 318 (1985), 419-425",
+      "locator": "DOI 10.1038/318419a0",
+      "url": "https://doi.org/10.1038/318419a0",
+      "status": "registered",
+      "limits": "single historical study; methods and later debate remain separate"
+    },
+  "R13": {
+      "layer": "modern_empirical",
+      "work": "Fichten & Sunerton, Popular Horoscopes and the Barnum Effect",
+      "version": "Journal of Social Psychology (1983)",
+      "locator": "DOI 10.1080/00223980.1983.9915405",
+      "url": "https://doi.org/10.1080/00223980.1983.9915405",
+      "status": "registered",
+    "limits": "methodological counter-evidence, not a test of every natal technique",
+    "metadata_audit": "references/loop-runs/P0-METADATA-AUDIT-20260814.md",
+    "abstract_status": "not_available_in_crossref_response",
+    "fulltext_status": "not_retrieved",
+    "alternative_paths": ["institutional_library_or_interlibrary_loan", "author_repository_search", "independent_Barnum_effect_primary_study_with_equivalent_design"],
+    "upgrade_stop_condition": "no_rule_upgrade_without_fulltext_or_two_independent_equivalent_primary_studies"
+    },
+  "R14": {
+      "layer": "modern_empirical",
+      "work": "Tyson, An empirical test of the astrological theory of personality",
+      "version": "Personality and Individual Differences (1984)",
+      "locator": "DOI 10.1016/0191-8869(84)90059-x",
+      "url": "https://doi.org/10.1016/0191-8869(84)90059-x",
+      "status": "registered",
+    "limits": "personality-study scope only",
+    "metadata_audit": "references/loop-runs/P0-METADATA-AUDIT-20260814.md",
+    "abstract_status": "not_available_in_crossref_response",
+    "fulltext_status": "publisher_coredata_only_openaccess_false",
+    "alternative_paths": ["institutional_library_or_interlibrary_loan", "Elsevier_subscription_access", "independent_personality_astrology_primary_replication"],
+    "upgrade_stop_condition": "no_rule_upgrade_from_title_or_metadata; require_full_methods_and_results"
+    },
+    "R15": {
+      "layer": "modern_social_science",
+      "work": "Allum, What Makes Some People Think Astrology Is Scientific?",
+      "version": "Science Communication (2011)",
+      "locator": "DOI 10.1177/1075547010389819",
+      "url": "https://doi.org/10.1177/1075547010389819",
+      "status": "registered",
+    "limits": "explains belief formation, not astrological validity",
+    "metadata_audit": "references/loop-runs/P0-METADATA-AUDIT-20260814.md",
+    "abstract_status": "crossref_abstract_available_scope_limited",
+    "fulltext_status": "not_retrieved",
+    "alternative_paths": ["SAGE_library_or_interlibrary_loan", "author_repository_search", "independent_science_communication_primary_study"],
+      "upgrade_stop_condition": "may_inform_evidence_communication_only; no_astrological_validity_upgrade"
+    },
+    "R27": {
+      "layer": "modern_empirical_auxiliary",
+      "work": "Cao & Xuan, Understanding the Impact of Barnum Effect in Astrology: An Eye-tracking Study",
+      "version": "The Frontiers of Society, Science and Technology 4(12), 2022, pp. 74-78",
+      "locator": "DOI 10.25236/FSST.2022.041210; open PDF pp. 74-78",
+      "url": "https://doi.org/10.25236/FSST.2022.041210",
+      "fulltext_url": "http://francis-press.com/uploads/papers/rRltYUzZqKw5bkDptYq3TuxZoQstCcbg3O5TKo3I.pdf",
+      "status": "auxiliary",
+      "limits": "small exploratory eye-tracking study (n=12) using unlabeled sun-sign descriptions; informs anti-generalization and wording controls only",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": [
+        "independent_Barnum_effect_primary_replication",
+        "institutional_library_for_Fichten_Sunerton_fulltext"
+      ],
+      "upgrade_stop_condition": "no_astrological_validity_upgrade; require larger preregistered or independent replication before methodological weight increases"
+    },
+    "R28": {
+      "layer": "secondary_technical_research",
+      "work": "The Planetary Joys and the Origins of the Significations of the Houses and Triplicities",
+      "version": "Chris Brennan, Katarche / ISAR Journal Vol. 42 No. 1 (2013)",
+      "locator": "PDF pp. 1-5, 9, 18, 25-27",
+      "url": "https://library.keplercollege.org/wp-content/uploads/2022/01/the-planetary-joys.pdf",
+      "status": "auxiliary",
+      "limits": "secondary historical reconstruction; Joys are a contextual layer and do not override a chart-specific ruler chain",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Paulus_Introduction_24", "Firmicus_Mathesis_2_15_19", "Valens_Anthology_2_15"],
+      "upgrade_stop_condition": "no standalone house-signification upgrade without primary-text cross-check"
+    },
+    "R29": {
+      "layer": "primary_translation_fulltext",
+      "work": "Vettius Valens, Anthologies",
+      "version": "Mark T. Riley translation, Jane Griscti reformatted PDF",
+      "locator": "Book II §§2.9-2.20, pp. 104-129; §2.15 table p. 112; §2.16 pp. 113-123; §2.19-2.20 pp. 127-129",
+      "url": "https://www.skyscript.co.uk/pdf/pubs/texts/valens/griscti/docs/Valens-Anthologies.pdf",
+      "status": "auxiliary",
+      "limits": "Riley translation is preliminary/unperfected; harsh historical delineations require source criticism and cannot be modernized into deterministic sensitive claims",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["archive_org_Riley_translation", "Greek_critical_edition", "independent_translation_comparison"],
+      "upgrade_stop_condition": "no S/A rule upgrade from a single preliminary translation; require chapter context and cross-translation check"
+    },
+    "R30": {
+      "layer": "secondary_technical_research",
+      "work": "Bonification and Maltreatment in Traditional Astrology",
+      "version": "Traditional Astrology educational article, accessed 2026-08-15",
+      "locator": "sections What Bonification and Maltreatment Are; Bonification; Maltreatment; Reception; Cazimi",
+      "url": "https://traditional-astrology.com/bonification-maltreatment-astrology.html",
+      "status": "auxiliary",
+      "limits": "commercial teaching article; its orb, reception and scoring language must not be treated as a single-author classical rule",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Valens_Book_II_context", "Abu_Mashar_reception_translation", "al_Qabisi_introduction_translation", "Lilly_Christian_Astrology_cazimi"],
+      "upgrade_stop_condition": "no S/A rule upgrade from this article alone; require primary-text and cross-tradition verification"
+    },
+    "R31": {
+      "layer": "secondary_technical_research",
+      "work": "Bonification & Maltreatment Calculator (Hellenistic)",
+      "version": "Augurine transparent scorecard, last updated 2026-05-09",
+      "locator": "sections What bonification means; What maltreatment means; conditions scored; sect; counteraction",
+      "url": "https://www.augurine.com/tools/bonification-maltreatment-calculator",
+      "status": "auxiliary",
+      "limits": "product scorecard explicitly disclaims that its weights or thresholds came from one surviving author; not a primary rule source",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Valens_Book_II_context", "Abu_Mashar_reception_translation", "al_Qabisi_introduction_translation"],
+      "upgrade_stop_condition": "use only for transparent hypothesis enumeration and counteraction vocabulary; no deterministic scoring upgrade"
+    },
+    "R33": {
+      "layer": "primary_translation_fulltext",
+      "work": "Dorotheus of Sidon, Carmen Astrologicum",
+      "version": "David Pingree translation, Skyscript study PDF",
+      "locator": "Book I §§3-6, 12-17, 22-27; PDF pp. 3-21",
+      "url": "https://www.skyscript.co.uk/dorotheus1.pdf",
+      "status": "auxiliary",
+      "limits": "translation is explicitly for personal study; severe historical judgments require cross-source and modern safety review",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Dorotheus_Teubner_critical_edition", "Arabic_Persian_transmission", "independent_translation_comparison"],
+      "upgrade_stop_condition": "no sensitive S/A rule from this translation alone; retain formula, sect and benefic/malefic conditions"
+    },
+    "R34": {
+      "layer": "primary_translation_critical",
+      "work": "Al-Qabisi (Alcabitius), The Introduction to Astrology",
+      "version": "Charles Burnett, Keiji Yamamoto, Michio Yano, Warburg Institute 2004 edition",
+      "locator": "Arabic/Latin/English edition, ch. 5 house significations and ch. 6 lots; PDF text pp. 51-66, 143-149",
+      "url": "https://archive.org/details/the-introduction-to-astrology-qabisi-alcabitius",
+      "status": "auxiliary",
+      "limits": "scholarly edition and translation; archive copy and terminology still require edition-level citation before core upgrade",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Warburg_Institute_catalogue", "Arabic_manuscript_comparison", "Abu_Mashar_Great_Introduction"],
+      "upgrade_stop_condition": "formula variants and Arabic/Latin divergences must remain version-locked; no modern medical or death prediction"
+    },
+    "R35": {
+      "layer": "primary_translation_fulltext",
+      "work": "Guido Bonatti, Liber Astronomiae",
+      "version": "Benjamin Dykes translation, Treatise 8.2 archive text",
+      "locator": "Treatise 8.2 chapters 10-11 and 14; Parts of marriage, death, illness, property and parents",
+      "url": "https://archive.org/details/liber-astronomiae-guido-bonatti",
+      "status": "auxiliary",
+      "limits": "medieval compilation with layered Hermes/Valens/Abu Ma'shar attributions; not a single uniform rule set",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["Bonatti_Latin_1491", "Dykes_print_edition", "Abu_Mashar_and_Al_Qabisi_cross_check"],
+      "upgrade_stop_condition": "Parts and formulas cannot be used without source attribution, exact degrees, sect, timing technique and modern sensitive-topic gate"
+    },
+    "R36": {
+      "layer": "modern_medical_safety",
+      "work": "National Cancer Institute, How Cancer Is Diagnosed",
+      "version": "official patient-information page accessed 2026-08-15",
+      "locator": "Diagnosis overview: no single test; clinical history, examination, laboratory/imaging tests and often biopsy",
+      "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis",
+      "status": "verified",
+      "limits": "medical safety boundary, not evidence for astrology",
+      "fulltext_status": "retrieved_and_method_read",
+      "alternative_paths": ["WHO_cancer_fact_sheet", "local_oncology_guidelines"],
+      "upgrade_stop_condition": "must only constrain wording and referral; never be used to validate an astrological cancer signature"
+    },
+    "R37": {
+      "layer": "primary_translation_lead",
+      "work": "Julius Firmicus Maternus, Mathesis",
+      "version": "James H. Holden English translation lead; full technical text not retrieved",
+      "locator": "Books III-IV health, parents, marriage and death chapters; bibliographic lead only",
+      "url": "https://books.google.com/books/about/Mathesis.html?id=j5FangEACAAJ",
+      "status": "registered",
+      "limits": "full English technical text was not available in the accessible source; a short introductory PDF is not sufficient for rule extraction",
+      "fulltext_status": "not_retrieved",
+      "alternative_paths": ["American_Federation_of_Astrologers_catalogue", "institutional_library_or_interlibrary_loan", "Latin_Mathesis_critical_edition", "independent_translation_comparison"],
+      "upgrade_stop_condition": "no Firmicus sensitive rule upgrade until Book III-IV full text and chapter/page locators are verified"
+    },
+    "house-matrix": {
+      "layer": "internal_rule",
+      "work": "Classical Astrology Consultation house responsibility matrix",
+      "version": "project NATAL-1.0",
+      "locator": "references/house-matrix.md",
+      "status": "internal",
+      "limits": "operational synthesis, not a historical source"
+    },
+    "Chart_Facts": {
+      "layer": "chart_data",
+      "work": "validated chart input",
+      "version": "per-chart",
+      "locator": "user/API source and raw response",
+      "status": "per_chart",
+      "limits": "must retain raw input and settings"
+    },
+    "judgment-algorithm": {
+      "layer": "internal_rule",
+      "work": "Classical Astrology Consultation judgment algorithm",
+      "version": "project LOOP-1.0",
+      "locator": "references/judgment-algorithm.md",
+      "status": "internal",
+      "limits": "governance layer, not independent historical evidence"
+    }
+  },
+  "conflict_clusters": [
+    {
+      "id": "terms_version",
+      "sources": ["R01", "R22"],
+      "version_keys": ["terms"],
+      "claim": "terms/bounds table and transmission",
+      "decision": "version_lock_required",
+      "default": "egyptian",
+      "limits": "do not merge Egyptian and Ptolemaic bounds"
+    },
+    {
+      "id": "triplicity_version",
+      "sources": ["R02", "R26"],
+      "version_keys": ["triplicity"],
+      "claim": "day/night and participating triplicity rulers",
+      "decision": "version_lock_required",
+      "default": "dorotheus_style_three_rulers"
+    },
+    {
+      "id": "reception_condition",
+      "sources": ["R19", "R21"],
+      "version_keys": ["reception", "aspect"],
+      "claim": "reception requires dignity, direction and aspect/application context",
+      "decision": "retain_conditions",
+      "default": {"reception": "direction_plus_connection_required", "aspect": "application_separation_required"}
+    },
+    {
+      "id": "modern_validity",
+      "sources": ["R08", "R13", "R14", "R15"],
+      "claim": "historical tradition versus modern empirical validity",
+      "decision": "separate_layers",
+      "default": "traditional_interpretation_is_not_modern_validation"
+    }
+  ]
+}

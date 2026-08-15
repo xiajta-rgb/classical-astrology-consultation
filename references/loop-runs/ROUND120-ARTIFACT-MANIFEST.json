@@ -1,0 +1,30 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/loop-runs/ROUND120-release-manifest.json",
+      "bytes": 5572,
+      "sha256": "6f300c058a8f5c6e7fce850cef6b89c861a603d6513a08649978e07e4c86fc01"
+    },
+    {
+      "path": "references/loop-runs/ROUND120-research-assets.json",
+      "bytes": 19650,
+      "sha256": "601456806e0e0caedbad069d43d64307a344f1db097f6c613e6d66797708cfdc"
+    },
+    {
+      "path": "references/loop-runs/ROUND120-source-audit.json",
+      "bytes": 1232,
+      "sha256": "26c2b17f6b9faa636e9c560988056606a0574b36c09a77fbeceeb3c9e1adb33e"
+    },
+    {
+      "path": "references/loop-runs/ROUND120-user-facts.json",
+      "bytes": 91304,
+      "sha256": "733f7c31147b2f66bddc64ff71317bd89141aae083519750e7bf4a8272b35ebd"
+    },
+    {
+      "path": "references/loop-runs/ROUND120-user-report.md",
+      "bytes": 20653,
+      "sha256": "a369f21cd55a4ae727ff51ca38d1488ab336fdcc11d53155501b332155183ad0"
+    }
+  ]
+}

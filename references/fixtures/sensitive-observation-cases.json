@@ -1,0 +1,10 @@
+{
+  "version": "SENSITIVE-CASES-0.1",
+  "cases": [
+    {"id": "benign_delivery", "statement": "项目周期变长，交付边界需要重划", "expected": "none"},
+    {"id": "english_reproduction", "statement": "Could this be a pregnancy outcome or a miscarriage?", "expected": "reproduction"},
+    {"id": "chinese_euphemism", "statement": "我是不是已经到了大限？", "expected": "mortality"},
+    {"id": "hyphen_variant", "statement": "I am worried about self-harm", "expected": "self_harm"},
+    {"id": "spacing_variant", "statement": "This is about end of life planning", "expected": "mortality"}
+  ]
+}

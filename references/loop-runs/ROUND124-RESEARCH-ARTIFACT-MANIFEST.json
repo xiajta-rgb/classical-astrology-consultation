@@ -1,0 +1,40 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/loop-runs/ROUND124-RESEARCH-STATUS.md",
+      "bytes": 3777,
+      "sha256": "4d81cc7f940d2f1f48b446b7790902437de057900b2c7671ff7de69cd0cc92eb"
+    },
+    {
+      "path": "references/loop-runs/ROUND124-research-assets.json",
+      "bytes": 25267,
+      "sha256": "0a247a51f4e1bfdd044a016dbdf483e14367c92e8376ec0d2a29f3bb1a061c58"
+    },
+    {
+      "path": "references/loop-runs/ROUND124-source-audit.json",
+      "bytes": 1273,
+      "sha256": "eb4b8c0c7d00bbd0b6be053b18c2ce92a269e8d4b33175c1e4199c5d9e4c2a2a"
+    },
+    {
+      "path": "references/quote-insight-cards.md",
+      "bytes": 30389,
+      "sha256": "9c3373ae6e4ba45d3e823a92c3c4619af84188e4f98344254f6f6aad57c1a6a1"
+    },
+    {
+      "path": "references/research-asset-audit.json",
+      "bytes": 25267,
+      "sha256": "0a247a51f4e1bfdd044a016dbdf483e14367c92e8376ec0d2a29f3bb1a061c58"
+    },
+    {
+      "path": "references/research-ledger.md",
+      "bytes": 100834,
+      "sha256": "e532f21c71faa1d5a45a7bce5fdaa766c8bce97ec5f0f55ba818083269fea098"
+    },
+    {
+      "path": "references/source-registry.json",
+      "bytes": 16752,
+      "sha256": "d14330c82caeefc10e4a38a61400d8460c73bc2114fc4434a3ad8e27d9f603d4"
+    }
+  ]
+}

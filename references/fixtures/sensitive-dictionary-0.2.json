@@ -1,0 +1,13 @@
+{
+  "version": "SENSITIVE-0.2",
+  "rules": {
+    "mortality": ["死亡", "寿命"],
+    "self_harm": ["自杀", "自残"],
+    "medical": ["疾病", "癌", "精神病", "抑郁"],
+    "violence_crime": ["暴力", "犯罪", "强奸", "乱伦"],
+    "reproduction": ["怀孕", "流产", "不孕"],
+    "sexual_identity": ["性取向"],
+    "curse_possession": ["诅咒", "附体"],
+    "addiction": ["成瘾"]
+  }
+}

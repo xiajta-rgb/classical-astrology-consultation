@@ -1,0 +1,40 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/fixtures/ephh-1996-11-11-zhuzhou-lusong.json",
+      "bytes": 39752,
+      "sha256": "bf12185fca1c48609492d85de5a607458f87ab5a87892ed85b7b65c4b7c8a231"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-CET-COMPARISON.json",
+      "bytes": 48218,
+      "sha256": "c1ad9ec1fbc188bfcd1c63ca36afef08a911c7ba12c238a5b1a37123058c736e"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-EPHH-COMPARISON.json",
+      "bytes": 1958,
+      "sha256": "f3a2a149e5c1b5bf675e59223dace998b309a8dd3b06101b29bc731a70d6516a"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-EPHH-FACTS.json",
+      "bytes": 96331,
+      "sha256": "51345957c573460d8d909107fc365e5c1bdb56a346717c0643145d9069c2f1ea"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-EPHH-REPORT.md",
+      "bytes": 2644,
+      "sha256": "5f98ff38ce2d64286b663a65ba20c1a9af9830d5f7e3bee2678ef1e325f94c3a"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-EPHH-SMOKE.md",
+      "bytes": 2765,
+      "sha256": "431e5c7b20df04075c86df51f818b3bde41a39f5ae38162d99711500be90d718"
+    },
+    {
+      "path": "references/loop-runs/ROUND122-STATUS.md",
+      "bytes": 1130,
+      "sha256": "f947f516c9a5a748d9f07fec2fe90331dfc0f019cbdf07a3435993b33615f4c0"
+    }
+  ]
+}
