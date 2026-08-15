@@ -1,0 +1,2218 @@
+{
+  "version": "INFERENCE-0.1-candidate",
+  "chart_id": "synthetic-delivery-evidence",
+  "status": "candidate",
+  "rule_version_gate": "locked",
+  "rule_version_lock": {
+    "terms": true,
+    "triplicity": true,
+    "faces": true,
+    "reception": true,
+    "aspect": true
+  },
+  "version_gate_blockers": [],
+  "source_conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "locked",
+      "values": {
+        "terms": "egyptian"
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "locked",
+      "values": {
+        "triplicity": "dorotheus_style_three_rulers"
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "locked",
+      "values": {
+        "reception": "direction_plus_connection_required",
+        "aspect": "application_separation_required"
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    }
+  ],
+  "observation_validation": {
+    "status": "not_collected",
+    "count": 0,
+    "active_count": 0,
+    "tombstone_count": 0,
+    "findings": [],
+    "observations": {},
+    "sensitive_dictionary_version": "SENSITIVE-0.3",
+    "sensitive_dictionary_status": "configured",
+    "sensitive_dictionary_audit": {
+      "previous_version": "SENSITIVE-0.2",
+      "change_note": "新增英文术语、空格/连字符归一化和寿命/自伤隐喻；保留既有中文类别。",
+      "changed_categories": [
+        "mortality",
+        "self_harm",
+        "medical",
+        "violence_crime",
+        "reproduction",
+        "sexual_identity",
+        "curse_possession",
+        "addiction"
+      ]
+    }
+  },
+  "cards": [
+    {
+      "topic": "self_decision",
+      "label": "自我与决策",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看self_decision责任链的传统宫主：月亮；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：木星, 金星，分歧集中在第1宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "1宫宫头巨蟹，宫主月亮落1宫金牛",
+        "5宫宫头天蝎，宫主火星落6宫处女",
+        "10宫宫头白羊，宫主火星落6宫处女",
+        "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+        "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[月亮]；其他尊贵候选[木星, 金星]；分歧宫位[1]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_1_RULER_PLACEMENT",
+          "fact": "1宫宫头巨蟹，宫主月亮落1宫金牛",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "house_rulership",
+          "dependency_key": "月亮:1:金牛",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_5_RULER_PLACEMENT",
+          "fact": "5宫宫头天蝎，宫主火星落6宫处女",
+          "house": 5,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_10_RULER_PLACEMENT",
+          "fact": "10宫宫头白羊，宫主火星落6宫处女",
+          "house": 10,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_月亮",
+          "fact": "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:月亮:exaltation:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "RECEPTION_self_decision_2_月亮_金星",
+          "fact": "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "月亮",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:月亮->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_self_decision_6_木星_月亮",
+          "fact": "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "木星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:木星->月亮:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_self_decision",
+          "fact": "主题候选审计：传统宫主[月亮]；其他尊贵候选[木星, 金星]；分歧宫位[1]；状态=competing_candidates",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:self_decision:月亮:木星, 金星:1",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_10_RULER_PLACEMENT",
+        "STATE_月亮",
+        "RECEPTION_self_decision_2_月亮_金星",
+        "RECEPTION_self_decision_6_木星_月亮",
+        "CANDIDATE_self_decision"
+      ],
+      "chart_specific_anchor": "1宫宫头巨蟹，宫主月亮落1宫金牛；5宫宫头天蝎，宫主火星落6宫处女；10宫宫头白羊，宫主火星落6宫处女",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕self_decision责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "火星的状态包含果宫落点",
+        "火星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "money_income",
+      "label": "金钱与收入",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看money_income责任链的传统宫主：太阳, 火星, 金星；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：土星, 月亮，分歧集中在第2, 10, 11宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "2宫宫头狮子，宫主太阳落10宫白羊",
+        "4宫宫头天秤，宫主金星落7宫双鱼",
+        "5宫宫头天蝎，宫主火星落6宫处女",
+        "8宫宫头水瓶，宫主土星落9宫天秤",
+        "10宫宫头白羊，宫主火星落6宫处女",
+        "11宫宫头金牛，宫主金星落7宫双鱼",
+        "太阳：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=angular",
+        "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+        "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+        "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+        "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[太阳, 火星, 金星]；其他尊贵候选[土星, 月亮]；分歧宫位[2, 10, 11]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_2_RULER_PLACEMENT",
+          "fact": "2宫宫头狮子，宫主太阳落10宫白羊",
+          "house": 2,
+          "ruler": "太阳",
+          "independence_group": "house_rulership",
+          "dependency_key": "太阳:10:白羊",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_4_RULER_PLACEMENT",
+          "fact": "4宫宫头天秤，宫主金星落7宫双鱼",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_5_RULER_PLACEMENT",
+          "fact": "5宫宫头天蝎，宫主火星落6宫处女",
+          "house": 5,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_8_RULER_PLACEMENT",
+          "fact": "8宫宫头水瓶，宫主土星落9宫天秤",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_10_RULER_PLACEMENT",
+          "fact": "10宫宫头白羊，宫主火星落6宫处女",
+          "house": 10,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_11_RULER_PLACEMENT",
+          "fact": "11宫宫头金牛，宫主金星落7宫双鱼",
+          "house": 11,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_太阳",
+          "fact": "太阳：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=angular",
+          "house": 2,
+          "ruler": "太阳",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:太阳:exaltation,triplicity_day:in_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_金星",
+          "fact": "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+          "house": 11,
+          "ruler": "金星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:金星:exaltation,triplicity_day:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_火星",
+          "fact": "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+          "house": 10,
+          "ruler": "火星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:火星:triplicity_participating:out_of_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "ASPECT_money_income_1_水星_火星_六合",
+          "fact": "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+          "house": null,
+          "ruler": "火星",
+          "independence_group": "aspect_validation",
+          "dependency_key": "aspect:水星:火星:六合:degree_confirmed",
+          "source_ids": [
+            "Chart_Facts",
+            "R21"
+          ],
+          "source_cluster": "aspect_validation"
+        },
+        {
+          "id": "RECEPTION_money_income_1_太阳_火星",
+          "fact": "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "太阳",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:太阳->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_money_income_2_月亮_金星",
+          "fact": "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "月亮",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:月亮->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_money_income_3_水星_火星",
+          "fact": "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "水星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:水星->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_money_income_4_金星_木星",
+          "fact": "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "金星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:金星->木星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_money_income",
+          "fact": "主题候选审计：传统宫主[太阳, 火星, 金星]；其他尊贵候选[土星, 月亮]；分歧宫位[2, 10, 11]；状态=competing_candidates",
+          "house": 2,
+          "ruler": "太阳, 火星, 金星",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:money_income:太阳, 火星, 金星:土星, 月亮:2, 10, 11",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_2_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_10_RULER_PLACEMENT",
+        "HOUSE_11_RULER_PLACEMENT",
+        "STATE_太阳",
+        "STATE_金星",
+        "STATE_火星",
+        "ASPECT_money_income_1_水星_火星_六合",
+        "RECEPTION_money_income_1_太阳_火星",
+        "RECEPTION_money_income_2_月亮_金星",
+        "RECEPTION_money_income_3_水星_火星",
+        "RECEPTION_money_income_4_金星_木星",
+        "CANDIDATE_money_income"
+      ],
+      "chart_specific_anchor": "2宫宫头狮子，宫主太阳落10宫白羊；4宫宫头天秤，宫主金星落7宫双鱼；5宫宫头天蝎，宫主火星落6宫处女",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕money_income责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "火星的状态包含果宫落点",
+        "土星的状态包含果宫落点",
+        "火星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "shared_resources",
+      "label": "共享资源与债务",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看shared_resources责任链的传统宫主：土星, 太阳；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：木星, 火星, 金星，分歧集中在第2, 7, 8宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "8宫宫头水瓶，宫主土星落9宫天秤",
+        "7宫宫头摩羯，宫主土星落9宫天秤",
+        "2宫宫头狮子，宫主太阳落10宫白羊",
+        "4宫宫头天秤，宫主金星落7宫双鱼",
+        "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+        "太阳：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=angular",
+        "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：土星->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[土星, 太阳]；其他尊贵候选[木星, 火星, 金星]；分歧宫位[2, 7, 8]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_8_RULER_PLACEMENT",
+          "fact": "8宫宫头水瓶，宫主土星落9宫天秤",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_7_RULER_PLACEMENT",
+          "fact": "7宫宫头摩羯，宫主土星落9宫天秤",
+          "house": 7,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_2_RULER_PLACEMENT",
+          "fact": "2宫宫头狮子，宫主太阳落10宫白羊",
+          "house": 2,
+          "ruler": "太阳",
+          "independence_group": "house_rulership",
+          "dependency_key": "太阳:10:白羊",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_4_RULER_PLACEMENT",
+          "fact": "4宫宫头天秤，宫主金星落7宫双鱼",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_土星",
+          "fact": "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:土星:exaltation,triplicity_day:in_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_太阳",
+          "fact": "太阳：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=angular",
+          "house": 2,
+          "ruler": "太阳",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:太阳:exaltation,triplicity_day:in_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "RECEPTION_shared_resources_1_太阳_火星",
+          "fact": "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "太阳",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:太阳->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_shared_resources_7_土星_金星",
+          "fact": "接纳方向候选：土星->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "土星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:土星->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_shared_resources",
+          "fact": "主题候选审计：传统宫主[土星, 太阳]；其他尊贵候选[木星, 火星, 金星]；分歧宫位[2, 7, 8]；状态=competing_candidates",
+          "house": 8,
+          "ruler": "土星, 太阳",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:shared_resources:土星, 太阳:木星, 火星, 金星:2, 7, 8",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_2_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "STATE_土星",
+        "STATE_太阳",
+        "RECEPTION_shared_resources_1_太阳_火星",
+        "RECEPTION_shared_resources_7_土星_金星",
+        "CANDIDATE_shared_resources"
+      ],
+      "chart_specific_anchor": "8宫宫头水瓶，宫主土星落9宫天秤；7宫宫头摩羯，宫主土星落9宫天秤；2宫宫头狮子，宫主太阳落10宫白羊",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕shared_resources责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "土星的状态包含果宫落点",
+        "土星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "career_public_role",
+      "label": "职业与公共角色",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看career_public_role责任链的传统宫主：土星, 月亮, 木星, 火星, 金星；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：太阳，分歧集中在第1, 6, 7, 10, 11宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "10宫宫头白羊，宫主火星落6宫处女",
+        "1宫宫头巨蟹，宫主月亮落1宫金牛",
+        "6宫宫头射手，宫主木星落4宫巨蟹",
+        "7宫宫头摩羯，宫主土星落9宫天秤",
+        "11宫宫头金牛，宫主金星落7宫双鱼",
+        "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+        "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+        "木星：本质状态[exaltation]，sect=in_sect，角性=angular",
+        "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+        "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+        "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+        "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[土星, 月亮, 木星, 火星, 金星]；其他尊贵候选[太阳]；分歧宫位[1, 6, 7, 10, 11]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_10_RULER_PLACEMENT",
+          "fact": "10宫宫头白羊，宫主火星落6宫处女",
+          "house": 10,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_1_RULER_PLACEMENT",
+          "fact": "1宫宫头巨蟹，宫主月亮落1宫金牛",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "house_rulership",
+          "dependency_key": "月亮:1:金牛",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_6_RULER_PLACEMENT",
+          "fact": "6宫宫头射手，宫主木星落4宫巨蟹",
+          "house": 6,
+          "ruler": "木星",
+          "independence_group": "house_rulership",
+          "dependency_key": "木星:4:巨蟹",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_7_RULER_PLACEMENT",
+          "fact": "7宫宫头摩羯，宫主土星落9宫天秤",
+          "house": 7,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_11_RULER_PLACEMENT",
+          "fact": "11宫宫头金牛，宫主金星落7宫双鱼",
+          "house": 11,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_火星",
+          "fact": "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+          "house": 10,
+          "ruler": "火星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:火星:triplicity_participating:out_of_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_月亮",
+          "fact": "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:月亮:exaltation:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_木星",
+          "fact": "木星：本质状态[exaltation]，sect=in_sect，角性=angular",
+          "house": 6,
+          "ruler": "木星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:木星:exaltation:in_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_土星",
+          "fact": "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+          "house": 7,
+          "ruler": "土星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:土星:exaltation,triplicity_day:in_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_金星",
+          "fact": "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+          "house": 11,
+          "ruler": "金星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:金星:exaltation,triplicity_day:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "ASPECT_career_public_role_1_水星_火星_六合",
+          "fact": "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+          "house": null,
+          "ruler": "火星",
+          "independence_group": "aspect_validation",
+          "dependency_key": "aspect:水星:火星:六合:degree_confirmed",
+          "source_ids": [
+            "Chart_Facts",
+            "R21"
+          ],
+          "source_cluster": "aspect_validation"
+        },
+        {
+          "id": "RECEPTION_career_public_role_1_太阳_火星",
+          "fact": "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "太阳",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:太阳->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_career_public_role_2_月亮_金星",
+          "fact": "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "月亮",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:月亮->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_career_public_role_3_水星_火星",
+          "fact": "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "水星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:水星->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_career_public_role_4_金星_木星",
+          "fact": "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "金星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:金星->木星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_career_public_role",
+          "fact": "主题候选审计：传统宫主[土星, 月亮, 木星, 火星, 金星]；其他尊贵候选[太阳]；分歧宫位[1, 6, 7, 10, 11]；状态=competing_candidates",
+          "house": 10,
+          "ruler": "土星, 月亮, 木星, 火星, 金星",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:career_public_role:土星, 月亮, 木星, 火星, 金星:太阳:1, 6, 7, 10, 11",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_10_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_6_RULER_PLACEMENT",
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_11_RULER_PLACEMENT",
+        "STATE_火星",
+        "STATE_月亮",
+        "STATE_木星",
+        "STATE_土星",
+        "STATE_金星",
+        "ASPECT_career_public_role_1_水星_火星_六合",
+        "RECEPTION_career_public_role_1_太阳_火星",
+        "RECEPTION_career_public_role_2_月亮_金星",
+        "RECEPTION_career_public_role_3_水星_火星",
+        "RECEPTION_career_public_role_4_金星_木星",
+        "CANDIDATE_career_public_role"
+      ],
+      "chart_specific_anchor": "10宫宫头白羊，宫主火星落6宫处女；1宫宫头巨蟹，宫主月亮落1宫金牛；6宫宫头射手，宫主木星落4宫巨蟹",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕career_public_role责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "火星的状态包含果宫落点",
+        "土星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "relationship_family",
+      "label": "关系与家庭",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看relationship_family责任链的传统宫主：土星, 月亮, 金星；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：木星, 火星，分歧集中在第1, 4, 7, 8宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "7宫宫头摩羯，宫主土星落9宫天秤",
+        "4宫宫头天秤，宫主金星落7宫双鱼",
+        "1宫宫头巨蟹，宫主月亮落1宫金牛",
+        "8宫宫头水瓶，宫主土星落9宫天秤",
+        "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+        "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+        "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+        "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：土星->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[土星, 月亮, 金星]；其他尊贵候选[木星, 火星]；分歧宫位[1, 4, 7, 8]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_7_RULER_PLACEMENT",
+          "fact": "7宫宫头摩羯，宫主土星落9宫天秤",
+          "house": 7,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_4_RULER_PLACEMENT",
+          "fact": "4宫宫头天秤，宫主金星落7宫双鱼",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_1_RULER_PLACEMENT",
+          "fact": "1宫宫头巨蟹，宫主月亮落1宫金牛",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "house_rulership",
+          "dependency_key": "月亮:1:金牛",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_8_RULER_PLACEMENT",
+          "fact": "8宫宫头水瓶，宫主土星落9宫天秤",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_土星",
+          "fact": "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+          "house": 7,
+          "ruler": "土星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:土星:exaltation,triplicity_day:in_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_金星",
+          "fact": "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:金星:exaltation,triplicity_day:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_月亮",
+          "fact": "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:月亮:exaltation:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "RECEPTION_relationship_family_2_月亮_金星",
+          "fact": "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "月亮",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:月亮->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_relationship_family_4_金星_木星",
+          "fact": "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "金星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:金星->木星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_relationship_family_6_木星_月亮",
+          "fact": "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "木星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:木星->月亮:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_relationship_family_7_土星_金星",
+          "fact": "接纳方向候选：土星->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "土星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:土星->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_relationship_family",
+          "fact": "主题候选审计：传统宫主[土星, 月亮, 金星]；其他尊贵候选[木星, 火星]；分歧宫位[1, 4, 7, 8]；状态=competing_candidates",
+          "house": 7,
+          "ruler": "土星, 月亮, 金星",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:relationship_family:土星, 月亮, 金星:木星, 火星:1, 4, 7, 8",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_7_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "STATE_土星",
+        "STATE_金星",
+        "STATE_月亮",
+        "RECEPTION_relationship_family_2_月亮_金星",
+        "RECEPTION_relationship_family_4_金星_木星",
+        "RECEPTION_relationship_family_6_木星_月亮",
+        "RECEPTION_relationship_family_7_土星_金星",
+        "CANDIDATE_relationship_family"
+      ],
+      "chart_specific_anchor": "7宫宫头摩羯，宫主土星落9宫天秤；4宫宫头天秤，宫主金星落7宫双鱼；1宫宫头巨蟹，宫主月亮落1宫金牛",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕relationship_family责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "土星的状态包含果宫落点",
+        "土星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "creation_children",
+      "label": "创作与子女",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看creation_children责任链的传统宫主：土星, 月亮, 火星, 金星；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：木星，分歧集中在第1, 4, 5, 8宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "5宫宫头天蝎，宫主火星落6宫处女",
+        "1宫宫头巨蟹，宫主月亮落1宫金牛",
+        "4宫宫头天秤，宫主金星落7宫双鱼",
+        "8宫宫头水瓶，宫主土星落9宫天秤",
+        "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+        "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+        "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+        "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+        "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+        "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[土星, 月亮, 火星, 金星]；其他尊贵候选[木星]；分歧宫位[1, 4, 5, 8]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_5_RULER_PLACEMENT",
+          "fact": "5宫宫头天蝎，宫主火星落6宫处女",
+          "house": 5,
+          "ruler": "火星",
+          "independence_group": "house_rulership",
+          "dependency_key": "火星:6:处女",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_1_RULER_PLACEMENT",
+          "fact": "1宫宫头巨蟹，宫主月亮落1宫金牛",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "house_rulership",
+          "dependency_key": "月亮:1:金牛",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_4_RULER_PLACEMENT",
+          "fact": "4宫宫头天秤，宫主金星落7宫双鱼",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "house_rulership",
+          "dependency_key": "金星:7:双鱼",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_8_RULER_PLACEMENT",
+          "fact": "8宫宫头水瓶，宫主土星落9宫天秤",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_火星",
+          "fact": "火星：本质状态[triplicity_participating]，sect=out_of_sect，角性=cadent",
+          "house": 5,
+          "ruler": "火星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:火星:triplicity_participating:out_of_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_月亮",
+          "fact": "月亮：本质状态[exaltation]，sect=out_of_sect，角性=angular",
+          "house": 1,
+          "ruler": "月亮",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:月亮:exaltation:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_金星",
+          "fact": "金星：本质状态[exaltation,triplicity_day]，sect=out_of_sect，角性=angular",
+          "house": 4,
+          "ruler": "金星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:金星:exaltation,triplicity_day:out_of_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_土星",
+          "fact": "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:土星:exaltation,triplicity_day:in_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "ASPECT_creation_children_1_水星_火星_六合",
+          "fact": "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+          "house": null,
+          "ruler": "火星",
+          "independence_group": "aspect_validation",
+          "dependency_key": "aspect:水星:火星:六合:degree_confirmed",
+          "source_ids": [
+            "Chart_Facts",
+            "R21"
+          ],
+          "source_cluster": "aspect_validation"
+        },
+        {
+          "id": "RECEPTION_creation_children_1_太阳_火星",
+          "fact": "接纳方向候选：太阳->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "太阳",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:太阳->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_creation_children_2_月亮_金星",
+          "fact": "接纳方向候选：月亮->金星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "月亮",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:月亮->金星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_creation_children_3_水星_火星",
+          "fact": "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "水星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:水星->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_creation_children_4_金星_木星",
+          "fact": "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "金星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:金星->木星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_creation_children",
+          "fact": "主题候选审计：传统宫主[土星, 月亮, 火星, 金星]；其他尊贵候选[木星]；分歧宫位[1, 4, 5, 8]；状态=competing_candidates",
+          "house": 5,
+          "ruler": "土星, 月亮, 火星, 金星",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:creation_children:土星, 月亮, 火星, 金星:木星:1, 4, 5, 8",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_5_RULER_PLACEMENT",
+        "HOUSE_1_RULER_PLACEMENT",
+        "HOUSE_4_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "STATE_火星",
+        "STATE_月亮",
+        "STATE_金星",
+        "STATE_土星",
+        "ASPECT_creation_children_1_水星_火星_六合",
+        "RECEPTION_creation_children_1_太阳_火星",
+        "RECEPTION_creation_children_2_月亮_金星",
+        "RECEPTION_creation_children_3_水星_火星",
+        "RECEPTION_creation_children_4_金星_木星",
+        "CANDIDATE_creation_children"
+      ],
+      "chart_specific_anchor": "5宫宫头天蝎，宫主火星落6宫处女；1宫宫头巨蟹，宫主月亮落1宫金牛；4宫宫头天秤，宫主金星落7宫双鱼",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕creation_children责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "火星的状态包含果宫落点",
+        "土星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    },
+    {
+      "topic": "pressure_risk",
+      "label": "压力与风险",
+      "status": "candidate",
+      "grade": "B",
+      "rule_version_gate": "locked",
+      "rule_version_lock": {
+        "terms": true,
+        "triplicity": true,
+        "faces": true,
+        "reception": true,
+        "aspect": true
+      },
+      "source_conflict_status": [
+        {
+          "id": "terms_version",
+          "version_keys": [
+            "terms"
+          ],
+          "state": "locked",
+          "values": {
+            "terms": "egyptian"
+          }
+        },
+        {
+          "id": "triplicity_version",
+          "version_keys": [
+            "triplicity"
+          ],
+          "state": "locked",
+          "values": {
+            "triplicity": "dorotheus_style_three_rulers"
+          }
+        },
+        {
+          "id": "reception_condition",
+          "version_keys": [
+            "reception",
+            "aspect"
+          ],
+          "state": "locked",
+          "values": {
+            "reception": "direction_plus_connection_required",
+            "aspect": "application_separation_required"
+          }
+        },
+        {
+          "id": "modern_validity",
+          "version_keys": [],
+          "state": "not_versioned",
+          "values": {}
+        }
+      ],
+      "observation_contract": {
+        "status": "uncollected",
+        "interpretation_boundary": "uncollected_is_not_counterevidence; withdrawn_is_not_support",
+        "items": [],
+        "tombstones": [],
+        "findings": [],
+        "required_fields": [
+          "id",
+          "statement",
+          "source_type",
+          "source_locator",
+          "relation",
+          "confidence"
+        ]
+      },
+      "H1_leading": "主线先看pressure_risk责任链的传统宫主：土星, 木星, 水星；再沿宫主落宫判断交付领域。",
+      "H2_runner_up": "竞争解释来自其他尊贵候选：太阳，分歧集中在第6, 8, 12宫；没有度数/相位区分时不选胜者。",
+      "Evidence": [
+        "6宫宫头射手，宫主木星落4宫巨蟹",
+        "8宫宫头水瓶，宫主土星落9宫天秤",
+        "12宫宫头双子，宫主水星落3宫天蝎",
+        "2宫宫头狮子，宫主太阳落10宫白羊",
+        "木星：本质状态[exaltation]，sect=in_sect，角性=angular",
+        "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+        "水星：本质状态[无已确认本质尊贵]，sect=variable，角性=cadent",
+        "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+        "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：火星->水星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+        "主题候选审计：传统宫主[土星, 木星, 水星]；其他尊贵候选[太阳]；分歧宫位[6, 8, 12]；状态=competing_candidates"
+      ],
+      "evidence_items": [
+        {
+          "id": "HOUSE_6_RULER_PLACEMENT",
+          "fact": "6宫宫头射手，宫主木星落4宫巨蟹",
+          "house": 6,
+          "ruler": "木星",
+          "independence_group": "house_rulership",
+          "dependency_key": "木星:4:巨蟹",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_8_RULER_PLACEMENT",
+          "fact": "8宫宫头水瓶，宫主土星落9宫天秤",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "house_rulership",
+          "dependency_key": "土星:9:天秤",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_12_RULER_PLACEMENT",
+          "fact": "12宫宫头双子，宫主水星落3宫天蝎",
+          "house": 12,
+          "ruler": "水星",
+          "independence_group": "house_rulership",
+          "dependency_key": "水星:3:天蝎",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "HOUSE_2_RULER_PLACEMENT",
+          "fact": "2宫宫头狮子，宫主太阳落10宫白羊",
+          "house": 2,
+          "ruler": "太阳",
+          "independence_group": "house_rulership",
+          "dependency_key": "太阳:10:白羊",
+          "source_ids": [
+            "house-matrix",
+            "Chart_Facts"
+          ],
+          "source_cluster": "house_responsibility"
+        },
+        {
+          "id": "STATE_木星",
+          "fact": "木星：本质状态[exaltation]，sect=in_sect，角性=angular",
+          "house": 6,
+          "ruler": "木星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:木星:exaltation:in_sect:angular",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_土星",
+          "fact": "土星：本质状态[exaltation,triplicity_day]，sect=in_sect，角性=cadent",
+          "house": 8,
+          "ruler": "土星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:土星:exaltation,triplicity_day:in_sect:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "STATE_水星",
+          "fact": "水星：本质状态[无已确认本质尊贵]，sect=variable，角性=cadent",
+          "house": 12,
+          "ruler": "水星",
+          "independence_group": "planetary_state",
+          "dependency_key": "state:水星:无已确认本质尊贵:variable:cadent",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01",
+            "R25",
+            "R26"
+          ],
+          "source_cluster": "planetary_state_rules"
+        },
+        {
+          "id": "ASPECT_pressure_risk_1_水星_火星_六合",
+          "fact": "相位候选：水星 六合 火星；evidence_layer=classical_core; support_level=degree_confirmed; status=exact",
+          "house": null,
+          "ruler": "水星",
+          "independence_group": "aspect_validation",
+          "dependency_key": "aspect:水星:火星:六合:degree_confirmed",
+          "source_ids": [
+            "Chart_Facts",
+            "R21"
+          ],
+          "source_cluster": "aspect_validation"
+        },
+        {
+          "id": "RECEPTION_pressure_risk_3_水星_火星",
+          "fact": "接纳方向候选：水星->火星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "水星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:水星->火星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_pressure_risk_4_金星_木星",
+          "fact": "接纳方向候选：金星->木星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "金星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:金星->木星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_pressure_risk_5_火星_水星",
+          "fact": "接纳方向候选：火星->水星；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "火星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:火星->水星:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "RECEPTION_pressure_risk_6_木星_月亮",
+          "fact": "接纳方向候选：木星->月亮；当前只确认尊贵方向，连接与应用/分离仍需度数核验",
+          "house": null,
+          "ruler": "木星",
+          "independence_group": "reception_validation",
+          "dependency_key": "reception:木星->月亮:direction_only",
+          "source_ids": [
+            "Chart_Facts",
+            "R19"
+          ],
+          "source_cluster": "reception_validation",
+          "connection_status": "not_supplied"
+        },
+        {
+          "id": "CANDIDATE_pressure_risk",
+          "fact": "主题候选审计：传统宫主[土星, 木星, 水星]；其他尊贵候选[太阳]；分歧宫位[6, 8, 12]；状态=competing_candidates",
+          "house": 6,
+          "ruler": "土星, 木星, 水星",
+          "independence_group": "rulership_candidate",
+          "dependency_key": "candidate:pressure_risk:土星, 木星, 水星:太阳:6, 8, 12",
+          "source_ids": [
+            "judgment-algorithm",
+            "R01"
+          ],
+          "source_cluster": "dignity_candidate_rules",
+          "rule_card_ids": [
+            "QI-017"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "HOUSE_6_RULER_PLACEMENT",
+        "HOUSE_8_RULER_PLACEMENT",
+        "HOUSE_12_RULER_PLACEMENT",
+        "HOUSE_2_RULER_PLACEMENT",
+        "STATE_木星",
+        "STATE_土星",
+        "STATE_水星",
+        "ASPECT_pressure_risk_1_水星_火星_六合",
+        "RECEPTION_pressure_risk_3_水星_火星",
+        "RECEPTION_pressure_risk_4_金星_木星",
+        "RECEPTION_pressure_risk_5_火星_水星",
+        "RECEPTION_pressure_risk_6_木星_月亮",
+        "CANDIDATE_pressure_risk"
+      ],
+      "chart_specific_anchor": "6宫宫头射手，宫主木星落4宫巨蟹；8宫宫头水瓶，宫主土星落9宫天秤；12宫宫头双子，宫主水星落3宫天蝎",
+      "Rule": "先按主题责任链读取宫位，再看宫主落点、行星状态、相位和接纳；不把占据宫位等同于宫主责任。",
+      "Inference": "待下游咨询层结合独立证据选择领先假设；本卡不自动写成命运断言。",
+      "Observable_translation_candidate": "现实观察应围绕pressure_risk责任链的具体交付、候选分歧和可复核记录，而不是抽象性格标签。",
+      "Counter_test": [
+        "土星的状态包含果宫落点",
+        "水星的状态包含果宫落点",
+        "主宰候选存在并列；必须用宫位度数、sect、相位或接纳区分"
+      ],
+      "Missing_discriminator": [
+        "精确度数与应用/分离",
+        "主题相关现实资料",
+        "若涉及时间问题则需单独时限技术",
+        "主宰候选分歧的区分证据"
+      ],
+      "source_refs": [
+        "references/house-matrix.md",
+        "references/judgment-algorithm.md",
+        "references/evidence-and-language.md"
+      ]
+    }
+  ],
+  "evidence_dependency_index": {
+    "HOUSE_1_RULER_PLACEMENT": [
+      "self_decision",
+      "career_public_role",
+      "relationship_family",
+      "creation_children"
+    ],
+    "HOUSE_5_RULER_PLACEMENT": [
+      "self_decision",
+      "money_income",
+      "creation_children"
+    ],
+    "HOUSE_10_RULER_PLACEMENT": [
+      "self_decision",
+      "money_income",
+      "career_public_role"
+    ],
+    "STATE_月亮": [
+      "self_decision",
+      "career_public_role",
+      "relationship_family",
+      "creation_children"
+    ],
+    "HOUSE_2_RULER_PLACEMENT": [
+      "money_income",
+      "shared_resources",
+      "pressure_risk"
+    ],
+    "HOUSE_4_RULER_PLACEMENT": [
+      "money_income",
+      "shared_resources",
+      "relationship_family",
+      "creation_children"
+    ],
+    "HOUSE_8_RULER_PLACEMENT": [
+      "money_income",
+      "shared_resources",
+      "relationship_family",
+      "creation_children",
+      "pressure_risk"
+    ],
+    "HOUSE_11_RULER_PLACEMENT": [
+      "money_income",
+      "career_public_role"
+    ],
+    "STATE_太阳": [
+      "money_income",
+      "shared_resources"
+    ],
+    "STATE_金星": [
+      "money_income",
+      "career_public_role",
+      "relationship_family",
+      "creation_children"
+    ],
+    "STATE_火星": [
+      "money_income",
+      "career_public_role",
+      "creation_children"
+    ],
+    "HOUSE_7_RULER_PLACEMENT": [
+      "shared_resources",
+      "career_public_role",
+      "relationship_family"
+    ],
+    "STATE_土星": [
+      "shared_resources",
+      "career_public_role",
+      "relationship_family",
+      "creation_children",
+      "pressure_risk"
+    ],
+    "HOUSE_6_RULER_PLACEMENT": [
+      "career_public_role",
+      "pressure_risk"
+    ],
+    "STATE_木星": [
+      "career_public_role",
+      "pressure_risk"
+    ]
+  }
+}

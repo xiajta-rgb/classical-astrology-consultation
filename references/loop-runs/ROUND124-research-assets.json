@@ -1,0 +1,801 @@
+{
+  "status": "pass",
+  "card_count": 25,
+  "complete_card_count": 25,
+  "pending_card_count": 7,
+  "pending_queue": [
+    {
+      "card_id": "QI-101",
+      "source_ids": [
+        "R09"
+      ],
+      "source_works": [
+        "Barton, Ancient Astrology"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "priority_reason": "historical_context_and_primary_locator",
+      "blocking_reasons": [
+        "R09:fulltext_not_available_or_not_retrieved",
+        "R09:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "independent_primary_history_source",
+        "library_catalog_and_interlibrary_loan",
+        "publisher_or_author_bibliography"
+      ],
+      "upgrade_stop_conditions": [
+        "no_historical_claim_upgrade_without_edition_and_page_locator"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-102",
+      "source_ids": [
+        "R10"
+      ],
+      "source_works": [
+        "Beck, A Brief History of Ancient Astrology"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "priority_reason": "historical_context_and_primary_locator",
+      "blocking_reasons": [
+        "R10:fulltext_not_available_or_not_retrieved",
+        "R10:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "independent_primary_history_source",
+        "library_catalog_and_interlibrary_loan",
+        "publisher_or_author_bibliography"
+      ],
+      "upgrade_stop_conditions": [
+        "no_historical_claim_upgrade_without_edition_and_page_locator"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-103",
+      "source_ids": [
+        "R11"
+      ],
+      "source_works": [
+        "Lehoux, Observation and prediction in ancient astrology"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "priority_reason": "historical_context_and_primary_locator",
+      "blocking_reasons": [
+        "R11:fulltext_not_available_or_not_retrieved",
+        "R11:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "independent_primary_history_source",
+        "library_catalog_and_interlibrary_loan",
+        "publisher_or_author_bibliography"
+      ],
+      "upgrade_stop_conditions": [
+        "no_historical_claim_upgrade_without_edition_and_page_locator"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-104",
+      "source_ids": [
+        "R12"
+      ],
+      "source_works": [
+        "Kassell, Stars, spirits, signs"
+      ],
+      "status": "draft",
+      "priority": "P1",
+      "priority_reason": "historical_context_and_primary_locator",
+      "blocking_reasons": [
+        "R12:fulltext_not_available_or_not_retrieved",
+        "R12:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "independent_primary_history_source",
+        "library_catalog_and_interlibrary_loan",
+        "publisher_or_author_bibliography"
+      ],
+      "upgrade_stop_conditions": [
+        "no_historical_claim_upgrade_without_edition_and_page_locator"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-105",
+      "source_ids": [
+        "R13"
+      ],
+      "source_works": [
+        "Fichten & Sunerton, Popular Horoscopes and the Barnum Effect"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "priority_reason": "anti_overfit_and_methodology_boundary",
+      "blocking_reasons": [
+        "R13:fulltext_not_available_or_not_retrieved",
+        "R13:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "author_repository_search",
+        "independent_Barnum_effect_primary_study_with_equivalent_design",
+        "institutional_library_or_interlibrary_loan"
+      ],
+      "upgrade_stop_conditions": [
+        "no_rule_upgrade_without_fulltext_or_two_independent_equivalent_primary_studies"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-106",
+      "source_ids": [
+        "R14"
+      ],
+      "source_works": [
+        "Tyson, An empirical test of the astrological theory of personality"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "priority_reason": "anti_overfit_and_methodology_boundary",
+      "blocking_reasons": [
+        "R14:fulltext_not_available_or_not_retrieved",
+        "R14:abstract_not_available"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "Elsevier_subscription_access",
+        "independent_personality_astrology_primary_replication",
+        "institutional_library_or_interlibrary_loan"
+      ],
+      "upgrade_stop_conditions": [
+        "no_rule_upgrade_from_title_or_metadata; require_full_methods_and_results"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    },
+    {
+      "card_id": "QI-107",
+      "source_ids": [
+        "R15"
+      ],
+      "source_works": [
+        "Allum, What Makes Some People Think Astrology Is Scientific?"
+      ],
+      "status": "draft",
+      "priority": "P0",
+      "priority_reason": "anti_overfit_and_methodology_boundary",
+      "blocking_reasons": [
+        "R15:fulltext_not_available_or_not_retrieved"
+      ],
+      "completion_gate": "blocked_source_access",
+      "alternative_paths": [
+        "SAGE_library_or_interlibrary_loan",
+        "author_repository_search",
+        "independent_science_communication_primary_study"
+      ],
+      "upgrade_stop_conditions": [
+        "may_inform_evidence_communication_only; no_astrological_validity_upgrade"
+      ],
+      "required_actions": [
+        "full_text_or_primary_locator",
+        "translator/edition verification",
+        "counter-test extraction",
+        "upgrade decision"
+      ]
+    }
+  ],
+  "pending_priority_counts": {
+    "P0": 3,
+    "P1": 4,
+    "P2": 0
+  },
+  "pending_blocker_counts": {
+    "blocked_source_access": 7,
+    "awaiting_extraction": 0
+  },
+  "pending_stop_condition_count": 7,
+  "pending_queue_quality": {
+    "all_have_alternative_paths": true,
+    "all_have_upgrade_stop_conditions": true
+  },
+  "referenced_sources": [
+    "R01",
+    "R02",
+    "R03",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "R31"
+  ],
+  "registered_source_count": 29,
+  "registry_fingerprint": "db90bb4fa80dad4a679747e8af45567ddcc5e78e1b55bbc59917867d8799d5da",
+  "script_links": {
+    "QI-001": [
+      "build_natal_facts.py",
+      "check_research_loop.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-002": [
+      "planetary_state.py"
+    ],
+    "QI-004": [
+      "validate_observations.py"
+    ],
+    "QI-005": [
+      "check_source_registry.py"
+    ],
+    "QI-006": [
+      "check_research_loop.py"
+    ],
+    "QI-007": [
+      "check_source_registry.py"
+    ],
+    "QI-008": [
+      "build_natal_facts.py",
+      "planetary_state.py"
+    ],
+    "QI-009": [
+      "validate_chart_facts.py"
+    ],
+    "QI-010": [
+      "validate_chart_facts.py"
+    ],
+    "QI-011": [
+      "planetary_state.py"
+    ],
+    "QI-012": [
+      "validate_observations.py"
+    ],
+    "QI-013": [
+      "build_natal_facts.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-014": [
+      "planetary_state.py"
+    ],
+    "QI-015": [
+      "planetary_state.py"
+    ],
+    "QI-016": [
+      "check_source_registry.py"
+    ],
+    "QI-017": [
+      "build_natal_facts.py",
+      "planetary_state.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-018": [
+      "check_research_loop.py"
+    ],
+    "QI-019": [
+      "build_modular_interpretation.py",
+      "build_natal_facts.py",
+      "check_source_registry.py",
+      "validate_observations.py"
+    ],
+    "QI-020": [
+      "check_source_registry.py",
+      "planetary_state.py",
+      "validate_chart_facts.py",
+      "validate_observations.py"
+    ],
+    "QI-021": [
+      "build_modular_interpretation.py",
+      "build_natal_facts.py",
+      "check_source_registry.py",
+      "planetary_state.py"
+    ],
+    "QI-022": [
+      "planetary_state.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-023": [
+      "check_source_registry.py",
+      "planetary_state.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-024": [
+      "check_source_registry.py",
+      "planetary_state.py",
+      "validate_chart_facts.py"
+    ],
+    "QI-025": [
+      "check_source_registry.py",
+      "planetary_state.py",
+      "validate_chart_facts.py"
+    ]
+  },
+  "capability_status": {
+    "@accidental_dignity": "unmapped",
+    "@anti_overfit": "governance_only",
+    "@antiscia": "auxiliary_candidate",
+    "@aspects": "implemented",
+    "@chart_validation": "implemented",
+    "@delivery": "auxiliary_candidate",
+    "@dignity": "implemented",
+    "@ethics": "governance_only",
+    "@evidence": "governance_only",
+    "@formula_control": "auxiliary_candidate",
+    "@hidden_technique": "auxiliary_candidate",
+    "@history": "context_only",
+    "@house_rulership": "governance_only",
+    "@hypothesis": "governance_only",
+    "@lots": "implemented",
+    "@medical_history": "sensitive_context_only",
+    "@methodology": "implemented",
+    "@orb": "auxiliary_candidate",
+    "@planetary_state": "implemented",
+    "@reception": "implemented",
+    "@sect": "implemented",
+    "@sensitive": "implemented",
+    "@source_conflict": "governance_only",
+    "@source_criticism": "implemented",
+    "@terms": "implemented",
+    "@timing": "timing_extension_only",
+    "@triplicity": "implemented",
+    "@version_control": "governance_only",
+    "@visibility": "auxiliary_candidate",
+    "@wealth": "implemented"
+  },
+  "upgrade_profiles": {
+    "QI-001": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R01"
+      ],
+      "source_statuses": {
+        "R01": "auxiliary"
+      }
+    },
+    "QI-002": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R01"
+      ],
+      "source_statuses": {
+        "R01": "auxiliary"
+      }
+    },
+    "QI-003": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "needs_locator_review",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R02",
+        "capability_limited:@timing",
+        "locator_not_precise"
+      ],
+      "source_statuses": {
+        "R02": "auxiliary"
+      }
+    },
+    "QI-004": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R02"
+      ],
+      "source_statuses": {
+        "R02": "auxiliary"
+      }
+    },
+    "QI-005": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R03"
+      ],
+      "source_statuses": {
+        "R03": "registered"
+      }
+    },
+    "QI-006": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R08"
+      ],
+      "source_statuses": {
+        "R08": "registered"
+      }
+    },
+    "QI-007": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R16",
+        "capability_limited:@antiscia,@hidden_technique"
+      ],
+      "source_statuses": {
+        "R16": "auxiliary"
+      }
+    },
+    "QI-008": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R17,R20",
+        "capability_limited:@formula_control"
+      ],
+      "source_statuses": {
+        "R17": "registered",
+        "R20": "registered"
+      }
+    },
+    "QI-009": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "capability_limited:@delivery,@hidden_technique"
+      ],
+      "source_statuses": {
+        "R19": "verified"
+      }
+    },
+    "QI-010": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R21",
+        "capability_limited:@orb,@visibility"
+      ],
+      "source_statuses": {
+        "R21": "auxiliary"
+      }
+    },
+    "QI-011": {
+      "eligibility": "eligible_candidate",
+      "core_rule_eligibility": "blocked_independent_source",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [],
+      "source_statuses": {
+        "R22": "verified"
+      }
+    },
+    "QI-012": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R23"
+      ],
+      "source_statuses": {
+        "R23": "registered"
+      }
+    },
+    "QI-013": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R21"
+      ],
+      "source_statuses": {
+        "R21": "auxiliary"
+      }
+    },
+    "QI-014": {
+      "eligibility": "eligible_candidate",
+      "core_rule_eligibility": "blocked_independent_source",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [],
+      "source_statuses": {
+        "R25": "verified"
+      }
+    },
+    "QI-015": {
+      "eligibility": "eligible_candidate",
+      "core_rule_eligibility": "blocked_independent_source",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [],
+      "source_statuses": {
+        "R26": "verified"
+      }
+    },
+    "QI-016": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R02"
+      ],
+      "source_statuses": {
+        "R02": "auxiliary"
+      }
+    },
+    "QI-017": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "source_status_limited:R01"
+      ],
+      "source_statuses": {
+        "R01": "auxiliary"
+      }
+    },
+    "QI-018": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R27"
+      ],
+      "source_statuses": {
+        "R27": "auxiliary"
+      }
+    },
+    "QI-019": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R29"
+      ],
+      "source_statuses": {
+        "R29": "auxiliary"
+      }
+    },
+    "QI-020": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R29"
+      ],
+      "source_statuses": {
+        "R29": "auxiliary"
+      }
+    },
+    "QI-021": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R29"
+      ],
+      "source_statuses": {
+        "R29": "auxiliary"
+      }
+    },
+    "QI-022": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R28"
+      ],
+      "source_statuses": {
+        "R28": "auxiliary"
+      }
+    },
+    "QI-023": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R29"
+      ],
+      "source_statuses": {
+        "R29": "auxiliary"
+      }
+    },
+    "QI-024": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R30"
+      ],
+      "source_statuses": {
+        "R30": "auxiliary"
+      }
+    },
+    "QI-025": {
+      "eligibility": "limited",
+      "core_rule_eligibility": "limited",
+      "counter_test_present": true,
+      "locator_quality": "precise",
+      "reasons": [
+        "card_status:auxiliary",
+        "source_status_limited:R31"
+      ],
+      "source_statuses": {
+        "R31": "auxiliary"
+      }
+    }
+  },
+  "card_fingerprints": {
+    "QI-001": "dc622abda682945366e16fb6aa115a871d95e4706a04254dad642cc6f607b7cc",
+    "QI-002": "866b8ba5fd0e36aa9a41a9581e28dca41e78dbf8afc0f46aed6a55df9b4b1ebc",
+    "QI-003": "42f65393f3ac117674b6328f03d3d38a3dc682b4225697c7df1f668b631a0aed",
+    "QI-004": "444b9de9c8de52664e7d58ce983d5f469fd15f3e5b43f70a8d1e6959a34b7114",
+    "QI-005": "f23134519875fcc6588427f1e224ac7f329bf51c2168fd1bdfd25cc33f17e7b1",
+    "QI-006": "ebf40e31e1f983386e3308639febfbc8c9cabfc594bb9fe174a06c89b8e1d412",
+    "QI-007": "b234a8848642bbe013e023d4c7b66ed29c6a467e52f78a4ad691ddad80b403b1",
+    "QI-008": "bfbd9ca57a16c5edd868b13261462f74a91d2576218bd1f058d53ed46c141508",
+    "QI-009": "71564bcbc18b7a9c9e6241b548ca7ce5a41ffdff2908450570ec899b9958fb98",
+    "QI-010": "fadb2e0de89c1c09b197425ef7b78f1c31d43c65e81c423bd3da121bf4ddc8d5",
+    "QI-011": "9ab47311f5d2e5bbae4ad41b2380fdbe6a066467da4c7f9f10738db3d1d97124",
+    "QI-012": "0079cc1abfdf1c3d588caaf629a576cccce7cf304ab5b73cd62276d14d12e5d6",
+    "QI-013": "54620bc280b98ad4003fb2e412a5b8310474dc6927cb69dd272b3b31b5d9562c",
+    "QI-014": "c906dbac78bf414b3e814cc78cc77c1b688e3e22bbe50c7ec24df164cde45155",
+    "QI-015": "55cfb471ca097f03dc6459a7a90eb7b5fbb27d774143e0f77360d6287ca62e1b",
+    "QI-016": "7b07b6322a03426acd425e0f743aa2273b4cfd9ea8254ae59e0d3a05199c5e51",
+    "QI-017": "643afe24a959d1a056e041b1a693be3e24a984bcdedbaa8e5e032c32fcd82d2d",
+    "QI-018": "bf1f6af5dbe8db1218aa04335e55f06eb396d00dfb7f9bfc423db2e7aee9858c",
+    "QI-019": "50fd3b5ba9819263eb5fa2e709321fe9184d6ce55c06e0dd2fbad24f910f22fe",
+    "QI-020": "3bb970dbd29088a5435c6ead590cf55ea9603991014ee706acfb3cbc731d0ff5",
+    "QI-021": "ce6c7d64e6b3a06c58b8938011b362f96208e7f4284580ada5f8bf83d9e03b24",
+    "QI-022": "dd6c1a216c16bc8a77adf6a915c166261c3f6b03848344a09f043651c0c96072",
+    "QI-023": "9a3ee3dd454161b7a53581ae5b544840ecafcf84082795a227a8842d5f503548",
+    "QI-024": "16029e8e456d814d84dcf2c5ede960d00aaf5d0813665be80c9157d34db76c4d",
+    "QI-025": "6548b04ccc2c9ed98abd40acfb7496e5714974975095489afe01b719beb8c010"
+  },
+  "warnings": [
+    "QI-001: no dedicated executor mapping for @ethics",
+    "QI-002: no dedicated executor mapping for @evidence",
+    "QI-003: non-upgradeable card status auxiliary",
+    "QI-003: no dedicated executor mapping for @house_rulership",
+    "QI-003: no dedicated executor mapping for @timing",
+    "QI-003: no dedicated executor mapping for @hypothesis",
+    "QI-025: non-upgradeable card status auxiliary",
+    "QI-025: no dedicated executor mapping for @anti_overfit",
+    "QI-004: no dedicated executor mapping for @history",
+    "QI-004: no dedicated executor mapping for @ethics",
+    "QI-005: no dedicated executor mapping for @history",
+    "QI-006: non-upgradeable card status auxiliary",
+    "QI-006: no dedicated executor mapping for @evidence",
+    "QI-006: no dedicated executor mapping for @ethics",
+    "QI-007: non-upgradeable card status auxiliary",
+    "QI-007: no dedicated executor mapping for @antiscia",
+    "QI-007: no dedicated executor mapping for @hidden_technique",
+    "QI-008: non-upgradeable card status auxiliary",
+    "QI-008: no dedicated executor mapping for @formula_control",
+    "QI-009: non-upgradeable card status auxiliary",
+    "QI-009: no dedicated executor mapping for @delivery",
+    "QI-009: no dedicated executor mapping for @hidden_technique",
+    "QI-010: non-upgradeable card status auxiliary",
+    "QI-010: no dedicated executor mapping for @visibility",
+    "QI-010: no dedicated executor mapping for @orb",
+    "QI-011: no dedicated executor mapping for @source_conflict",
+    "QI-012: no dedicated executor mapping for @medical_history",
+    "QI-012: no dedicated executor mapping for @ethics",
+    "QI-013: no dedicated executor mapping for @anti_overfit",
+    "QI-014: no dedicated executor mapping for @accidental_dignity",
+    "QI-014: no dedicated executor mapping for @anti_overfit",
+    "QI-015: no dedicated executor mapping for @source_conflict",
+    "QI-016: no dedicated executor mapping for @version_control",
+    "QI-016: no dedicated executor mapping for @evidence",
+    "QI-017: no dedicated executor mapping for @house_rulership",
+    "QI-017: no dedicated executor mapping for @anti_overfit",
+    "QI-018: non-upgradeable card status auxiliary",
+    "QI-018: no dedicated executor mapping for @anti_overfit",
+    "QI-018: no dedicated executor mapping for @evidence",
+    "QI-019: non-upgradeable card status auxiliary",
+    "QI-019: no dedicated executor mapping for @house_rulership",
+    "QI-020: non-upgradeable card status auxiliary",
+    "QI-020: no dedicated executor mapping for @anti_overfit",
+    "QI-021: non-upgradeable card status auxiliary",
+    "QI-021: no dedicated executor mapping for @house_rulership",
+    "QI-022: non-upgradeable card status auxiliary",
+    "QI-022: no dedicated executor mapping for @house_rulership",
+    "QI-022: no dedicated executor mapping for @history",
+    "QI-022: no dedicated executor mapping for @source_conflict",
+    "QI-023: non-upgradeable card status auxiliary",
+    "QI-023: no dedicated executor mapping for @anti_overfit",
+    "QI-024: non-upgradeable card status auxiliary",
+    "QI-024: no dedicated executor mapping for @anti_overfit",
+    "QI-101: pending card not yet fully extracted",
+    "QI-102: pending card not yet fully extracted",
+    "QI-103: pending card not yet fully extracted",
+    "QI-104: pending card not yet fully extracted",
+    "QI-105: pending card not yet fully extracted",
+    "QI-106: pending card not yet fully extracted",
+    "QI-107: pending card not yet fully extracted"
+  ],
+  "findings": []
+}

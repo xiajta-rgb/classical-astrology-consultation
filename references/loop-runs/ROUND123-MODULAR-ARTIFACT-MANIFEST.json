@@ -1,0 +1,25 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/interpretation-modules/registry.json",
+      "bytes": 10385,
+      "sha256": "572ae1b93937fe8f1897807c115a4f5591daaa94b67cd39a9f38c083e74705b5"
+    },
+    {
+      "path": "references/loop-runs/ROUND123-MODULAR-INTERPRETATION.json",
+      "bytes": 19445,
+      "sha256": "475a5384780bce0cebed2caec994323dddcf7b1728b9fc5ac5cf013883a8b4ed"
+    },
+    {
+      "path": "references/loop-runs/ROUND123-MODULAR-INTERPRETATION.md",
+      "bytes": 10491,
+      "sha256": "a4c5604f5190bb2cf36595d1c1198fcdcd9eebc8220f79c5eb7e42a81a9fc1a0"
+    },
+    {
+      "path": "references/loop-runs/ROUND123-MODULAR-STATUS.md",
+      "bytes": 1406,
+      "sha256": "a645542c16d962c94a1286336ec0a2e6d2ace2d6547e5998c827336c0b7feb90"
+    }
+  ]
+}

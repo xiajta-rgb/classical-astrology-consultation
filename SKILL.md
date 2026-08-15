@@ -42,6 +42,8 @@ Prioritize astrological evidence over fluent prose. Do not replace chart structu
 
 Identify the chart source, zodiac, house system, exact birth time quality, location, and whether degrees are available. Mark missing or uncertain data before interpreting. If the user asks a timing question but supplies only a natal chart, state the limitation and offer the minimum additional technique/data needed.
 
+Default to the [NATAL-1.0 natal-first architecture](references/natal-first-architecture.md): complete the natal Chart Facts, house responsibility chains, planetary-state audit, competing hypotheses and full-picture synthesis before activating any timing extension. Profections, transits, progressions, primary directions, zodiacal releasing and solar returns are inactive until the user explicitly asks a future-time question and the required data are available.
+
 ### 2. Build the Chart Facts inventory
 
 Record, in neutral language:
@@ -119,6 +121,23 @@ Use this fixed order unless the user asks for a shorter answer:
 
 Use concrete wording such as “明确表现为”, “明显倾向于”, “可能涉及”, or “本命盘无法确认” according to evidence strength.
 
+主题正文必须先经过[本命征象显著性筛选协议](references/interpretation-priority.md)：优先输出能改变主题责任链的 `critical/high` 征象；`supporting/context` 征象默认延后到审计层，不得用数量堆叠制造重要性。
+
+### 9. Network research and system iteration
+
+When new online astrology material is requested, use [references/research-ledger.md](references/research-ledger.md) as the intake register and execute the full [LOOP-1.0 research iteration](references/research-loop.md):
+
+1. Identify the work, author, period, translator/editor, host, and chapter/page before extracting a rule.
+2. Classify the item as primary historical text, later traditional synthesis, modern empirical research, or commentary. Do not merge the layers.
+3. Record the historical claim in neutral language, then record scope conditions, independent support, counter-testimony, and modern status.
+4. For death, disease, mental health, sexuality, reproduction, crime, violence, servitude, curses, or stigma, run [references/sensitive-significations.md](references/sensitive-significations.md) before any user-facing wording.
+5. Convert useful passages into [references/quote-insight-cards.md](references/quote-insight-cards.md): preserve only short, versioned quotations; use paraphrase for longer material; attach tags, locator, conditions, counter-test and output guardrail.
+6. Add rules only as versioned, reversible hypotheses. A new source can strengthen, qualify, downgrade, or remove a rule; “more material” is not automatically “more evidence”.
+7. Run the source, rule, counter-test, anti-generalization, directness, sensitive-topic and full-picture gates. The lightweight checker is [scripts/check_research_loop.py](scripts/check_research_loop.py).
+8. After each update, re-run representative chart judgments and check that the new rule does not create double counting, deterministic event claims, or modern outer-planet override.
+
+The system may maintain this ledger across future user-requested research turns, but it must not imply autonomous background browsing or unverified continuous learning between turns.
+
 ## Quality gate
 
 Before emitting a core conclusion, require all of the following:
@@ -145,3 +164,51 @@ Astrology is an interpretive framework, not a guarantee of events or a substitut
 - [references/evidence-and-language.md](references/evidence-and-language.md): evidence scoring, anti-generalization tests, certainty vocabulary, and output template.
 - [references/judgment-algorithm.md](references/judgment-algorithm.md): hypothesis competition, planetary-state audit, counter-evidence, and duplicate-testimony controls.
 - [references/sect-and-planetary-layers.md](references/sect-and-planetary-layers.md): day/night sect weighting and classical-versus-modern evidence hierarchy.
+- [references/research-ledger.md](references/research-ledger.md): traceable online source intake, versioning, conflicts, and iterative updates.
+- [references/research-campaign-20260814.md](references/research-campaign-20260814.md): current broad-source research lanes, quality filters, and distilled priorities.
+- [references/sensitive-significations.md](references/sensitive-significations.md): sensitive-topic levels, prohibited deterministic outputs, and historical-language handling.
+- [references/sensitive-dictionary.json](references/sensitive-dictionary.json): versioned multilingual/implicit sensitive markers used by the observation privacy gate.
+- [references/quote-insight-cards.md](references/quote-insight-cards.md): short quotations, structured paraphrases, tags, conditions, counter-tests and output guardrails.
+- [references/research-loop.md](references/research-loop.md): multi-round research, adversarial testing, directness protocol, full-picture snapshot, and rollback rules.
+- [references/natal-first-architecture.md](references/natal-first-architecture.md): natal Chart Facts, topic chains, hypothesis cards, full-picture synthesis, and timing-extension boundary.
+- [references/cet-api-integration.md](references/cet-api-integration.md): CET public ephemeris endpoint, field mapping, derived fly-in/reception rules, and verification limits.
+- [references/ephh-integration.md](references/ephh-integration.md): local ephh/Swiss Ephemeris input contract, coordinate uncertainty, aspect generation and CET comparison limits.
+- [references/interpretation-modules/registry.json](references/interpretation-modules/registry.json): decoupled natal interpretation modules for timing baseline, identity, wealth, career, relationships and family.
+- [references/interpretation-priority.md](references/interpretation-priority.md): salience levels, primary-rule caps, deferred evidence and chart-specific prioritization.
+- [references/loop-runs/LOOP-20260814.md](references/loop-runs/LOOP-20260814.md): current research/test rounds and next-round handoff.
+- [references/loop-runs/ROUND93-STATUS.md](references/loop-runs/ROUND93-STATUS.md): current end-to-end research status, user-chart boundaries, and shortest HOLD-release path.
+- [references/loop-runs/ROUND100-ARTIFACT-MANIFEST.json](references/loop-runs/ROUND100-ARTIFACT-MANIFEST.json): durable facts/audit/manifest/report SHA-256 snapshot.
+- [scripts/check_research_loop.py](scripts/check_research_loop.py): fail-closed QA for traceability, specificity, coverage, sensitive-topic boundaries, and generic-language leakage.
+- [scripts/check_natal_first.py](scripts/check_natal_first.py): prevents timing language from leaking into a natal-only draft without explicit activation.
+- [scripts/cet_api_client.py](scripts/cet_api_client.py): read-only CET API fetcher and UTF-8 normalizer; preserves raw response for audit.
+- [scripts/check_cet_api_adapter.py](scripts/check_cet_api_adapter.py): regression for complete CET field mapping and sparse/unknown response branches.
+- [scripts/ephh_chart_client.py](scripts/ephh_chart_client.py): invokes the local ephh calculator through an isolated compatible interpreter and normalizes exact natal facts.
+- [scripts/ephh_worker.py](scripts/ephh_worker.py): initializes ephh Swiss Ephemeris and adds the explicitly-labelled Chiron extra point.
+- [scripts/check_ephh_chart_client.py](scripts/check_ephh_chart_client.py): offline regression for ephh normalization, sign cleanup and aspect candidate generation.
+- [scripts/build_modular_interpretation.py](scripts/build_modular_interpretation.py): matches module rules to Chart Facts and renders evidence-linked topic reports without activating timing.
+- [scripts/check_modular_interpretation.py](scripts/check_modular_interpretation.py): regression for module count, timing hold and topic evidence anchors.
+- [scripts/validate_chart_facts.py](scripts/validate_chart_facts.py): validates traditional ruler fly-ins, deduplicates receptions, and classifies degree-dependent aspect geometry without inventing missing degrees.
+- [scripts/rulership_candidates.py](scripts/rulership_candidates.py): enumerates dignity-based house/topic candidate claims without collapsing domicile, exaltation, triplicity, terms, and face into a score.
+- [scripts/planetary_state.py](scripts/planetary_state.py): versioned sect, essential dignity, triplicity, terms, faces, and angularity state layer; missing degrees remain unresolved.
+- [scripts/check_planetary_state.py](scripts/check_planetary_state.py): regression for declared-versus-unknown speed, retrograde, and visibility evidence.
+- [scripts/build_natal_facts.py](scripts/build_natal_facts.py): combines Chart Facts, geometry/reception checks, planetary state, topic coverage and a fail-closed natal release gate.
+- [scripts/render_natal_report.py](scripts/render_natal_report.py): renders an evidence-first natal audit, paragraph/source upgrade labels, and can recompute score output from raw cards plus registry before publication.
+- [scripts/build_hypothesis_cards.py](scripts/build_hypothesis_cards.py): creates bounded H1/H2 natal hypothesis cards only after the release gate passes.
+- [scripts/check_hypothesis_cards.py](scripts/check_hypothesis_cards.py): detects duplicated evidence, generic hypotheses, missing chart anchors, and forbidden auto-upgrades.
+- [scripts/score_hypothesis_cards.py](scripts/score_hypothesis_cards.py): applies transparent 1.0/0.5 unique-versus-shared evidence weighting, source limits, version gates, counter-test classification, and publication reasons without automatic S/A upgrades.
+- [scripts/compare_score_outputs.py](scripts/compare_score_outputs.py): compares before/after score outputs and proves that observation withdrawal or supersession changes only the intended topic set.
+- [scripts/build_release_manifest.py](scripts/build_release_manifest.py): combines chart gate, score, source, dictionary and score-diff states into a fail-closed machine-readable release manifest.
+- [scripts/check_source_registry.py](scripts/check_source_registry.py): validates evidence provenance IDs, source status, and conflict-cluster references.
+- [scripts/build_artifact_fingerprint.py](scripts/build_artifact_fingerprint.py): creates deterministic SHA-256 snapshots for facts, audits, manifests and rendered reports.
+- [scripts/check_release_bundle.py](scripts/check_release_bundle.py): recomputes the release manifest and verifies all artifact hashes in one pre-publication gate.
+- [scripts/check_release_gates.py](scripts/check_release_gates.py): adversarial regression for locked-rule/missing-metadata combinations, source HOLD propagation, paragraph BLOCKED labels, and scorer grade caps.
+- [scripts/validate_observations.py](scripts/validate_observations.py): validates versioned real-world observations, active/withdrawn tombstones, sensitive privacy gates, and chart-fact separation.
+- [scripts/check_sensitive_dictionary.py](scripts/check_sensitive_dictionary.py): compares sensitive-dictionary versions against regression samples and reports added/removed markers and changed classifications.
+- [scripts/check_research_assets.py](scripts/check_research_assets.py): cross-checks quote-insight-card IDs, statuses, pending cards, and source IDs against the source registry without upgrading draft material.
+- [scripts/check_user_chart_input.py](scripts/check_user_chart_input.py): regression-checks the complete user-supplied natal summary and keeps missing birth metadata fail-closed.
+- [scripts/check_reception_connections.py](scripts/check_reception_connections.py): adversarial regression for direction-only, sector-only, degree-confirmed, and unsupported reception branches.
+- [references/source-registry.json](references/source-registry.json): machine-readable source layers, versions, limits, and unresolved conflict clusters.
+- [references/research-asset-audit.json](references/research-asset-audit.json): latest quote-card/source/capability cross-audit; warnings remain visible and do not upgrade evidence.
+- Pending research cards carry P0/P1/P2 priorities; priority is workflow order only and never an evidence upgrade.
+- [references/fixtures/user-chart-1996-supplied.json](references/fixtures/user-chart-1996-supplied.json): supplied chart fixture with missing metadata retained as an intentional hold-case.
+- [references/fixtures/sensitive-observation-cases.json](references/fixtures/sensitive-observation-cases.json): regression samples for sensitive-marker recall and benign false-positive control.

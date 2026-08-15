@@ -1,0 +1,26 @@
+{
+  "chart_id": "synthetic-contrast-a",
+  "source": "synthetic_regression",
+  "birth_date": "2001-02-03",
+  "birth_time": "08:00",
+  "birth_place": "Synthetic",
+  "zodiac": "tropical",
+  "house_system": "Placidus",
+  "rule_versions": {"terms": "egyptian", "triplicity": "dorotheus_style_three_rulers", "faces": "chaldean", "reception": "direction_plus_connection_required", "aspect": "application_separation_required"},
+  "axes": {"asc": {"sign": "巨蟹", "degree": 15.0}},
+  "placements": {
+    "太阳": {"sign": "白羊", "degree": 10.0, "house": 10},
+    "月亮": {"sign": "金牛", "degree": 10.0, "house": 1},
+    "水星": {"sign": "处女", "degree": 10.0, "house": 3},
+    "金星": {"sign": "双鱼", "degree": 10.0, "house": 7},
+    "火星": {"sign": "摩羯", "degree": 10.0, "house": 6},
+    "木星": {"sign": "巨蟹", "degree": 10.0, "house": 4},
+    "土星": {"sign": "天秤", "degree": 10.0, "house": 9}
+  },
+  "cusps": {
+    "1": "巨蟹", "2": "狮子", "3": "处女", "4": "天秤", "5": "天蝎", "6": "射手",
+    "7": "摩羯", "8": "水瓶", "9": "双鱼", "10": "白羊", "11": "金牛", "12": "双子"
+  },
+  "aspects": [],
+  "receptions": []
+}

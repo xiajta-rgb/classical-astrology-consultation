@@ -1,0 +1,87 @@
+{
+  "version": "INFERENCE-0.1-candidate",
+  "chart_id": "user-1996-hunan-supplied",
+  "status": "hold",
+  "reason": [
+    "chart_contract_incomplete",
+    "duplicate_reception_claims",
+    "duplicate_fly_in_claims",
+    "reception_connection_requires_degree_validation",
+    "aspect_degrees_required",
+    "ascendant_boundary_risk_high"
+  ],
+  "rule_version_gate": "locked",
+  "rule_version_lock": {
+    "terms": true,
+    "triplicity": true,
+    "faces": true,
+    "reception": true,
+    "aspect": true
+  },
+  "version_gate_blockers": [],
+  "source_conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "locked",
+      "values": {
+        "terms": "egyptian"
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "locked",
+      "values": {
+        "triplicity": "dorotheus_style_three_rulers"
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "locked",
+      "values": {
+        "reception": "direction_plus_connection_required",
+        "aspect": "application_separation_required"
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    }
+  ],
+  "observation_validation": {
+    "status": "not_collected",
+    "count": 0,
+    "active_count": 0,
+    "tombstone_count": 0,
+    "findings": [],
+    "observations": {},
+    "sensitive_dictionary_version": "SENSITIVE-0.3",
+    "sensitive_dictionary_status": "configured",
+    "sensitive_dictionary_audit": {
+      "previous_version": "SENSITIVE-0.2",
+      "change_note": "新增英文术语、空格/连字符归一化和寿命/自伤隐喻；保留既有中文类别。",
+      "changed_categories": [
+        "mortality",
+        "self_harm",
+        "medical",
+        "violence_crime",
+        "reproduction",
+        "sexual_identity",
+        "curse_possession",
+        "addiction"
+      ]
+    }
+  },
+  "cards": []
+}

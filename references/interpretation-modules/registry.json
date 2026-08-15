@@ -1,0 +1,106 @@
+{
+  "schema_version": "INTERPRETATION-MODULES-0.1",
+  "version": "NATAL-MODULES-2026-08-15",
+  "scope": "natal_only",
+  "modules": [
+    {
+      "id": "identity_core",
+      "title": "核心性格与决策机制",
+      "house_chain": [1, 4, 5, 10],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "ASC边界风险高时使用条件式表述",
+      "rules": [
+        {"id": "I-1", "salience": "critical", "kind": "ruler_in_house", "house": 1, "ruler_house": 4, "text": "1宫宫主落4宫：自我决策首先受家庭、居所、根基和隐私安全牵引，而不是先追逐外部声望。"},
+        {"id": "I-2", "salience": "high", "kind": "placement", "planet": "月亮", "house": 4, "sign": "天蝎", "dignity": "fall", "text": "月亮天蝎4宫且处失势：情绪处理深、封闭、记忆性强；真正的压力点通常发生在家庭边界、信任和控制权，而不是表面社交。"},
+        {"id": "I-3", "salience": "critical", "kind": "cluster", "planets": ["太阳", "月亮", "水星"], "house": 4, "text": "太阳、月亮、水星集中4宫：人生主轴明显偏向内在根基、家庭系统、隐性资源和私域掌控。"}
+      ],
+      "counter_tests": ["ASC为巨蟹29°34′，行政区中心坐标可能使宫位跨界；需精确地点或校时后复核。", "不能由4宫聚集单独推出家庭事件或心理诊断。"],
+      "observable_tests": ["核对重大决策是否常被居住地、家庭责任、资产安排或隐私安全改变。", "核对是否倾向先观察、保留信息，确认安全后才公开行动。"]
+    },
+    {
+      "id": "life_timing",
+      "title": "关键人生时间",
+      "house_chain": [1, 4, 7, 10],
+      "status": "inactive_until_timing_activation",
+      "safety_gate": "没有推运/岁限/行运输入，不输出具体年份、年龄或事件日期",
+      "rules": [],
+      "fixed_statement": "本命盘只能建立长期主题基线，不能单独给出某年结婚、发财、升职或家庭事件日期。本模块预留年度主限、次限、行运和年限法接口，启用后仍必须先锁定本命责任链。",
+      "counter_tests": ["任何具体年份判断都必须来自独立时间技术，而不是从本命宫位倒推。"],
+      "observable_tests": ["先收集已发生的转折年份，用于测试未来采用的时间技术，而不是反向改写本命事实。"]
+    },
+    {
+      "id": "wealth_income",
+      "title": "财富与收入",
+      "house_chain": [2, 11, 10, 8],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "不输出投资收益、暴富或破产保证；共同资金必须做现实尽调",
+      "rules": [
+        {"id": "W-1", "salience": "critical", "kind": "ruler_in_house", "house": 2, "ruler_house": 4, "text": "2宫主太阳落4宫：财富与家庭资产、居住地、私域经营或长期根基建设有结构性关联。"},
+        {"id": "W-2", "salience": "critical", "kind": "ruler_in_house", "house": 10, "ruler_house": 2, "text": "10宫主火星落2宫：职业必须转化为可计价的技能、效率、产品或现金流；只追求头衔而不建立定价能力会削弱职业回报。"},
+        {"id": "W-3", "salience": "high", "kind": "placement", "planet": "火星", "house": 2, "sign": "处女", "text": "火星处女2宫：收入杠杆偏向细分技能、流程、诊断、执行和持续优化，而非纯粹靠运气。"},
+        {"id": "W-4", "salience": "supporting", "kind": "placement", "planet": "金星", "house": 3, "sign": "天秤", "dignity": "domicile", "text": "11宫主金星在天秤3宫守护：客户、合作、写作沟通、审美判断和关系网络是可变现的增量渠道。"},
+        {"id": "W-5", "salience": "high", "kind": "placement", "planet": "土星", "house": 9, "sign": "白羊", "dignity": "fall", "retrograde": true, "text": "8宫主土星在白羊9宫失势且逆行：共同资金、债务、税务、法律、跨地域或教育投入需要慢审、留痕和退出条件，不能靠口头信任。"}
+      ],
+      "counter_tests": ["2宫主落4宫不等于必然继承房产；必须有真实资产、家庭资金或居住地经营证据。", "金星守护11宫不等于所有合作都会带来收益；应检查客户质量、合同和现金回款。"],
+      "observable_tests": ["将收入拆成技能劳动、家庭/居所相关、合作网络和共同资金四类，连续记录回款与成本。", "任何共同资金项目先验证授权、债务、税务和退出机制。"]
+    },
+    {
+      "id": "career_public_role",
+      "title": "事业与公众角色",
+      "house_chain": [10, 6, 2, 11, 7],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "输出职业结构与工作方式，不替代求职、经营或法律决策",
+      "rules": [
+        {"id": "C-1", "salience": "critical", "kind": "ruler_in_house", "house": 10, "ruler_house": 2, "text": "10宫主火星落2宫：事业的核心问题不是‘有没有职业’，而是能否把专业动作直接转成价格、利润和可复用资产。"},
+        {"id": "C-2", "salience": "high", "kind": "placement", "planet": "火星", "house": 2, "sign": "处女", "text": "火星处女2宫适合需要排错、拆解、交付、流程控制和细节责任的工作；弱点是把精力消耗在低价、高频、无边界的执行上。"},
+        {"id": "C-3", "salience": "high", "kind": "placement", "planet": "木星", "house": 6, "sign": "摩羯", "dignity": "fall", "text": "6宫主木星落6宫摩羯且失势：日常工作量和制度约束很重，职业成长依赖流程、资质和长期纪律，而非一次性机会。"},
+        {"id": "C-4", "salience": "supporting", "kind": "aspect", "planet1": "太阳", "planet2": "木星", "aspect": "六合", "max_orb": 5.0, "text": "太阳六合木星（orb约4°53′）提供把私域资源、经验和工作系统转化为增长的通道；但入相/出相尚未判定，只能作为支持性结构。"}
+      ],
+      "counter_tests": ["职业方向不能只由火星处女推断；需结合真实技能、行业门槛、客户和交付记录。", "木星失势不等于职业失败，重点是工作制度和资源配置是否可持续。"],
+      "observable_tests": ["检查过去项目中最容易收费的环节，是诊断、执行、流程优化还是沟通协作。", "记录低价高耗工作占比，并测试是否能通过标准化、报价和边界减少损耗。"]
+    },
+    {
+      "id": "work_execution",
+      "title": "职业与日常工作方式",
+      "house_chain": [6, 2, 3, 10],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 2, "defer_supporting": true},
+      "safety_gate": "输出工作机制与可验证的职业行为，不替代雇佣、经营或健康判断",
+      "rules": [
+        {"id": "J-1", "salience": "high", "kind": "ruler_in_house", "house": 6, "ruler_house": 6, "text": "6宫主木星仍落6宫：职业日常会反复面对流程、服务、责任和工作负荷，必须靠制度化管理而不是临场英雄主义。"},
+        {"id": "J-2", "salience": "high", "kind": "placement", "planet": "木星", "house": 6, "sign": "摩羯", "dignity": "fall", "text": "木星摩羯6宫失势：工作扩张容易先增加责任和复杂度，后得到回报；职责边界、资质和时间预算是硬约束。"},
+        {"id": "J-3", "salience": "supporting", "kind": "ruler_in_house", "house": 3, "ruler_house": 4, "text": "3宫主水星落4宫：沟通、文档、信息处理与私域/家庭环境相连，适合沉淀知识库和后台系统，但需防止信息封闭。"}
+      ],
+      "counter_tests": ["6宫强调工作负荷，不等于必然从事某个行业；需要用真实岗位和项目记录验证。"],
+      "observable_tests": ["记录一周中真正产生价值的工作与重复消耗，测试流程、文档和自动化能否降低后者。", "检查职责是否有明确验收标准和超时补偿。"]
+    },
+    {
+      "id": "love_relationship",
+      "title": "爱情与伴侣关系",
+      "house_chain": [7, 1, 4, 8],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "不判断必然结婚/离婚；不把伴侣标签化，关注契约、边界和共同资源",
+      "rules": [
+        {"id": "R-1", "salience": "critical", "kind": "ruler_in_house", "house": 7, "ruler_house": 9, "text": "7宫主土星落9宫白羊且逆行失势：关系承诺容易与价值观、距离、教育/法律议题或人生方向绑定；承诺必须经过规则和时间检验。"},
+        {"id": "R-2", "salience": "high", "kind": "ruler_in_house", "house": 4, "ruler_house": 3, "text": "4宫主金星落3宫天秤守护：家庭稳定依赖持续沟通、协商和公平分工，不是靠沉默维持。"},
+        {"id": "R-3", "salience": "high", "kind": "placement", "planet": "月亮", "house": 4, "sign": "天蝎", "dignity": "fall", "text": "月亮天蝎4宫：亲密关系中的核心敏感点是信任、隐私、控制权和情绪安全；如果不说清楚，容易以试探或冷处理代替协商。"},
+        {"id": "R-4", "salience": "supporting", "kind": "aspect", "planet1": "月亮", "planet2": "土星", "aspect": "拱", "max_orb": 6.5, "text": "月亮拱土星（orb约6°13′）提供在规则清楚时承担长期责任的能力；但相位运动状态未知，不能夸大为关系必然稳定。"}
+      ],
+      "counter_tests": ["土星落9宫不等于异地或晚婚事实；需要真实关系经历和时间技术验证。", "月亮失势描述的是情绪处理成本，不是人格缺陷或心理诊断。"],
+      "observable_tests": ["观察冲突时是否明确说出边界、金钱、居住和责任，而不是通过沉默测试对方。", "把共同资源、家务和长期计划写成可复核约定。"]
+    },
+    {
+      "id": "family_home",
+      "title": "家庭、居所与根基",
+      "house_chain": [4, 2, 8, 10],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "不对家庭成员、房产或生育结果做确定性断言",
+      "rules": [
+        {"id": "F-1", "salience": "critical", "kind": "cluster", "planets": ["太阳", "月亮", "水星"], "house": 4, "text": "4宫聚集太阳、月亮、水星：家庭/居所不是背景板，而是身份、情绪、思考与资源配置的主战场。"},
+        {"id": "F-2", "salience": "high", "kind": "ruler_in_house", "house": 4, "ruler_house": 3, "text": "4宫主金星落3宫天秤：家庭问题主要通过沟通、文件、协商、邻里/手足或日常安排被处理。"},
+        {"id": "F-3", "salience": "high", "kind": "ruler_in_house", "house": 2, "ruler_house": 4, "text": "2宫主太阳落4宫：家庭与个人财务边界高度相关，需要把居住、资产、支持和责任拆开核算。"}
+      ],
+      "counter_tests": ["4宫聚集不等于家庭一定和睦或一定破裂；必须区分支持、责任、控制和现实资源。"],
+      "observable_tests": ["建立家庭责任、居住成本和资产权属清单，避免情感承诺替代事实记录。", "记录家庭议题如何影响职业选择、现金流和公开/隐私边界。"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "ARTIFACT-FINGERPRINT-0.1",
+  "artifacts": [
+    {
+      "path": "references/loop-runs/ROUND126-SENSITIVE-STATUS.md",
+      "bytes": 2669,
+      "sha256": "f68bb22761117697d20884b135a5ce245b93ffbab42a3b630643d9517691ed43"
+    },
+    {
+      "path": "references/loop-runs/ROUND126-research-assets.json",
+      "bytes": 32231,
+      "sha256": "b77af1614ea4bc000e42b091fed32ff482f43f38506379e16c0c774ce29eb025"
+    },
+    {
+      "path": "references/loop-runs/ROUND126-source-audit.json",
+      "bytes": 1273,
+      "sha256": "48d9aa4316bbed368a0c6e731b23219c8e97a11466979632d6035d5e6e9e25bc"
+    },
+    {
+      "path": "references/quote-insight-cards.md",
+      "bytes": 42298,
+      "sha256": "9e3a16a0ca336f177882c8ddc74eb1b47231204311d2adc24d82874c3760ed97"
+    },
+    {
+      "path": "references/research-asset-audit.json",
+      "bytes": 32231,
+      "sha256": "b77af1614ea4bc000e42b091fed32ff482f43f38506379e16c0c774ce29eb025"
+    },
+    {
+      "path": "references/research-ledger.md",
+      "bytes": 102389,
+      "sha256": "1d7c144853d927ceca6e9cae427f88c5d070279df55b47a2af2f8174a926d108"
+    },
+    {
+      "path": "references/sensitive-significations.md",
+      "bytes": 5743,
+      "sha256": "1a1595b9e9ea4e2c1d53204ae5685ac93dc64954f5f09cf79b2ed8a2f70e2ca5"
+    },
+    {
+      "path": "references/source-registry.json",
+      "bytes": 21160,
+      "sha256": "2b9ab01c0e52c00f3ebb0131fa065aa41ba7446eadd3e911e190a2e6ef0f58f0"
+    },
+    {
+      "path": "scripts/check_research_loop.py",
+      "bytes": 8237,
+      "sha256": "8f44b339b5580f88abce71b83848cfaa4f1a2087bd5ce92000ca4acb8155fba7"
+    }
+  ]
+}

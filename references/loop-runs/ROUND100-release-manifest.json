@@ -1,0 +1,149 @@
+{
+  "schema_version": "RELEASE-0.1",
+  "chart_id": "user-1996-hunan-supplied",
+  "decision": "hold",
+  "publishable": false,
+  "artifact_status": {
+    "facts": "present",
+    "score": "absent",
+    "source_audit": "present",
+    "dictionary_audit": "absent",
+    "score_diff": "absent",
+    "research_assets": "pass"
+  },
+  "chart_contract": {
+    "zodiac": "unknown",
+    "house_system": "unknown",
+    "birth_time_present": false,
+    "degrees_available": false,
+    "sect": "night",
+    "sect_source": "inferred_from_sun_below_horizon",
+    "sect_confidence": "low",
+    "missing_contract_fields": [
+      "birth_date",
+      "birth_time",
+      "birth_place",
+      "zodiac",
+      "house_system",
+      "planetary_degrees"
+    ],
+    "rule_version_lock": {
+      "terms": true,
+      "triplicity": true,
+      "faces": true,
+      "reception": true,
+      "aspect": true
+    },
+    "ascendant_boundary_risk": "high"
+  },
+  "chart_layers": {
+    "provenance": {
+      "placements": "user_declared_unrecomputed",
+      "cusps": "user_declared_unrecomputed",
+      "aspect_claims": "user_declared_sector_validated",
+      "rulership_fly_ins": "computed_traditional_from_declared_cusps",
+      "reception_validation": "computed_from_declared_signs_and_locked_rule_version",
+      "planetary_state": "computed_from_declared_signs_houses_with_provisional_zodiac"
+    },
+    "sensitive_topic_gates": {
+      "self_decision": "standard_structural_language",
+      "money_income": "standard_structural_language",
+      "shared_resources": "financial_due_diligence_required",
+      "career_public_role": "standard_structural_language",
+      "relationship_family": "no_deterministic_relationship_or_family_outcome",
+      "creation_children": "G2_context_only_no_reproductive_outcome",
+      "pressure_risk": "G1_no_medical_or_mortality_claim"
+    },
+    "fact_inventory_ready": true,
+    "natal_interpretation_ready": false,
+    "rulership_chain_count": 12,
+    "aspect_validation_count": 43,
+    "classical_core_aspect_count": 8,
+    "auxiliary_aspect_count": 35,
+    "aspect_support_levels": {
+      "boundary_only": 10,
+      "sector_supported": 33
+    },
+    "reception_pair_count": 1,
+    "planetary_state_status": "unknown",
+    "topic_count": 7,
+    "responsibility_topic_count": 7,
+    "cross_topic_shared_ruler_count": 6
+  },
+  "score_diff": {
+    "changed_topics": [],
+    "findings": []
+  },
+  "observations": {
+    "status": "not_collected",
+    "count": 0,
+    "active_count": 0,
+    "tombstone_count": 0,
+    "findings": [],
+    "sensitive_dictionary_version": "SENSITIVE-0.3"
+  },
+  "research_assets": {
+    "status": "pass",
+    "card_count": 16,
+    "pending_card_count": 7,
+    "pending_priority_counts": {
+      "P0": 3,
+      "P1": 4,
+      "P2": 0
+    },
+    "pending_blocker_counts": {
+      "blocked_source_access": 7,
+      "awaiting_extraction": 0
+    },
+    "pending_stop_condition_count": 7,
+    "capability_status": {
+      "@accidental_dignity": "unmapped",
+      "@anti_overfit": "governance_only",
+      "@antiscia": "auxiliary_candidate",
+      "@aspects": "implemented",
+      "@chart_validation": "implemented",
+      "@delivery": "auxiliary_candidate",
+      "@dignity": "implemented",
+      "@ethics": "governance_only",
+      "@evidence": "governance_only",
+      "@formula_control": "auxiliary_candidate",
+      "@hidden_technique": "auxiliary_candidate",
+      "@history": "context_only",
+      "@house_rulership": "governance_only",
+      "@hypothesis": "governance_only",
+      "@lots": "implemented",
+      "@medical_history": "sensitive_context_only",
+      "@methodology": "implemented",
+      "@orb": "auxiliary_candidate",
+      "@planetary_state": "implemented",
+      "@reception": "implemented",
+      "@sect": "implemented",
+      "@sensitive": "implemented",
+      "@source_conflict": "governance_only",
+      "@source_criticism": "implemented",
+      "@terms": "implemented",
+      "@timing": "timing_extension_only",
+      "@triplicity": "implemented",
+      "@version_control": "governance_only",
+      "@visibility": "auxiliary_candidate"
+    },
+    "upgrade_profile_counts": {
+      "limited": 13,
+      "eligible_candidate": 3
+    },
+    "core_upgrade_profile_counts": {
+      "limited": 13,
+      "blocked_independent_source": 3
+    }
+  },
+  "blockers": [
+    "chart_contract_incomplete"
+  ],
+  "warnings": [
+    "ascendant_boundary_risk_high",
+    "aspect_degrees_required",
+    "duplicate_fly_in_claims",
+    "duplicate_reception_claims",
+    "research_assets_pending:7"
+  ]
+}
