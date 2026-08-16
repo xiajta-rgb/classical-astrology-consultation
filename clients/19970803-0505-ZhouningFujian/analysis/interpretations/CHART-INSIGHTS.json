@@ -1,0 +1,156 @@
+{
+  "schema_version": "CHART-INSIGHT-LEDGER-1.0",
+  "case_id": "19970803-0505-ZhouningFujian",
+  "chart_id": "local-19970803-050500-P-29ca15cd41eb",
+  "last_updated": "2026-08-16",
+  "source_policy": "local_chart_facts_first_predictive_layers_explicit",
+  "chart_convention": {
+    "birth_datetime": "1997-08-03T05:05:00",
+    "birth_place": "福建省宁德市周宁县",
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "sect": "night"
+  },
+  "observed_context": {
+    "gender": "female",
+    "occupation": "university postdoctoral researcher",
+    "field": "typhoon research / atmospheric science",
+    "context_status": "user_supplied_context_2026-08-16",
+    "interpretation_effect": "reclassifies_9H_10H_3H_6H_chain_from_generic_institutional_work_to_academic_research_training_publication_forecasting_and_project_funding"
+  },
+  "context_mapping": [
+    {
+      "id": "CONTEXT-001",
+      "domain": "academic_research_career",
+      "evidence": ["10th ruler Mars in 3rd", "6th ruler Saturn in 9th", "9th ruler Jupiter in 7th", "3rd/11th ruler Mercury in 2nd"],
+      "translation": "The chart is specifically compatible with institution-based research in which data, models, writing, forecasting, papers, grants and collaboration turn advanced training into public career standing and income.",
+      "grade": "A-",
+      "limit": "This supports the academic research mechanism; it cannot by itself determine tenure, a specific university, grant amount or publication outcome."
+    }
+  ],
+  "chart_validation_conflicts": [
+    {
+      "id": "HOUSE-VERSION-001",
+      "status": "open",
+      "user_claim": "4th cusp Scorpio with Pluto in 4th",
+      "canonical_fact": "current local Placidus facts record 4th cusp Libra 29°05′ and Pluto Sagittarius 2°52′ in 5th",
+      "action": "do_not_merge_interpretations_until_house_system_or_chart_screenshot_is_confirmed"
+    }
+  ],
+  "family_kinship_cards": [
+    {
+      "id": "FAMILY-001",
+      "domain": "family_root_parental_resources",
+      "evidence": ["4th ruler Venus in 2nd", "Mercury/Venus conjunction in 2nd", "Sun/Moon in 1st", "8th ruler Saturn in 9th"],
+      "inference": "Family roots and parental resources are tied to practical security, education, skills, documents and personal money; support is more likely to be expressed through concrete arrangements than through an unstructured emotional flow.",
+      "grade": "B+",
+      "counter_test": "The chart does not establish whether parents are wealthy, conflictual or continuously supportive; occupation, asset and transfer history are required."
+    },
+    {
+      "id": "FAMILY-002",
+      "domain": "siblings_close_kin",
+      "evidence": ["3rd ruler Mercury in 2nd and strong in Virgo", "11th ruler Mercury in 2nd", "Mercury conjunct Venus"],
+      "inference": "Siblings and close relatives are linked to study, technical skill, documents, practical help and money/value decisions; sibling interaction may be useful and task-oriented, but details of number, age and gender remain unknown.",
+      "grade": "B+",
+      "counter_test": "No concrete sibling event has been supplied, so the chart cannot distinguish actual sibling support from a close cousin or peer substitute."
+    },
+    {
+      "id": "FAMILY-003",
+      "domain": "parental_authority_family_boundary",
+      "evidence": ["10th ruler Mars in 3rd opposite 9th ruler Saturn in 9th", "4th ruler Venus in 2nd", "Sun/Moon in 1st"],
+      "inference": "Parental authority and family decisions are more likely to be experienced through education, mobility, institutions, communication and practical responsibility than through a simple parental-conflict signature.",
+      "grade": "B",
+      "counter_test": "The Mars/Saturn opposition is not proof of parents fighting; it may manifest through academic or institutional constraints instead."
+    }
+  ],
+  "natal_core": {
+    "angles": {"ascendant": "Leo 4°52′", "mc": "Aries 29°05′"},
+    "placements": [
+      {"planet": "Sun", "sign_degree": "Leo 10°35′", "house": 1, "responsibility": [1]},
+      {"planet": "Moon", "sign_degree": "Leo 5°24′", "house": 1, "responsibility": [12]},
+      {"planet": "Mercury", "sign_degree": "Virgo 7°51′", "house": 2, "responsibility": [2, 11]},
+      {"planet": "Venus", "sign_degree": "Virgo 12°25′", "house": 2, "responsibility": [3, 10]},
+      {"planet": "Mars", "sign_degree": "Libra 23°06′", "house": 3, "responsibility": [4, 9]},
+      {"planet": "Jupiter", "sign_degree": "Aquarius 17°52′ Rx", "house": 7, "responsibility": [5, 8]},
+      {"planet": "Saturn", "sign_degree": "Aries 20°22′ Rx", "house": 9, "responsibility": [6, 7]}
+    ],
+    "key_aspects": [
+      "Sun conjunct Moon in 1st",
+      "Moon opposition Uranus",
+      "Mars opposition Saturn",
+      "Mercury conjunct Venus in 2nd",
+      "Jupiter sextile Saturn",
+      "Mars trine Jupiter"
+    ],
+    "house_rulers": {
+      "1": {"sign": "Leo", "ruler": "Sun", "ruler_house": 1},
+      "2": {"sign": "Leo", "ruler": "Sun", "ruler_house": 1},
+      "3": {"sign": "Virgo", "ruler": "Mercury", "ruler_house": 2},
+      "4": {"sign": "Libra", "ruler": "Venus", "ruler_house": 2},
+      "5": {"sign": "Sagittarius", "ruler": "Jupiter", "ruler_house": 7},
+      "6": {"sign": "Capricorn", "ruler": "Saturn", "ruler_house": 9},
+      "7": {"sign": "Aquarius", "ruler": "Saturn", "ruler_house": 9},
+      "8": {"sign": "Aquarius", "ruler": "Saturn", "ruler_house": 9},
+      "9": {"sign": "Pisces", "ruler": "Jupiter", "ruler_house": 7},
+      "10": {"sign": "Aries", "ruler": "Mars", "ruler_house": 3},
+      "11": {"sign": "Gemini", "ruler": "Mercury", "ruler_house": 2},
+      "12": {"sign": "Cancer", "ruler": "Moon", "ruler_house": 1}
+    }
+  },
+  "insight_cards": [
+    {
+      "id": "NATAL-001",
+      "domain": "self_value_income",
+      "evidence": ["Sun/Moon in Leo 1st", "Mercury in Virgo 2nd", "Mercury conjunct Venus", "2nd and 11th rulers tied to 1st/2nd"],
+      "rule": "The 1st and 2nd houses are strongly connected; the chart's self-direction, skills and value system are direct carriers of income.",
+      "inference": "Money is built through personal capability, analysis, communication and ownership of a skill or product, not through passive dependence alone.",
+      "grade": "A-",
+      "counter_test": "Venus is in Virgo and the night chart places pressure on ease of financial delivery; income may require correction, service and repeatable process."
+    },
+    {
+      "id": "NATAL-002",
+      "domain": "career_institutions",
+      "evidence": ["10th ruler Mars in 3rd", "Mars opposition Saturn in 9th", "6th/7th rulers Saturn in 9th", "Jupiter in 7th rules 5th/8th"],
+      "rule": "Career is carried through communication, documents, training and institutions, while Mars-Saturn opposition creates a pressure between immediate execution and formal rules.",
+      "inference": "The major career question is not only what work is done, but which institution, contract, credential or partnership authorizes it.",
+      "grade": "A-",
+      "counter_test": "A single job title cannot represent the whole career; exact employment history is needed to choose between communication, institutional and partnership manifestations."
+    },
+    {
+      "id": "NATAL-003",
+      "domain": "partnership_shared_resources",
+      "evidence": ["Jupiter in Aquarius 7th", "5th/8th ruler Jupiter in 7th", "7th/8th ruler Saturn in 9th", "Moon opposition Uranus"],
+      "rule": "Partners and collaborators carry both creative/romantic and shared-resource responsibilities; Saturn places legal, distance, education or institutional conditions on commitment.",
+      "inference": "Relationship and partnership decisions can alter financial exposure and long-term direction; agreements need explicit boundaries and time horizon.",
+      "grade": "A-",
+      "counter_test": "Jupiter in the 7th can bring support, but its retrograde/air-sign condition does not guarantee stable partnership or effortless shared money."
+    },
+    {
+      "id": "NATAL-004",
+      "domain": "education_work_health_loop",
+      "evidence": ["6th ruler Saturn in 9th", "9th ruler Jupiter in 7th", "10th ruler Mars in 3rd", "Mars-Saturn opposition"],
+      "rule": "Daily work, health routines, education and professional qualification are joined by the same Saturn/Jupiter/Mars chain.",
+      "inference": "Progress is achieved through sustained training and institutional participation; overloading the work-study-health system creates delays or forced resets.",
+      "grade": "B+",
+      "counter_test": "This is a structural risk pattern, not a diagnosis or a guarantee of illness."
+    }
+  ],
+  "period_blocks": [
+    {"range": "2015-2019", "firdaria": "Saturn/Mercury until 2017-08; Jupiter/Moon then Jupiter/Saturn", "profections": "7H Saturn, 8H Jupiter, 9H Mars, 10H Venus, 11H Mercury", "key_triggers": ["2015 Saturn trine Sun; Uranus conjunct Saturn", "2017 Jupiter conjunct Mars; Uranus conjunct MC; Saturn trine MC", "2019 Uranus square ASC/Moon; Pluto square Mars"], "direction": "institutional transition, education/career entry, partnership and status restructuring"},
+    {"range": "2020-2024", "firdaria": "Jupiter/Saturn, Jupiter/Jupiter, Jupiter/Mars, Jupiter/North Node, Jupiter/Sun", "profections": "12H Moon, 1H Sun, 2H Mercury, 3H Venus, 4H Mars", "key_triggers": ["2021 Saturn opposition ASC/Sun; Jupiter sextile MC", "2022 Saturn conjunct Jupiter; Pluto square MC", "2023 Saturn opposition Mercury; Jupiter opposition Mars", "2024 secondary Moon reaches ASC; tertiary Moon reaches MC; Jupiter sextile Sun"], "direction": "identity, money, paperwork and home/foundation decisions become the main transition field"},
+    {"range": "2025-2029", "firdaria": "Jupiter/Sun, Jupiter/Venus, Jupiter/Mercury, then Mars/Moon begins 2029-08", "profections": "5H Jupiter, 6H Saturn, 7H Saturn, 8H Jupiter, 9H Mars", "key_triggers": ["2025 tertiary Moon conjunct MC; Pluto opposition ASC", "2026 Pluto opposition Moon; tertiary Moon conjunct Mars", "2027 secondary Moon conjunct Mercury; tertiary Moon conjunct Saturn", "2028 Saturn opposition Mars and square ASC/Sun/Moon; Uranus square Venus", "2029 Pluto opposition Sun; Jupiter square Sun"], "direction": "creative/children and public role move into work-health, partnership, shared finance and education/relocation tests"},
+    {"range": "2030-2035", "firdaria": "Mars/Saturn, Mars/Jupiter, Mars/Mars, Mars/North Node, Mars/Sun, Mars/Venus, Mars/Mercury", "profections": "10H Venus, 11H Mercury, 12H Moon, 1H Sun, 2H Mercury, 3H Venus", "key_triggers": ["2030 Saturn/Uranus support ASC and Mars, but Saturn squares Mercury", "2031 Jupiter trine MC; solar arc Moon conjunct Mercury", "2032 Saturn trine Jupiter; Uranus sextile MC; Jupiter square MC", "2033 Pluto conjunct Jupiter; Neptune conjunct Saturn", "2034 Saturn conjunct ASC/Moon and squares MC; Neptune opposes Mars", "2035 Saturn conjunct Sun and opposes Jupiter"], "direction": "career authority, income, public gains and self-redefinition are rebuilt under heavier responsibility"}
+  ],
+  "limitations": [
+    "This is a 20-year overview, not a claim that every year contains a concrete event.",
+    "Tertiary and secondary Moon contacts are used as activation layers; exact day-level predictions require a specific target question and event context.",
+    "Primary directions and zodiacal releasing remain deferred in the production engine.",
+    "Outer-planet contacts are auxiliary context and cannot override the classical natal chain."
+  ],
+  "provenance": [
+    "analysis/chart-facts/ROUND129-19970803-CHART-FACTS.json",
+    "astrology_engine.natal.calculate_natal",
+    "astrology_engine.predictive.calculate_predictive",
+    "astrology_engine.predictive_events.scan_progressive_window"
+  ]
+}

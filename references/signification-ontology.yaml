@@ -1,0 +1,117 @@
+version: "SIGNIFICATION-ONTOLOGY-0.2"
+role: "bounded_exhaustive_keyword_and_relation_map_for_natal_interpretation"
+authority: "chart_facts_plus_project_signification_ontology"
+principles:
+  - "keywords_are_candidate_semantics_not_conclusions"
+  - "house_and_rulership_define_event_domain_before_planetary_style"
+  - "planet_condition_modulates_delivery_not_topic_existence"
+  - "aspect_is_a_relation_operator_not_a_standalone_prediction"
+  - "all_expansions_require_counter_tests_and_output_grade"
+
+planets:
+  Sun:
+    functions: [主体, 意志, 身份, 生命方向, 创造, 可见性, 领导, 名望, 父辈, 权威]
+    event_verbs: [确立, 主导, 公开, 争取认可, 承担责任, 代表, 发光]
+  Moon:
+    functions: [身体节律, 情绪反应, 安全感, 家庭, 居所, 母亲, 照料, 日常需要, 公众反馈]
+    event_verbs: [适应, 照料, 迁移, 安置, 保护, 反应, 吸收, 维持]
+  Mercury:
+    functions: [思考, 语言, 文书, 合同, 学习, 数据, 交易, 手足, 短途移动, 技术处理]
+    event_verbs: [分析, 记录, 签署, 谈判, 计算, 传递, 排错, 解释, 转换]
+  Venus:
+    functions: [关系, 吸引, 价值, 金钱, 合作, 舒适, 审美, 和解, 收益]
+    event_verbs: [连接, 协商, 交换, 定价, 吸引, 美化, 调和, 分配]
+  Mars:
+    functions: [行动, 竞争, 争取, 切割, 防御, 决断, 应急, 工具, 火气, 边界]
+    event_verbs: [启动, 推进, 争夺, 切断, 保护, 处理, 对抗, 修复, 加速]
+  Jupiter:
+    functions: [扩张, 教育, 信念, 法律, 远行, 教师, 保护, 机会, 资源放大]
+    event_verbs: [扩大, 授予, 教导, 传播, 跨越, 保护, 引介, 放大]
+  Saturn:
+    functions: [边界, 责任, 时间, 规则, 延迟, 结构, 制度, 老年, 约束]
+    event_verbs: [限制, 固化, 延后, 审核, 承担, 建立, 留痕, 结算]
+  Uranus:
+    functions: [突变, 脱离, 技术, 非常规, 独立, 网络, 断裂]
+    event_verbs: [打断, 改道, 脱离, 革新, 突发, 重连]
+  Neptune:
+    functions: [渗透, 想象, 模糊, 理想, 投射, 溶解, 牺牲]
+    event_verbs: [弥散, 投射, 理想化, 隐退, 融合, 误读]
+  Pluto:
+    functions: [根部重组, 深层资源, 临界, 权限, 隐性结构, 代际主题, 极端聚焦]
+    event_verbs: [重组, 清理, 深挖, 重新定价, 夺回, 终止旧结构, 重建]
+  North Node:
+    priority: auxiliary
+    functions: [放大, 聚集, 增量, 牵引, 非线性增长, 集体趋势]
+    event_verbs: [放大, 聚合, 加码, 推向前台, 加速进入]
+  South Node:
+    priority: auxiliary
+    functions: [释放, 减量, 既有惯性, 消耗, 旧资源, 退场]
+    event_verbs: [放下, 清空, 减少, 退出, 回收]
+  Fortune:
+    priority: auxiliary
+    functions: [物质结果, 身体处境, 机会落点, 外部顺势, 可获得资源]
+    event_verbs: [获得, 落地, 收取, 顺势, 兑现]
+  Chiron:
+    priority: auxiliary
+    functions: [长期缺口, 修复路径, 专业化伤口, 传授经验, 脆弱处的能力]
+    event_verbs: [暴露, 修复, 训练, 转化, 教会他人]
+  Juno:
+    priority: auxiliary
+    functions: [契约承诺, 平等交换, 长期绑定, 配偶议题, 关系规则]
+    event_verbs: [承诺, 订立, 协商, 绑定, 重新议定]
+
+houses:
+  1: {domain: [主体, 身体, 外在行动, 自我决定], event_verbs: [开始, 进入, 站出来, 重新定义自己]}
+  2: {domain: [收入, 现金, 资产, 价值感, 可支配资源], event_verbs: [赚取, 定价, 保存, 消耗, 重新分配]}
+  3: {domain: [信息, 学习, 文书, 合同, 手足, 交通, 邻里], event_verbs: [沟通, 签署, 运输, 学习, 传递, 排错]}
+  4: {domain: [家庭, 父母, 居所, 土地, 根基, 私域, 终局], event_verbs: [安置, 搬迁, 置业, 继承, 修缮, 扎根, 结束]}
+  5: {domain: [子女, 恋爱, 创作, 娱乐, 投机, 教学, 作品], event_verbs: [创造, 照料, 投入, 玩乐, 冒险, 产出]}
+  6: {domain: [工作负荷, 服务, 日常劳务, 同事, 宠物, 健康管理], event_verbs: [执行, 维护, 排班, 服役, 修复, 承担]}
+  7: {domain: [伴侣, 客户, 合伙, 对手, 合同对方, 公开关系], event_verbs: [结盟, 对谈, 竞争, 签约, 分离, 交涉]}
+  8: {domain: [共同资金, 债务, 税务, 保险, 遗产, 风险, 亲密交换], event_verbs: [借入, 分配, 清算, 承担, 退出, 共享]}
+  9: {domain: [高等教育, 远行, 法律, 宗教, 哲学, 外国, 出版], event_verbs: [进修, 迁徙, 认证, 审判, 传播, 出国]}
+  10: {domain: [事业, 职位, 名声, 管理, 公共权力, 上级], event_verbs: [任职, 晋升, 公开, 管理, 交付, 转轨]}
+  11: {domain: [收益, 客户群, 朋友, 组织, 赞助, 长期愿望], event_verbs: [获利, 联盟, 扩张, 分红, 进入网络]}
+  12: {domain: [隐退, 幕后, 隔离, 隐性成本, 慢性消耗, 机构], event_verbs: [隐藏, 休养, 隔离, 牺牲, 释放, 结束]}
+
+signs:
+  0: {name: 白羊, mode: [启动, 直接, 竞争, 独立, 快速], event_verbs: [发起, 突破, 争先, 切断, 立即处理]}
+  1: {name: 金牛, mode: [稳定, 持有, 物质, 感官, 节奏], event_verbs: [保存, 累积, 定价, 固定, 兑现]}
+  2: {name: 双子, mode: [信息, 变化, 连接, 多线程, 交易], event_verbs: [沟通, 分流, 交换, 学习, 转换]}
+  3: {name: 巨蟹, mode: [保护, 家庭, 记忆, 归属, 滋养], event_verbs: [安置, 照料, 回归, 防护, 继承]}
+  4: {name: 狮子, mode: [主体, 创造, 表现, 荣誉, 领导], event_verbs: [展示, 主导, 创作, 授予, 争取认可]}
+  5: {name: 处女, mode: [分析, 技术, 细节, 服务, 校正], event_verbs: [拆解, 排错, 记录, 优化, 审核]}
+  6: {name: 天秤, mode: [平衡, 契约, 协商, 对等, 审美], event_verbs: [协商, 签约, 分配, 调和, 定标准]}
+  7: {name: 天蝎, mode: [深度, 共享, 隐私, 风险, 重组], event_verbs: [调查, 清算, 合并, 保密, 重建]}
+  8: {name: 射手, mode: [扩张, 信念, 远行, 教育, 法律], event_verbs: [远行, 认证, 教授, 出版, 跨越]}
+  9: {name: 摩羯, mode: [结构, 责任, 制度, 时间, 结果], event_verbs: [规划, 承担, 延期, 结算, 建制]}
+  10: {name: 水瓶, mode: [网络, 改革, 技术, 集体, 脱离], event_verbs: [联网, 改造, 独立, 重组, 试验]}
+  11: {name: 双鱼, mode: [渗透, 想象, 共情, 边界, 牺牲], event_verbs: [融合, 投射, 松绑, 休养, 象征化]}
+
+aspects:
+  conjunction: {relation: [融合, 合并, 集中, 直接动员], risk: [边界不清, 单一回路过热]}
+  sextile: {relation: [可调用, 协作, 机会通道], risk: [需要主动使用, 不自动兑现]}
+  square: {relation: [摩擦, 压力, 迫使行动, 资源冲突], risk: [损耗, 争执, 延误, 反复]}
+  trine: {relation: [顺畅, 习惯性能力, 互相供给], risk: [过度依赖, 不主动开发]}
+  opposition: {relation: [两端拉扯, 外部对手, 投射, 分化], risk: [关系冲突, 选择成本, 来回摆动]}
+  quincunx: {relation: [调整, 不匹配, 重新校准], risk: [小问题长期累积]}
+  semisquare: {relation: [低强度摩擦, 隐性卡点, 持续刺激], risk: [不易察觉的累积损耗, 小事反复]}
+  sesquisquare: {relation: [过量摩擦, 失衡修正, 被迫改道], risk: [压力升级, 过度反应, 反复返工]}
+
+conditions:
+  domicile: [自主, 熟练, 有控制权, 资源可用]
+  exaltation: [放大, 可见, 容易获得支持, 目标感强]
+  triplicity: [环境支持, 同类资源, 稳定背景]
+  term: [局部技能, 具体操作, 有限范围内的可用性]
+  face: [表层风格, 临时工具, 低强度支持]
+  detriment: [异地操作, 需要借力, 目标与环境不完全匹配]
+  fall: [交付受损, 需要额外成本, 结果易延后]
+  angular: [显著, 可见, 现实主轴, 事件容易发生]
+  succedent: [持续, 累积, 稳定兑现]
+  cadent: [间接, 延迟, 学习与准备, 需要转译]
+  retrograde: [回头, 复盘, 反复, 延迟兑现]
+  combust: [被权威/主体目标遮蔽, 内化, 外部不可见]
+
+output_layers:
+  exhaustive_internal: [fact_nodes, keyword_expansion, relation_edges, responsibility_domains, delivery_conditions, counter_tests, unresolved_fields]
+  prioritized_external: [primary_mechanism, convergent_support, bottleneck, timing_activation, limitation]

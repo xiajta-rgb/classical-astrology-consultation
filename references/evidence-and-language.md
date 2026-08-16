@@ -39,6 +39,11 @@ Ask “Would this survive if I swapped in another chart?” If yes, add the exac
 
 ## Fixed response skeleton
 
+The skeleton below is the shared evidence layer. The default user-facing
+renderer is `classical-direct`; the optional `modern-evolutionary` renderer is
+defined in [consultation-output-protocol.md](consultation-output-protocol.md)
+and must preserve the same evidence grade, counter-test and boundary.
+
 ```markdown
 ## 核心判断
 1. [claim]（S/A/B/C/N/A）

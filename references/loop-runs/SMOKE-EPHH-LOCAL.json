@@ -1,0 +1,1031 @@
+{
+  "request": {
+    "year": 1996,
+    "month": 11,
+    "day": 11,
+    "hour": 22,
+    "minute": 25,
+    "second": 0,
+    "lat": 27.83,
+    "lon": 113.13,
+    "tz": 8.0,
+    "place": "Zhuzhou-Lusong"
+  },
+  "backend": "C:\\Users\\xiajt\\Desktop\\项目文件夹\\ephh\\ephhh\\backend.py",
+  "charts": {
+    "placidus": {
+      "chart_id": "ephh-19961111-2225-placidus",
+      "source": "local_ephh_project",
+      "source_engine": "ephh.backend.calculate_ephemeris",
+      "source_backend": "C:\\Users\\xiajt\\Desktop\\项目文件夹\\ephh\\ephhh\\backend.py",
+      "source_backend_sha256": "0811433ade7f17eabd733f261f39077fe4ee0afe8bb9f45e2966b5def2f3b2a0",
+      "birth_date": "1996-11-11",
+      "birth_time": "22:25:00",
+      "birth_place": "Zhuzhou-Lusong",
+      "lat": 27.83,
+      "lon": 113.13,
+      "tz": 8.0,
+      "zodiac": "tropical",
+      "house_system": "Placidus",
+      "house_assignment_source": "ephh_swiss_ephemeris_houses",
+      "axis_policy": "ASC/MC from ephh; DESC/IC derived as exact opposites because the desktop backend mislabels ascmc[2]/[3]. In whole-sign mode MC remains an angle point separate from the 10th house cusp.",
+      "sect": "night",
+      "lot_of_fortune": {
+        "sign": "巨蟹",
+        "degree": 24.121,
+        "ecl_lon": 114.121,
+        "house": 12,
+        "sect_formula": "night: ASC + Sun - Moon"
+      },
+      "rule_versions": {
+        "zodiac": "tropical",
+        "terms": "egyptian",
+        "triplicity": "dorotheus_style_three_rulers",
+        "faces": "chaldean",
+        "reception": "direction_plus_connection_required",
+        "aspect": "geometry_only; motion_status_not_available_from_backend"
+      },
+      "placements": {
+        "太阳": {
+          "sign": "天蝎",
+          "degree": 19.48,
+          "ecl_lon": 229.48,
+          "ecl_lat": 0.0,
+          "house": 4
+        },
+        "月亮": {
+          "sign": "天蝎",
+          "degree": 24.83,
+          "ecl_lon": 234.8255,
+          "ecl_lat": 3.7981,
+          "house": 4
+        },
+        "水星": {
+          "sign": "天蝎",
+          "degree": 25.18,
+          "ecl_lon": 235.1766,
+          "ecl_lat": -0.7436,
+          "house": 4
+        },
+        "金星": {
+          "sign": "天秤",
+          "degree": 15.92,
+          "ecl_lon": 195.9156,
+          "ecl_lat": 1.7723,
+          "house": 3
+        },
+        "火星": {
+          "sign": "处女",
+          "degree": 6.68,
+          "ecl_lon": 156.6791,
+          "ecl_lat": 1.7664,
+          "house": 2
+        },
+        "木星": {
+          "sign": "摩羯",
+          "degree": 14.59,
+          "ecl_lon": 284.5928,
+          "ecl_lat": -0.2719,
+          "house": 6
+        },
+        "土星": {
+          "sign": "白羊",
+          "degree": 1.03,
+          "ecl_lon": 1.0315,
+          "ecl_lat": -2.5469,
+          "house": 9
+        },
+        "天王星": {
+          "sign": "水瓶",
+          "degree": 1.09,
+          "ecl_lon": 301.0901,
+          "ecl_lat": -0.5816,
+          "house": 7
+        },
+        "海王星": {
+          "sign": "摩羯",
+          "degree": 25.33,
+          "ecl_lon": 295.3343,
+          "ecl_lat": 0.4433,
+          "house": 6
+        },
+        "冥王星": {
+          "sign": "射手",
+          "degree": 2.47,
+          "ecl_lon": 242.4674,
+          "ecl_lat": 12.3869,
+          "house": 5
+        }
+      },
+      "axes": {
+        "asc": {
+          "sign": "巨蟹",
+          "degree": 29.47,
+          "ecl_lon": 119.4665,
+          "house": 1
+        },
+        "mc": {
+          "sign": "白羊",
+          "degree": 22.05,
+          "ecl_lon": 22.0518,
+          "house": 10
+        },
+        "des": {
+          "sign": "摩羯",
+          "degree": 29.4665,
+          "ecl_lon": 299.4665,
+          "house": 7
+        },
+        "ic": {
+          "sign": "天秤",
+          "degree": 22.0518,
+          "ecl_lon": 202.0518,
+          "house": 4
+        }
+      },
+      "cusps": {
+        "1": "巨蟹",
+        "2": "狮子",
+        "3": "处女",
+        "4": "天秤",
+        "5": "天蝎",
+        "6": "射手",
+        "7": "摩羯",
+        "8": "水瓶",
+        "9": "双鱼",
+        "10": "白羊",
+        "11": "金牛",
+        "12": "双子"
+      },
+      "cusp_degrees": {
+        "1": {
+          "sign": "巨蟹",
+          "degree": 29.47,
+          "ecl_lon": 119.4665
+        },
+        "2": {
+          "sign": "狮子",
+          "degree": 23.03,
+          "ecl_lon": 143.0299
+        },
+        "3": {
+          "sign": "处女",
+          "degree": 20.28,
+          "ecl_lon": 170.2783
+        },
+        "4": {
+          "sign": "天秤",
+          "degree": 22.05,
+          "ecl_lon": 202.0518
+        },
+        "5": {
+          "sign": "天蝎",
+          "degree": 26.26,
+          "ecl_lon": 236.2562
+        },
+        "6": {
+          "sign": "射手",
+          "degree": 29.27,
+          "ecl_lon": 269.2723
+        },
+        "7": {
+          "sign": "摩羯",
+          "degree": 29.47,
+          "ecl_lon": 299.4665
+        },
+        "8": {
+          "sign": "水瓶",
+          "degree": 23.03,
+          "ecl_lon": 323.0299
+        },
+        "9": {
+          "sign": "双鱼",
+          "degree": 20.28,
+          "ecl_lon": 350.2783
+        },
+        "10": {
+          "sign": "白羊",
+          "degree": 22.05,
+          "ecl_lon": 22.0518
+        },
+        "11": {
+          "sign": "金牛",
+          "degree": 26.26,
+          "ecl_lon": 56.2562
+        },
+        "12": {
+          "sign": "双子",
+          "degree": 29.27,
+          "ecl_lon": 89.2723
+        }
+      },
+      "aspects": [
+        {
+          "planet1": "土星",
+          "planet2": "天王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 0.0586,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "水星",
+          "planet2": "海王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 0.1577,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "月亮",
+          "planet2": "水星",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 0.3511,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "月亮",
+          "planet2": "海王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 0.5088,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "金星",
+          "planet2": "木星",
+          "type": "刑相",
+          "angle": 90.0,
+          "orb": 1.3228,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "天王星",
+          "planet2": "冥王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 1.3773,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "土星",
+          "planet2": "冥王星",
+          "type": "拱相",
+          "angle": 120.0,
+          "orb": 1.4359,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "火星",
+          "planet2": "冥王星",
+          "type": "刑相",
+          "angle": 90.0,
+          "orb": 4.2117,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "太阳",
+          "planet2": "木星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 4.8872,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "太阳",
+          "planet2": "月亮",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 5.3455,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "太阳",
+          "planet2": "水星",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 5.6966,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "土星",
+          "planet2": "海王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 5.6972,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "天王星",
+          "planet2": "海王星",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 5.7558,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "太阳",
+          "planet2": "海王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 5.8543,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "水星",
+          "planet2": "土星",
+          "type": "拱相",
+          "angle": 120.0,
+          "orb": 5.8549,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "水星",
+          "planet2": "天王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 5.9135,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "月亮",
+          "planet2": "土星",
+          "type": "拱相",
+          "angle": 120.0,
+          "orb": 6.206,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "月亮",
+          "planet2": "天王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 6.2646,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "海王星",
+          "planet2": "冥王星",
+          "type": "六合",
+          "angle": 60.0,
+          "orb": 7.1331,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "水星",
+          "planet2": "冥王星",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 7.2908,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "月亮",
+          "planet2": "冥王星",
+          "type": "合相",
+          "angle": 0.0,
+          "orb": 7.6419,
+          "source": "computed_from_local_ephh_longitudes"
+        },
+        {
+          "planet1": "火星",
+          "planet2": "木星",
+          "type": "拱相",
+          "angle": 120.0,
+          "orb": 7.9137,
+          "source": "computed_from_local_ephh_longitudes"
+        }
+      ],
+      "raw_ephh_input": {
+        "year": 1996,
+        "month": 11,
+        "day": 11,
+        "hour": 22,
+        "minute": 25,
+        "second": 0,
+        "city": null,
+        "lat": 27.83,
+        "lon": 113.13,
+        "tz": 8.0,
+        "local_datetime": "1996-11-11T22:25:00",
+        "utc_datetime": "1996-11-11T14:25:00",
+        "jd_ut": 2450399.1006944445,
+        "house_system": "Placidus"
+      },
+      "raw_ephh_response": {
+        "status": "success",
+        "input": {
+          "year": 1996,
+          "month": 11,
+          "day": 11,
+          "hour": 22,
+          "minute": 25,
+          "second": 0,
+          "city": null,
+          "lat": 27.83,
+          "lon": 113.13,
+          "tz": 8.0,
+          "local_datetime": "1996-11-11T22:25:00",
+          "utc_datetime": "1996-11-11T14:25:00",
+          "jd_ut": 2450399.1006944445,
+          "house_system": "Placidus"
+        },
+        "ephemeris": {
+          "Sun": {
+            "name": "Sun",
+            "ecliptic_longitude": 229.48,
+            "ecliptic_latitude": 0.0,
+            "ra": null,
+            "dec": null,
+            "mag": -26.74,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 19.48,
+              "degree_str": "19°29'",
+              "full_str": "天蝎座 19°29'"
+            },
+            "house_number": 4
+          },
+          "Moon": {
+            "name": "Moon",
+            "ecliptic_longitude": 234.8255,
+            "ecliptic_latitude": 3.7981,
+            "ra": null,
+            "dec": null,
+            "mag": -12.74,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 24.83,
+              "degree_str": "24°50'",
+              "full_str": "天蝎座 24°50'"
+            },
+            "house_number": 4
+          },
+          "Mercury": {
+            "name": "Mercury",
+            "ecliptic_longitude": 235.1766,
+            "ecliptic_latitude": -0.7436,
+            "ra": null,
+            "dec": null,
+            "mag": -0.6,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 25.18,
+              "degree_str": "25°11'",
+              "full_str": "天蝎座 25°11'"
+            },
+            "house_number": 4
+          },
+          "Venus": {
+            "name": "Venus",
+            "ecliptic_longitude": 195.9156,
+            "ecliptic_latitude": 1.7723,
+            "ra": null,
+            "dec": null,
+            "mag": -4.0,
+            "zodiac": {
+              "index": 6,
+              "name": "天秤座",
+              "degree": 15.92,
+              "degree_str": "15°55'",
+              "full_str": "天秤座 15°55'"
+            },
+            "house_number": 3
+          },
+          "Mars": {
+            "name": "Mars",
+            "ecliptic_longitude": 156.6791,
+            "ecliptic_latitude": 1.7664,
+            "ra": null,
+            "dec": null,
+            "mag": -1.5,
+            "zodiac": {
+              "index": 5,
+              "name": "处女座",
+              "degree": 6.68,
+              "degree_str": "6°41'",
+              "full_str": "处女座 6°41'"
+            },
+            "house_number": 2
+          },
+          "Jupiter": {
+            "name": "Jupiter",
+            "ecliptic_longitude": 284.5928,
+            "ecliptic_latitude": -0.2719,
+            "ra": null,
+            "dec": null,
+            "mag": -2.2,
+            "zodiac": {
+              "index": 9,
+              "name": "摩羯座",
+              "degree": 14.59,
+              "degree_str": "14°35'",
+              "full_str": "摩羯座 14°35'"
+            },
+            "house_number": 6
+          },
+          "Saturn": {
+            "name": "Saturn",
+            "ecliptic_longitude": 1.0315,
+            "ecliptic_latitude": -2.5469,
+            "ra": null,
+            "dec": null,
+            "mag": 0.9,
+            "zodiac": {
+              "index": 0,
+              "name": "白羊座",
+              "degree": 1.03,
+              "degree_str": "1°2'",
+              "full_str": "白羊座 1°2'"
+            },
+            "house_number": 9
+          },
+          "Uranus": {
+            "name": "Uranus",
+            "ecliptic_longitude": 301.0901,
+            "ecliptic_latitude": -0.5816,
+            "ra": null,
+            "dec": null,
+            "mag": 5.7,
+            "zodiac": {
+              "index": 10,
+              "name": "水瓶座",
+              "degree": 1.09,
+              "degree_str": "1°5'",
+              "full_str": "水瓶座 1°5'"
+            },
+            "house_number": 7
+          },
+          "Neptune": {
+            "name": "Neptune",
+            "ecliptic_longitude": 295.3343,
+            "ecliptic_latitude": 0.4433,
+            "ra": null,
+            "dec": null,
+            "mag": 7.8,
+            "zodiac": {
+              "index": 9,
+              "name": "摩羯座",
+              "degree": 25.33,
+              "degree_str": "25°20'",
+              "full_str": "摩羯座 25°20'"
+            },
+            "house_number": 6
+          },
+          "Pluto": {
+            "name": "Pluto",
+            "ecliptic_longitude": 242.4674,
+            "ecliptic_latitude": 12.3869,
+            "ra": null,
+            "dec": null,
+            "mag": 14.0,
+            "zodiac": {
+              "index": 8,
+              "name": "射手座",
+              "degree": 2.47,
+              "degree_str": "2°28'",
+              "full_str": "射手座 2°28'"
+            },
+            "house_number": 5
+          }
+        },
+        "axes": {
+          "asc": {
+            "name": "Ascendant",
+            "ecl_lon": 119.4665,
+            "zodiac": {
+              "index": 3,
+              "name": "巨蟹座",
+              "degree": 29.47,
+              "degree_str": "29°28'",
+              "full_str": "巨蟹座 29°28'"
+            },
+            "house_number": 1
+          },
+          "mc": {
+            "name": "Midheaven",
+            "ecl_lon": 22.0518,
+            "zodiac": {
+              "index": 0,
+              "name": "白羊座",
+              "degree": 22.05,
+              "degree_str": "22°3'",
+              "full_str": "白羊座 22°3'"
+            },
+            "house_number": 10
+          },
+          "des": {
+            "name": "Descendant",
+            "ecl_lon": 20.388,
+            "zodiac": {
+              "index": 0,
+              "name": "白羊座",
+              "degree": 20.39,
+              "degree_str": "20°23'",
+              "full_str": "白羊座 20°23'"
+            },
+            "house_number": 7
+          },
+          "ic": {
+            "name": "Imum Coeli",
+            "ecl_lon": 245.166,
+            "zodiac": {
+              "index": 8,
+              "name": "射手座",
+              "degree": 5.17,
+              "degree_str": "5°10'",
+              "full_str": "射手座 5°10'"
+            },
+            "house_number": 4
+          }
+        },
+        "house_cusps": [
+          119.4665,
+          143.0299,
+          170.2783,
+          202.0518,
+          236.2562,
+          269.2723,
+          299.4665,
+          323.0299,
+          350.2783,
+          22.0518,
+          56.2562,
+          89.2723
+        ],
+        "house_cusps_detail": [
+          {
+            "house_number": 1,
+            "ecl_lon": 119.4665,
+            "zodiac": {
+              "index": 3,
+              "name": "巨蟹座",
+              "degree": 29.47,
+              "degree_str": "29°28'",
+              "full_str": "巨蟹座 29°28'"
+            }
+          },
+          {
+            "house_number": 2,
+            "ecl_lon": 143.0299,
+            "zodiac": {
+              "index": 4,
+              "name": "狮子座",
+              "degree": 23.03,
+              "degree_str": "23°2'",
+              "full_str": "狮子座 23°2'"
+            }
+          },
+          {
+            "house_number": 3,
+            "ecl_lon": 170.2783,
+            "zodiac": {
+              "index": 5,
+              "name": "处女座",
+              "degree": 20.28,
+              "degree_str": "20°17'",
+              "full_str": "处女座 20°17'"
+            }
+          },
+          {
+            "house_number": 4,
+            "ecl_lon": 202.0518,
+            "zodiac": {
+              "index": 6,
+              "name": "天秤座",
+              "degree": 22.05,
+              "degree_str": "22°3'",
+              "full_str": "天秤座 22°3'"
+            }
+          },
+          {
+            "house_number": 5,
+            "ecl_lon": 236.2562,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 26.26,
+              "degree_str": "26°16'",
+              "full_str": "天蝎座 26°16'"
+            }
+          },
+          {
+            "house_number": 6,
+            "ecl_lon": 269.2723,
+            "zodiac": {
+              "index": 8,
+              "name": "射手座",
+              "degree": 29.27,
+              "degree_str": "29°16'",
+              "full_str": "射手座 29°16'"
+            }
+          },
+          {
+            "house_number": 7,
+            "ecl_lon": 299.4665,
+            "zodiac": {
+              "index": 9,
+              "name": "摩羯座",
+              "degree": 29.47,
+              "degree_str": "29°28'",
+              "full_str": "摩羯座 29°28'"
+            }
+          },
+          {
+            "house_number": 8,
+            "ecl_lon": 323.0299,
+            "zodiac": {
+              "index": 10,
+              "name": "水瓶座",
+              "degree": 23.03,
+              "degree_str": "23°2'",
+              "full_str": "水瓶座 23°2'"
+            }
+          },
+          {
+            "house_number": 9,
+            "ecl_lon": 350.2783,
+            "zodiac": {
+              "index": 11,
+              "name": "双鱼座",
+              "degree": 20.28,
+              "degree_str": "20°17'",
+              "full_str": "双鱼座 20°17'"
+            }
+          },
+          {
+            "house_number": 10,
+            "ecl_lon": 22.0518,
+            "zodiac": {
+              "index": 0,
+              "name": "白羊座",
+              "degree": 22.05,
+              "degree_str": "22°3'",
+              "full_str": "白羊座 22°3'"
+            }
+          },
+          {
+            "house_number": 11,
+            "ecl_lon": 56.2562,
+            "zodiac": {
+              "index": 1,
+              "name": "金牛座",
+              "degree": 26.26,
+              "degree_str": "26°16'",
+              "full_str": "金牛座 26°16'"
+            }
+          },
+          {
+            "house_number": 12,
+            "ecl_lon": 89.2723,
+            "zodiac": {
+              "index": 2,
+              "name": "双子座",
+              "degree": 29.27,
+              "degree_str": "29°16'",
+              "full_str": "双子座 29°16'"
+            }
+          }
+        ],
+        "visualization_data": [
+          {
+            "name": "Sun",
+            "ecl_lon": 229.48,
+            "ecl_lat": 0.0,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 19.48,
+              "degree_str": "19°29'",
+              "full_str": "天蝎座 19°29'"
+            },
+            "house_number": 4,
+            "mag": -26.74
+          },
+          {
+            "name": "Moon",
+            "ecl_lon": 234.8255,
+            "ecl_lat": 3.7981,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 24.83,
+              "degree_str": "24°50'",
+              "full_str": "天蝎座 24°50'"
+            },
+            "house_number": 4,
+            "mag": -12.74
+          },
+          {
+            "name": "Mercury",
+            "ecl_lon": 235.1766,
+            "ecl_lat": -0.7436,
+            "zodiac": {
+              "index": 7,
+              "name": "天蝎座",
+              "degree": 25.18,
+              "degree_str": "25°11'",
+              "full_str": "天蝎座 25°11'"
+            },
+            "house_number": 4,
+            "mag": -0.6
+          },
+          {
+            "name": "Venus",
+            "ecl_lon": 195.9156,
+            "ecl_lat": 1.7723,
+            "zodiac": {
+              "index": 6,
+              "name": "天秤座",
+              "degree": 15.92,
+              "degree_str": "15°55'",
+              "full_str": "天秤座 15°55'"
+            },
+            "house_number": 3,
+            "mag": -4.0
+          },
+          {
+            "name": "Mars",
+            "ecl_lon": 156.6791,
+            "ecl_lat": 1.7664,
+            "zodiac": {
+              "index": 5,
+              "name": "处女座",
+              "degree": 6.68,
+              "degree_str": "6°41'",
+              "full_str": "处女座 6°41'"
+            },
+            "house_number": 2,
+            "mag": -1.5
+          },
+          {
+            "name": "Jupiter",
+            "ecl_lon": 284.5928,
+            "ecl_lat": -0.2719,
+            "zodiac": {
+              "index": 9,
+              "name": "摩羯座",
+              "degree": 14.59,
+              "degree_str": "14°35'",
+              "full_str": "摩羯座 14°35'"
+            },
+            "house_number": 6,
+            "mag": -2.2
+          },
+          {
+            "name": "Saturn",
+            "ecl_lon": 1.0315,
+            "ecl_lat": -2.5469,
+            "zodiac": {
+              "index": 0,
+              "name": "白羊座",
+              "degree": 1.03,
+              "degree_str": "1°2'",
+              "full_str": "白羊座 1°2'"
+            },
+            "house_number": 9,
+            "mag": 0.9
+          },
+          {
+            "name": "Uranus",
+            "ecl_lon": 301.0901,
+            "ecl_lat": -0.5816,
+            "zodiac": {
+              "index": 10,
+              "name": "水瓶座",
+              "degree": 1.09,
+              "degree_str": "1°5'",
+              "full_str": "水瓶座 1°5'"
+            },
+            "house_number": 7,
+            "mag": 5.7
+          },
+          {
+            "name": "Neptune",
+            "ecl_lon": 295.3343,
+            "ecl_lat": 0.4433,
+            "zodiac": {
+              "index": 9,
+              "name": "摩羯座",
+              "degree": 25.33,
+              "degree_str": "25°20'",
+              "full_str": "摩羯座 25°20'"
+            },
+            "house_number": 6,
+            "mag": 7.8
+          },
+          {
+            "name": "Pluto",
+            "ecl_lon": 242.4674,
+            "ecl_lat": 12.3869,
+            "zodiac": {
+              "index": 8,
+              "name": "射手座",
+              "degree": 2.47,
+              "degree_str": "2°28'",
+              "full_str": "射手座 2°28'"
+            },
+            "house_number": 5,
+            "mag": 14.0
+          }
+        ],
+        "ascendant_summary": "巨蟹座 29°28'",
+        "mc_summary": "白羊座 22°3'",
+        "transitions": [
+          {
+            "planet": "Sun/Moon",
+            "type": "eclipse",
+            "eclipse_type": "partial_eclipse",
+            "time": "1996-11-11T01:00:00Z",
+            "jd_ut": 2450398.5416666665,
+            "description": "日食"
+          },
+          {
+            "planet": "Sun/Moon",
+            "type": "eclipse",
+            "eclipse_type": "partial_eclipse",
+            "time": "1996-11-11T02:00:00Z",
+            "jd_ut": 2450398.5833333335,
+            "description": "日食"
+          },
+          {
+            "planet": "Moon",
+            "type": "eclipse",
+            "eclipse_type": "eclipse",
+            "time": "1996-11-11T03:00:00Z",
+            "jd_ut": 2450398.625,
+            "description": "月食"
+          },
+          {
+            "planet": "Moon",
+            "type": "eclipse",
+            "eclipse_type": "eclipse",
+            "time": "1996-11-11T04:00:00Z",
+            "jd_ut": 2450398.6666666665,
+            "description": "月食"
+          },
+          {
+            "planet": "Moon",
+            "type": "eclipse",
+            "eclipse_type": "eclipse",
+            "time": "1996-11-11T05:00:00Z",
+            "jd_ut": 2450398.7083333335,
+            "description": "月食"
+          },
+          {
+            "planet": "Moon",
+            "type": "eclipse",
+            "eclipse_type": "eclipse",
+            "time": "1996-11-11T06:00:00Z",
+            "jd_ut": 2450398.75,
+            "description": "月食"
+          },
+          {
+            "planet": "Sun/Moon",
+            "type": "eclipse",
+            "eclipse_type": "partial_eclipse",
+            "time": "1996-11-11T07:00:00Z",
+            "jd_ut": 2450398.7916666665,
+            "description": "日食"
+          },
+          {
+            "planet": "Sun/Moon",
+            "type": "eclipse",
+            "eclipse_type": "partial_eclipse",
+            "time": "1996-11-11T08:00:00Z",
+            "jd_ut": 2450398.8333333335,
+            "description": "日食"
+          },
+          {
+            "planet": "Moon",
+            "type": "constellation",
+            "from_sign": "天蝎座",
+            "to_sign": "射手座",
+            "time": "1996-11-11T23:26:26Z",
+            "jd_ut": 2450399.4766960144,
+            "longitude": 240
+          },
+          {
+            "planet": "Saturn",
+            "type": "constellation",
+            "from_sign": "白羊座",
+            "to_sign": "金牛座",
+            "time": "1996-11-11T23:59:59Z",
+            "jd_ut": 2450399.4999961853,
+            "longitude": 30
+          }
+        ]
+      },
+      "calculation_diagnostics": "✅ Placidus宫位计算结果：ASC=119.4665°, MC=22.0518°\n✅ Placidus宫位计算结果：ASC=243.8992°, MC=162.1567°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n✅ Placidus宫位计算结果：ASC=244.7438°, MC=163.2159°\n"
+    }
+  },
+  "comparison": {
+    "same_ecliptic_longitudes": true,
+    "same_axes": true,
+    "house_difference": "whole_sign derives one sign per house from the same Ascendant; this case is compared explicitly in each chart"
+  }
+}

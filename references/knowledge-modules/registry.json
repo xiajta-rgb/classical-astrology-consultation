@@ -1,0 +1,246 @@
+{
+  "schema_version": "LOCAL-KNOWLEDGE-MODULES-0.1",
+  "version": "LOCAL-DOCS-2026-08-15-1",
+  "role": "source_extraction_audit_only",
+  "runtime_activation": "references/knowledge-modules/plugins.json",
+  "scope": "attached_user_materials",
+  "chart_policy": {
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "default_engine": "local_ephh_project",
+    "alternative_house_systems": ["Whole Sign"],
+    "alternative_status": "research_comparison_only",
+    "mc_policy": "MC is the 10th-house cusp in the project-default quadrant chart; do not relabel whole-sign MC comparisons as ordinary production facts"
+  },
+  "plugin_manifest": "plugins.json",
+  "calculation_engine": {
+    "root": "../../astrology_engine",
+    "manifest": "../../astrology_engine/MANIFEST.json",
+    "natal": "../../astrology_engine/natal.py",
+    "predictive": "../../astrology_engine/predictive.py",
+    "policy": "project-local tropical plus Placidus calculation; timing techniques are explicit extensions and never auto-activated in natal-only output"
+  },
+  "cross_system_transfer": {
+    "audit": "../calculation-methods/cross-system-transfer-audit.md",
+    "association_operators": "../calculation-methods/association-operators.json",
+    "technique_registry": "../../astrology_engine/technique_registry.json",
+    "qa_script": "../../scripts/check_technique_registry.py",
+    "distillation_round": "../loop-runs/ROUND134-CROSS-SYSTEM-ASSOCIATION-DISTILL.md",
+    "policy": "borrow computation/provenance/validation logic from Horosa and Vedic skills; keep sidereal, Dasha, divisional and other Vedic rules isolated"
+  },
+  "event_retrieval": {
+    "registry": "event-clusters.json",
+    "links": "event-links.jsonl",
+    "index": "event-retrieval-index.json",
+    "planner": "scripts/plan_knowledge_retrieval.py",
+    "cluster_count": 16,
+    "candidate_link_count": 1627,
+    "policy": "event_first_for_real_world_events; significator_first_for_natal_structure; dual_entry_for_comparison"
+  },
+  "research_loop": {
+    "root": "../research-loop",
+    "round_manifest": "../research-loop/rounds/LOOP-20260815-01.json",
+    "source_queue": "../research-loop/source-queue.jsonl",
+    "candidate_extracts": "../research-loop/candidate-extracts.jsonl",
+    "gap_registry": "../research-loop/gap-registry.json",
+    "batch_manifests": "../research-loop/batches",
+    "cluster_script": "scripts/cluster_research_extracts.py",
+    "runner": "scripts/run_research_loop.py",
+    "auto_crawler": "scripts/auto_research_loop.py",
+    "continuous_runner": "scripts/continuous_research_loop.py",
+    "daemon_runner": "scripts/daemon_research_loop.py",
+    "daemon_state": "../research-loop/daemon-loop-state.json",
+    "daemon_log": "../research-loop/daemon-loop.log.jsonl",
+    "qa_script": "scripts/check_research_loop_system.py",
+    "promotion_policy": "external_research_is_candidate_until_source_locator_counter_test_and_chart_regression_pass"
+  },
+  "default_evidence_cap": "C",
+  "modules": [
+    {
+      "id": "house-ruler-flow",
+      "title": "宫主飞宫的方向性责任链",
+      "source_ids": [
+        "R38"
+      ],
+      "status": "candidate",
+      "layer": "secondary_user_notes",
+      "grade_cap": "C",
+      "artifacts": [
+        "fly-star-corpus.md"
+      ],
+      "coverage": {
+        "directed_house_flows": 144,
+        "source_locator": "R38 paragraphs 2761-3214 and 3346-3463"
+      },
+      "operational_rule": "把 A 宫宫主落入 B 宫记录为 A→B 的主题流向摘要；先解释宫位责任，再解释行星能力，不把飞宫本身当成独立吉凶分数。",
+      "conditions": [
+        "zodiac、house_system、宫头和宫主版本已锁定",
+        "宫主落宫来自 Chart Facts 或可复核计算，而非手工猜测",
+        "穿刺、截夺或双重宫主已单独标记",
+        "至少有一条独立的行星状态、相位或现实观察支持"
+      ],
+      "counter_tests": [
+        "同一宫主可能承担多个宫位责任，不能把一条飞宫重复计数为多个独立证据",
+        "资料中的‘旺星/衰星’分数没有统一历史定义，不能覆盖尊贵、sect、角性、可见性和交付审计",
+        "飞入第八/十二宫不能自动翻译为灾难、疾病、犯罪或灵体事件"
+      ],
+      "output_guardrail": "输出‘某主题责任被带入某宫，现实中可观察为……’，并标注 B/C 或 deferred；不输出必然事件。",
+      "next_test": "用至少三份合成 Chart Facts 比较 A→B 流向与完整宫主链，检查是否产生重复计数。"
+    },
+    {
+      "id": "mutual-reception-matrix",
+      "title": "宫位对互容经验矩阵（非严格互容）",
+      "source_ids": [
+        "R38",
+        "R39"
+      ],
+      "status": "auxiliary",
+      "layer": "secondary_user_notes",
+      "grade_cap": "C",
+      "artifacts": [
+        "mutual-reception-matrix.md"
+      ],
+      "coverage": {
+        "unordered_house_pairs": 78,
+        "source_locator": "R38 paragraphs 2794-3202 and R39 tables 0-1"
+      },
+      "operational_rule": "把 1-2、2-10、7-11 等宫位对记录为‘经验假设卡’，用于提出竞争假设；严格的行星互容/接纳仍按 typed reception policy，要求尊贵类型、方向和相位连接字段。",
+      "conditions": [
+        "先完成相关主题的完整责任链扫描",
+        "把宫位对经验解释拆成资源、责任、风险三类可观察机制",
+        "互容的双向性与相位要求必须显式记录，不能用‘关系好’代替"
+      ],
+      "counter_tests": [
+        "经验表中的‘财务不会差、富二代、大财、婚姻不错’不是可直接发布的结论",
+        "同一宫位对的结果会被行星尊贵、sect、相位、宫制和现实条件改写",
+        "宫位对表没有作者、版本和独立样本，不得升级为古典共识或 S/A 规则"
+      ],
+      "output_guardrail": "使用‘该宫位对提出一种待验证的资源/责任联动假设（C）’，并列出支持、反证和缺失判别数据。",
+      "next_test": "为 2-8、7-11、4-10 各建立正负对照合成盘，检验风险与支持是否被同一事实重复计算。"
+    },
+    {
+      "id": "advanced-delineation-logic",
+      "title": "高级整盘联想层（多重征象、交付与持续性）",
+      "source_ids": ["R01", "R02", "R19", "R29", "R33", "R40"],
+      "status": "candidate",
+      "layer": "research_extension",
+      "grade_cap": "C",
+      "artifacts": ["advanced-delineation.md", "../research-loop/batches/BATCH-20260816-ADVANCED-DELINEATION.json"],
+      "coverage": {
+        "mechanisms": ["wealth_acquisition_vs_duration", "planetary_condition", "typed_reception_delivery", "fortune_daimon_exaltation_accomplishment", "triplicity_phase_order", "house_domain_separation", "antiscia_hidden_connection", "employment_content_axis_status", "relationship_intention_profit_mutual_effect", "travel_mobility_foreign_gain_return", "family_source_resources_climate", "fifth_house_output_care_risk_split"],
+        "case_examples": "Valens Book II §2.21 examples 1-12",
+        "source_locator": "references/knowledge-modules/advanced-delineation.md"
+      },
+      "operational_rule": "先生成责任主体与承载者，再审 sect/尊贵/角性/可见性、应用与接纳、dispositor 和持续性；Fortune、Daimon、Exaltation、Accomplishment 只在公式版本锁定时启用。",
+      "conditions": [
+        "Chart Facts、宫制、日夜盘、尊贵表和相位连接已校验",
+        "Lot 公式和版本明确记录；不把本模块当作默认时限技术",
+        "每个结论至少区分取得、交付、持续/反转三个阶段",
+        "历史案例只作方法演示，敏感主题保留安全门禁"
+      ],
+      "counter_tests": [
+        "吉星落不利宫位与凶星得势的反转测试",
+        "没有应用/连接的接纳降级为 C",
+        "单一 4→2、7→11 或宫位对不得独立推出财富、婚姻或社会地位",
+        "未激活时限技术时不输出年份、月份和确定事件"
+      ],
+      "output_guardrail": "输出‘责任—承载—交付—持续性’链条，明确证据等级、反证和缺失数据；不输出保证式预测。",
+      "next_test": "建立 3 个资源取得/持续正例、3 个反例和 2 个接纳交付失败例，检查与现有飞星和互容插件的重复计数。"
+    },
+    {
+      "id": "timing-boundary",
+      "title": "推运与预测方法的后续插件清单",
+      "source_ids": [
+        "R38"
+      ],
+      "status": "inactive_until_timing_activation",
+      "layer": "method_inventory",
+      "operational_rule": "仅登记法达、太阳弧、次限/三限、太阳返照、月返、行运和校时等方法，不从本地笔记直接生成日期。",
+      "conditions": [
+        "用户明确提出未来时间问题",
+        "有准确出生时间、地点和必要的度数/历表数据",
+        "先完成本命责任链，再锁定具体时限版本"
+      ],
+      "counter_tests": [
+        "只有本命盘或模糊出生时间时，时间模块保持 inactive",
+        "一个推运指标不能单独确认婚姻、财富、职业或灾难事件"
+      ],
+      "output_guardrail": "本模块只返回未激活状态和所需数据，不返回年份、月份或事件日期。",
+      "fixed_statement": "本命资料可以提供长期结构基线，但不能单独给出具体年份或事件日期。"
+    }
+  ],
+  "core_distillation": {
+    "schema_version": "CORE-KNOWLEDGE-0.1",
+    "version": "CORE-DISTILL-2026-08-15-1",
+    "canonical_store": "core/cards.jsonl",
+    "index": "core/index.json",
+    "readme": "core/README.md",
+    "sources": {
+      "R38": {
+        "file_name": "看盘手册(综合最终）.docx",
+        "sha256": "2d9c85a8d4a63bc9ee2b2dbbdc0a65e65e22da75b3b1a7a1557df206af45573d"
+      },
+      "R39": {
+        "file_name": "1互容特征汇总表.docx",
+        "sha256": "997e6d98b0b950b05ae2971db01d487ed133a9ba881e7d121bd701ae4ba402d9"
+      }
+    },
+    "counts": {
+      "total": 1281,
+      "flow_cards": 144,
+      "matrix_cards": 78,
+      "manual_core_extracts": 1059,
+      "by_module": {
+        "house_rulership_flow": 556,
+        "mutual_reception_matrix": 78,
+        "natal_framework": 36,
+        "planetary_state_and_aspects": 140,
+        "natal_method_and_reception": 229,
+        "supporting_techniques": 31,
+        "wealth_and_career_topics": 211
+      },
+      "by_status": {
+        "candidate": 222,
+        "auxiliary": 1059
+      }
+    },
+    "excluded": {
+      "full_manual_extract": true,
+      "reason": "user requested key core only; ambiguous, modern, medical, identity-label, case-heavy and timing-extension material is not retained",
+      "drop_terms": [
+        "癌",
+        "疾病",
+        "抑郁",
+        "精神病",
+        "自杀",
+        "死亡",
+        "寿命",
+        "犯罪",
+        "暴力",
+        "强奸",
+        "性取向",
+        "怀孕",
+        "流产",
+        "不孕",
+        "灵体",
+        "附体",
+        "牢狱",
+        "出轨",
+        "不伦",
+        "MBTI",
+        "天王星",
+        "海王星",
+        "冥王星",
+        "凯龙",
+        "小行星",
+        "北交点",
+        "南交点",
+        "星盘举例",
+        "案例",
+        "这个盘",
+        "图中",
+        "例如"
+      ]
+    }
+  }
+}

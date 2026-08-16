@@ -1,0 +1,21 @@
+{
+  "schema_version": "FLY-IN-DIRECTION-REGRESSION-0.1",
+  "cases": [
+    {
+      "id": "property_direction_001_4_to_2",
+      "fly_in": {"responsibility_house": 4, "ruler_house": 2},
+      "expected": {"direction": "property_to_wealth", "interpretation": "property_can_enter_wealth_audit", "grade_cap": "C", "alone_proves_profit": false}
+    },
+    {
+      "id": "property_direction_001_2_to_4",
+      "fly_in": {"responsibility_house": 2, "ruler_house": 4},
+      "expected": {"direction": "wealth_to_property", "interpretation": "money_can_enter_property_allocation", "grade_cap": "C", "alone_proves_profit": false}
+    },
+    {
+      "id": "property_direction_001_4_to_2_without_support",
+      "fly_in": {"responsibility_house": 4, "ruler_house": 2},
+      "additional_testimony": {"fortune_connection": false, "ruler_condition": "unknown", "duration_test": "missing"},
+      "expected": {"direction": "property_to_wealth", "interpretation": "hold_for_property_profit", "grade_cap": "C", "alone_proves_profit": false}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260815-02",
+  "started_at": "2026-08-15",
+  "topics": ["fixed_stars_and_lots", "timing_source_map", "friendship_counterexamples"],
+  "queries": [
+    "traditional astrology fixed stars lots reception primary text",
+    "traditional astrology marriage career friends primary text podcast",
+    "traditional astrology forum career friendship 11th house 10th house 6th house"
+  ],
+  "source_ids": [
+    "WEB-MEDIEVAL-FIXED-STARS",
+    "WEB-CONSTELLATIONS-FIXED-STARS",
+    "VIDEO-AP-ANCIENT-TIMING",
+    "POST-REDDIT-11TH-LONER"
+  ],
+  "extract_ids": [
+    "EXT-20260815-010",
+    "EXT-20260815-011",
+    "EXT-20260815-012",
+    "EXT-20260815-013"
+  ],
+  "result": "candidate_only",
+  "next_step": "retrieve full pages or timestamps, then compare with primary text and retain counterexamples"
+}

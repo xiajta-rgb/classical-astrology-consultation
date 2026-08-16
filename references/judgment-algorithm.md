@@ -59,6 +59,25 @@ Then write a balanced judgment: support + limitation → bounded conclusion.
 
 Choose the leading hypothesis only when it is repeatedly reinforced by independent relevant testimonies. Preserve a runner-up when evidence remains ambiguous. Label unsupported alternatives N/A rather than filling the gap with a confident story.
 
+## F1. Deep inference pass (internal only)
+
+Do not stop at a keyword list. For each unusually concentrated configuration, construct an event ladder:
+
+```text
+symbolic function -> life mechanism -> ordinary manifestation -> structural strain -> major transition/loss hypothesis
+```
+
+Example for a Moon/4th-house concentration: emotional regulation and family roots -> household authority, care, privacy or shared resources -> repeated family duty or home restructuring -> separation, bereavement, inheritance or family-system rupture as a historical candidate. The last tier is a hypothesis for internal comparison, not a conclusion.
+
+Before retaining a high-intensity candidate, require:
+
+1. at least two independent significator chains (for example luminary/parent indicator plus relevant house ruler or Lot);
+2. whole-chart support and a counter-hypothesis (the same testimony may describe the native's experience, care burden, property or ancestry rather than another person's event);
+3. an appropriate, separately validated timing technique for event claims;
+4. explicit sensitive-topic gating and a neutral observable translation.
+
+If these conditions are absent, preserve the deep hypothesis in the audit trail at `candidate`/`N/A` and output only the lower, structurally supported tier.
+
 ## G. Translate in layers
 
 Always separate:

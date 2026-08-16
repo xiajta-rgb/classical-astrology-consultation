@@ -1,0 +1,24 @@
+{
+  "case_id": "19970803-0505-ZhouningFujian",
+  "display_name": null,
+  "birth_date": "1997-08-03",
+  "birth_time": "05:05",
+  "birth_place": "福建省宁德市周宁县",
+  "gender": "female",
+  "occupation": "大学博士后",
+  "field": "台风研究/大气科学",
+  "coordinates": {"lat": 27.0872517, "lon": 119.2950426, "timezone": "+08:00"},
+  "source": "local_chart_engine",
+  "consultation_topics": ["natal_structure", "academic_research_career", "family_parents_siblings_kin", "2015_2035_predictive_timing"],
+  "canonical_artifacts": [
+    "analysis/chart-facts/ROUND129-19970803-CHART-FACTS.json",
+    "analysis/interpretations/CHART-INSIGHTS.json",
+    "analysis/interpretations/CHART-INSIGHTS.md",
+    "analysis/interpretations/2015-2035-PREDICTIVE-ANALYSIS.md",
+    "analysis/interpretations/2026-08-16-ACADEMIC-CAREER-CONTEXT-REFINEMENT.md",
+    "analysis/interpretations/2026-08-16-FAMILY-KINSHIP-ANALYSIS.md",
+    "analysis/interpretations/2026-08-16-CHART-HOUSE-SYSTEM-RECONCILIATION.md"
+  ],
+  "management_status": "canonical_client_record",
+  "legacy_sources": ["references/loop-runs/ROUND129-19970803-CHART-FACTS.json"]
+}

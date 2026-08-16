@@ -1,0 +1,25 @@
+{
+  "schema_version": "ASSOCIATION-REGRESSION-0.1",
+  "cases": [
+    {
+      "id": "mother_1973_siblings",
+      "domain": "siblings",
+      "context_status": "user_reported_validation",
+      "evidence": [
+        {"id": "mars_3rd", "chain_id": "sibling_3_house", "domain": "siblings", "house": 3, "responsibility": "siblings", "carrier": "Mars", "mechanism": "sibling_health_loss_route", "polarity": "constraint", "condition": ["near_cusp"], "chart_anchor": "placidus.Mars.house3"},
+        {"id": "venus_ruler_3rd_8th", "chain_id": "sibling_3_ruler", "domain": "siblings", "house": 8, "responsibility": "siblings", "carrier": "Venus", "mechanism": "sibling_health_loss_route", "polarity": "support", "condition": ["domicile", "8th_house"], "chart_anchor": "placidus.3rd_ruler_Venus.house8"},
+        {"id": "jupiter_ruler_11th_12th", "chain_id": "sibling_11_ruler", "domain": "siblings", "house": 12, "responsibility": "older_siblings", "carrier": "Jupiter", "mechanism": "sibling_health_loss_route", "polarity": "constraint", "condition": ["cadent", "12th_house"], "chart_anchor": "placidus.11th_ruler_Jupiter.house12"}
+      ]
+    },
+    {
+      "id": "mother_1973_wealth",
+      "domain": "wealth",
+      "context_status": "user_reported_validation",
+      "evidence": [
+        {"id": "fortune_1st", "chain_id": "fortune_chain", "domain": "wealth", "house": 1, "responsibility": "resources", "carrier": "Lot_of_Fortune", "mechanism": "large_shared_resource_opportunity", "polarity": "support", "condition": ["angular"], "chart_anchor": "placidus.fortune.house1"},
+        {"id": "venus_8th", "chain_id": "shared_resource_chain", "domain": "wealth", "house": 8, "responsibility": "shared_resources", "carrier": "Venus", "mechanism": "large_shared_resource_opportunity", "polarity": "support", "condition": ["domicile", "8th_house"], "chart_anchor": "placidus.Venus.house8"},
+        {"id": "jupiter_pluto_trine", "chain_id": "gain_amplification_chain", "domain": "wealth", "house": 12, "responsibility": "gain_and_leakage", "carrier": "Jupiter", "mechanism": "large_shared_resource_opportunity", "polarity": "support", "condition": ["tight_trine", "cadent_cost"], "chart_anchor": "placidus.Jupiter_trine_Pluto"}
+      ]
+    }
+  ]
+}

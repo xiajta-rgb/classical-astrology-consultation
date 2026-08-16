@@ -1,0 +1,15 @@
+version: "KNOWLEDGE-SYMBOLS-1.2"
+role: "stable_short_invocation_index_for_knowledge_plugins"
+registry: "references/knowledge-modules/plugins.json"
+authority: "plugins.json.invocation"
+symbols:
+  "@NAT": {plugin_id: "natal-core"}
+  "@MSC": {plugin_id: "multi-significator-composition"}
+  "@ADL": {plugin_id: "advanced-delineation-logic"}
+  "@CNM": {plugin_id: "core-natal-method"}
+  "@HFR": {plugin_id: "house-ruler-flow"}
+  "@MRX": {plugin_id: "mutual-reception-matrix"}
+  "@PLO": {plugin_id: "pluto-aspect-synthesis"}
+  "@MAR": {plugin_id: "mars-personal-aspect-synthesis"}
+  "@TOP": {plugin_id: "interpretation-topic-adapters"}
+  "@TIM": {plugin_id: "timing-boundary"}

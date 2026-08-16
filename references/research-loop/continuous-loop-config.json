@@ -1,0 +1,11 @@
+{
+  "schema_version": "CONTINUOUS-LOOP-CONFIG-0.1",
+  "discovery_queries": "references/research-loop/discovery-queries.jsonl",
+  "source_queue": "references/research-loop/source-queue.jsonl",
+  "max_rounds_per_run": 6,
+  "discovery_queries_per_round": 1,
+  "pages_per_round": 8,
+  "timeout_seconds": 10,
+  "stop_only_when": ["max_rounds_reached", "query_pool_exhausted_and_queue_exhausted", "user_interrupt"],
+  "promotion_policy": "discovery_is_candidate_only"
+}

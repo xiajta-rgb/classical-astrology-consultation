@@ -1,0 +1,129 @@
+version: "INFO-ARCH-1.0"
+purpose: "为客户资料、计算事实、解释模块、外部知识、研究循环和回归测试提供唯一归属与生命周期"
+
+principles:
+  - one_canonical_owner_per_artifact
+  - client_data_is_case_scoped
+  - facts_before_interpretation
+  - knowledge_is_versioned_and_provenance_traced
+  - research_candidates_do_not_auto_promote
+  - legacy_paths_are_read_only_after_cutover
+  - missing_data_is_explicit_not_invented
+
+canonical_roots:
+  clients:
+    path: "clients"
+    owner: "case_management"
+    role: "客户输入、出生资料、Chart Facts、解释、交付与现实观察"
+    write_policy: "canonical_write"
+    naming: "YYYYMMDD-HHMM-PlaceSlug; incomplete values use unknown"
+    required_files: ["profile.json"]
+    allowed_subdirs: ["input", "analysis", "delivery", "observations", "related"]
+  engine:
+    paths: ["astrology_engine", "config/place_aliases.json"]
+    owner: "calculation_runtime"
+    role: "本地星盘计算、推运技术和技术注册表"
+    write_policy: "code_only_no_client_records"
+  interpretation:
+    paths: ["config/interpretation_routes.yaml", "config/module_dispatch.yaml", "config/consultation_modes.yaml", "references/interpretation-modules", "references/signification-ontology.yaml", "scripts/expand_signification_map.py", "references/composition-framework.md", "references/judgment-algorithm.md", "references/evidence-and-language.md"]
+    owner: "interpretation_system"
+    role: "路由、征象组合、证据等级、两种文案输出和发布门禁"
+    write_policy: "versioned_rule_change"
+  knowledge:
+    paths: ["config/knowledge_scope.yaml", "config/knowledge_symbols.yaml", "references/knowledge-modules", "references/source-registry.json", "references/quote-insight-cards.md", "references/house-matrix.md", "references/sensitive-significations.md"]
+    owner: "knowledge_governance"
+    role: "可追溯资料、知识卡、来源分级、条件与反证"
+    write_policy: "source_trace_required"
+  research:
+    paths: ["references/research-loop", "references/research-loop.md", "references/research-ledger.md", "references/research-campaign-20260814.md"]
+    owner: "research_loop"
+    role: "外部资料采集、候选抽取、反例、回测和晋级记录"
+    write_policy: "user_triggered_bounded_only"
+  regression:
+    paths: ["references/fixtures", "references/architecture-coupling-audit-2026-08-16.md", "config/quality_gate.yaml", "scripts/run_quality_gate.py", "scripts/check_*.py", "scripts/validate_*.py", "scripts/build_*.py"]
+    owner: "quality_assurance"
+    role: "机器回归、失败案例、敏感主题门禁与发布前检查"
+    write_policy: "deterministic_test_artifacts"
+  legacy_archive:
+    paths: ["references/loop-runs"]
+    owner: "migration_archive"
+    role: "历史研究和旧客户交付的兼容归档"
+    write_policy: "read_only_legacy_no_new_client_intake"
+
+artifact_contract:
+  profile:
+    canonical: "clients/<case_id>/profile.json"
+    required: ["case_id", "source", "management_status"]
+  raw_client_input:
+    canonical: "clients/<case_id>/input/"
+    required: ["source", "received_at_or_undated", "input_scope"]
+  chart_facts:
+    canonical: "clients/<case_id>/analysis/chart-facts/"
+    required: ["chart_id", "engine", "birth_datetime", "birth_place", "zodiac", "house_system", "timezone_source", "provenance"]
+  semantic_coverage:
+    canonical: "clients/<case_id>/analysis/chart-facts/NATAL-<chart_id>.json#semantic_coverage"
+    required: ["schema_version", "ontology_version", "chart_id", "nodes", "edges", "coverage", "unresolved"]
+  interpretation:
+    canonical: "clients/<case_id>/analysis/interpretations/"
+    required: ["route_id", "evidence_trace", "counter_test", "publication_status"]
+  insight_ledger:
+    canonical: "clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.json"
+    required: ["schema_version", "case_id", "natal_core", "insight_cards", "provenance"]
+  delivery:
+    canonical: "clients/<case_id>/delivery/"
+    required: ["mode", "source_case_id", "limitations", "generated_at"]
+  observation:
+    canonical: "clients/<case_id>/observations/"
+    required: ["observation_id", "status", "source", "privacy_gate"]
+  research_source:
+    canonical: "references/research-loop/source-queue.jsonl"
+    required: ["source_id", "url_or_locator", "source_tier", "status", "upgrade_rule"]
+  knowledge_card:
+    canonical: "references/knowledge-modules/"
+    required: ["source_ids", "conditions", "counter_test", "grade_cap", "status"]
+  knowledge_plugin:
+    canonical: "references/knowledge-modules/plugins.json"
+    required: ["id", "version", "status", "invocation", "retrieval", "grade_cap", "event_mechanism"]
+  regression_fixture:
+    canonical: "references/fixtures/"
+    required: ["schema_version", "cases"]
+
+lifecycle:
+  - id: intake
+    inputs: ["user_message", "uploaded_file", "birth_data"]
+    outputs: ["clients/<case_id>/profile.json", "clients/<case_id>/input/"]
+  - id: calculation
+    inputs: ["profile", "raw_client_input"]
+    outputs: ["clients/<case_id>/analysis/chart-facts/"]
+  - id: interpretation
+    inputs: ["chart_facts", "route", "knowledge_cards"]
+    outputs: ["clients/<case_id>/analysis/interpretations/"]
+  - id: insight_ledger
+    inputs: ["chart_facts", "interpretation", "user_confirmed_real_world_event"]
+    outputs: ["clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.json", "clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.md"]
+  - id: delivery
+    inputs: ["interpretation", "consultation_mode"]
+    outputs: ["clients/<case_id>/delivery/"]
+  - id: observation
+    inputs: ["user_confirmed_real_world_event"]
+    outputs: ["clients/<case_id>/observations/", "references/research-loop/candidate-extracts.jsonl"]
+  - id: learning
+    inputs: ["observations", "counterexamples", "external_sources"]
+    outputs: ["references/knowledge-modules/", "references/fixtures/", "references/research-loop/rounds/"]
+
+routing_rules:
+  new_client: "clients/<case_id>/profile.json"
+  new_chart_calculation: "clients/<case_id>/analysis/chart-facts/"
+  new_consultation_text: "clients/<case_id>/analysis/interpretations/ or delivery/"
+  new_chart_insight: "clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.json and CHART-INSIGHTS.md"
+  new_external_source: "references/research-loop/"
+  promoted_knowledge: "references/knowledge-modules/ with source_ids and grade gate"
+  new_regression_case: "references/fixtures/ plus a check script when deterministic"
+  historical_only: "references/loop-runs/; never use as new canonical intake"
+
+forbidden_cross_writes:
+  - "calculation code writing client facts into astrology_engine/"
+  - "research candidate writing directly into knowledge-modules/core/"
+  - "consultation prose becoming a rule without evidence_trace and counter_test"
+  - "new client data being stored only in references/loop-runs/"
+  - "legacy archive being treated as the canonical source"

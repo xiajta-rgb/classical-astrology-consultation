@@ -1,0 +1,32 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260816-ADVANCED-DELINEATION",
+  "started_at": "2026-08-16",
+  "scope": "advanced_multi_testimony_delineation_and_classical_case_logic",
+  "topics": [
+    "wealth_acquisition_vs_duration",
+    "planetary_condition",
+    "typed_reception_and_delivery",
+    "fortune_daimon_exaltation_accomplishment",
+    "triplicity_phase_order",
+    "house_domain_separation",
+    "antiscia_hidden_connection",
+    "Valens_Book_II_case_examples"
+  ],
+  "source_ids": ["R01", "R02", "R16", "R19", "R29", "R33", "R40"],
+  "retrieval_method": "direct_read_only_web_and_pdf_extraction",
+  "retrieved_at": "2026-08-16",
+  "result": "Primary and primary-translation material supports a layered judgment model: responsibility and Lot, planetary condition and sect, actual connection/reception, delivery path, and duration/reversal must be separated. Valens Book II examples provide reusable whole-chart synthesis patterns but remain historical case material.",
+  "artifacts": [
+    "references/knowledge-modules/advanced-delineation.md"
+  ],
+  "promotion_decision": "candidate_layer",
+  "grade_cap": "B",
+  "regression_requirements": [
+    "at least three positive and three negative synthetic Chart Facts cases",
+    "deduplication against house-ruler-flow and mutual-reception-matrix",
+    "separate acquisition and continuity outcomes",
+    "no timing activation or sensitive deterministic language"
+  ],
+  "next_step": "implement a small advanced-delineation plugin and regression fixtures before any card is promoted above B/C"
+}

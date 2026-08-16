@@ -1,0 +1,10 @@
+{
+  "version": "PLACE-ALIAS-1.0",
+  "purpose": "Offline administrative-centre fallbacks for place-only chart input; never treated as exact birth-address coordinates.",
+  "places": {
+    "泉州": {"lat": 24.8741, "lon": 118.6757, "timezone": "Asia/Shanghai", "precision_warning": "administrative_city_centroid"},
+    "泉州泉港": {"lat": 25.1209, "lon": 118.9126, "timezone": "Asia/Shanghai", "precision_warning": "administrative_district_centroid"},
+    "Quanzhou": {"lat": 24.8741, "lon": 118.6757, "timezone": "Asia/Shanghai", "precision_warning": "administrative_city_centroid"},
+    "Quanzhou Quangang": {"lat": 25.1209, "lon": 118.9126, "timezone": "Asia/Shanghai", "precision_warning": "administrative_district_centroid"}
+  }
+}

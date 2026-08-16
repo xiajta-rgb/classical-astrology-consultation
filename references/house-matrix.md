@@ -16,6 +16,9 @@ Use this matrix to decide which testimonies must be inspected before making a ma
 | Health/workload | 6 → ruler of 6 → 1 → sect/light | Labor, illness symbolism, burdens; do not diagnose |
 | Study/travel/belief | 9 → ruler of 9 → 1 → 10 | Higher learning, journeys, doctrine and application |
 
+| Windfall/speculative wealth | 2 -> ruler of 2 -> 5 -> 8 -> 11 -> Lot of Fortune and its ruler | Windfalls, speculation, shared resources, and gains; Fortune is corroboration, never a standalone promise |
+| Siblings | 3 -> ruler of 3 -> 8; also 11 -> ruler of 11 -> 12 for elder-sibling loss/absence hypotheses | Younger/general siblings, elder-sibling branch, illness/loss hypotheses; require sibling order and real-event validation |
+
 ## Cross-validation rules
 
 - A strong conclusion needs at least two independent links: for example, the relevant house ruler plus its placement, dignity, angularity, or a corroborating aspect.

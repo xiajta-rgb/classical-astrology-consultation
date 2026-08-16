@@ -1,0 +1,13 @@
+{
+  "case_id": "19961111-2225-ZhuzhouLusong",
+  "display_name": null,
+  "birth_date": "1996-11-11",
+  "birth_time": "22:25",
+  "birth_place": "湖南株洲芦淞区",
+  "coordinates": {"lat": 27.8065115, "lon": 113.2582282, "timezone": "+08:00"},
+  "source": "user_supplied_and_local_chart_engine",
+  "consultation_topics": ["natal_structure", "career_finance", "family_cross_validation"],
+  "canonical_artifacts": ["input/ephh-1996-11-11-zhuzhou-lusong.json", "analysis/chart-facts/ROUND122-EPHH-FACTS.json", "analysis/chart-facts/ROUND122-EPHH-COMPARISON.json", "analysis/chart-facts/BIRTH-TIME-VALIDATION-20260816.json", "analysis/interpretations/CHART-INSIGHTS.json", "analysis/interpretations/CHART-INSIGHTS.md", "observations/OBS-20260816-BIRTH-TIME-VALIDATION.json", "analysis/interpretations/ROUND123-MODULAR-INTERPRETATION.json", "analysis/interpretations/ROUND123-MODULAR-INTERPRETATION.md", "analysis/interpretations/ROUND125-SALIENCE-INTERPRETATION.json"],
+  "management_status": "canonical_client_record",
+  "legacy_sources": ["references/fixtures/ephh-1996-11-11-zhuzhou-lusong.json", "references/loop-runs/ROUND122-EPHH-FACTS.json", "references/loop-runs/ROUND132-19961111-SON-CHART-FACTS.json"]
+}

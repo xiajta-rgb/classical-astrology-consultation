@@ -1,0 +1,28 @@
+{
+  "schema_version": "RESEARCH-ROUND-0.1",
+  "run_id": "LOOP-20260815-02",
+  "started_at": "2026-08-15",
+  "objective": "检验房产—财富飞宫方向、第四宫房产职责与严格互容边界，禁止把经验方向直接升级为古典定则",
+  "focus_clusters": ["EVT-MONEY-WINDFALL", "EVT-FAMILY-PROPERTY-RESOURCES", "EVT-DEBT-INHERITANCE-SHARED-FINANCE", "EVT-CAREER-PUBLIC-STATUS"],
+  "inputs": {"batch": "references/research-loop/batches/BATCH-20260815-05.json", "candidate_extracts": "references/research-loop/candidate-extracts.jsonl", "source_queue": "references/research-loop/source-queue.jsonl", "chart_facts": "scripts/validate_chart_facts.py"},
+  "sources_read": [
+    {"source_id": "BOOK-PTOLEMY-TETRABIBLOS", "url": "https://www.gutenberg.org/files/70850/70850-h/70850-h.htm", "locator": "Book IV, chapter II, The Fortune of Wealth", "tier": "primary_translation", "finding": "wealth judged from Part of Fortune, ruling planets, condition, connection, and adverse testimony; buildings are one Saturnian route"},
+    {"source_id": "WEB-SKY-4TH-HOUSE", "url": "https://www.skyscript.co.uk/4.html", "locator": "The Fourth House / Main Rulerships", "tier": "secondary_traditional", "finding": "land, buildings, home and property are grouped with parents, ancestry and inheritance distinctions"},
+    {"source_id": "WEB-SKY-RECEPTION", "url": "https://www.skyscript.co.uk/masha_allah_receptions.html", "locator": "Masha'allah, On Reception, chapter 1", "tier": "primary_translation_excerpt", "finding": "reception requires domicile or exaltation relationship plus conjunction/aspect; one-way and mutual reception are distinct"}
+  ],
+  "candidate_rules": [
+    {"id": "CAND-PROP-001", "claim": "4→2 can be used as a property-to-wealth direction only as an internal hypothesis, never alone as proof of property profit", "grade_cap": "C", "reason": "no primary text located that states the directional fly-in rule"},
+    {"id": "CAND-PROP-002", "claim": "2→4 describes money/resources being allocated into property more directly than property generating wealth", "grade_cap": "C", "reason": "directional asymmetry is an operational model requiring regression"},
+    {"id": "CAND-REC-001", "claim": "typed planetary reception requires dignity relationship and actual connection; house-pair mutual reception remains auxiliary", "grade_cap": "B", "reason": "explicitly supported by Masha'allah excerpt and project reception gate"},
+    {"id": "CAND-WEALTH-001", "claim": "wealth acquisition and wealth duration must be scored separately", "grade_cap": "B", "reason": "Ptolemy adds adverse testimony and continuation conditions"}
+  ],
+  "tests_run": [
+    {"test": "primary_text_locator_review", "status": "pass", "result": "wealth and reception mechanisms located; fly-in profit rule not located"},
+    {"test": "countertest_direction_symmetry", "status": "pending", "result": "requires paired positive/negative charts"},
+    {"test": "chart_regression_chen_yue_peng_2235", "status": "pending", "result": "validated facts available; property profit claim currently fails publication gate without 4→2"}
+  ],
+  "failures": ["web__run search/open returned 404 in this environment; direct read-only HTTP fallback used and recorded"],
+  "changes": ["added EXT-20260815-018 through EXT-20260815-021", "added BATCH-20260815-05", "kept all new rules at candidate/auxiliary layer"],
+  "result": "bounded_research_complete_no_core_promotion",
+  "next_round": ["paired chart regression for 4→2 versus 2→4", "verify Part of Fortune and ruler-condition interactions", "compare a second primary translation for reception and wealth", "write a negative-test fixture for unsupported property-profit wording"]
+}

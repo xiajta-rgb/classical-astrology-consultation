@@ -1,0 +1,187 @@
+version: "INTERPRETATION-ROUTES-1.1"
+role: topic_responsibility_map_only
+runtime_activation: config/module_dispatch.yaml
+default_route: natal_structure
+
+# Every route is resolved inside a canonical client case. The route chooses
+# interpretation modules; it never becomes the storage location for client data.
+case_context:
+  required: true
+  case_id_source: "clients.json -> clients/<case_id>/profile.json"
+  input_root: "clients/<case_id>/input"
+  facts_root: "clients/<case_id>/analysis/chart-facts"
+  interpretation_root: "clients/<case_id>/analysis/interpretations"
+  delivery_root: "clients/<case_id>/delivery"
+  observation_root: "clients/<case_id>/observations"
+
+# Route selection is intent-first. Every route starts from calculated Chart Facts;
+# candidate knowledge modules may enrich a judgment but never replace the facts.
+routes:
+  natal_structure:
+    match_topics: [natal, personality, ability, overall]
+    required_nodes:
+      - chart_facts
+      - planetary_state
+      - responsibility_chain
+      - semantic_coverage
+      - composition
+      - topic_knowledge
+    optional_nodes: [house_ruler_flow, typed_reception]
+    optional_insight_nodes: [mbti_personality]
+
+  property_wealth:
+    match_topics: [property, home, house_purchase, real_estate, wealth_from_property]
+    required_nodes:
+      - chart_facts
+      - fly_in_calculation
+      - semantic_coverage
+      - fly_in_validation
+      - property_chain
+      - wealth_chain
+      - composition
+      - topic_knowledge
+    optional_nodes: [typed_reception, mutual_reception_matrix, timing]
+    primary_house_chain: [4, 2, 8, 10, 11]
+    child_overlay_when_ruler4_in_5: [5, 1, 4, 8]
+
+  career_finance:
+    match_topics: [career, work, income, debt, cashflow]
+    required_nodes:
+      - chart_facts
+      - fly_in_calculation
+      - semantic_coverage
+      - career_chain
+      - wealth_chain
+      - pressure_chain
+      - composition
+      - topic_knowledge
+    optional_nodes: [timing]
+    optional_insight_nodes: [career_insight]
+
+  relationship_family:
+    match_topics: [relationship, love, marriage, partner, family, household, parents]
+    required_nodes:
+      - chart_facts
+      - fly_in_calculation
+      - semantic_coverage
+      - relationship_chain
+      - family_chain_when_home_is_in_scope
+      - composition
+      - topic_knowledge
+    optional_nodes: [typed_reception, property_chain, timing]
+
+  children_education:
+    match_topics: [children, education, schooling, parenting]
+    required_nodes:
+      - chart_facts
+      - fly_in_calculation
+      - semantic_coverage
+      - children_chain
+      - property_chain_when_home_is_in_scope
+      - composition
+      - topic_knowledge
+    optional_nodes: [timing]
+
+  current_timing:
+    match_topics: [future, current, trend, forecast, transits, progression, profection, firdaria]
+    required_nodes:
+      - natal_structure_first
+      - semantic_coverage
+      - predictive_technique
+      - timing_activation_gate
+      - composition
+    optional_nodes: [solar_return, secondary_progression, solar_arc, profection, firdaria]
+
+  birth_time_validation:
+    match_topics: [birth_time_validation, rectification, event_backtest, exact_birth_time]
+    required_nodes:
+      - natal_structure_first
+      - semantic_coverage
+      - dated_event_observations
+      - candidate_time_scan
+      - predictive_technique_matrix
+      - tolerance_window_gate
+      - composition
+    optional_nodes: []
+
+  reception_audit:
+    match_topics: [reception, mutual_reception, dignity, acceptance]
+    required_nodes:
+      - chart_facts
+      - semantic_coverage
+      - typed_reception_calculation
+      - reception_connection_audit
+    optional_nodes: [mutual_reception_matrix]
+
+nodes:
+  client_context:
+    source: clients.json + clients/<case_id>/profile.json
+    output: case_id_profile_provenance_and_data_completeness
+  chart_facts:
+    source: astrology_engine.natal.calculate_natal
+    output: tropical_placidus_chart_facts
+  planetary_state:
+    source: astrology_engine.predictive.calculate_predictive(essential_dignities)
+    output: dignity_sect_angularity_state
+  fly_in_calculation:
+    source: astrology_engine.significations.calculate_responsibilities
+    output: rulership_fly_ins
+  fly_in_validation:
+    source: scripts.check_reception_connections.py + responsibility-chain assertions
+    output: validated_responsibility_chains
+  typed_reception_calculation:
+    source: astrology_engine.predictive.calculate_predictive(mutual_reception)
+    output: strict_planetary_reception
+  reception_connection_audit:
+    source: scripts.check_reception_connections.py
+    output: direction_connection_status
+  composition:
+    source: scripts.compose_significators.py
+    output: convergence_conflict_bottleneck_event_mechanism
+  topic_knowledge:
+    source: scripts.query_knowledge_plugins.py + references/interpretation-modules/registry.json
+    output: bounded_topic_template_rules_counter_tests_and_observable_tests
+  semantic_coverage:
+    source: scripts.expand_signification_map.py + references/signification-ontology.yaml
+    version: SEMANTIC-COVERAGE-0.2
+    output: exhaustive_internal_keyword_relation_map
+  relationship_chain:
+    source: astrology_engine.significations.calculate_responsibilities + relationship topic adapter
+    output: relationship_significators_and_directional_responsibility_chain
+  family_chain_when_home_is_in_scope:
+    source: astrology_engine.significations.calculate_responsibilities + family topic adapter
+    output: family_home_significators_and_scope_limited_responsibility_chain
+  timing_activation_gate:
+    source: references/consultation-output-protocol.md
+    output: publishable_or_deferred
+  insight_ledger:
+    source: clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.json
+    output: persistent_chart_specific_significators_and_validated_insights
+  dated_event_observations:
+    source: clients/<case_id>/observations/OBS-*-BIRTH-TIME-VALIDATION.json
+    output: user_confirmed_event_dates_and_domains
+  candidate_time_scan:
+    source: scripts/validate_birth_time.py
+    output: candidate_time_event_window_matrix
+  predictive_technique_matrix:
+    source: astrology_engine.predictive.calculate_predictive + astrology_engine.predictive_events
+    output: natal_firdaria_profection_progression_transit_arc_return_contacts
+  tolerance_window_gate:
+    source: references/birth-time-validation.md
+    output: explicit_event_tolerance_and_confidence_limits
+
+evidence_policy:
+  source_trace_required_for:
+    - fly_in_claim
+    - reception_claim
+    - property_profit_claim
+    - timing_claim
+  trace_fields:
+    - chart_engine
+    - calculation_script
+    - reference_rule
+    - module_or_card_id
+    - counter_test
+  direction_rule: "A ruler in B means A responsibility enters B; reverse direction is a different claim."
+  no_mutual_reception_without_reverse: true
+  auxiliary_house_pair_cap: C

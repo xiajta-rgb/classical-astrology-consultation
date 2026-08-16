@@ -1,0 +1,2562 @@
+{
+  "schema_version": "NATAL-PIPELINE-1.0",
+  "status": "ready_for_topic_composition",
+  "route_plan": {
+    "schema_version": "CONSULTATION-PLAN-1.0",
+    "status": "ready",
+    "route_id": "property_wealth",
+    "topic": "property",
+    "timing": {
+      "requested": false,
+      "technique": null,
+      "policy": "natal_first_and_direct_activation_only"
+    },
+    "modules": [
+      {
+        "id": "client_context",
+        "version": "CLIENT-CONTEXT-1.0",
+        "owner": "clients",
+        "source": "clients.json + clients/<case_id>/profile.json",
+        "technique": null,
+        "activation": "always",
+        "status": "active",
+        "output": "case_id_provenance_completeness"
+      },
+      {
+        "id": "chart_facts",
+        "version": "CHART-FACTS-1.0",
+        "owner": "astrology_engine",
+        "source": "astrology_engine.natal.calculate_natal",
+        "technique": null,
+        "activation": "always",
+        "status": "active",
+        "output": "tropical_chart_facts"
+      },
+      {
+        "id": "planetary_state",
+        "version": "PLANETARY-STATE-1.0",
+        "owner": "astrology_engine",
+        "source": "astrology_engine.predictive.calculate_predictive",
+        "technique": "essential_dignities",
+        "activation": "always",
+        "status": "active",
+        "output": "sect_dignity_terms_triplicity_faces_angularity_visibility"
+      },
+      {
+        "id": "responsibility_chain",
+        "version": "RESPONSIBILITY-1.0",
+        "owner": "astrology_engine",
+        "source": "astrology_engine.significations.calculate_responsibilities",
+        "technique": null,
+        "activation": "always",
+        "status": "active",
+        "output": "house_ruler_flow_and_aspects"
+      },
+      {
+        "id": "reception_audit",
+        "version": "RECEPTION-1.0",
+        "owner": "astrology_engine",
+        "source": "astrology_engine.predictive.calculate_predictive",
+        "technique": "mutual_reception",
+        "activation": "always",
+        "status": "active",
+        "output": "typed_reception_and_connection_status"
+      },
+      {
+        "id": "topic_knowledge",
+        "version": "PLUGIN-CONTRACT-0.1",
+        "owner": "knowledge_modules",
+        "source": "scripts.query_knowledge_plugins.py",
+        "technique": null,
+        "activation": "explicit_topic",
+        "status": "active",
+        "output": "bounded_cards_and_deferred_candidates"
+      },
+      {
+        "id": "composition",
+        "version": "COMPOSITION-0.1",
+        "owner": "interpretation",
+        "source": "scripts.compose_significators.py",
+        "technique": null,
+        "activation": "always_after_core_facts",
+        "status": "active",
+        "output": "deduplicated_mechanism_graph_and_competing_hypotheses"
+      }
+    ],
+    "knowledge_plugins": [
+      "core-natal-method",
+      "house-ruler-flow"
+    ],
+    "guardrails": [
+      "model_memory_as_source",
+      "knowledge_card_before_chart_facts",
+      "case_text_as_global_rule",
+      "house_pair_matrix_as_strict_mutual_reception",
+      "future_sentence_without_direct_activation",
+      "modern_outer_planet_overriding_classical_core"
+    ]
+  },
+  "client_context": {
+    "status": "case_loaded",
+    "case_id": "19861012-2235-QuanzhouQuangang",
+    "profile_path": "clients\\19861012-2235-QuanzhouQuangang\\profile.json",
+    "analysis_root": "clients\\19861012-2235-QuanzhouQuangang\\analysis"
+  },
+  "module_trace": [
+    {
+      "module": "client_context",
+      "version": "CLIENT-CONTEXT-1.0",
+      "status": "case_loaded",
+      "source": "clients.json + clients/<case_id>/profile.json"
+    },
+    {
+      "module": "chart_facts",
+      "version": "CHART-FACTS-1.0",
+      "status": "computed",
+      "source": "astrology_engine.natal.calculate_natal"
+    },
+    {
+      "module": "planetary_state",
+      "version": "PLANETARY-STATE-1.0",
+      "status": "computed",
+      "source": "astrology_engine.predictive.calculate_predictive"
+    },
+    {
+      "module": "responsibility_chain",
+      "version": "RESPONSIBILITY-1.0",
+      "status": "computed",
+      "source": "astrology_engine.significations.calculate_responsibilities"
+    },
+    {
+      "module": "reception_audit",
+      "version": "RECEPTION-1.0",
+      "status": "computed",
+      "source": "astrology_engine.predictive.calculate_predictive"
+    },
+    {
+      "module": "topic_knowledge",
+      "version": "PLUGIN-CONTRACT-0.1",
+      "status": "retrieved",
+      "source": "scripts.query_knowledge_plugins.py"
+    },
+    {
+      "module": "composition",
+      "version": "COMPOSITION-0.1",
+      "status": "awaiting_topic_evidence",
+      "source": "scripts.compose_significators.py"
+    }
+  ],
+  "chart_facts": {
+    "engine": "project_local_ephh_natal",
+    "chart_id": "local-19861012-213000-P-394ace114a0f",
+    "birth_datetime": "1986-10-12T21:30:00",
+    "place": "泉州泉港",
+    "lat": 25.1209,
+    "lon": 118.9126,
+    "tz": 8.0,
+    "timezone_name": "Asia/Shanghai",
+    "timezone_source": "iana_timezone",
+    "location_source": "local_place_alias",
+    "location_precision_warning": "administrative_district_centroid",
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "placements": {
+      "Sun": {
+        "name": "Sun",
+        "name_cn": "太阳",
+        "ecliptic_longitude": 198.9288,
+        "ecliptic_latitude": -0.0001,
+        "zodiac": {
+          "index": 6,
+          "name": "天秤",
+          "degree": 18.9288,
+          "degree_str": "18°56'",
+          "full_str": "天秤座 18°56'"
+        },
+        "house_number": 5,
+        "house_meaning": "恋爱、子女、创造力、娱乐",
+        "is_retrograde": false,
+        "speed": 0.989439
+      },
+      "Moon": {
+        "name": "Moon",
+        "name_cn": "月亮",
+        "ecliptic_longitude": 314.8894,
+        "ecliptic_latitude": -4.8288,
+        "zodiac": {
+          "index": 10,
+          "name": "水瓶",
+          "degree": 14.8894,
+          "degree_str": "14°53'",
+          "full_str": "水瓶座 14°53'"
+        },
+        "house_number": 9,
+        "house_meaning": "教育、旅行、哲学、信仰",
+        "is_retrograde": false,
+        "speed": 13.77217
+      },
+      "Mercury": {
+        "name": "Mercury",
+        "name_cn": "水星",
+        "ecliptic_longitude": 221.6904,
+        "ecliptic_latitude": -2.1583,
+        "zodiac": {
+          "index": 7,
+          "name": "天蝎",
+          "degree": 11.6904,
+          "degree_str": "11°41'",
+          "full_str": "天蝎座 11°41'"
+        },
+        "house_number": 5,
+        "house_meaning": "恋爱、子女、创造力、娱乐",
+        "is_retrograde": false,
+        "speed": 1.286529
+      },
+      "Venus": {
+        "name": "Venus",
+        "name_cn": "金星",
+        "ecliptic_longitude": 230.2074,
+        "ecliptic_latitude": -6.7488,
+        "zodiac": {
+          "index": 7,
+          "name": "天蝎",
+          "degree": 20.2074,
+          "degree_str": "20°13'",
+          "full_str": "天蝎座 20°13'"
+        },
+        "house_number": 5,
+        "house_meaning": "恋爱、子女、创造力、娱乐",
+        "is_retrograde": false,
+        "speed": 0.120096
+      },
+      "Mars": {
+        "name": "Mars",
+        "name_cn": "火星",
+        "ecliptic_longitude": 301.9517,
+        "ecliptic_latitude": -2.9986,
+        "zodiac": {
+          "index": 10,
+          "name": "水瓶",
+          "degree": 1.9517,
+          "degree_str": "1°57'",
+          "full_str": "水瓶座 1°57'"
+        },
+        "house_number": 8,
+        "house_meaning": "投资、偏财、转化、深层",
+        "is_retrograde": false,
+        "speed": 0.562316
+      },
+      "Jupiter": {
+        "name": "Jupiter",
+        "name_cn": "木星",
+        "ecliptic_longitude": 344.166,
+        "ecliptic_latitude": -1.4838,
+        "zodiac": {
+          "index": 11,
+          "name": "双鱼",
+          "degree": 14.166,
+          "degree_str": "14°10'",
+          "full_str": "双鱼座 14°10'"
+        },
+        "house_number": 10,
+        "house_meaning": "事业、名声、地位、成就",
+        "is_retrograde": true,
+        "speed": -0.085897
+      },
+      "Saturn": {
+        "name": "Saturn",
+        "name_cn": "土星",
+        "ecliptic_longitude": 246.3784,
+        "ecliptic_latitude": 1.5915,
+        "zodiac": {
+          "index": 8,
+          "name": "射手",
+          "degree": 6.3784,
+          "degree_str": "6°23'",
+          "full_str": "射手座 6°23'"
+        },
+        "house_number": 6,
+        "house_meaning": "工作、健康、服务、日常",
+        "is_retrograde": false,
+        "speed": 0.0923
+      },
+      "Uranus": {
+        "name": "Uranus",
+        "name_cn": "天王星",
+        "ecliptic_longitude": 259.2317,
+        "ecliptic_latitude": -0.103,
+        "zodiac": {
+          "index": 8,
+          "name": "射手",
+          "degree": 19.2317,
+          "degree_str": "19°14'",
+          "full_str": "射手座 19°14'"
+        },
+        "house_number": 6,
+        "house_meaning": "工作、健康、服务、日常",
+        "is_retrograde": false,
+        "speed": 0.037073
+      },
+      "Neptune": {
+        "name": "Neptune",
+        "name_cn": "海王星",
+        "ecliptic_longitude": 273.2496,
+        "ecliptic_latitude": 1.0466,
+        "zodiac": {
+          "index": 9,
+          "name": "摩羯",
+          "degree": 3.2496,
+          "degree_str": "3°15'",
+          "full_str": "摩羯座 3°15'"
+        },
+        "house_number": 7,
+        "house_meaning": "婚姻、合伙、他人、合作",
+        "is_retrograde": false,
+        "speed": 0.01509
+      },
+      "Pluto": {
+        "name": "Pluto",
+        "name_cn": "冥王星",
+        "ecliptic_longitude": 216.5549,
+        "ecliptic_latitude": 15.9281,
+        "zodiac": {
+          "index": 7,
+          "name": "天蝎",
+          "degree": 6.5549,
+          "degree_str": "6°33'",
+          "full_str": "天蝎座 6°33'"
+        },
+        "house_number": 5,
+        "house_meaning": "恋爱、子女、创造力、娱乐",
+        "is_retrograde": false,
+        "speed": 0.03897
+      },
+      "North Node": {
+        "name": "North Node",
+        "name_cn": "北交点",
+        "ecliptic_longitude": 20.8986,
+        "ecliptic_latitude": 0.0,
+        "zodiac": {
+          "index": 0,
+          "name": "白羊",
+          "degree": 20.8986,
+          "degree_str": "20°54'",
+          "full_str": "白羊座 20°54'"
+        },
+        "house_number": 11,
+        "house_meaning": "社交、人脉、理想、群体",
+        "is_retrograde": false,
+        "speed": -0.00293
+      },
+      "Chiron": {
+        "name": "Chiron",
+        "name_cn": "凯龙星",
+        "ecliptic_longitude": 81.2641,
+        "ecliptic_latitude": -5.3822,
+        "zodiac": {
+          "index": 2,
+          "name": "双子",
+          "degree": 21.2641,
+          "degree_str": "21°16'",
+          "full_str": "双子座 21°16'"
+        },
+        "house_number": 12,
+        "house_meaning": "玄学、潜意识、隐秘、灵性",
+        "is_retrograde": false,
+        "speed": -0.016734
+      },
+      "Juno": {
+        "name": "Juno",
+        "name_cn": "婚神星",
+        "ecliptic_longitude": 253.8446,
+        "ecliptic_latitude": 11.2325,
+        "zodiac": {
+          "index": 8,
+          "name": "射手",
+          "degree": 13.8446,
+          "degree_str": "13°50'",
+          "full_str": "射手座 13°50'"
+        },
+        "house_number": 6,
+        "house_meaning": "工作、健康、服务、日常",
+        "is_retrograde": false,
+        "speed": 0.288104
+      },
+      "South Node": {
+        "name": "South Node",
+        "name_cn": "南交点",
+        "ecliptic_longitude": 200.8986,
+        "ecliptic_latitude": 0.0,
+        "zodiac": {
+          "index": 6,
+          "name": "天秤",
+          "degree": 20.8986,
+          "degree_str": "20°54'",
+          "full_str": "天秤座 20°54'"
+        },
+        "house_number": 5,
+        "house_meaning": "恋爱、子女、创造力、娱乐",
+        "is_retrograde": false,
+        "speed": -0.00293
+      },
+      "Fortune": {
+        "name": "Fortune",
+        "name_cn": "福点",
+        "ecliptic_longitude": 328.4453,
+        "ecliptic_latitude": 0.0,
+        "zodiac": {
+          "index": 10,
+          "name": "水瓶",
+          "degree": 28.4453,
+          "degree_str": "28°27'",
+          "full_str": "水瓶座 28°27'"
+        },
+        "house_number": 9,
+        "house_meaning": "教育、旅行、哲学、信仰",
+        "is_retrograde": false,
+        "speed": 0.0
+      }
+    },
+    "houses": {
+      "house_cusps": [
+        84.4059,
+        108.0952,
+        132.5325,
+        160.7574,
+        194.2586,
+        230.4796,
+        264.4059,
+        288.0952,
+        312.5325,
+        340.7574,
+        14.2586,
+        50.4796
+      ],
+      "asc": 84.4059,
+      "mc": 340.7574,
+      "des": 342.242,
+      "ic": 220.1659,
+      "house_system": "Placidus"
+    },
+    "aspects": [
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Moon",
+        "planet2_cn": "月亮",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.04,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 4.76,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Saturn",
+        "planet2_cn": "土星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.45,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 0.3,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 1.97,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 2.34,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 5.08,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 1.97,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 5.48,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Mercury",
+        "planet2_cn": "水星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 3.2,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Venus",
+        "planet2_cn": "金星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 5.32,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.34,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 1.04,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.01,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 2.48,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 5.14,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 2.28,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 0.93,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.04,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Neptune",
+        "planet2_cn": "海王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 1.96,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 0.69,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 1.06,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 4.2,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.79,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Saturn",
+        "planet2_cn": "土星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.43,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.28,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 4.6,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 5.07,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.61,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 0.32,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 3.41,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 0.48,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 7.47,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 0.48,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 4.38,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.32,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 1.67,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 2.03,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 5.39,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 1.67,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 5.17,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Neptune",
+        "planet1_cn": "海王星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 3.31,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Neptune",
+        "planet1_cn": "海王星",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.8,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 0.29,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 2.85,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.2,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 0.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.05,
+        "motion": "applying"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 0.0,
+        "motion": "stationary"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 3.51,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 7.42,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 0.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.18,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 3.14,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Juno",
+        "planet1_cn": "婚神星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 3.09,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "South Node",
+        "planet1_cn": "南交点",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.55,
+        "motion": "separating"
+      },
+      {
+        "planet1": "South Node",
+        "planet1_cn": "南交点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 3.51,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Fortune",
+        "planet1_cn": "福点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.04,
+        "motion": "unknown"
+      }
+    ],
+    "is_day_chart": false,
+    "ephemeris_path": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\astrology_engine\\ephh_core\\ephe",
+    "source_policy": "vendored_ephh_algorithm_subset"
+  },
+  "responsibility_chain": {
+    "schema_version": "RESPONSIBILITY-1.0",
+    "chart_id": "local-19861012-213000-P-394ace114a0f",
+    "source_chart_facts": "local-19861012-213000-P-394ace114a0f",
+    "engine": "project_local_ephh_natal",
+    "birth_datetime": "1986-10-12T21:30:00",
+    "place": "泉州泉港",
+    "lat": 25.1209,
+    "lon": 118.9126,
+    "tz": 8.0,
+    "timezone_name": "Asia/Shanghai",
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "house_flying": [
+      {
+        "house": 1,
+        "cusp": 84.4059,
+        "cusp_sign": "双子座",
+        "ruler": "Mercury",
+        "ruler_cn": "水星",
+        "ruler_house": 5,
+        "ruler_sign": "天蝎",
+        "direction": "1->5"
+      },
+      {
+        "house": 2,
+        "cusp": 108.0952,
+        "cusp_sign": "巨蟹座",
+        "ruler": "Moon",
+        "ruler_cn": "月亮",
+        "ruler_house": 9,
+        "ruler_sign": "水瓶",
+        "direction": "2->9"
+      },
+      {
+        "house": 3,
+        "cusp": 132.5325,
+        "cusp_sign": "狮子座",
+        "ruler": "Sun",
+        "ruler_cn": "太阳",
+        "ruler_house": 5,
+        "ruler_sign": "天秤",
+        "direction": "3->5"
+      },
+      {
+        "house": 4,
+        "cusp": 160.7574,
+        "cusp_sign": "处女座",
+        "ruler": "Mercury",
+        "ruler_cn": "水星",
+        "ruler_house": 5,
+        "ruler_sign": "天蝎",
+        "direction": "4->5"
+      },
+      {
+        "house": 5,
+        "cusp": 194.2586,
+        "cusp_sign": "天秤座",
+        "ruler": "Venus",
+        "ruler_cn": "金星",
+        "ruler_house": 5,
+        "ruler_sign": "天蝎",
+        "direction": "5->5"
+      },
+      {
+        "house": 6,
+        "cusp": 230.4796,
+        "cusp_sign": "天蝎座",
+        "ruler": "Mars",
+        "ruler_cn": "火星",
+        "ruler_house": 8,
+        "ruler_sign": "水瓶",
+        "direction": "6->8"
+      },
+      {
+        "house": 7,
+        "cusp": 264.4059,
+        "cusp_sign": "射手座",
+        "ruler": "Jupiter",
+        "ruler_cn": "木星",
+        "ruler_house": 10,
+        "ruler_sign": "双鱼",
+        "direction": "7->10"
+      },
+      {
+        "house": 8,
+        "cusp": 288.0952,
+        "cusp_sign": "摩羯座",
+        "ruler": "Saturn",
+        "ruler_cn": "土星",
+        "ruler_house": 6,
+        "ruler_sign": "射手",
+        "direction": "8->6"
+      },
+      {
+        "house": 9,
+        "cusp": 312.5325,
+        "cusp_sign": "水瓶座",
+        "ruler": "Saturn",
+        "ruler_cn": "土星",
+        "ruler_house": 6,
+        "ruler_sign": "射手",
+        "direction": "9->6"
+      },
+      {
+        "house": 10,
+        "cusp": 340.7574,
+        "cusp_sign": "双鱼座",
+        "ruler": "Jupiter",
+        "ruler_cn": "木星",
+        "ruler_house": 10,
+        "ruler_sign": "双鱼",
+        "direction": "10->10"
+      },
+      {
+        "house": 11,
+        "cusp": 14.2586,
+        "cusp_sign": "白羊座",
+        "ruler": "Mars",
+        "ruler_cn": "火星",
+        "ruler_house": 8,
+        "ruler_sign": "水瓶",
+        "direction": "11->8"
+      },
+      {
+        "house": 12,
+        "cusp": 50.4796,
+        "cusp_sign": "金牛座",
+        "ruler": "Venus",
+        "ruler_cn": "金星",
+        "ruler_house": 5,
+        "ruler_sign": "天蝎",
+        "direction": "12->5"
+      }
+    ],
+    "aspects": [
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Moon",
+        "planet2_cn": "月亮",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.04,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 4.76,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Saturn",
+        "planet2_cn": "土星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.45,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 0.3,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 1.97,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 2.34,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 5.08,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 1.97,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Sun",
+        "planet1_cn": "太阳",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 5.48,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Mercury",
+        "planet2_cn": "水星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 3.2,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Venus",
+        "planet2_cn": "金星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 5.32,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.34,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 1.04,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Moon",
+        "planet1_cn": "月亮",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.01,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 2.48,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 5.14,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 2.28,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Mercury",
+        "planet1_cn": "水星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 0.93,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 6.04,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Neptune",
+        "planet2_cn": "海王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 1.96,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 0.69,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 1.06,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Venus",
+        "planet1_cn": "金星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "quincunx",
+        "type_cn": "梅花相",
+        "angle": 150,
+        "orb": 4.2,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Jupiter",
+        "planet2_cn": "木星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.79,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Saturn",
+        "planet2_cn": "土星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.43,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.28,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Mars",
+        "planet1_cn": "火星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 4.6,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Uranus",
+        "planet2_cn": "天王星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 5.07,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.61,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 0.32,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Jupiter",
+        "planet1_cn": "木星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 3.41,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 0.48,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 7.47,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 0.48,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Saturn",
+        "planet1_cn": "土星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 4.38,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "semisquare",
+        "type_cn": "半四分相",
+        "angle": 45,
+        "orb": 2.32,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "North Node",
+        "planet2_cn": "北交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 1.67,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 2.03,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 5.39,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 1.67,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Uranus",
+        "planet1_cn": "天王星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 5.17,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Neptune",
+        "planet1_cn": "海王星",
+        "planet2": "Pluto",
+        "planet2_cn": "冥王星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 3.31,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Neptune",
+        "planet1_cn": "海王星",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 4.8,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 0.29,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sesquisquare",
+        "type_cn": "倍半四分相",
+        "angle": 135,
+        "orb": 2.85,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Pluto",
+        "planet1_cn": "冥王星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.2,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Chiron",
+        "planet2_cn": "凯龙星",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 0.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.05,
+        "motion": "applying"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 0.0,
+        "motion": "stationary"
+      },
+      {
+        "planet1": "North Node",
+        "planet1_cn": "北交点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "sextile",
+        "type_cn": "六分相",
+        "angle": 60,
+        "orb": 3.51,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Juno",
+        "planet2_cn": "婚神星",
+        "type": "opposition",
+        "type_cn": "对冲",
+        "angle": 180,
+        "orb": 7.42,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "South Node",
+        "planet2_cn": "南交点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 0.37,
+        "motion": "applying"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.18,
+        "motion": "separating"
+      },
+      {
+        "planet1": "Chiron",
+        "planet1_cn": "凯龙星",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "conjunction",
+        "type_cn": "合相",
+        "angle": 0,
+        "orb": 3.14,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Juno",
+        "planet1_cn": "婚神星",
+        "planet2": "Midheaven",
+        "planet2_cn": "中天",
+        "type": "square",
+        "type_cn": "四分相",
+        "angle": 90,
+        "orb": 3.09,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "South Node",
+        "planet1_cn": "南交点",
+        "planet2": "Fortune",
+        "planet2_cn": "福点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 7.55,
+        "motion": "separating"
+      },
+      {
+        "planet1": "South Node",
+        "planet1_cn": "南交点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 3.51,
+        "motion": "unknown"
+      },
+      {
+        "planet1": "Fortune",
+        "planet1_cn": "福点",
+        "planet2": "Ascendant",
+        "planet2_cn": "上升点",
+        "type": "trine",
+        "type_cn": "三分相",
+        "angle": 120,
+        "orb": 4.04,
+        "motion": "unknown"
+      }
+    ],
+    "is_day_chart": false,
+    "provenance": {
+      "chart_facts": "astrology_engine.natal.calculate_natal",
+      "rulership": "traditional_sign_rulers_from_chart_facts",
+      "direction_rule": "A ruler in B means A responsibility enters B"
+    }
+  },
+  "planetary_state": {
+    "engine": "project_local_ephh_predictive",
+    "technique": "essential_dignities",
+    "source_algorithm": "calculate_essential_dignities",
+    "birth_datetime": "1986-10-12T21:30:00",
+    "chart_id": "local-19861012-213000-P-394ace114a0f",
+    "target_datetime": null,
+    "target_year": null,
+    "place": "泉州泉港",
+    "lat": 25.1209,
+    "lon": 118.9126,
+    "location_source": "local_place_alias",
+    "location_precision_warning": "administrative_district_centroid",
+    "tz": 8.0,
+    "target_tz": null,
+    "timezone_name": "Asia/Shanghai",
+    "timezone_source": "iana_timezone",
+    "house_system": "P",
+    "ephemeris_path": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\astrology_engine\\ephh_core\\ephe",
+    "result": {
+      "chart_type": "essential_dignities",
+      "birth_datetime": "1986-10-12T21:30:00",
+      "is_day_chart": false,
+      "use_modern_rulers": false,
+      "dignities": {
+        "Sun": {
+          "planet": "Sun",
+          "sign": "天秤座",
+          "sign_index": 6,
+          "longitude": 198.9288,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "air",
+          "triplicity_ruler_day": "Saturn",
+          "triplicity_ruler_night": "Mercury",
+          "triplicity_ruler_participating": "Jupiter",
+          "sect_triplicity_ruler": "Mercury",
+          "term_system": "egyptian",
+          "term_ruler": "Jupiter",
+          "face_ruler": "Saturn",
+          "house": 5,
+          "accidental_condition": "succedent",
+          "speed": 0.989439,
+          "retrograde": false,
+          "sun_distance": 0.0,
+          "visibility_state": "cazimi"
+        },
+        "Moon": {
+          "planet": "Moon",
+          "sign": "水瓶座",
+          "sign_index": 10,
+          "longitude": 314.8894,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "air",
+          "triplicity_ruler_day": "Saturn",
+          "triplicity_ruler_night": "Mercury",
+          "triplicity_ruler_participating": "Jupiter",
+          "sect_triplicity_ruler": "Mercury",
+          "term_system": "egyptian",
+          "term_ruler": "Jupiter",
+          "face_ruler": "Mercury",
+          "house": 9,
+          "accidental_condition": "cadent",
+          "speed": 13.77217,
+          "retrograde": false,
+          "sun_distance": 115.9606,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Mercury": {
+          "planet": "Mercury",
+          "sign": "天蝎座",
+          "sign_index": 7,
+          "longitude": 221.6904,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "water",
+          "triplicity_ruler_day": "Venus",
+          "triplicity_ruler_night": "Mars",
+          "triplicity_ruler_participating": "Moon",
+          "sect_triplicity_ruler": "Mars",
+          "term_system": "egyptian",
+          "term_ruler": "Jupiter",
+          "face_ruler": "Sun",
+          "house": 5,
+          "accidental_condition": "succedent",
+          "speed": 1.286529,
+          "retrograde": false,
+          "sun_distance": 22.7616,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Venus": {
+          "planet": "Venus",
+          "sign": "天蝎座",
+          "sign_index": 7,
+          "longitude": 230.2074,
+          "status": "detriment",
+          "status_cn": "失势",
+          "score": -2,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 2,
+            "face": 1
+          },
+          "triplicity": "water",
+          "triplicity_ruler_day": "Venus",
+          "triplicity_ruler_night": "Mars",
+          "triplicity_ruler_participating": "Moon",
+          "sect_triplicity_ruler": "Mars",
+          "term_system": "egyptian",
+          "term_ruler": "Venus",
+          "face_ruler": "Venus",
+          "house": 5,
+          "accidental_condition": "succedent",
+          "speed": 0.120096,
+          "retrograde": false,
+          "sun_distance": 31.2786,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Mars": {
+          "planet": "Mars",
+          "sign": "水瓶座",
+          "sign_index": 10,
+          "longitude": 301.9517,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "air",
+          "triplicity_ruler_day": "Saturn",
+          "triplicity_ruler_night": "Mercury",
+          "triplicity_ruler_participating": "Jupiter",
+          "sect_triplicity_ruler": "Mercury",
+          "term_system": "egyptian",
+          "term_ruler": "Mercury",
+          "face_ruler": "Venus",
+          "house": 8,
+          "accidental_condition": "succedent",
+          "speed": 0.562316,
+          "retrograde": false,
+          "sun_distance": 103.0229,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Jupiter": {
+          "planet": "Jupiter",
+          "sign": "双鱼座",
+          "sign_index": 11,
+          "longitude": 344.166,
+          "status": "domicile",
+          "status_cn": "入庙",
+          "score": 6,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": 5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 1
+          },
+          "triplicity": "water",
+          "triplicity_ruler_day": "Venus",
+          "triplicity_ruler_night": "Mars",
+          "triplicity_ruler_participating": "Moon",
+          "sect_triplicity_ruler": "Mars",
+          "term_system": "egyptian",
+          "term_ruler": "Mercury",
+          "face_ruler": "Jupiter",
+          "house": 10,
+          "accidental_condition": "angular",
+          "speed": -0.085897,
+          "retrograde": true,
+          "sun_distance": 145.2372,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Saturn": {
+          "planet": "Saturn",
+          "sign": "射手座",
+          "sign_index": 8,
+          "longitude": 246.3784,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -4,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 1,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "fire",
+          "triplicity_ruler_day": "Sun",
+          "triplicity_ruler_night": "Jupiter",
+          "triplicity_ruler_participating": "Saturn",
+          "sect_triplicity_ruler": "Jupiter",
+          "term_system": "egyptian",
+          "term_ruler": "Venus",
+          "face_ruler": "Mercury",
+          "house": 6,
+          "accidental_condition": "cadent",
+          "speed": 0.0923,
+          "retrograde": false,
+          "sun_distance": 47.4496,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Uranus": {
+          "planet": "Uranus",
+          "sign": "射手座",
+          "sign_index": 8,
+          "longitude": 259.2317,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "fire",
+          "triplicity_ruler_day": "Sun",
+          "triplicity_ruler_night": "Jupiter",
+          "triplicity_ruler_participating": "Saturn",
+          "sect_triplicity_ruler": "Jupiter",
+          "term_system": "egyptian",
+          "term_ruler": "Jupiter",
+          "face_ruler": "Moon",
+          "house": 6,
+          "accidental_condition": "cadent",
+          "speed": 0.037073,
+          "retrograde": false,
+          "sun_distance": 60.3029,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Neptune": {
+          "planet": "Neptune",
+          "sign": "摩羯座",
+          "sign_index": 9,
+          "longitude": 273.2496,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "earth",
+          "triplicity_ruler_day": "Venus",
+          "triplicity_ruler_night": "Moon",
+          "triplicity_ruler_participating": "Mars",
+          "sect_triplicity_ruler": "Moon",
+          "term_system": "egyptian",
+          "term_ruler": "Mercury",
+          "face_ruler": "Jupiter",
+          "house": 7,
+          "accidental_condition": "angular",
+          "speed": 0.01509,
+          "retrograde": false,
+          "sun_distance": 74.3208,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Pluto": {
+          "planet": "Pluto",
+          "sign": "天蝎座",
+          "sign_index": 7,
+          "longitude": 216.5549,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "water",
+          "triplicity_ruler_day": "Venus",
+          "triplicity_ruler_night": "Mars",
+          "triplicity_ruler_participating": "Moon",
+          "sect_triplicity_ruler": "Mars",
+          "term_system": "egyptian",
+          "term_ruler": "Mercury",
+          "face_ruler": "Mars",
+          "house": 5,
+          "accidental_condition": "succedent",
+          "speed": 0.03897,
+          "retrograde": false,
+          "sun_distance": 17.6261,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "North Node": {
+          "planet": "North Node",
+          "sign": "白羊座",
+          "sign_index": 0,
+          "longitude": 20.8986,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "fire",
+          "triplicity_ruler_day": "Sun",
+          "triplicity_ruler_night": "Jupiter",
+          "triplicity_ruler_participating": "Saturn",
+          "sect_triplicity_ruler": "Jupiter",
+          "term_system": "egyptian",
+          "term_ruler": "Mars",
+          "face_ruler": "Venus",
+          "house": 11,
+          "accidental_condition": "succedent",
+          "speed": -0.00293,
+          "retrograde": false,
+          "sun_distance": 178.0302,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Chiron": {
+          "planet": "Chiron",
+          "sign": "双子座",
+          "sign_index": 2,
+          "longitude": 81.2641,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "air",
+          "triplicity_ruler_day": "Saturn",
+          "triplicity_ruler_night": "Mercury",
+          "triplicity_ruler_participating": "Jupiter",
+          "sect_triplicity_ruler": "Mercury",
+          "term_system": "egyptian",
+          "term_ruler": "Mars",
+          "face_ruler": "Sun",
+          "house": 12,
+          "accidental_condition": "cadent",
+          "speed": -0.016734,
+          "retrograde": false,
+          "sun_distance": 117.6647,
+          "visibility_state": "visible_by_sun_distance"
+        },
+        "Juno": {
+          "planet": "Juno",
+          "sign": "射手座",
+          "sign_index": 8,
+          "longitude": 253.8446,
+          "status": "peregrine",
+          "status_cn": "游走",
+          "score": -5,
+          "essential_score": {
+            "domicile_or_detriment_or_exaltation_or_fall": -5,
+            "triplicity": 0,
+            "term": 0,
+            "face": 0
+          },
+          "triplicity": "fire",
+          "triplicity_ruler_day": "Sun",
+          "triplicity_ruler_night": "Jupiter",
+          "triplicity_ruler_participating": "Saturn",
+          "sect_triplicity_ruler": "Jupiter",
+          "term_system": "egyptian",
+          "term_ruler": "Venus",
+          "face_ruler": "Moon",
+          "house": 6,
+          "accidental_condition": "cadent",
+          "speed": 0.288104,
+          "retrograde": false,
+          "sun_distance": 54.9158,
+          "visibility_state": "visible_by_sun_distance"
+        }
+      },
+      "summary": {
+        "strong_count": 1,
+        "weak_count": 12,
+        "peregrine_count": 10,
+        "total_score": -50,
+        "strong_planets": [
+          "Jupiter"
+        ],
+        "weak_planets": [
+          "Sun",
+          "Moon",
+          "Mercury",
+          "Venus",
+          "Mars",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Pluto",
+          "North Node",
+          "Chiron",
+          "Juno"
+        ]
+      },
+      "method": {
+        "term_system": "egyptian",
+        "triplicity_system": "dorothean",
+        "accidental_condition_scope": "house_angularity_speed_retrograde_sun_distance"
+      }
+    }
+  },
+  "typed_reception": {
+    "engine": "project_local_ephh_predictive",
+    "technique": "mutual_reception",
+    "source_algorithm": "calculate_mutual_reception",
+    "birth_datetime": "1986-10-12T21:30:00",
+    "chart_id": "local-19861012-213000-P-394ace114a0f",
+    "target_datetime": null,
+    "target_year": null,
+    "place": "泉州泉港",
+    "lat": 25.1209,
+    "lon": 118.9126,
+    "location_source": "local_place_alias",
+    "location_precision_warning": "administrative_district_centroid",
+    "tz": 8.0,
+    "target_tz": null,
+    "timezone_name": "Asia/Shanghai",
+    "timezone_source": "iana_timezone",
+    "house_system": "P",
+    "ephemeris_path": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\astrology_engine\\ephh_core\\ephe",
+    "result": {
+      "chart_type": "mutual_reception",
+      "birth_datetime": "1986-10-12T21:30:00",
+      "use_modern_rulers": false,
+      "receptions": [],
+      "reception_count": 0,
+      "has_reception": false
+    }
+  },
+  "knowledge": [
+    {
+      "schema_version": "KNOWLEDGE-QUERY-0.1",
+      "plugins": [
+        {
+          "id": "natal-core",
+          "version": "NATAL-1.0",
+          "status": "base",
+          "grade_cap": "A",
+          "judgment_utility": "primary_judgment",
+          "event_domains": [
+            "identity",
+            "money",
+            "career",
+            "work",
+            "relationship",
+            "family",
+            "property",
+            "risk"
+          ],
+          "event_mechanism": "house responsibility chain + planetary capability + delivery path",
+          "non_judgment_use": "defines the base facts and controls the order of judgment",
+          "module_policy": {}
+        },
+        {
+          "id": "core-natal-method",
+          "version": "CORE-DISTILL-2026-08-15-1",
+          "status": "active",
+          "grade_cap": "C",
+          "judgment_utility": "supporting_inference",
+          "event_domains": [
+            "identity",
+            "money",
+            "career",
+            "work",
+            "relationship",
+            "family",
+            "property",
+            "risk"
+          ],
+          "event_mechanism": "distilled rule becomes usable only after it joins a Chart Facts responsibility chain and yields an observable consequence",
+          "non_judgment_use": "context and supporting evidence; never a standalone personality label",
+          "module_policy": {
+            "natal_framework": {
+              "judgment_utility": "supporting_inference",
+              "event_domains": [
+                "identity",
+                "money",
+                "career",
+                "relationship",
+                "family",
+                "property"
+              ]
+            },
+            "planetary_state_and_aspects": {
+              "judgment_utility": "supporting_inference",
+              "event_domains": [
+                "identity",
+                "work",
+                "relationship",
+                "risk"
+              ]
+            },
+            "natal_method_and_reception": {
+              "judgment_utility": "supporting_inference",
+              "event_domains": [
+                "money",
+                "career",
+                "relationship",
+                "family",
+                "risk"
+              ]
+            },
+            "supporting_techniques": {
+              "judgment_utility": "context_only",
+              "event_domains": [],
+              "reason": "没有独立责任链或现实事件机制时，不得进入核心判断"
+            },
+            "wealth_and_career_topics": {
+              "judgment_utility": "supporting_inference",
+              "event_domains": [
+                "money",
+                "career",
+                "work",
+                "property",
+                "risk"
+              ]
+            }
+          }
+        }
+      ],
+      "cards": [
+        {
+          "id": "R38-P5368",
+          "source_ids": [
+            "R38"
+          ],
+          "source_locator": {
+            "paragraph_index": 5368,
+            "style": "Heading 2"
+          },
+          "module": "wealth_and_career_topics",
+          "kind": "curated_source_extract",
+          "text": "12．金钱财富",
+          "conditions": [
+            "source is a user-provided secondary note",
+            "do not treat as independent classical proof"
+          ],
+          "counter_test": "must be reconciled with Chart Facts, independent testimony and the project evidence gate",
+          "grade_cap": "N/A",
+          "status": "auxiliary",
+          "safety_gate": "G0",
+          "version": "CORE-DISTILL-2026-08-15-1",
+          "card_id": "R38-P5368"
+        }
+      ],
+      "deferred": [],
+      "guardrails": [
+        "natal-core runs first",
+        "plugin evidence cannot override Chart Facts or typed reception",
+        "all cards remain bounded by their declared grade_cap",
+        "sign/planet/house meanings are intermediate variables; use only with an event mechanism and observable translation",
+        "context_only/deferred material cannot enter a core judgment"
+      ]
+    },
+    {
+      "schema_version": "KNOWLEDGE-QUERY-0.1",
+      "plugins": [
+        {
+          "id": "natal-core",
+          "version": "NATAL-1.0",
+          "status": "base",
+          "grade_cap": "A",
+          "judgment_utility": "primary_judgment",
+          "event_domains": [
+            "identity",
+            "money",
+            "career",
+            "work",
+            "relationship",
+            "family",
+            "property",
+            "risk"
+          ],
+          "event_mechanism": "house responsibility chain + planetary capability + delivery path",
+          "non_judgment_use": "defines the base facts and controls the order of judgment",
+          "module_policy": {}
+        },
+        {
+          "id": "house-ruler-flow",
+          "version": "CORE-DISTILL-2026-08-15-1",
+          "status": "candidate",
+          "grade_cap": "C",
+          "judgment_utility": "supporting_inference",
+          "event_domains": [
+            "identity",
+            "money",
+            "career",
+            "work",
+            "relationship",
+            "family",
+            "property",
+            "risk"
+          ],
+          "event_mechanism": "a ruler carries one house responsibility into the placement house and changes the delivery path",
+          "non_judgment_use": "directional responsibility-chain hypothesis, not a trait catalogue",
+          "module_policy": {}
+        }
+      ],
+      "cards": [
+        {
+          "id": "FS-1-1",
+          "source_ids": [
+            "R38"
+          ],
+          "source_locator": "R38 paragraphs 2761-3214 and 3346-3463",
+          "module": "house_rulership_flow",
+          "kind": "house_flow_hypothesis",
+          "from_house": 1,
+          "to_house": 1,
+          "text": "自我关注、行动以自身为中心；能力强弱决定是自信交付还是意志消耗。",
+          "conditions": [
+            "validated Chart Facts rulership_fly_ins",
+            "house system and cusp risk recorded"
+          ],
+          "counter_test": "same ruler may carry multiple house responsibilities; do not double count",
+          "grade_cap": "C",
+          "status": "candidate",
+          "safety_gate": "G0",
+          "version": "CORE-DISTILL-2026-08-15-1",
+          "card_id": "FS-1-1"
+        }
+      ],
+      "deferred": [],
+      "guardrails": [
+        "natal-core runs first",
+        "plugin evidence cannot override Chart Facts or typed reception",
+        "all cards remain bounded by their declared grade_cap",
+        "sign/planet/house meanings are intermediate variables; use only with an event mechanism and observable translation",
+        "context_only/deferred material cannot enter a core judgment"
+      ]
+    }
+  ],
+  "timing": null,
+  "composition_contract": {
+    "required_next": [
+      "topic_evidence",
+      "counter_testimony",
+      "observable_translation"
+    ],
+    "command": "python scripts/compose_significators.py <evidence.json>"
+  }
+}

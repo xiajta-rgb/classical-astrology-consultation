@@ -1,0 +1,86 @@
+{
+  "schema_version": "RESEARCH-GAP-0.1",
+  "policy": "gaps_are_research_targets_not_production_event_clusters",
+  "gaps": [
+    {
+      "id": "EVT-SELF-BODY-IDENTITY",
+      "label": "self_body_identity_and_agency",
+      "priority": "high",
+      "houses_to_test": [1, 6, 8, 12],
+      "research_questions": ["如何把1宫的主体性、身体与行动能力拆开", "何时应转入6/8/12宫的身体限制或危机机制"],
+      "promotion_gate": "two independent traditional sources plus chart regression"
+    },
+    {
+      "id": "EVT-COMMUNICATION-LEARNING",
+      "label": "communication_basic_learning_and_local_mobility",
+      "priority": "high",
+      "houses_to_test": [3, 9],
+      "research_questions": ["3宫如何区别手足、沟通、基础教育和短途移动", "如何与9宫高等教育和远行区分"],
+      "promotion_gate": "primary-text chapter locators and at least one counterexample"
+    },
+    {
+      "id": "EVT-TRAVEL-RELOCATION-FOREIGN",
+      "label": "travel_migration_relocation_and_foreign_life",
+      "priority": "high",
+      "houses_to_test": [3, 4, 9, 12],
+      "research_questions": ["短途旅行、长期迁移、异国生活和归乡如何分层", "4/9轴与12宫隔离如何避免重复计数"],
+      "promotion_gate": "cross-source terminology map and dated case set"
+    },
+    {
+      "id": "EVT-LEGAL-DISPUTE-ENEMIES",
+      "label": "litigation_contract_dispute_and_open_enemies",
+      "priority": "high",
+      "houses_to_test": [6, 7, 9, 12],
+      "research_questions": ["诉讼、合同争议、公开敌手与普通关系冲突的边界", "哪些条件才允许进入事件判断"],
+      "promotion_gate": "原典章节 + 现代法律语境边界 + 失败案例"
+    },
+    {
+      "id": "EVT-ACUTE-ACCIDENT-CRISIS",
+      "label": "acute_accident_emergency_and_crisis",
+      "priority": "medium",
+      "houses_to_test": [1, 6, 8, 12],
+      "research_questions": ["急性危机与慢性照护如何区分", "如何禁止从单一征象推出具体伤病"],
+      "promotion_gate": "sensitive-topic review and non-diagnostic wording tests"
+    },
+    {
+      "id": "EVT-DEBT-INHERITANCE-SHARED-FINANCE",
+      "label": "debt_tax_inheritance_and_shared_finance",
+      "priority": "high",
+      "houses_to_test": [2, 8, 4, 7],
+      "research_questions": ["继承、债务、税务和配偶共有财务如何与横财分开", "如何保留资源机制而不做财务保证"],
+      "promotion_gate": "separate resource mechanisms and independent chart tests"
+    },
+    {
+      "id": "EVT-ISOLATION-INSTITUTION-CONFINEMENT",
+      "label": "isolation_institutional_life_and_confinement",
+      "priority": "medium",
+      "houses_to_test": [6, 8, 12],
+      "research_questions": ["医院、疗养、监禁、隐退和远离社会如何区分", "如何处理高敏感语义而不进行确定性预言"],
+      "promotion_gate": "historical terminology map plus safety gate"
+    },
+    {
+      "id": "EVT-CREATIVE-PLEASURE-SPECULATION",
+      "label": "creative_output_pleasure_and_speculation",
+      "priority": "medium",
+      "houses_to_test": [5, 2, 10, 11],
+      "research_questions": ["创作、娱乐、子女和投机为何同属5宫但机制不同", "何时5宫与事业/财富产生可验证联动"],
+      "promotion_gate": "mechanism split and anti-overgeneralization test"
+    },
+    {
+      "id": "EVT-PARENTS-FAMILY-ORIGIN",
+      "label": "parent_relationship_family_origin_and_ancestry",
+      "priority": "high",
+      "houses_to_test": [4, 10, 3, 9],
+      "research_questions": ["父母身份、亲子关系、家庭出身与父母离世如何区分", "如何处理不同传统对父母宫位的版本差异"],
+      "promotion_gate": "version-locked parent significators plus chart regression"
+    },
+    {
+      "id": "EVT-END-OF-LIFE-MORTALITY",
+      "label": "end_of_life_and_mortality_history",
+      "priority": "research_only",
+      "houses_to_test": [1, 4, 8, 12],
+      "research_questions": ["古典寿命/死亡文本如何进行历史语境隔离", "如何只保留研究与边界，不生成确定性死亡预测"],
+      "promotion_gate": "sensitive-topic governance, historical source criticism, never deterministic output"
+    }
+  ]
+}

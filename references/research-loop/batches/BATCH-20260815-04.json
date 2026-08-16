@@ -1,0 +1,18 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260815-04",
+  "started_at": "2026-08-15",
+  "scope": "family_children_shared_resources_and_planetary_state",
+  "topics": ["parents", "home", "children", "creativity", "inheritance", "shared_resources", "hidden_pressure", "bonification", "maltreatment", "lots"],
+  "source_ids": [
+    "WEB-SKY-4TH-HOUSE",
+    "WEB-SKY-5TH-HOUSE",
+    "WEB-SKY-8TH-HOUSE",
+    "WEB-TRAD-ASTRO-BONIFICATION",
+    "WEB-AUGURINE-BONIFICATION",
+    "WEB-SKY-PARTS",
+    "BOOK-LILLY-CHRISTIAN-ASTROLOGY-ARCHIVE"
+  ],
+  "result": "metadata_collection_then_primary_text_and_case_review",
+  "next_step": "extract only versioned mechanisms; preserve counteraction and avoid deterministic sensitive claims"
+}

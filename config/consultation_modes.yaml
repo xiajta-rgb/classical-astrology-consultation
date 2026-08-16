@@ -1,0 +1,66 @@
+version: "CONSULTATION-OUTPUT-1.0"
+default_mode: classical-direct
+independent_natal_pass_required: true
+role:
+  primary: astrologer
+  therapy_or_life_coaching_substitute: false
+  forecast_direction_required_when_timing_is_publishable: true
+shared_judgment_layer:
+  - N0_data_contract
+  - N1_chart_facts
+  - N2_topic_map
+  - N3_evidence_cards
+  - N4_hypothesis_competition
+  - N5_full_picture
+  - T1_timing_when_explicitly_requested
+  - Q0_quality_gate
+modes:
+  classical-direct:
+    label_zh: "古典直断"
+    astrology_vocabulary: visible
+    tone: direct
+    ambiguity: name_the_discriminator
+    fortune_judgment: "吉/混合/有压力/不利/N/A when supported"
+    required_sections:
+      - 核心判断
+      - 本命结构
+      - 证据链
+      - 职业、财富与代价
+      - 直接建议
+      - 不可判断
+    optional_sections:
+      - 未来激活（仅 timing_status=publishable）
+  modern-evolutionary:
+    label_zh: "现代进化式"
+    astrology_vocabulary: hidden
+    evidence_vocabulary: visible_in_plain_language
+    preserve_evidence_weight: true
+    preserve_primary_testimony: true
+    hide_symbols_only: true
+    role: astrologer
+    generic_psychological_counseling: forbidden
+    tone: polite
+    ambiguity: explain_the_missing_information
+    fortune_judgment: "plain-language constructive/risk/boundary with explicit evidence strength"
+    required_sections:
+      - 核心问题
+      - 这件事如何形成
+      - 可能的优势与代价
+      - 处理方式
+      - 不能替代的判断
+    optional_sections:
+      - 未来阶段（仅 timing_status=publishable）
+selection:
+  default: classical-direct
+  classical_keywords: [直断, 古典, 不客气, 说本质, 判吉凶]
+  modern_keywords: [委婉, 现代, 进化, 不要星盘术语, 给客户看的]
+  both: "render both from identical evidence cards; never recalculate or contradict"
+writing_guardrails:
+  reject_conditional_filler:
+    - "只要……就……"
+    - "并非没有……"
+    - "有机会……"
+    - "可以考虑……"
+    - "需要注意……"
+    - "取决于……"
+  replacement_contract: "state supported judgment -> mechanism -> concrete discriminator/boundary"

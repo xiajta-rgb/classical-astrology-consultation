@@ -1,0 +1,73 @@
+{
+  "schema_version": "OBSERVATION-1.0",
+  "observation_id": "OBS-20260816-BIRTH-TIME-VALIDATION",
+  "status": "active",
+  "source": "user_confirmed_in_conversation",
+  "privacy_gate": "sensitive_events_present_case_scoped",
+  "birth_time_validation": {
+    "center_time": "22:25",
+    "reported_time_range": ["21:00", "23:00"],
+    "birth_time_source": "family_estimate_no_birth_certificate",
+    "event_tolerance_days": 10,
+    "events": [
+      {
+        "id": "REL-20210216",
+        "date": "2021-02-16",
+        "domain": "relationship_intimacy",
+        "description": "2月14日前后与老同学重新碰面，2月16日发生关系；本人较主动，对方也有主动性，事件发生在家中"
+      },
+      {
+        "id": "EDU-20210326",
+        "date": "2021-03-26",
+        "domain": "academic_result",
+        "description": "正式录取研究生，并在学校里得知录取结果"
+      },
+      {
+        "id": "HEALTH-20241221",
+        "date": "2024-12-21",
+        "domain": "health",
+        "description": "前一晚吃了变质水果，次日开始腹泻约一天；随后到医院检查并吊水，回家休息数日，影响工作出勤"
+      },
+      {
+        "id": "WORK-ENTRY-20240710",
+        "date": "2024-07-10",
+        "domain": "employment_entry",
+        "description": "入职新工作"
+      },
+      {
+        "id": "FAMILY-ASSET-20230715",
+        "date": "2023-07-15",
+        "date_precision": "approximate_month",
+        "tolerance_days": 15,
+        "domain": "family_asset_transfer",
+        "description": "2023年7月父母出售原持有投资房后，一次性将房款直接转入本人账户，资金已明确作为个人购房资金"
+      },
+      {
+        "id": "WORK-20241227",
+        "date": "2024-12-27",
+        "domain": "employment_exit",
+        "description": "2024-07-10入职；2024-12-27白天在公司被突然通知离职，正值试用期转正节点，涉及合同问题并要求提交离职申请；正式离职日为2024-12-31"
+      },
+      {
+        "id": "MIL-20170907",
+        "date": "2017-09-07",
+        "date_precision": "approximate_day",
+        "domain": "institutional_transition",
+        "description": "主动报名入伍；入伍前持续外出走动，没有长时间待在家中"
+      },
+      {
+        "id": "MIL-END-20190910",
+        "date": "2019-09-10",
+        "date_precision": "approximate_day",
+        "domain": "institutional_transition",
+        "description": "正常服役期满退伍，日期约为2019-09-10"
+      },
+      {
+        "id": "FAMILY-LOSS-20250830",
+        "date": "2025-08-30",
+        "domain": "family_loss",
+        "description": "母亲傍晚去世；2024年6月确诊白血病，经历两轮化疗，后转入寺庙度过最后阶段"
+      }
+    ]
+  }
+}

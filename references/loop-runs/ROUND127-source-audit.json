@@ -1,0 +1,73 @@
+{
+  "findings": [],
+  "conflict_clusters": [
+    "terms_version",
+    "triplicity_version",
+    "reception_condition",
+    "modern_validity",
+    "attached_mutual_reception"
+  ],
+  "conflict_status": [
+    {
+      "id": "terms_version",
+      "version_keys": [
+        "terms"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "terms": null
+      }
+    },
+    {
+      "id": "triplicity_version",
+      "version_keys": [
+        "triplicity"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "triplicity": null
+      }
+    },
+    {
+      "id": "reception_condition",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "reception": null,
+        "aspect": null
+      }
+    },
+    {
+      "id": "modern_validity",
+      "version_keys": [],
+      "state": "not_versioned",
+      "values": {}
+    },
+    {
+      "id": "attached_mutual_reception",
+      "version_keys": [
+        "reception",
+        "aspect"
+      ],
+      "state": "unknown_no_chart_facts",
+      "values": {
+        "reception": null,
+        "aspect": null
+      }
+    }
+  ],
+  "version_gate": "not_evaluated",
+  "version_gate_blockers": [
+    "terms_version",
+    "triplicity_version",
+    "reception_condition",
+    "attached_mutual_reception"
+  ],
+  "card_source_profiles": [],
+  "source_count": 36,
+  "registry_fingerprint": "72165abc6f6e1eddf4c970558c07f2d3783f7c520cd22dc8d881b2d51d7c59fd",
+  "status": "pass"
+}

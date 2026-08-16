@@ -1,0 +1,398 @@
+{
+  "schema_version": "RESEARCH-CLUSTER-0.1",
+  "method": "explicit_event_tags_plus_auditable_lexical_proposal",
+  "promotion_policy": "clusters_propose_research_targets; they do not prove chart events",
+  "counts": {
+    "extracts": 13,
+    "clusters_with_hits": 13,
+    "unassigned": 2,
+    "candidate_links": 36
+  },
+  "clusters": {
+    "EVT-ACADEMIC-CAREER": [
+      {
+        "extract_id": "EXT-20260815-003",
+        "source_id": "VIDEO-ASTROLOGY-PODCAST-HOUSES",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "research"
+        ],
+        "counter_test": "record timestamp, compare with primary text, and keep dissenting interpretations"
+      },
+      {
+        "extract_id": "EXT-20260815-008",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "research"
+        ],
+        "counter_test": "separate voluntary network evidence from hidden-enemy or institutional facts and prohibit deterministic claims"
+      }
+    ],
+    "EVT-CAREER-PUBLIC-STATUS": [
+      {
+        "extract_id": "EXT-20260815-001",
+        "source_id": "WEB-DEJA-20260815",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "authority",
+          "career",
+          "public",
+          "reputation"
+        ],
+        "counter_test": "check whether the chart's 6th/10th rulers and actual work history agree"
+      },
+      {
+        "extract_id": "EXT-20260815-004",
+        "source_id": "POST-REDDIT-HOUSE-MEANINGS",
+        "status": "hypothesis_only",
+        "grade_cap": "C",
+        "hit_terms": [
+          "career",
+          "public"
+        ],
+        "counter_test": "swap the house label and test whether the sentence still sounds equally true"
+      },
+      {
+        "extract_id": "EXT-20260815-006",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "compare the same event against the 1/3/6/10 responsibility chain and test for duplicate counting"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      },
+      {
+        "extract_id": "EXT-20260815-013",
+        "source_id": "WEB-CONSTELLATIONS-FIXED-STARS",
+        "status": "hypothesis_only",
+        "grade_cap": "C",
+        "hit_terms": [
+          "public"
+        ],
+        "counter_test": "return to cited ancient source, version-lock star coordinates and test only exact contacts"
+      }
+    ],
+    "EVT-COMMUNICATION-LEARNING": [
+      {
+        "extract_id": "EXT-20260815-003",
+        "source_id": "VIDEO-ASTROLOGY-PODCAST-HOUSES",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "record timestamp, compare with primary text, and keep dissenting interpretations"
+      },
+      {
+        "extract_id": "EXT-20260815-006",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "3rd"
+        ],
+        "counter_test": "compare the same event against the 1/3/6/10 responsibility chain and test for duplicate counting"
+      }
+    ],
+    "EVT-DEBT-INHERITANCE-SHARED-FINANCE": [
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "inheritance"
+        ],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "tax"
+        ],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      }
+    ],
+    "EVT-FRIENDSHIP-SOCIAL-NETWORK": [
+      {
+        "extract_id": "EXT-20260815-002",
+        "source_id": "WEB-DEJA-20260815",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "friends",
+          "friendship",
+          "network"
+        ],
+        "counter_test": "distinguish voluntary friendship from contractual 7th/10th-house partnership"
+      },
+      {
+        "extract_id": "EXT-20260815-008",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "friends",
+          "friendship"
+        ],
+        "counter_test": "separate voluntary network evidence from hidden-enemy or institutional facts and prohibit deterministic claims"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "friends"
+        ],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      },
+      {
+        "extract_id": "EXT-20260815-012",
+        "source_id": "POST-REDDIT-11TH-LONER",
+        "status": "counterexample",
+        "grade_cap": "C",
+        "hit_terms": [
+          "friends",
+          "friendship"
+        ],
+        "counter_test": "compare friendship reciprocity, ruler condition, benefic/malefic testimony and actual network facts"
+      }
+    ],
+    "EVT-ISOLATION-INSTITUTION-CONFINEMENT": [
+      {
+        "extract_id": "EXT-20260815-008",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "confinement",
+          "isolation"
+        ],
+        "counter_test": "separate voluntary network evidence from hidden-enemy or institutional facts and prohibit deterministic claims"
+      },
+      {
+        "extract_id": "EXT-20260815-012",
+        "source_id": "POST-REDDIT-11TH-LONER",
+        "status": "counterexample",
+        "grade_cap": "C",
+        "hit_terms": [
+          "isolation"
+        ],
+        "counter_test": "compare friendship reciprocity, ruler condition, benefic/malefic testimony and actual network facts"
+      }
+    ],
+    "EVT-LEGAL-DISPUTE-ENEMIES": [
+      {
+        "extract_id": "EXT-20260815-003",
+        "source_id": "VIDEO-ASTROLOGY-PODCAST-HOUSES",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "record timestamp, compare with primary text, and keep dissenting interpretations"
+      },
+      {
+        "extract_id": "EXT-20260815-005",
+        "source_id": "POST-QUORA-LEGAL-ASTROLOGY",
+        "status": "hypothesis_only",
+        "grade_cap": "C",
+        "hit_terms": [
+          "dispute",
+          "legal"
+        ],
+        "counter_test": "require an explicit dispute event and compare 6/7/9/12 responsibility chains"
+      },
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "legal"
+        ],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      }
+    ],
+    "EVT-LOVE-ROMANCE": [
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "love"
+        ],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      }
+    ],
+    "EVT-MARRIAGE-COMMITMENT": [
+      {
+        "extract_id": "EXT-20260815-002",
+        "source_id": "WEB-DEJA-20260815",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "marriage"
+        ],
+        "counter_test": "distinguish voluntary friendship from contractual 7th/10th-house partnership"
+      },
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "marriage"
+        ],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "marriage"
+        ],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      }
+    ],
+    "EVT-RELATIONSHIP-CONFLICT-SEPARATION": [
+      {
+        "extract_id": "EXT-20260815-006",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "separation"
+        ],
+        "counter_test": "compare the same event against the 1/3/6/10 responsibility chain and test for duplicate counting"
+      },
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      }
+    ],
+    "EVT-SELF-BODY-IDENTITY": [
+      {
+        "extract_id": "EXT-20260815-006",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "compare the same event against the 1/3/6/10 responsibility chain and test for duplicate counting"
+      },
+      {
+        "extract_id": "EXT-20260815-013",
+        "source_id": "WEB-CONSTELLATIONS-FIXED-STARS",
+        "status": "hypothesis_only",
+        "grade_cap": "C",
+        "hit_terms": [
+          "self"
+        ],
+        "counter_test": "return to cited ancient source, version-lock star coordinates and test only exact contacts"
+      }
+    ],
+    "EVT-TRAVEL-RELOCATION-FOREIGN": [
+      {
+        "extract_id": "EXT-20260815-003",
+        "source_id": "VIDEO-ASTROLOGY-PODCAST-HOUSES",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "record timestamp, compare with primary text, and keep dissenting interpretations"
+      },
+      {
+        "extract_id": "EXT-20260815-007",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "foreign",
+          "travel"
+        ],
+        "counter_test": "require the relevant house ruler and event-specific observable facts; do not infer a sensitive event from house label alone"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "travel"
+        ],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      }
+    ],
+    "EVT-WORK-EMPLOYMENT-ROUTINE": [
+      {
+        "extract_id": "EXT-20260815-001",
+        "source_id": "WEB-DEJA-20260815",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "daily",
+          "labor",
+          "work"
+        ],
+        "counter_test": "check whether the chart's 6th/10th rulers and actual work history agree"
+      },
+      {
+        "extract_id": "EXT-20260815-002",
+        "source_id": "WEB-DEJA-20260815",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "work"
+        ],
+        "counter_test": "distinguish voluntary friendship from contractual 7th/10th-house partnership"
+      },
+      {
+        "extract_id": "EXT-20260815-004",
+        "source_id": "POST-REDDIT-HOUSE-MEANINGS",
+        "status": "hypothesis_only",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "swap the house label and test whether the sentence still sounds equally true"
+      },
+      {
+        "extract_id": "EXT-20260815-006",
+        "source_id": "WEB-LILLY-HOUSES-SKY",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [],
+        "counter_test": "compare the same event against the 1/3/6/10 responsibility chain and test for duplicate counting"
+      },
+      {
+        "extract_id": "EXT-20260815-009",
+        "source_id": "BOOK-PTOLEMY-TETRABIBLOS",
+        "status": "candidate",
+        "grade_cap": "C",
+        "hit_terms": [
+          "employment"
+        ],
+        "counter_test": "read the relevant book chapters, lock translation/version, and keep mortality material behind the sensitive-topic gate"
+      }
+    ]
+  },
+  "unassigned_extracts": [
+    "EXT-20260815-010",
+    "EXT-20260815-011"
+  ]
+}

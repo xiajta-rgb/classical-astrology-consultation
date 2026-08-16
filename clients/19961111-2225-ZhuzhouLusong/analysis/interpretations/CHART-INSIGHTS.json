@@ -1,0 +1,167 @@
+{
+  "schema_version": "CHART-INSIGHT-LEDGER-1.0",
+  "case_id": "19961111-2225-ZhuzhouLusong",
+  "chart_id": "local-19961111-222500-P-3a2007f27047",
+  "last_updated": "2026-08-16",
+  "source_policy": "local_chart_facts_first_user_confirmed_events_second",
+  "chart_convention": {
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "birth_time_status": "family_estimate_no_birth_certificate",
+    "reported_time_range": ["21:00", "23:00"],
+    "working_candidate": "22:25",
+    "cusp_risk": "Moon and Mercury house positions change around 22:19-22:23; Ascendant crosses Cancer to Leo around 22:27; major 2nd/4th/8th/10th/11th cusp configuration changes again around 22:54-22:55"
+  },
+  "client_context_facts": {
+    "birth_time_source": "No birth certificate; family estimate is between 21:00 and 23:00, traditionally the Hai hour.",
+    "residence_and_family_business": [
+      "Born in Hunan.",
+      "Returned to the hometown around 2000.",
+      "Moved to Shanghai around 2003 because both parents were doing business there; lived there about four years and also studied elsewhere.",
+      "Returned to the hometown around 2008 for school.",
+      "Left after the 2015 gaokao."
+    ],
+    "family_relationship": "Parents generally had a harmonious relationship; no reported long-term parental conflict, family property dispute or sustained caregiving burden.",
+    "relationship_history": "First clearly significant relationship was in early 2017; no long-term relationship history or major breakup was reported before the 2021 event.",
+    "family_asset_context": "Parents originally held the investment property; the title was temporarily under the client's name. After sale, the proceeds were transferred in one lump sum, with no ongoing repayment demand, and are treated as the client's personal home-purchase funds."
+    ,"maternal_illness_context": "Mother was diagnosed with leukemia around June 2024, underwent two rounds of chemotherapy, did not continue the third round, and spent the final period at a temple before dying in the early evening of 2025-08-30."
+  },
+  "natal_core": {
+    "angles": {
+      "ascendant": "Cancer 29°34′",
+      "mc": "Aries 22°11′"
+    },
+    "placements": [
+      {"planet": "Sun", "sign_degree": "Scorpio 19°29′", "house": 4, "responsibility": [2]},
+      {"planet": "Moon", "sign_degree": "Scorpio 24°50′", "house": 4, "responsibility": [1]},
+      {"planet": "Mercury", "sign_degree": "Scorpio 25°11′", "house": 4, "responsibility": [3, 12]},
+      {"planet": "Venus", "sign_degree": "Libra 15°55′", "house": 3, "responsibility": [4, 11]},
+      {"planet": "Mars", "sign_degree": "Virgo 6°41′", "house": 2, "responsibility": [5, 10]},
+      {"planet": "Jupiter", "sign_degree": "Capricorn 14°35′", "house": 6, "responsibility": [6, 9]},
+      {"planet": "Saturn", "sign_degree": "Aries 1°02′ Rx", "house": 9, "responsibility": [7, 8]}
+    ],
+    "house_rulers": {
+      "1": {"sign": "Cancer", "ruler": "Moon", "ruler_house": 4},
+      "2": {"sign": "Leo", "ruler": "Sun", "ruler_house": 4},
+      "3": {"sign": "Virgo", "ruler": "Mercury", "ruler_house": 4},
+      "4": {"sign": "Libra", "ruler": "Venus", "ruler_house": 3},
+      "5": {"sign": "Scorpio", "ruler": "Mars", "ruler_house": 2},
+      "6": {"sign": "Sagittarius", "ruler": "Jupiter", "ruler_house": 6},
+      "7": {"sign": "Capricorn", "ruler": "Saturn", "ruler_house": 9},
+      "8": {"sign": "Aquarius", "ruler": "Saturn", "ruler_house": 9},
+      "9": {"sign": "Pisces", "ruler": "Jupiter", "ruler_house": 6},
+      "10": {"sign": "Aries", "ruler": "Mars", "ruler_house": 2},
+      "11": {"sign": "Taurus", "ruler": "Venus", "ruler_house": 3},
+      "12": {"sign": "Gemini", "ruler": "Mercury", "ruler_house": 4}
+    },
+    "strict_receptions": [
+      {
+        "planets": ["Mercury", "Mars"],
+        "type": "mutual_reception_by_domicile",
+        "logic": "Mercury in Scorpio, Mars in Virgo",
+        "connected_responsibilities": [2, 3, 4, 5, 10, 12]
+      }
+    ],
+    "reception_boundary": "The strict mutual reception is Mercury–Mars; it is not a Sun–Venus or 2nd-ruler–4th-ruler mutual reception. Venus is in Libra, its own domicile."
+  },
+  "insight_cards": [
+    {
+      "id": "NATAL-001",
+      "status": "confirmed",
+      "domain": "family_property_personal_wealth",
+      "evidence": ["2nd ruler Sun in 4th", "Moon/Sun/Mercury concentrated in 4th", "Mercury–Mars domicile mutual reception", "Mars in 2nd rules 5th and 10th"],
+      "rule": "Personal wealth is placed in the family/property field; the Mercury–Mars reception creates a two-way channel between family/property paperwork and money/career/children responsibilities.",
+      "inference": "Family property can become a material source entering the person's own asset management, while personal funds and work income can also be directed back into property and family obligations.",
+      "observable_manifestation": "Parents' investment-house sale proceeds were transferred in one lump sum to the client and designated for personal home purchase.",
+      "grade": "A-",
+      "counter_test": "2nd ruler in 4th alone does not prove parental gifts; a clean 4th-ruler-in-2nd structure would be more direct."
+    },
+    {
+      "id": "NATAL-002",
+      "status": "confirmed",
+      "domain": "career_income",
+      "evidence": ["10th ruler Mars in 2nd", "Mars also rules 5th", "Jupiter rules 6th/9th and is in 6th", "Mercury–Mars mutual reception"],
+      "rule": "The career ruler placed in the money house makes work and income a direct delivery path; the 6th/9th Jupiter chain adds service, training and institutional work.",
+      "inference": "Employment changes can directly affect cashflow, while education, institutional experience and practical work routines are part of the career mechanism.",
+      "observable_manifestation": "Military service, graduate admission, 2024 employment entry and sudden employment exit formed a dated career/institutional sequence.",
+      "grade": "A"
+    },
+    {
+      "id": "NATAL-003",
+      "status": "confirmed",
+      "domain": "home_mobility_education",
+      "evidence": ["Moon/Sun/Mercury in 4th", "4th ruler Venus in 3rd", "9th ruler Jupiter in 6th", "7th/8th ruler Saturn in 9th"],
+      "rule": "The home axis is carried through movement, documents, schooling and institutional transitions rather than only through family conflict or property ownership.",
+      "inference": "Residence and education repeatedly reorganize one another across life stages.",
+      "observable_manifestation": "Moves between Hunan, Shanghai, other study locations and the hometown in 2000, 2003, 2008 and 2015.",
+      "grade": "A-",
+      "counter_test": "Parental relationship was described as generally harmonious; the 4th-house emphasis should not be translated into family conflict."
+    },
+    {
+      "id": "NATAL-004",
+      "status": "confirmed_with_event_validation",
+      "domain": "health_work_pressure",
+      "evidence": ["Jupiter in 6th", "Mars in 2nd rules 10th", "Moon/Sun/Mercury in 4th", "2024 Mars profection and tertiary Moon–Mars contact"],
+      "rule": "Health, daily work and income can become one event chain when the 6th-house condition and 10th-ruler/2nd-house placement are simultaneously activated.",
+      "inference": "An acute health disruption can immediately affect attendance and employment, but the chart does not diagnose the medical cause.",
+      "observable_manifestation": "December 2024 acute gastrointestinal illness affected attendance, followed by a sudden layoff notice and formal departure on December 31.",
+      "grade": "A"
+    },
+    {
+      "id": "NATAL-005",
+      "status": "confirmed_with_event_validation",
+      "domain": "parents_assets_to_personal_wealth",
+      "evidence": ["4th house represents parents/family", "2nd from the 4th is natal 5th", "5th ruler Mars in natal 2nd", "2nd ruler Sun in natal 4th", "Mercury–Mars domicile mutual reception"],
+      "rule": "Derived houses must be read from the relevant house: the 2nd from the 4th describes the parents' movable assets and resources. Its ruler placed in the native's 2nd can describe parents' assets entering the native's personal wealth.",
+      "inference": "Parental property support is structurally possible without requiring a literal 4th-ruler-in-2nd placement. The 4th-to-5th-to-2nd chain, reinforced by 2nd ruler in 4th and Mercury–Mars reception, is a specific asset-transfer mechanism.",
+      "observable_manifestation": "In July 2023, parents sold an investment property and transferred the proceeds in one lump sum to the client for personal home purchase.",
+      "grade": "A",
+      "counter_test": "This is a derived-house inference, not proof of recurring support or property appreciation. The transaction date remains month-level and the late-time house-cusp branch must be compared."
+    }
+  ],
+  "multi_expert_review": {
+    "date": "2026-08-16",
+    "reviewers": ["classical_natal_structure", "wealth_property", "rectification_event_backtest"],
+    "consensus": [
+      "The deepest property finding is 4th-house parents -> 2nd from the 4th (5th) -> Mars in 2nd, reinforced by 2nd ruler Sun in 4th and Mercury–Mars mutual reception.",
+      "Career volatility is more likely to show through contracts, authority boundaries and institutional conditions than a sudden loss of ability.",
+      "Residence, parental business, education and institutional transitions form one 4th/3rd/6th/9th infrastructure chain.",
+      "The strongest rectification discriminator remains the pre/post-22:27 annual-lord chain, with a second major cusp branch around 22:54-22:55."
+    ],
+    "limits": [
+      "Do not use the Mercury–Mars reception as a Sun–Venus or 2nd-ruler–4th-ruler mutual reception.",
+      "Do not turn the family asset transfer into a claim of lifelong parental allowance or property-price appreciation.",
+      "Do not use family illness or death for medical diagnosis or deterministic mortality claims."
+    ]
+  },
+  "validated_events": [
+    {"date": "2017-09-07", "precision": "approximate_day", "domain": "institutional_transition", "observation": "主动报名入伍"},
+    {"date": "2019-09-10", "precision": "approximate_day", "domain": "institutional_transition", "observation": "正常服役期满退伍"},
+    {"date": "2021-02-16", "precision": "day", "domain": "relationship_intimacy", "observation": "与两日前重新碰面的老同学发生关系；本人较主动，对方也主动，地点在家中"},
+    {"date": "2021-03-26", "precision": "day", "domain": "academic_result", "observation": "正式录取研究生，并在学校得知结果"},
+    {"date": "2023-07", "precision": "month", "domain": "family_asset_transfer", "observation": "父母售房后一次性转入个人账户并作为购房资金"},
+    {"date": "2024-07-10", "precision": "day", "domain": "employment_entry", "observation": "入职"},
+    {"date": "2024-12-21", "precision": "day", "domain": "health", "observation": "前一晚食用变质水果，次日腹泻，医院检查吊水，回家休息数日并影响出勤"},
+    {"date": "2024-12-27", "precision": "day", "domain": "employment_exit", "observation": "白天在公司被突然通知离职"},
+    {"date": "2025-08-30", "precision": "day", "domain": "family_loss", "observation": "母亲傍晚去世；2024年6月确诊白血病，经历两轮化疗，未继续第三轮，最后阶段在寺庙度过"}
+  ],
+  "rectification_status": {
+    "current_leading_candidate": "22:25",
+    "rough_core_band": "22:20-22:35",
+    "candidate_segments": [
+      {"range": "before_22:27", "structure": "Cancer Ascendant; Moon/Mercury 4th-house branch", "status": "leading"},
+      {"range": "22:27-22:54", "structure": "Leo Ascendant with the earlier 2nd/4th/8th/10th/11th cusp pattern", "status": "counter_candidate"},
+      {"range": "22:55_or_later", "structure": "new 2nd/4th/8th/10th/11th cusp pattern; direct 4th-ruler-to-2nd possibility", "status": "counter_candidate_requires_exact_asset_date"}
+    ],
+    "reason": "Cumulative event cross-validation; 2023 family-asset transfer was modeled at month level, so it cannot establish minute-level accuracy.",
+    "remaining_counter_candidates": ["22:30-22:35", "22:50-23:00"],
+    "required_next_data": ["2023 July transfer date or early/mid/late July", "exact 2024 June diagnosis date", "exact 2017 and 2019 dates if available"],
+    "deferred_techniques": ["primary_directions", "zodiacal_releasing"]
+  },
+  "provenance": [
+    "analysis/chart-facts/ROUND122-EPHH-FACTS.json",
+    "analysis/chart-facts/BIRTH-TIME-VALIDATION-20260816.json",
+    "observations/OBS-20260816-BIRTH-TIME-VALIDATION.json",
+    "astrology_engine.predictive.calculate_predictive(mutual_reception)"
+  ]
+}

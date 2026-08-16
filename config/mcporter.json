@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "horosa": {
+      "command": "C:\\Users\\xiajt\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\xiajt\\AppData\\Local\\Temp\\horosa-src-2a7cbdf5-3722-4464-a30d-a79e06ac2721\\horosa-skill",
+        "horosa-skill",
+        "serve",
+        "--transport",
+        "stdio"
+      ],
+      "cwd": "C:\\Users\\xiajt\\AppData\\Local\\Temp\\horosa-src-2a7cbdf5-3722-4464-a30d-a79e06ac2721\\horosa-skill",
+      "env": {
+        "HOME": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\.horosa-home",
+        "HOROSA_RUNTIME_ROOT": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\.horosa-home\\.horosa\\runtime",
+        "HOROSA_SKILL_DATA_DIR": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\.horosa-home\\.horosa-skill",
+        "HOROSA_LOCAL_BACKEND_PORT": "58450",
+        "HOROSA_LOCAL_CHART_PORT": "58451",
+        "HOROSA_SERVER_ROOT": "http://127.0.0.1:58450",
+        "HOROSA_CHART_SERVER_ROOT": "http://127.0.0.1:58451",
+        "USERPROFILE": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\.horosa-home"
+      }
+    }
+  }
+}

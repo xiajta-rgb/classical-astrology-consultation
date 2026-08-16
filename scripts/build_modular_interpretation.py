@@ -69,6 +69,23 @@ def _match(package: dict[str, Any], rule: dict[str, Any]) -> tuple[bool, list[st
         if not item:
             return False, []
         return True, [f"ASPECT_{item['planet1']}_{item['planet2']}_{item['type']}"]
+    if kind == "responsibility_chain":
+        # A chain rule is a bounded hypothesis: emit it only when at least
+        # one directed link in the declared house sequence is present.  The
+        # full chain remains visible in the rule text and must be completed
+        # by the topic-specific responsibility audit.
+        chain = [int(house) for house in rule.get("house_chain", [])]
+        evidence_ids: list[str] = []
+        for from_house, to_house in zip(chain, chain[1:]):
+            item = _ruler(package, from_house)
+            if item.get("ruler_house") == to_house:
+                evidence_ids.append(f"HOUSE_{from_house}_RULER_{item.get('ruler', 'unknown')}")
+        return bool(evidence_ids), evidence_ids
+    if kind in {"mechanism_split", "policy", "context"}:
+        # These are interpretation/safety constraints, not chart-matchable
+        # evidence.  They remain in the module payload without pretending to
+        # be a planetary testimony.
+        return False, []
     raise ValueError(f"unsupported module rule kind: {kind}")
 
 
@@ -166,7 +183,7 @@ def render(report: dict[str, Any], package: dict[str, Any]) -> str:
         "",
         "## 使用说明",
         "",
-        "本报告把本命事实、主题规则、结构性推断、现实验证和限制分开。当前坐标为行政区中心且 ASC 接近 30°，所以所有主题均以条件式/暂定式输出；关键人生时间模块未启用，不提供具体年份或事件日期。",
+        "本报告把本命事实、主题规则、结构性推断、现实验证和限制分开。若地点精度不足或 ASC 接近宫头边界，相关主题必须降级并分支复核；关键人生时间模块未启用，不提供具体年份或事件日期。",
         "",
         "## 总览",
         "",

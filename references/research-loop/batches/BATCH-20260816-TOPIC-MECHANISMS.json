@@ -1,0 +1,27 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260816-TOPIC-MECHANISMS",
+  "started_at": "2026-08-16",
+  "scope": "topic_mechanism_separation_for_work_relationship_travel_family_and_creative_output",
+  "topics": [
+    "employment_axis_content_and_status",
+    "friendship_intention_profit_and_mutual_effect",
+    "travel_mobility_foreign_gain_and_return",
+    "parents_family_resources_and_relationship_climate",
+    "creative_output_care_and_speculation"
+  ],
+  "source_ids": ["R01", "R29", "R40"],
+  "retrieval_method": "direct_read_only_web_and_local_text_extraction",
+  "retrieved_at": "2026-08-16",
+  "result": "Ptolemy's Book III-IV chapters provide a mechanism split that prevents common over-compression: employment has a lord/content/status hierarchy; relationships divide into intention, profit and mutual effect; travel divides into mobility, foreign opportunity and return conditions; family divides into source, resources and relational climate; fifth-house topics require an explicit choice between output, care and risk.",
+  "artifacts": ["references/knowledge-modules/advanced-delineation.md"],
+  "promotion_decision": "candidate_layer",
+  "grade_cap": "B",
+  "regression_requirements": [
+    "one positive and one negative case for each mechanism split",
+    "no modern gender-essentialist or sensitive historical wording",
+    "no synastry or transit activation unless explicitly requested",
+    "deduplication against house-ruler-flow and event clusters"
+  ],
+  "next_step": "encode topic-specific mechanism selectors in the consultation planner and test them on existing family, career and work charts"
+}

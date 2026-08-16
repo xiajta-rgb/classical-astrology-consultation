@@ -1,0 +1,80 @@
+version: "QUALITY-GATE-1.0"
+purpose: "单一入口运行项目级架构与回归检查；任何核心检查失败都阻止发布。"
+python: "python"
+checks:
+  - id: architecture_coupling
+    command: scripts/check_architecture_coupling.py
+    required: true
+    timeout_seconds: 60
+  - id: plugin_architecture
+    command: scripts/check_plugin_architecture.py
+    required: true
+    timeout_seconds: 60
+  - id: module_dispatch
+    command: scripts/check_module_dispatch.py
+    required: true
+    timeout_seconds: 60
+  - id: project_architecture
+    command: scripts/check_project_architecture.py
+    required: true
+    timeout_seconds: 60
+  - id: client_registry
+    command: scripts/check_client_registry.py
+    required: true
+    timeout_seconds: 60
+  - id: knowledge_modules
+    command: scripts/check_knowledge_modules.py
+    required: true
+    timeout_seconds: 60
+  - id: astrology_engine
+    command: scripts/check_astrology_engine.py
+    required: true
+    timeout_seconds: 120
+  - id: technique_registry
+    command: scripts/check_technique_registry.py
+    required: true
+    timeout_seconds: 60
+  - id: modular_interpretation
+    command: scripts/check_modular_interpretation.py
+    required: true
+    timeout_seconds: 60
+  - id: research_loop_system
+    command: scripts/check_research_loop_system.py
+    required: true
+    timeout_seconds: 60
+  - id: association_operators
+    command: scripts/check_association_operators.py
+    required: true
+    timeout_seconds: 60
+  - id: association_cases
+    command: scripts/check_association_cases.py
+    required: true
+    timeout_seconds: 60
+  - id: fly_in_direction
+    command: scripts/check_fly_in_direction_regression.py
+    required: true
+    timeout_seconds: 60
+  - id: reception_connections
+    command: scripts/check_reception_connections.py
+    required: true
+    timeout_seconds: 60
+  - id: planetary_state
+    command: scripts/check_planetary_state.py
+    required: true
+    timeout_seconds: 60
+  - id: hypothesis_cards
+    command: [scripts/check_hypothesis_cards.py, --self-test]
+    required: true
+    timeout_seconds: 60
+  - id: natal_first
+    command: [scripts/check_natal_first.py, --self-test]
+    required: true
+    timeout_seconds: 60
+  - id: sensitive_dictionary
+    command: scripts/check_sensitive_dictionary.py
+    required: true
+    timeout_seconds: 60
+  - id: source_registry
+    command: [scripts/check_source_registry.py, references/source-registry.json]
+    required: true
+    timeout_seconds: 60

@@ -1,0 +1,75 @@
+{
+  "schema_version": "CORE-KNOWLEDGE-0.1",
+  "version": "CORE-DISTILL-2026-08-15-1",
+  "canonical_store": "core/cards.jsonl",
+  "index": "core/index.json",
+  "readme": "core/README.md",
+  "sources": {
+    "R38": {
+      "file_name": "看盘手册(综合最终）.docx",
+      "sha256": "2d9c85a8d4a63bc9ee2b2dbbdc0a65e65e22da75b3b1a7a1557df206af45573d"
+    },
+    "R39": {
+      "file_name": "1互容特征汇总表.docx",
+      "sha256": "997e6d98b0b950b05ae2971db01d487ed133a9ba881e7d121bd701ae4ba402d9"
+    }
+  },
+  "counts": {
+    "total": 1281,
+    "flow_cards": 144,
+    "matrix_cards": 78,
+    "manual_core_extracts": 1059,
+    "by_module": {
+      "house_rulership_flow": 556,
+      "mutual_reception_matrix": 78,
+      "natal_framework": 36,
+      "planetary_state_and_aspects": 140,
+      "natal_method_and_reception": 229,
+      "supporting_techniques": 31,
+      "wealth_and_career_topics": 211,
+      "advanced_delineation": 0
+    },
+    "by_status": {
+      "candidate": 222,
+      "auxiliary": 1059
+    }
+  },
+  "excluded": {
+    "full_manual_extract": true,
+    "reason": "user requested key core only; ambiguous, modern, medical, identity-label, case-heavy and timing-extension material is not retained",
+    "drop_terms": [
+      "癌",
+      "疾病",
+      "抑郁",
+      "精神病",
+      "自杀",
+      "死亡",
+      "寿命",
+      "犯罪",
+      "暴力",
+      "强奸",
+      "性取向",
+      "怀孕",
+      "流产",
+      "不孕",
+      "灵体",
+      "附体",
+      "牢狱",
+      "出轨",
+      "不伦",
+      "MBTI",
+      "天王星",
+      "海王星",
+      "冥王星",
+      "凯龙",
+      "小行星",
+      "北交点",
+      "南交点",
+      "星盘举例",
+      "案例",
+      "这个盘",
+      "图中",
+      "例如"
+    ]
+  }
+}

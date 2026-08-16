@@ -1,0 +1,217 @@
+version: "DISPATCH-1.0"
+purpose: "把用户输入路由到唯一的计算、审计、知识和输出模块，避免只凭模型记忆或重复检索。"
+knowledge_symbol_registry: "config/knowledge_symbols.yaml"
+plugin_manifest: "references/knowledge-modules/plugins.json"
+
+principles:
+  - local_engine_is_the_only_calculation_authority
+  - client_facts_are_case_scoped_before_interpretation
+  - natal_core_runs_before_topic_plugins
+  - knowledge_plugins_add_missing_local_rules_only
+  - case_specific_text_never_enters_global_knowledge
+  - timing_is_explicit_and_never_auto_activated_from_birth_data_alone
+  - every_module_emits_trace_and_status
+
+entrypoints:
+  birth_data:
+    match: [birth_date, birth_time, birth_place, natal_chart, chart_facts]
+    default_route: natal_structure
+    required_first_pass: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, composition]
+  topic_question:
+    match: [topic]
+    topic_map: config/interpretation_routes.yaml
+    prerequisite: natal_structure
+    route_selector: routes
+  timing_question:
+    match: [timing_topic]
+    topic_map: config/interpretation_routes.yaml
+    prerequisite: natal_structure
+    default_route: current_timing
+  birth_time_validation:
+    match: [birth_time_validation, rectification, event_backtest, exact_birth_time]
+    prerequisite: natal_structure
+    default_route: birth_time_validation
+
+canonical_order:
+  - client_context
+  - chart_facts
+  - planetary_state
+  - responsibility_chain
+  - semantic_coverage
+  - reception_audit
+  - topic_knowledge
+  - mbti_personality
+  - career_insight
+  - composition
+  - timing_extension
+  - birth_time_validation
+  - insight_ledger
+  - release_gate
+  - renderer
+
+modules:
+  client_context:
+    version: CLIENT-CONTEXT-1.0
+    owner: clients
+    source: clients.json + clients/<case_id>/profile.json
+    activation: always
+    output: case_id_provenance_completeness
+  chart_facts:
+    version: CHART-FACTS-1.0
+    owner: astrology_engine
+    source: astrology_engine.natal.calculate_natal
+    activation: always
+    output: tropical_chart_facts
+    required_inputs: [birth_datetime, latitude_and_longitude_or_place, timezone_or_timezone_name, house_system]
+  planetary_state:
+    version: PLANETARY-STATE-1.0
+    owner: astrology_engine
+    source: astrology_engine.predictive.calculate_predictive
+    technique: essential_dignities
+    activation: always
+    output: sect_dignity_terms_triplicity_faces_angularity_visibility
+  responsibility_chain:
+    version: RESPONSIBILITY-1.0
+    owner: astrology_engine
+    source: astrology_engine.significations.calculate_responsibilities
+    activation: always
+    output: house_ruler_flow_and_aspects
+  semantic_coverage:
+    version: SEMANTIC-COVERAGE-0.2
+    owner: interpretation
+    source: scripts.expand_signification_map.py + references/signification-ontology.yaml
+    activation: after_chart_facts_and_responsibility_chain
+    output: exhaustive_internal_keyword_relation_map
+  reception_audit:
+    version: RECEPTION-1.0
+    owner: astrology_engine
+    source: astrology_engine.predictive.calculate_predictive
+    technique: mutual_reception
+    audit: scripts.check_reception_connections.py
+    activation: always
+    output: typed_reception_and_connection_status
+  topic_knowledge:
+    version: PLUGIN-CONTRACT-0.1
+    owner: knowledge_modules
+    source: scripts.query_knowledge_plugins.py
+    activation: explicit_topic
+    output: bounded_cards_and_deferred_candidates
+  mbti_personality:
+    version: MBTI-INSIGHT-1.0
+    owner: astrology_engine
+    source: astrology_engine.mbti.calculate_mbti
+    activation: explicit_personality_topic
+    output: mbti_dimension_and_jungian_function_profile
+    status_policy: auxiliary_symbolic_insight
+  career_insight:
+    version: TPES-CAREER-1.0
+    owner: astrology_engine
+    source: astrology_engine.tpes.calculate_tpes
+    activation: explicit_career_topic
+    output: tpes_career_style_profile_and_evidence_breakdown
+    status_policy: auxiliary_symbolic_insight
+  composition:
+    version: COMPOSITION-0.1
+    owner: interpretation
+    source: scripts.compose_significators.py
+    activation: always_after_core_facts
+    output: deduplicated_mechanism_graph_and_competing_hypotheses
+  timing_extension:
+    version: TIMING-1.0
+    owner: astrology_engine
+    source: astrology_engine.predictive.calculate_predictive + astrology_engine.predictive_events
+    activation: explicit_timing_question
+    output: requested_technique_snapshot; window_contacts_require_explicit_scan
+  birth_time_validation:
+    version: BIRTH-TIME-VALIDATION-1.0
+    owner: astrology_engine
+    source: scripts.validate_birth_time + astrology_engine.predictive_events
+    activation: explicit_birth_time_validation_request
+    output: candidate_time_event_window_matrix
+  insight_ledger:
+    version: INSIGHT-LEDGER-1.0
+    owner: clients
+    source: clients/<case_id>/analysis/interpretations/CHART-INSIGHTS.json + CHART-INSIGHTS.md
+    activation: after_any_natal_or_predictive_analysis
+    output: persistent_chart_specific_significators_insights_events_countertests
+  release_gate:
+    version: RELEASE-GATE-1.0
+    owner: quality_assurance
+    source: scripts.check_release_gates.py + scripts.check_release_bundle.py
+    activation: after_composition_and_timing
+    output: publication_status_and_blockers
+  renderer:
+    version: CONSULTATION-OUTPUT-1.0
+    owner: interpretation
+    source: config/consultation_modes.yaml
+    activation: after_release_gate
+    output: classical_direct_or_modern_evolutionary_text
+
+routes:
+  natal_structure:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, interpretation-topic-adapters]
+    timing: forbidden_without_explicit_question
+    topic_module: natal_framework
+    topic_modules_runtime:
+      personality: [mbti_personality]
+      mbti: [mbti_personality]
+      ability: [mbti_personality]
+  property_wealth:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, topic_knowledge, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, house-ruler-flow, interpretation-topic-adapters]
+    topic_module: wealth_and_career_topics
+  career_finance:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, topic_knowledge, career_insight, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, house-ruler-flow, interpretation-topic-adapters]
+    topic_module: wealth_and_career_topics
+    topic_modules:
+      work: planetary_state_and_aspects
+  relationship_family:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, topic_knowledge, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, interpretation-topic-adapters]
+    topic_module: natal_framework
+    topic_modules:
+      relationship: natal_framework
+      love: natal_framework
+      marriage: natal_framework
+      partner: natal_framework
+      family: natal_framework
+      household: natal_framework
+  children_education:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, topic_knowledge, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, house-ruler-flow, interpretation-topic-adapters]
+    topic_module: natal_framework
+  reception_audit:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, topic_knowledge, composition, insight_ledger, release_gate, renderer]
+    knowledge_plugins: [core-natal-method, mutual-reception-matrix]
+    topic_module: natal_method_and_reception
+  current_timing:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, composition, timing_extension, insight_ledger, release_gate, renderer]
+    timing_techniques: [transit, secondary, tertiary, solar_arc, solar_return, lunar_return, annual_profection, firdaria]
+    activation_rule: "only the requested technique is activated; other techniques remain comparison candidates"
+  birth_time_validation:
+    required_modules: [client_context, chart_facts, planetary_state, responsibility_chain, semantic_coverage, reception_audit, composition, birth_time_validation, insight_ledger, release_gate, renderer]
+    timing_techniques: [transit, secondary, tertiary, solar_arc, solar_return, lunar_return, annual_profection, firdaria]
+    activation_rule: "use user-confirmed dated events with explicit tolerance; rank candidate birth times without narrative fitting"
+
+natal_core_extensions:
+  - plugin: pluto-aspect-synthesis
+    symbol: "@PLO"
+    trigger: "register_Pluto_facts_during_natal_pass_then_interpret_only_when_chart_or_topic_condition_matches"
+    order: "natal_core_after_chart_facts_before_topic_render"
+    fallback: "return_deferred_candidate_if_house_or_aspect_version_is_unresolved"
+
+  - plugin: mars-personal-aspect-synthesis
+    symbol: "@MAR"
+    trigger: "register_Mars_facts_during_natal_pass_then_interpret_personal_planet_contacts_only_when_chart_or_topic_condition_matches"
+    order: "natal_core_after_chart_facts_before_topic_render"
+    fallback: "return_deferred_candidate_if_aspect_or_mars_state_is_unresolved"
+
+forbidden_shortcuts:
+  - "model_memory_as_source"
+  - "knowledge_card_before_chart_facts"
+  - "case_text_as_global_rule"
+  - "house_pair_matrix_as_strict_mutual_reception"
+  - "future_sentence_without_direct_activation"
+  - "modern_outer_planet_overriding_classical_core"

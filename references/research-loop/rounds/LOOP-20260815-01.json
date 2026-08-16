@@ -1,0 +1,43 @@
+{
+  "schema_version": "RESEARCH-ROUND-0.1",
+  "run_id": "LOOP-20260815-01",
+  "started_at": "2026-08-15",
+  "objective": "审查事件簇缺口，并用公开网页、书籍、PDF和帖子建立第一轮候选证据聚类",
+  "focus_clusters": [
+    "EVT-SELF-BODY-IDENTITY",
+    "EVT-COMMUNICATION-LEARNING",
+    "EVT-TRAVEL-RELOCATION-FOREIGN",
+    "EVT-LEGAL-DISPUTE-ENEMIES",
+    "EVT-ISOLATION-INSTITUTION-CONFINEMENT",
+    "EVT-LOVE-ROMANCE",
+    "EVT-FRIENDSHIP-SOCIAL-NETWORK",
+    "EVT-WORK-EMPLOYMENT-ROUTINE",
+    "EVT-CAREER-PUBLIC-STATUS"
+  ],
+  "inputs": {
+    "source_queue": "references/research-loop/source-queue.jsonl",
+    "candidate_extracts": "references/research-loop/candidate-extracts.jsonl",
+    "production_events": "references/knowledge-modules/event-clusters.json",
+    "gap_registry": "references/research-loop/gap-registry.json"
+  },
+  "stages": [
+    {"id":"L1","name":"locate_and_collect","status":"complete"},
+    {"id":"L2","name":"source_grade_and_version_lock","status":"partial"},
+    {"id":"L3","name":"candidate_extract_and_cluster","status":"complete"},
+    {"id":"L4","name":"primary_text_and_counterexample_review","status":"pending"},
+    {"id":"L5","name":"chart_regression","status":"pending"},
+    {"id":"L6","name":"promote_or_reject","status":"pending"}
+  ],
+  "guardrails": [
+    "Search snippets and forum claims stay at grade C or below",
+    "No sensitive medical, death, legal or identity claim is deterministic",
+    "A cluster is not a production event until responsibility, mechanism, counter-test and timing boundary are explicit",
+    "Every promoted card must retain source locator and version"
+  ],
+  "next_round": [
+    "Extract timestamped claims from the long-form house lecture",
+    "Read primary chapters on 3rd, 6th, 7th, 9th and 12th-house topics",
+    "Add dated success and failure charts for travel, litigation and relocation",
+    "Compare candidate gap clusters against existing 15 production clusters"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260815-06",
+  "started_at": "2026-08-15",
+  "scope": "paired_direction_regression_and_valens_cross_check",
+  "topics": ["4_to_2", "2_to_4", "lot_of_fortune", "wealth_duration", "property", "house_strength"],
+  "source_ids": ["PDF-VALENS-RILEY", "BOOK-PTOLEMY-TETRABIBLOS"],
+  "retrieval_method": "direct_read_only_pdf_download_and_local_text_extraction",
+  "result": "Valens reinforces Lot-of-Fortune, ruler condition, angularity and loss/continuity checks; no direct primary statement found for 4_to_2 as a standalone property-profit law",
+  "regression_fixture": "references/fixtures/fly-in-direction-regression.json",
+  "regression_script": "scripts/check_fly_in_direction_regression.py",
+  "promotion_decision": "hold_candidate_layer",
+  "next_step": "attach paired real charts and keep 4_to_2 publication wording conditional on independent wealth testimony"
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": "TECHNIQUE-REGISTRY-0.1",
+  "production_policy": {
+    "zodiac": "tropical",
+    "house_system": "Placidus",
+    "chart_significators_are_primary": true,
+    "borrowed_logic_scope": ["association", "composition", "validation", "timing_resolution"],
+    "external_systems_may_not_override_chart_facts": true,
+    "natal_only_default": true,
+    "predictive_requires_explicit_activation": true,
+    "vedic_rules_in_production": false
+  },
+  "techniques": {
+    "natal": {
+      "kind": "natal",
+      "status": "production",
+      "implementation": "astrology_engine.natal.calculate_natal",
+      "required_inputs": ["birth_datetime", "timezone", "latitude", "longitude"],
+      "optional_inputs": ["place"],
+      "resolution": "natal_structure",
+      "requires_target": false,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "chart_facts",
+      "fallback_policy": "fail_closed"
+    },
+    "secondary_progression": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "resolution": "day_to_year_window",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "progression_snapshot",
+      "fallback_policy": "fail_closed"
+    },
+    "tertiary_progression": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "resolution": "month_to_day_window",
+      "algorithm_profiles": [
+        "project_local_ephh_tertiary_v3_sidereal",
+        "project_local_ephh_tertiary_v2_synodic_anchor1",
+        "project_local_ephh_tertiary_v1"
+      ],
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "progression_snapshot",
+      "fallback_policy": "fail_closed"
+    },
+    "solar_arc": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "resolution": "year_to_month_window",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "directed_snapshot",
+      "fallback_policy": "fail_closed"
+    },
+    "solar_return": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_year", "timezone", "return_location"],
+      "resolution": "annual",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "return_chart",
+      "fallback_policy": "fail_closed"
+    },
+    "lunar_return": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "return_location"],
+      "resolution": "month_to_day_window",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "return_chart",
+      "fallback_policy": "fail_closed"
+    },
+    "firdaria": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "derived_inputs": ["sect_from_natal_horizon"],
+      "resolution": "multi_year_period",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "period_timeline",
+      "fallback_policy": "fail_closed"
+    },
+    "annual_profection": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "resolution": "annual",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "annual_lord_snapshot",
+      "fallback_policy": "fail_closed"
+    },
+    "essential_dignities": {
+      "kind": "natal_analysis",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "timezone", "latitude", "longitude"],
+      "optional_inputs": ["use_modern_rulers"],
+      "resolution": "natal_structure",
+      "requires_target": false,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "dignity_audit",
+      "fallback_policy": "fail_closed"
+    },
+    "mutual_reception": {
+      "kind": "natal_analysis",
+      "status": "production",
+      "implementation": "astrology_engine.predictive.calculate_predictive",
+      "required_inputs": ["birth_datetime", "timezone", "latitude", "longitude"],
+      "optional_inputs": ["use_modern_rulers"],
+      "resolution": "natal_structure",
+      "requires_target": false,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "reception_audit",
+      "fallback_policy": "fail_closed"
+    },
+    "transit": {
+      "kind": "predictive",
+      "status": "production",
+      "implementation": "astrology_engine.ephh_core.astro.transits.calculate_transit",
+      "required_inputs": ["birth_datetime", "target_datetime", "timezone", "latitude", "longitude"],
+      "optional_inputs": ["target_latitude", "target_longitude"],
+      "resolution": "day_to_hour_window",
+      "requires_target": true,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "transit_snapshot",
+      "fallback_policy": "fail_closed"
+    },
+    "primary_directions": {
+      "kind": "predictive",
+      "status": "candidate_external_parity",
+      "implementation": null,
+      "required_inputs": ["birth_datetime", "target_datetime", "pd_method", "pd_time_key", "pd_aspects", "timezone", "latitude", "longitude"],
+      "resolution": "year_to_month_window",
+      "requires_target": true,
+      "source_policy": "horosa_reference_only",
+      "output_artifact": "direction_snapshot",
+      "fallback_policy": "label_unverified_or_fail"
+    },
+    "zodiacal_releasing": {
+      "kind": "predictive",
+      "status": "candidate_external_parity",
+      "implementation": null,
+      "required_inputs": ["birth_datetime", "lot_selection", "sect", "target_datetime"],
+      "resolution": "period_timeline",
+      "requires_target": true,
+      "source_policy": "horosa_reference_only",
+      "output_artifact": "period_timeline",
+      "fallback_policy": "fail_closed"
+    },
+    "rectification_matrix": {
+      "kind": "calibration",
+      "status": "design_only",
+      "implementation": null,
+      "required_inputs": ["candidate_times", "hard_events", "birth_time_source", "location", "timezone"],
+      "resolution": "candidate_scan",
+      "requires_target": false,
+      "source_policy": "vedic_rectifier_logic_only",
+      "output_artifact": "candidate_score_matrix",
+      "fallback_policy": "never_narrative_fit"
+    },
+    "birth_time_validation": {
+      "kind": "calibration",
+      "status": "production",
+      "implementation": "scripts.validate_birth_time.validate",
+      "required_inputs": ["birth_date", "candidate_time", "events", "event_tolerance_days", "timezone", "latitude", "longitude"],
+      "optional_inputs": ["candidate_range_minutes", "candidate_step_minutes", "house_system"],
+      "resolution": "candidate_time_event_window_matrix",
+      "requires_target": false,
+      "source_policy": "local_ephh_vendored",
+      "output_artifact": "candidate_score_matrix",
+      "fallback_policy": "fail_closed"
+    }
+  }
+}

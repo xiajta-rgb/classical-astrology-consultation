@@ -1,3 +1,8 @@
 __pycache__/
 *.py[cod]
 .round19-tmp/
+.horosa-home/
+.pytest_cache/
+references/research-loop/*state*.json
+references/research-loop/**/*.state.json
+references/research-loop/daemon-loop.log.jsonl

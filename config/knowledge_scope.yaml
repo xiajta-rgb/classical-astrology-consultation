@@ -1,0 +1,45 @@
+version: "KNOWLEDGE-SCOPE-1.0"
+purpose: "只保留通用模型不具备的本地规则、来源边界和项目回归经验，避免把常识与客户事实塞进知识库。"
+
+canonical_runtime_registry: references/knowledge-modules/plugins.json
+source_audit_registry: references/knowledge-modules/registry.json
+case_data_root: clients/
+
+retain:
+  - id: local_method
+    description: "用户提供且项目明确采用的飞宫、互容经验规则及其方向性限制"
+    required: [source_locator, conditions, counter_test, grade_cap]
+  - id: project_contract
+    description: "本项目独有的输出模式、调用顺序、发布门禁和证据等级"
+    required: [owner, activation, rollback_or_deferred_rule]
+  - id: regression_lesson
+    description: "由用户纠正沉淀出的可重复边界、反例和回归夹具"
+    required: [failed_claim, corrected_rule, regression_fixture]
+  - id: provenance_boundary
+    description: "来源等级、冲突、排除项和不能升级的条件"
+    required: [source_ids, source_tier, promotion_status]
+
+exclude_or_route_elsewhere:
+  - id: generic_textbook_astrology
+    route: model_or_primary_reference
+  - id: client_specific_facts
+    route: clients/<case_id>/
+  - id: unverified_web_claim
+    route: references/research-loop/
+  - id: full_manual_dump
+    route: source_audit_only_then_discard
+  - id: generic_psychology_or_motivation
+    route: forbidden
+  - id: case_specific_sentence
+    route: clients/<case_id>/analysis/interpretations/
+  - id: unimplemented_timing_method
+    route: technique_registry_candidate_external_parity
+
+promotion:
+  default_status: candidate
+  maximum_grade_without_independent_validation: C
+  require_source_locator: true
+  require_counter_test: true
+  require_two_independent_cases: true
+  require_machine_regression: true
+  no_automatic_promotion_from_single_client_chart: true

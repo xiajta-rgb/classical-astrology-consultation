@@ -17,7 +17,7 @@ def main() -> int:
     report = build(package, registry)
     assert report["status"] == "hold"
     by_id = {item["id"]: item for item in report["modules"]}
-    assert len(by_id) == 7
+    assert len(by_id) == 8
     assert by_id["life_timing"]["status"] == "inactive"
     assert "某年" in by_id["life_timing"]["interpretation"][0]
     assert by_id["wealth_income"]["status"] == "provisional_hold"
@@ -28,7 +28,7 @@ def main() -> int:
     assert all(item.get("salience") in ("critical", "high") for item in by_id["wealth_income"]["evidence"])
     assert by_id["wealth_income"]["selection"]["deferred_count"] >= 0
     assert all(item["counter_tests"] for item in report["modules"])
-    print("PASS modular interpretation self-test: seven modules, salience gate, timing gate and evidence anchors")
+    print("PASS modular interpretation self-test: eight modules, salience gate, timing gate and evidence anchors")
     return 0
 
 

@@ -1,0 +1,18 @@
+{
+  "case_id": "19730829-1727-ZhouningFujian-FamilyGroup",
+  "display_name": null,
+  "case_type": "family_group",
+  "anchor_birth": {"date": "1973-08-29", "time": "17:27", "place": "福建省宁德市周宁县"},
+  "coordinates": {"lat": 27.0872517, "lon": 119.2950426, "timezone": "+08:00"},
+  "members": [
+    {"role": "mother", "birth_date": "1973-08-29", "birth_time": "17:27", "place": "周宁县"},
+    {"role": "son", "birth_date": "1996-11-11", "birth_time": "22:25", "place": "株洲芦淞区"},
+    {"role": "daughter", "birth_date": "1995-02-08", "birth_time": "03:00", "place": "周宁县", "time_precision": "未校正"},
+    {"role": "husband", "birth_date": "1971-06-02", "birth_time": "07:48", "place": "周宁县", "time_precision": "未校正"}
+  ],
+  "source": "user_supplied_family_context_and_local_chart_engine",
+  "consultation_topics": ["family_cross_validation", "parent_family_origin", "time_sensitivity"],
+  "canonical_artifacts": ["analysis/chart-facts/ROUND130-19730829-MOTHER-CHART-FACTS.json", "analysis/chart-facts/ROUND132-19961111-SON-CHART-FACTS.json", "analysis/chart-facts/ROUND133-FAMILY-CHARTS-FACTS.json", "analysis/interpretations/ROUND130-19730829-MOTHER-CASE-NOTES.md", "analysis/interpretations/ROUND131-19730829-MOTHER-PLACIDUS-AUDIT.md", "analysis/interpretations/ROUND133-FAMILY-TIME-SENSITIVITY.md"],
+  "management_status": "canonical_family_record",
+  "legacy_sources": ["references/loop-runs/ROUND130-19730829-MOTHER-CASE-NOTES.md", "references/loop-runs/ROUND130-19730829-MOTHER-CHART-FACTS.json", "references/loop-runs/ROUND131-19730829-MOTHER-PLACIDUS-AUDIT.md", "references/loop-runs/ROUND132-19961111-SON-CHART-FACTS.json", "references/loop-runs/ROUND133-FAMILY-CHARTS-FACTS.json", "references/loop-runs/ROUND133-FAMILY-TIME-SENSITIVITY.md"]
+}

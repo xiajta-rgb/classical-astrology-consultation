@@ -1,5 +1,7 @@
 {
   "schema_version": "INTERPRETATION-MODULES-0.1",
+  "role": "case_independent_topic_templates",
+  "runtime_activation": "config/module_dispatch.yaml",
   "version": "NATAL-MODULES-2026-08-15",
   "scope": "natal_only",
   "modules": [
@@ -14,8 +16,21 @@
         {"id": "I-2", "salience": "high", "kind": "placement", "planet": "月亮", "house": 4, "sign": "天蝎", "dignity": "fall", "text": "月亮天蝎4宫且处失势：情绪处理深、封闭、记忆性强；真正的压力点通常发生在家庭边界、信任和控制权，而不是表面社交。"},
         {"id": "I-3", "salience": "critical", "kind": "cluster", "planets": ["太阳", "月亮", "水星"], "house": 4, "text": "太阳、月亮、水星集中4宫：人生主轴明显偏向内在根基、家庭系统、隐性资源和私域掌控。"}
       ],
-      "counter_tests": ["ASC为巨蟹29°34′，行政区中心坐标可能使宫位跨界；需精确地点或校时后复核。", "不能由4宫聚集单独推出家庭事件或心理诊断。"],
+      "counter_tests": ["若上升或宫头接近边界，地点精度和校时可能改变责任链；需分支复核。", "不能由4宫聚集单独推出家庭事件或心理诊断。"],
       "observable_tests": ["核对重大决策是否常被居住地、家庭责任、资产安排或隐私安全改变。", "核对是否倾向先观察、保留信息，确认安全后才公开行动。"]
+    },
+    {
+      "id": "children_education",
+      "title": "子女、创作与教育投入",
+      "house_chain": [5, 1, 4, 8, 9, 3],
+      "priority_policy": {"minimum_salience": "high", "max_primary_rules": 3, "defer_supporting": true},
+      "safety_gate": "不对生育、儿童健康或教育结果做确定性断言；先区分创作、照料与学习机制",
+      "rules": [
+        {"id": "E-1", "salience": "high", "kind": "responsibility_chain", "house_chain": [5, 1, 4, 8], "text": "子女/创作问题先看5宫及其宫主，再看1宫主体、4宫家庭承载与8宫共享资源；教育问题再接9宫高等学习或3宫基础学习与信息处理。"},
+        {"id": "E-2", "salience": "supporting", "kind": "mechanism_split", "text": "5宫同一组征象可能对应创作产出、照料责任、恋爱投入或投机风险，必须由现实问题选择分支，不能叠加成单一结论。"}
+      ],
+      "counter_tests": ["5宫或其宫主单独不能推出生育、子女健康或教育结果；必须补充现实事实、行星状态和问题边界。", "教育主题需区分3宫基础学习、9宫高等学习、5宫教学/创作投入，不把所有学习经验混为一谈。"],
+      "observable_tests": ["记录学习/创作投入的时间、产出、照料成本与资源来源，验证责任链落点。", "把教育目标拆成具体阶段、资源预算和可复核结果，避免用星盘标签替代现实评估。"]
     },
     {
       "id": "life_timing",

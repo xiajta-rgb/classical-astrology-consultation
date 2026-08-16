@@ -1,0 +1,15 @@
+{
+  "case_id": "1996-unknown-unknown-place",
+  "display_name": null,
+  "birth_year": 1996,
+  "birth_date": null,
+  "birth_time": null,
+  "birth_place": null,
+  "source": "user_supplied_summary",
+  "input_status": "incomplete_hold",
+  "missing_fields": ["birth_date", "birth_time", "exact_birth_place", "coordinates", "zodiac", "house_system", "planetary_degrees"],
+  "consultation_topics": ["natal_structure_preliminary"],
+  "canonical_artifacts": ["input/user-chart-1996-supplied.json", "analysis/interpretations/USER-1996-PRELIMINARY-READING.md"],
+  "management_status": "canonical_incomplete_record",
+  "legacy_sources": ["references/fixtures/user-chart-1996-supplied.json", "references/loop-runs/USER-1996-PRELIMINARY-READING.md"]
+}

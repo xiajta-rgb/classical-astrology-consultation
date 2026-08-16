@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human writing core"
+  short_description: "Combine source-grounded human writing with AI-pattern cleanup"
+  default_prompt: "Use $human-writing-core to write or revise this text with a natural human voice, strict source boundaries, and a final AI-pattern cleanup pass."

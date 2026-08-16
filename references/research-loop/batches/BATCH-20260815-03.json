@@ -1,0 +1,19 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260815-03",
+  "started_at": "2026-08-15",
+  "scope": "house_topic_gap_fill",
+  "topics": ["communication", "work", "marriage", "career", "friendship", "hidden_adversity", "lots", "reception", "antiscia"],
+  "source_ids": [
+    "WEB-SKY-3RD-HOUSE",
+    "WEB-SKY-6TH-HOUSE",
+    "WEB-SKY-7TH-HOUSE",
+    "WEB-SKY-10TH-HOUSE",
+    "WEB-SKY-11TH-HOUSE",
+    "WEB-SKY-FORTUNE",
+    "WEB-SKY-RECEPTION",
+    "WEB-SKY-ANTISCIA"
+  ],
+  "result": "metadata_collection_then_manual_source_review",
+  "next_step": "compare pages with Lilly/Ptolemy/Valens and add only locator-backed candidate extracts"
+}

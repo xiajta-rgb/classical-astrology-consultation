@@ -1,0 +1,46 @@
+{
+  "schema_version": "PROJECT-ASTROLOGY-ENGINE-0.1",
+  "source_project": "C:/Users/xiajt/Documents/trae_projects/ephh",
+  "source_git_commit": "756aa148154e7f7b795f11e2d4c9ff9254214a8c",
+  "source_policy": "algorithm_subset_only; no FastAPI, database, client storage or credentials",
+  "zodiac": "tropical",
+  "default_house_system": "P",
+  "ephemeris": {
+    "directory": "ephh_core/ephe",
+    "files": ["seas_18.se1", "semo_18.se1"],
+    "sha256": {
+      "seas_18.se1": "0afe3f94769b6718082411c2c4fb06bf9d1aaa6c0bc1bad8f8b8725421ef8748",
+      "semo_18.se1": "ecfa54dbf5bc0b5a9bc3e04ed28629a821e98625eacae38f4070593bba0e2980"
+    }
+  },
+  "techniques": {
+    "secondary_progression": "ephh_core.astro.progressions.calculate_secondary_progression",
+    "tertiary_progression": "ephh_core.astro.progressions.calculate_tertiary_progression",
+    "solar_arc_progression": "ephh_core.astro.progressions.calculate_solar_arc_progression",
+    "solar_return": "ephh_core.astro.progressions.calculate_solar_return",
+    "lunar_return": "ephh_core.astro.progressions.calculate_lunar_return",
+    "firdaria": "ephh_core.astro.classical.calculate_firdaria",
+    "profection": "ephh_core.astro.classical.calculate_profection",
+    "essential_dignities": "ephh_core.astro.classical.calculate_essential_dignities",
+    "mutual_reception": "ephh_core.astro.classical.calculate_mutual_reception",
+    "transit": "ephh_core.astro.transits.calculate_transit"
+  },
+  "wrapper": "predictive.py",
+  "natal_wrapper": "natal.py",
+  "location_resolver": "location.py",
+  "regression_policy": "compare representative outputs against source project before changing copied algorithms"
+  ,"insights": {
+    "mbti": {
+      "source": "ephh/api/mbti_modules",
+      "entrypoint": "astrology_engine.mbti.calculate_mbti",
+      "version": "mbti-ephh-migrated",
+      "layer": "auxiliary_symbolic_insight"
+    },
+    "tpes": {
+      "source": "ephh/api/routes/tpes.py + ephh/api/tpes_modules/templates.py",
+      "entrypoint": "astrology_engine.tpes.calculate_tpes",
+      "version": "tpes-career-v3.2",
+      "layer": "auxiliary_symbolic_insight"
+    }
+  }
+}

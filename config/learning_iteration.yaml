@@ -1,0 +1,113 @@
+version: "LEARNING-ITERATION-1.0"
+mode: user_triggered_bounded
+autonomous_background_learning: false
+
+principles:
+  - chart_facts_before_interpretation
+  - route_before_retrieval
+  - direction_is_not_symmetric
+  - natal_before_timing
+  - evidence_weight_is_preserved_across_renderers
+  - every_claim_has_counter_test
+  - generic_prose_is_a_release_failure
+
+iteration_stages:
+  - id: L0_data_contract
+    goal: "锁定出生时间、地点、黄道、宫制、sect和上升边界"
+    required_artifacts: [chart_facts, location_precision, boundary_risk]
+    gate: "缺失或边界高风险时降级结论，不静默补齐"
+    scripts:
+      - scripts/run_natal_pipeline.py
+      - scripts/check_astrology_engine.py
+  - id: L1_route_selection
+    goal: "根据问题选择最小充分路由"
+    required_artifacts: [interpretation_route, module_trace]
+    gate: "未选路由不得直接进入解释层"
+  - id: L2_house_flow_audit
+    goal: "计算并校验宫主飞宫方向"
+    required_artifacts: [rulership_fly_ins, direction_trace]
+    scripts:
+      - astrology_engine/significations.py
+      - scripts/check_fly_in_direction_regression.py
+      - scripts/validate_chart_facts.py  # compatibility audit for supplied external charts
+      - scripts/build_natal_facts.py  # compatibility audit for supplied external charts
+    gate: "A->B不得倒读成B->A；方向性错误阻断发布"
+  - id: L3_reception_and_state
+    goal: "审计尊贵、sect、角性、相位连接和严格行星互容"
+    required_artifacts: [planetary_state, typed_reception, connection_audit]
+    scripts:
+      - astrology_engine/predictive.py
+      - scripts/check_reception_connections.py
+    gate: "宫位对经验矩阵不得升级为严格行星互容"
+  - id: L4_composition
+    goal: "把多个征象组合为现实机制，去重并保留反证"
+    required_artifacts: [evidence_cards, hypothesis_competition, mechanism_graph]
+    scripts:
+      - scripts/compose_significators.py
+    gate: "单一征象不得承载整个人生结论"
+  - id: L5_timing
+    goal: "仅在明确请求未来时调用直接时限技术"
+    required_artifacts: [technique, target_window, activated_natal_chain, counter_test]
+    scripts:
+      - scripts/run_natal_pipeline.py
+      - astrology_engine/predictive_events.py
+    gate: "无直接激活则deferred，不输出未来事件句"
+  - id: L6_rendering
+    goal: "从同一证据卡生成古典版和委婉版"
+    required_artifacts: [evidence_grade, source_trace, mode_output]
+    gate: "委婉版隐藏术语但不得削弱证据强度"
+  - id: L7_regression
+    goal: "把用户纠正转成可重复的回归测试"
+    required_artifacts: [lesson_card, regression_case, expected_boundary]
+    gate: "未通过回归不得升级规则"
+
+lesson_card_schema:
+  - claim_that_failed
+  - user_correction
+  - chart_fact
+  - correct_rule
+  - counter_test
+  - source_ids
+  - route_id
+  - evidence_grade
+  - regression_fixture
+  - promotion_status
+
+promotion_policy:
+  user_material_rule: "candidate/C unless independently validated"
+  no_rule_upgrade_from_single_chart: true
+  require_independent_test_cases: 2
+  require_counter_test: true
+  require_source_trace: true
+
+regression_cases:
+  - id: property_direction_001
+    input: "4 ruler in 2 versus 2 ruler in 4"
+    expected: "4->2 can support property wealth; 2->4 supports money allocated to property"
+  - id: property_child_002
+    input: "4 ruler in 5"
+    expected: "property enters child/education context; do not infer profit alone"
+  - id: debt_work_003
+    input: "8 ruler in 6 / 6 ruler in 8"
+    expected: "debt-work feedback only when the actual direction exists"
+  - id: reception_004
+    input: "house-pair matrix versus planetary mutual reception"
+    expected: "house-pair remains auxiliary/C; strict mutual reception requires reverse dignity and connection audit"
+  - id: birth_branch_005
+    input: "Chen Yuepeng 21:30 versus 22:35"
+    expected: "recompute house rulers before interpreting; do not carry 21:30 8->6 or 10-in-10 claims into 22:35"
+  - id: current_timing_006
+    input: "2026 current predictive request"
+    expected: "natal first; profection/Firdaria/progression/solar return only with direct activation and source trace"
+  - id: prose_007
+    input: "polite renderer"
+    expected: "hide symbols, preserve evidence strength; reject generic conditional filler"
+
+quality_metrics:
+  - route_completeness
+  - source_trace_completeness
+  - direction_error_count
+  - unsupported_profit_claim_count
+  - unsupported_timing_claim_count
+  - generic_filler_count
+  - regression_pass_rate

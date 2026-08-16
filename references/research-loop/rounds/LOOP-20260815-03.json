@@ -1,0 +1,27 @@
+{
+  "schema_version": "RESEARCH-ROUND-0.1",
+  "run_id": "LOOP-20260815-03",
+  "started_at": "2026-08-15",
+  "objective": "用Valens交叉核对财富取得与持续性，并对4飞2与2飞4做方向性回归测试",
+  "focus_clusters": ["EVT-MONEY-WINDFALL", "EVT-FAMILY-PROPERTY-RESOURCES", "EVT-DEBT-INHERITANCE-SHARED-FINANCE"],
+  "inputs": {"batch": "references/research-loop/batches/BATCH-20260815-06.json", "regression_fixture": "references/fixtures/fly-in-direction-regression.json", "regression_script": "scripts/check_fly_in_direction_regression.py", "candidate_extracts": "references/research-loop/candidate-extracts.jsonl"},
+  "sources_read": [
+    {"source_id": "PDF-VALENS-RILEY", "url": "https://www.skyscript.co.uk/pdf/pubs/texts/valens/griscti/docs/Valens-Anthologies.pdf", "locator": "Book II 2.3, 2.6, 2.9, 2.10 and 2.16; PDF pp. 95-122", "tier": "primary_translation_preliminary", "finding": "Lot of Fortune, its ruler, configurations, benefic/malefic condition and continuity/loss must be read together; conditional property acquisition and property-loss passages both occur"},
+    {"source_id": "BOOK-PTOLEMY-TETRABIBLOS", "url": "https://www.gutenberg.org/files/70850/70850-h/70850-h.htm", "locator": "Book IV, chapter II", "tier": "primary_translation", "finding": "wealth depends on Fortune rulership, planetary power/connection and adverse testimony; duration is separate from acquisition"}
+  ],
+  "candidate_rules": [
+    {"id": "CAND-PROP-003", "claim": "4→2 and 2→4 are non-symmetric labels; both remain candidate/C until paired real charts establish outcome separation", "grade_cap": "C", "reason": "directional semantics are operational, while primary sources supply mechanisms rather than this exact notation"},
+    {"id": "CAND-WEALTH-002", "claim": "Property acquisition requires a wealth testimony layer (Fortune/ruler/condition/connection), not only a property-house flow", "grade_cap": "B", "reason": "Ptolemy and Valens both center Fortune and ruler condition"},
+    {"id": "CAND-WEALTH-003", "claim": "Acquisition and continuity must be separate outputs", "grade_cap": "B", "reason": "both sources include loss, reversals or non-continuation conditions"}
+  ],
+  "tests_run": [
+    {"test": "fly_in_direction_regression", "status": "pass", "result": "4→2 maps to property_to_wealth_audit; 2→4 maps to wealth_to_property_allocation; neither alone proves profit"},
+    {"test": "valens_cross_text_review", "status": "pass", "result": "Lot/ruler/configuration and acquisition-vs-loss mechanisms located"},
+    {"test": "chen_yuepeng_2235_direction_audit", "status": "pass", "result": "validated chart has 2→4, 4→5, 8→5 and 10→9; no 4→2; Fortune is in 9th and strict planetary mutual reception is absent"},
+    {"test": "bounded_local_loop", "status": "pass", "result": "3 passes; 98 sources, 24 extracts, 0 promotions"}
+  ],
+  "failures": ["Valens Riley translation is preliminary; exact Greek/translation comparison remains outstanding", "paired real property cases are not yet available"],
+  "changes": ["added EXT-20260815-022 through EXT-20260815-024", "added BATCH-20260815-06", "added fly-in direction regression fixture and guard script", "recorded Chen Yuepeng 22:35 direction audit"],
+  "result": "bounded_research_complete_no_core_promotion",
+  "next_round": ["run the same direction audit on Chen Yuepeng 22:35 facts", "add one positive and one negative real property case", "compare Valens with a second translation or critical edition", "only then reassess whether 4→2 can exceed C-level wording"]
+}

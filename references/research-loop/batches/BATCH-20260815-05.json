@@ -1,0 +1,12 @@
+{
+  "schema_version": "RESEARCH-BATCH-0.1",
+  "batch_id": "BATCH-20260815-05",
+  "started_at": "2026-08-15",
+  "scope": "property_wealth_direction_and_reception_boundary",
+  "topics": ["second_house_wealth", "fourth_house_property", "4_to_2_vs_2_to_4", "part_of_fortune", "reception", "duration"],
+  "source_ids": ["BOOK-PTOLEMY-TETRABIBLOS", "WEB-SKY-4TH-HOUSE", "WEB-SKY-RECEPTION"],
+  "retrieval_method": "direct_http_read_after_web_tool_404",
+  "result": "primary_text_supports_wealth_condition_connection_and_duration; fourth_house_property_signification_supported; no primary confirmation_found_for_4_to_2_alone_as_property_profit_rule; strict_reception_gate_confirmed",
+  "promotion_decision": "hold_candidate_layer",
+  "next_step": "run chart regressions on 4_to_2, 2_to_4, 4_to_5 and 8_to_5; collect positive and negative property cases before any core promotion"
+}

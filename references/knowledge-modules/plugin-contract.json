@@ -1,0 +1,51 @@
+{
+  "schema_version": "KNOWLEDGE-PLUGIN-CONTRACT-0.2",
+  "purpose": "本地知识扩展的声明式契约；插件只能补充证据，不能覆盖核心占星体系。",
+  "required_fields": [
+    "id",
+    "version",
+    "status",
+    "layer",
+    "activation",
+    "depends_on",
+    "source_ids",
+    "artifacts",
+    "input_contract",
+    "output_contract",
+    "grade_cap",
+    "safety_gate",
+    "override_core",
+    "retrieval",
+    "judgment_utility",
+    "event_domains",
+    "event_mechanism",
+    "non_judgment_use",
+    "invocation"
+  ],
+  "enums": {
+    "status": ["base", "active", "candidate", "auxiliary", "inactive", "retired"],
+    "activation": ["always", "natal_default", "explicit_topic", "explicit_plugin", "timing_only"],
+    "grade_cap": ["S", "A", "B", "C", "N/A"],
+    "judgment_utility": ["primary_judgment", "supporting_inference", "context_only", "deferred"]
+  },
+  "invariants": [
+    "override_core must always be false",
+    "candidate/auxiliary plugins may not raise evidence above grade_cap C",
+    "timing_only plugins remain inactive unless the caller explicitly activates timing",
+    "every output must carry card_id, source_ids, grade_cap and safety_gate",
+    "plugin changes are versioned; replacement uses supersedes and rollback_to",
+    "context_only plugins/cards never enter a core conclusion",
+    "active/candidate plugins must declare an event domain and an event mechanism",
+    "a sign/planet/house definition without an event mechanism is not a judgment",
+    "every callable plugin must declare a stable invocation symbol, aliases, trigger and fallback"
+  ],
+  "optional_fields": ["module_policy"],
+  "input_contract": {
+    "required_base": ["Chart_Facts", "question.topic"],
+    "optional": ["typed_reception", "rulership_fly_ins", "question.scope"]
+  },
+  "output_contract": {
+    "bundle": ["plugin_id", "plugin_version", "cards", "deferred", "guardrails"],
+    "card_required": ["card_id", "text", "source_ids", "grade_cap", "conditions", "counter_test"]
+  }
+}

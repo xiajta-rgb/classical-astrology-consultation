@@ -1,0 +1,106 @@
+{
+  "schema_version": "ASSOCIATION-OPERATORS-0.1",
+  "principle": "Chart significators are the sole evidence source; operators only transform supported facts into hypotheses.",
+  "operators": [
+    {
+      "id": "responsibility_transfer",
+      "purpose": "Move a house/topic responsibility through its ruler to the real-world setting of delivery.",
+      "chart_anchors": ["house_cusp", "traditional_ruler", "ruler_placement"],
+      "external_logic_role": "association",
+      "output": "subject-domain-location-mechanism",
+      "confidence_effect": "adds_structure_only",
+      "blocked_without": ["verified_house_system", "ruler_identity"],
+      "not_allowed": ["sign_keyword_as_conclusion", "external_theme_without_ruler_chain"]
+    },
+    {
+      "id": "condition_modulation",
+      "purpose": "Translate dignity, sect, angularity, visibility, speed and aspect condition into delivery quality or cost.",
+      "chart_anchors": ["planet", "essential_dignity", "sect", "angularity", "aspect_condition"],
+      "external_logic_role": "composition",
+      "output": "capacity-versus-cost",
+      "confidence_effect": "qualifies_delivery",
+      "blocked_without": ["planetary_state_audit"],
+      "not_allowed": ["single_condition_determinism", "binary_good_bad_score"]
+    },
+    {
+      "id": "carrier_link",
+      "purpose": "Decide whether two responsibilities can interact through aspect, reception, dispositorship or a verified chain.",
+      "chart_anchors": ["aspect_or_reception", "dispositor_chain"],
+      "external_logic_role": "composition",
+      "output": "connected-versus-unconnected-delivery",
+      "confidence_effect": "adds_connection_not_severity",
+      "blocked_without": ["degree_or_typed_reception"],
+      "not_allowed": ["assumed_connection", "double_counting_same_planet"]
+    },
+    {
+      "id": "independent_convergence",
+      "purpose": "Raise thematic stability only when separate responsibility chains point to the same mechanism.",
+      "chart_anchors": ["two_or_more_independent_chains"],
+      "external_logic_role": "validation",
+      "output": "stable-theme-hypothesis",
+      "confidence_effect": "raises_support_not_event_severity",
+      "blocked_without": ["independent_chain_ids", "duplicate_evidence_audit"],
+      "not_allowed": ["counting_same_testimony_twice", "automatic_major_event"]
+    },
+    {
+      "id": "bottleneck",
+      "purpose": "Identify one weak or overloaded carrier through which several chart responsibilities must be delivered.",
+      "chart_anchors": ["multiple_responsibilities", "shared_carrier", "carrier_constraint"],
+      "external_logic_role": "composition",
+      "output": "cross-domain-delivery-bottleneck",
+      "confidence_effect": "raises_constraint_specificity",
+      "blocked_without": ["shared_carrier_verification"],
+      "not_allowed": ["multiplying_evidence_by_domain_count", "catastrophe_by_default"]
+    },
+    {
+      "id": "axis_transfer",
+      "purpose": "Translate tension between opposing houses into a resource, privacy/public, self/other or near/far trade-off.",
+      "chart_anchors": ["opposed_house_topics", "axis_rulers_or_planets"],
+      "external_logic_role": "association",
+      "output": "conditional-tradeoff",
+      "confidence_effect": "adds_contextual_mechanism",
+      "blocked_without": ["topic_specific_axis_mapping"],
+      "not_allowed": ["generic_axis_personality"]
+    },
+    {
+      "id": "event_ladder",
+      "purpose": "Generate ordinary, strain and major-transition hypotheses without collapsing them into one deterministic prediction.",
+      "chart_anchors": ["core_mechanism", "severity_conditions", "whole_chart_context"],
+      "external_logic_role": "association",
+      "output": "graduated-event-hypotheses",
+      "confidence_effect": "preserves_uncertainty",
+      "blocked_without": ["sensitive_topic_gate", "independent_corroboration_for_high_intensity"],
+      "not_allowed": ["natal_only_mortality_claim", "one_symbol_equals_event"]
+    },
+    {
+      "id": "temporal_activation",
+      "purpose": "Use a timing technique to activate an already-supported natal mechanism at its declared resolution.",
+      "chart_anchors": ["natal_permission", "explicit_target", "technique_contract"],
+      "external_logic_role": "timing_resolution",
+      "output": "calibrated-time-window",
+      "confidence_effect": "narrows_window_only",
+      "blocked_without": ["target_datetime_or_year", "method_settings", "provenance"],
+      "not_allowed": ["timing_creates_natal_theme", "false_day_level_precision"]
+    },
+    {
+      "id": "directional_overlay",
+      "purpose": "Keep A-to-B and B-to-A relationship activations separate before comparing shared or asymmetric effects.",
+      "chart_anchors": ["chart_A_facts", "chart_B_facts", "declared_relationship_type"],
+      "external_logic_role": "validation",
+      "output": "directional-relationship-hypotheses",
+      "confidence_effect": "preserves_asymmetry",
+      "blocked_without": ["both_chart_facts", "relationship_context"],
+      "not_allowed": ["single_match_score", "infer_relationship_type"]
+    },
+    {
+      "id": "counterfactual_removal",
+      "purpose": "Remove one proposed anchor and test whether the conclusion still stands or must be downgraded.",
+      "chart_anchors": ["candidate_conclusion", "evidence_set"],
+      "external_logic_role": "validation",
+      "output": "robustness-and-limit",
+      "confidence_effect": "can_downgrade",
+      "blocked_without": ["traceable_evidence_ids"],
+      "not_allowed": ["post_hoc_event_fitting"]
+    }
+  ]
+}

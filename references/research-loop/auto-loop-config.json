@@ -1,0 +1,11 @@
+{
+  "schema_version": "AUTO-LOOP-CONFIG-0.1",
+  "queue": "references/research-loop/source-queue.jsonl",
+  "state": "references/research-loop/auto-loop-state.json",
+  "extracts": "references/research-loop/auto-extracts.jsonl",
+  "default_max_pages_per_run": 8,
+  "per_source_timeout_seconds": 12,
+  "retry_limit": 1,
+  "save_policy": "metadata_and_keyword_candidates_only",
+  "promotion_policy": "never_auto_promote_external_content"
+}

@@ -82,7 +82,7 @@ terms、triplicity、faces、reception 和 aspect 的版本/政策必须在 Char
 → 结构性翻译
 ```
 
-七曜建立核心判断。Uranus、Neptune、Pluto、Chiron、节点、星座小行星和现代专属相位只能在本命核心之后作为辅助说明，不能单独升级结论。
+七曜建立古典核心判断；Uranus、Neptune、Pluto 的位置、宫位和相位仍应在同一轮本命 Chart Facts 中登记，再由 `natal_core_extension` 路由解释。它们不是古典主宰星，不能单独升级或推翻结论；Chiron、节点、星座小行星和现代专属相位仍保持辅助层。
 
 ## 五、N3 主题责任链
 

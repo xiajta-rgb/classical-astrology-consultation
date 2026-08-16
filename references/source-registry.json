@@ -329,6 +329,208 @@
       "alternative_paths": ["American_Federation_of_Astrologers_catalogue", "institutional_library_or_interlibrary_loan", "Latin_Mathesis_critical_edition", "independent_translation_comparison"],
       "upgrade_stop_condition": "no Firmicus sensitive rule upgrade until Book III-IV full text and chapter/page locators are verified"
     },
+    "R38": {
+      "layer": "secondary_user_notes",
+      "work": "看盘手册(综合最终）.docx",
+      "version": "user-provided local document, accessed 2026-08-15",
+      "locator": "知识体系概览；飞星系统；飞星：占星系统的压舱石；格局的观念-互容接纳；推运部分",
+      "local_path": "C:/Users/xiajt/Desktop/看盘手册(综合最终）.docx",
+      "status": "auxiliary",
+      "limits": "作者、出版版本和原典页码未提供；混合古典、现代、案例和敏感主题材料；仅用于候选模块和研究问题，不直接升级核心证据",
+      "fulltext_status": "retrieved_local_and_audited",
+      "upgrade_stop_condition": "no rule upgrade without author/version, chapter-level primary-source cross-check, independent support and synthetic-chart regression"
+    },
+    "R39": {
+      "layer": "secondary_user_notes",
+      "work": "1互容特征汇总表.docx",
+      "version": "user-provided local document, accessed 2026-08-15",
+      "locator": "two tables titled 互容详解汇总表; rows 1-1 through 12-12",
+      "local_path": "C:/Users/xiajt/Desktop/1互容特征汇总表.docx",
+      "status": "auxiliary",
+      "limits": "宫位对经验标签，无作者、版本、样本和原典定位；不得直接输出财富、婚姻、健康或事件保证",
+      "fulltext_status": "retrieved_local_and_audited",
+      "upgrade_stop_condition": "no S/A rule upgrade without independent source, explicit conditions, counterexamples and synthetic-chart regression"
+    },
+    "R40": {
+      "layer": "secondary_technical",
+      "work": "Deborah Houlding, The Fourth House (Skyscript)",
+      "version": "accessed 2026-08-15",
+      "locator": "https://www.skyscript.co.uk/4.html; section The Fourth House / Main Rulerships",
+      "url": "https://www.skyscript.co.uk/4.html",
+      "status": "auxiliary",
+      "limits": "secondary traditional synthesis; use for house significations and source leads, not as independent primary proof"
+    },
+    "R41": {
+      "layer": "primary_translation_excerpt",
+      "work": "William Lilly, Christian Astrology, planetary attributes of the Moon (adapted and annotated by Deborah Houlding)",
+      "version": "accessed 2026-08-15",
+      "locator": "https://www.skyscript.co.uk/moonatt.html; Dignities, Nature, People and Manners sections",
+      "url": "https://www.skyscript.co.uk/moonatt.html",
+      "status": "auxiliary",
+      "limits": "web adaptation of a historical text; preserve historical terminology and do not convert it into diagnosis"
+    },
+    "R42": {
+      "layer": "secondary_technical",
+      "work": "Deborah Houlding, Scorpio the Scorpion (Skyscript)",
+      "version": "accessed 2026-08-15",
+      "locator": "https://www.skyscript.co.uk/scorpio.html; rulerships and sign symbolism sections",
+      "url": "https://www.skyscript.co.uk/scorpio.html",
+      "status": "auxiliary",
+      "limits": "mixed traditional symbolism and modern trait language; only the dignity, element, modality and mechanism-relevant material is retained"
+    },
+    "R43": {
+      "layer": "modern_commentary",
+      "work": "Cafe Astrology, Moon Conjunct/Sextile/Trine/Square/Opposition Pluto Aspects",
+      "version": "accessed 2026-08-15",
+      "locator": "https://cafeastrology.com/natal/moonplutoaspects.html; Moon conjunct Pluto section",
+      "url": "https://cafeastrology.com/natal/moonplutoaspects.html",
+      "status": "auxiliary",
+      "limits": "modern interpretive commentary with generalization risk; cannot raise classical evidence or establish trauma, diagnosis or events"
+    },
+    "R44": {
+      "layer": "modern_commentary",
+      "work": "Cafe Astrology, Pluto in the Houses",
+      "version": "accessed 2026-08-15",
+      "locator": "https://cafeastrology.com/articles/plutoinhouses.html; Pluto in 4th House section",
+      "url": "https://cafeastrology.com/articles/plutoinhouses.html",
+      "status": "auxiliary",
+      "limits": "modern outer-planet house interpretation; auxiliary only and subject to anti-generalization testing"
+    },
+    "R45": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Sun-Pluto Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-sun-pluto-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-sun-pluto-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; no classical evidence upgrade and no standalone event prediction"
+    },
+    "R46": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Moon-Pluto Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-moon-pluto-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-moon-pluto-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; family and emotional claims require chart-specific house and event validation"
+    },
+    "R47": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Mercury-Pluto Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-mercury-pluto-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-mercury-pluto-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; research and communication claims require Mercury house/rulership and independent evidence"
+    },
+    "R48": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Venus-Pluto Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-venus-pluto-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-venus-pluto-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; do not collapse relationship, property or money into sexualized keywords"
+    },
+    "R49": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Mars-Pluto Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-mars-pluto-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-mars-pluto-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; action and conflict must be translated through Mars house/rulership and aspect geometry"
+    },
+    "R50": {
+      "layer": "secondary_traditional_synthesis",
+      "work": "Deborah Houlding, The Fourth House",
+      "version": "accessed 2026-08-16",
+      "locator": "https://www.skyscript.co.uk/4.html; Main Rulerships and Events sections",
+      "url": "https://www.skyscript.co.uk/4.html",
+      "status": "auxiliary",
+      "limits": "traditional house synthesis; Pluto material is modern/modern-mundane commentary and cannot be called classical doctrine"
+    },
+    "R51": {
+      "layer": "secondary_sign_symbolism",
+      "work": "Deborah Houlding, Scorpio the Scorpion",
+      "version": "accessed 2026-08-16",
+      "locator": "https://www.skyscript.co.uk/scorpio.html; sign symbolism and traditional rulerships",
+      "url": "https://www.skyscript.co.uk/scorpio.html",
+      "status": "auxiliary",
+      "limits": "mixed traditional and modern symbolism; retain Mars rulership and mechanism, exclude moralized trait labels"
+    },
+    "R52": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Sun-Mars Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-sun-mars-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-sun-mars-aspects",
+      "status": "auxiliary",
+      "limits": "modern archetypal synthesis; translate through Sun house/rulership, Mars condition and aspect geometry; no standalone event guarantee"
+    },
+    "R53": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Moon-Mars Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-moon-mars-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-moon-mars-aspects",
+      "status": "auxiliary",
+      "limits": "modern emotional/action synthesis; family, body and reactivity claims require Moon house/rulership and independent event validation"
+    },
+    "R54": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Mercury-Mars Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-mercury-mars-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-mercury-mars-aspects",
+      "status": "auxiliary",
+      "limits": "modern cognition/action synthesis; communication and dispute claims require Mercury house/rulership, contracts and observable records"
+    },
+    "R55": {
+      "layer": "modern_commentary",
+      "work": "Kerykeion, Natal Venus-Mars Aspects",
+      "version": "accessed 2026-08-16",
+      "locator": "https://kerykeion.net/content/learn-astrology/natal-venus-mars-aspects",
+      "url": "https://kerykeion.net/content/learn-astrology/natal-venus-mars-aspects",
+      "status": "auxiliary",
+      "limits": "modern attraction/action synthesis; relationship, money and property claims require Venus house/rulership and contract/reality checks"
+    },
+    "R56": {
+      "layer": "modern_commentary",
+      "work": "Cafe Astrology, Sun-Mars Aspects in the Natal Chart",
+      "version": "accessed 2026-08-16",
+      "locator": "https://cafeastrology.com/natal/sunmarsaspects.html",
+      "url": "https://cafeastrology.com/natal/sunmarsaspects.html",
+      "status": "auxiliary",
+      "limits": "general modern interpretation; useful for hypothesis generation only and cannot upgrade classical evidence"
+    },
+    "R57": {
+      "layer": "modern_commentary",
+      "work": "Cafe Astrology, Moon-Mars Aspects in the Natal Chart",
+      "version": "accessed 2026-08-16",
+      "locator": "https://cafeastrology.com/natal/moonmarsaspects.html",
+      "url": "https://cafeastrology.com/natal/moonmarsaspects.html",
+      "status": "auxiliary",
+      "limits": "general modern interpretation; do not convert emotional language into diagnosis or deterministic family events"
+    },
+    "R58": {
+      "layer": "modern_commentary",
+      "work": "Cafe Astrology, Venus-Mars Aspects in the Natal Chart",
+      "version": "accessed 2026-08-16",
+      "locator": "https://cafeastrology.com/natal/venusmarsaspects.html",
+      "url": "https://cafeastrology.com/natal/venusmarsaspects.html",
+      "status": "auxiliary",
+      "limits": "general modern interpretation; relationship and sexuality language must be translated through houses, rulers and consent/boundaries"
+    },
+    "R59": {
+      "layer": "secondary_traditional_synthesis",
+      "work": "Skyscript, Mars overview and traditional significations index",
+      "version": "accessed 2026-08-16",
+      "locator": "https://www.skyscript.co.uk/mars.html; Traditional Rulerships and Significations of Mars",
+      "url": "https://www.skyscript.co.uk/mars.html",
+      "status": "auxiliary",
+      "limits": "secondary traditional synthesis; use for Mars significations and rulership context, not as a standalone aspect rule"
+    },
     "house-matrix": {
       "layer": "internal_rule",
       "work": "Classical Astrology Consultation house responsibility matrix",
@@ -386,6 +588,19 @@
       "claim": "historical tradition versus modern empirical validity",
       "decision": "separate_layers",
       "default": "traditional_interpretation_is_not_modern_validation"
+    },
+    {
+      "id": "attached_mutual_reception",
+      "sources": ["R38", "R39", "R19", "R21"],
+      "version_keys": ["reception", "aspect"],
+      "claim": "local notes distinguish or conflate house-pair mutual reception and typed planetary reception",
+      "decision": "retain_strict_core_and_local_hypothesis_layer",
+      "default": {
+        "core": "direction_plus_dignity_plus_connection_required",
+        "local_house_pair": "candidate_only",
+        "grade_cap": "C"
+      },
+      "limits": "the local documents do not supply author/version or independent validation; do not let their no-aspect or always-beneficial claims override the core reception gate"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "case_id": "19861012-2235-QuanzhouQuangang",
+  "display_name": "陈月朋",
+  "birth_date": "1986-10-12",
+  "birth_time": "22:35",
+  "birth_time_precision": "约21:00-22:35区间；本档案以22:35计算版本单独归档",
+  "birth_place": "泉州泉港",
+  "coordinates": {"lat": 25.1704561, "lon": 118.8607403, "timezone": "+08:00"},
+  "source": "user_provided",
+  "consultation_topics": ["property_purchase", "child_education", "career_finance", "property_wealth_direction"],
+  "property_options": [
+    {"label": "近学校方案", "area_sqm": 75.86, "total_price_cny": 1100000, "unit_price_cny_per_sqm": 14500, "purpose": "接送与孩子上学"},
+    {"label": "海辰遵域对比方案", "area_sqm": 99, "total_price_cny": 1100000, "unit_price_cny_per_sqm": 11111.11, "purpose": "价格与面积对比"}
+  ],
+  "unverified_context": ["附近轻轨/地铁建设与2032年发展预期仅为中介或市场预测，不作为星盘事实"],
+  "canonical_artifacts": ["analysis/interpretations/ROUND136-CHEN-1986-2235-DIRECTION-AUDIT.md"],
+  "management_status": "canonical_client_record",
+  "legacy_sources": ["references/loop-runs/ROUND136-CHEN-1986-2235-DIRECTION-AUDIT.md"]
+}

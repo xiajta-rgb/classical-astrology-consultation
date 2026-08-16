@@ -299,8 +299,8 @@
     "R36",
     "R37"
   ],
-  "registered_source_count": 34,
-  "registry_fingerprint": "1ae14df68a05b162993b31b3619715ad7b8b196703a4ebed1f8e0815eb9adebe",
+  "registered_source_count": 41,
+  "registry_fingerprint": "451e5f2d78c13d2e787f92a13f28b29ffe0245e5bba4f1971d102c5a33aa22ea",
   "script_links": {
     "QI-001": [
       "build_natal_facts.py",
