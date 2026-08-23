@@ -242,5 +242,35 @@
         "例如"
       ]
     }
+  },
+  "article_distillation": {
+    "schema_version": "ARTICLE-DISTILLATION-0.1",
+    "version": "WECHAT-ARTICLE-DISTILL-2026-08-23-1",
+    "source_id": "R60",
+    "canonical_store": "distilled/cards.jsonl",
+    "retrieval_index": "distilled/retrieval-index.json",
+    "exclusions": "distilled/exclusions.jsonl",
+    "exploration": "distilled/exploration.json",
+    "review_queue": "distilled/review-queue.jsonl",
+    "module_drafts": "distilled/module-drafts.json",
+    "article_coverage": "distilled/article-coverage.jsonl",
+    "judgment_ledger": "distilled/judgment-ledger.jsonl",
+    "judgment_ledger_index": "distilled/judgment-ledger-index.json",
+    "public_retrieval_root": "distilled/retrieval/",
+    "public_retrieval_checker": "scripts/check_wechat_retrieval.py",
+    "retrieved_distillation": "distilled/retrieved-distilled/",
+    "record_count": 167,
+    "coverage_row_count": 14978,
+    "judgment_ledger_count": 5986,
+    "strict_judgment_count": 2177,
+    "broad_review_judgment_count": 3809,
+    "empty_body_direct_article_link_count": 6633,
+    "empty_body_album_link_count": 7447,
+    "unique_empty_body_direct_article_link_count": 6633,
+    "unique_empty_body_album_link_count": 687,
+    "status": "candidate_only",
+    "grade_cap": "C",
+    "promotion_policy": "source-level verification + independent support + counterexample + machine regression; never automatic",
+    "notes": "Only structured condition-mechanism spans are retained. Empty, promotional, case-heavy, sensitive/deterministic, cross-system and survey material is excluded. Timing cards remain deferred."
   }
 }

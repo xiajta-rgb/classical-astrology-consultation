@@ -21,6 +21,10 @@
 
 完整条目见 [fly-star-corpus.md](fly-star-corpus.md)（144 个有向飞宫条目）与 [mutual-reception-matrix.md](mutual-reception-matrix.md)（78 个宫位对条目）；洞见卡见 [insight-cards.md](insight-cards.md)。两份 Word 只保留筛选后的核心知识，机器规范源是 `core/cards.jsonl`。
 
+本轮公众号工作簿的候选抽取保存在 [distilled/](distilled/)：仅保留有正文且能抽出“条件—机制/表现”片段的文章卡，全部为 `candidate`/`deferred`/C；空正文、营销、案例堆砌、敏感确定性表述、跨系统混用和问卷内容见 `distilled/exclusions.jsonl`。主题簇边界和晋级测试见 `distilled/module-drafts.md`。该目录不属于核心知识库，也不自动进入 `plugins.json` 运行时路由。
+
+为避免“精华判断”因过滤而失踪，`distilled/judgment-ledger.jsonl` 保存全部识别出的判断片段；被安全、案例、夸大、营销或质量门禁挡住的片段标为 `quarantined`，仅可审计，不可调用。
+
 ## 调用协议
 
 ### 符号路由

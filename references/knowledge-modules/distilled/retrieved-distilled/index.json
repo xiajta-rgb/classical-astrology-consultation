@@ -1,0 +1,25 @@
+{
+  "schema_version": "ARTICLE-DISTILLATION-RETRIEVED-0.1",
+  "source_id": "R60",
+  "input": "C:\\Users\\xiajt\\Documents\\trae_projects\\classical-astrology-consultation\\references\\knowledge-modules\\distilled\\retrieval\\article-bodies.jsonl",
+  "input_sha256": "ca9b7faa2c07a681c4e652dfc1ef84be47ec28a3d715b38084304806dfb9a882",
+  "counts": {
+    "retrieved_records_seen": 496,
+    "candidate_cards": 141,
+    "excluded_records": 355,
+    "exclusion_counts": {
+      "no_condition_mechanism_structure": 89,
+      "sensitive_or_deterministic_claims": 61,
+      "sensational_unbounded_language": 38,
+      "body_too_short_after_marketing_cleanup": 49,
+      "insufficient_reusable_structure": 27,
+      "case_heavy_or_person_specific": 30,
+      "no_astrology_terms": 23,
+      "mixed_non_classical_system": 2,
+      "survey_or_call_to_action": 36
+    }
+  },
+  "status": "candidate_only",
+  "grade_cap": "C",
+  "policy": "This store supplements, never overwrites, the original workbook distillation; no automatic core/runtime promotion."
+}

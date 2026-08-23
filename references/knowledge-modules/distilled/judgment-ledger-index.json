@@ -1,0 +1,61 @@
+{
+  "schema_version": "ARTICLE-JUDGMENT-LEDGER-0.1",
+  "source_id": "R60",
+  "source_file": "(公众号数据)表格视图.xlsx",
+  "source_sha256": "ddc87742039cbc139ed987f231fa31a052831070f400d38f21f06a7b27f06c4a",
+  "coverage_store": "distilled/article-coverage.jsonl",
+  "judgment_store": "distilled/judgment-ledger.jsonl",
+  "counts": {
+    "rows_seen": 14978,
+    "rows_quarantined": 596,
+    "nonempty_body": 898,
+    "articles_with_extracted_judgments": 763,
+    "strict_judgments": 2177,
+    "broad_review_judgments": 3809,
+    "rows_candidate": 156,
+    "rows_excluded_no_reusable_judgment": 135,
+    "rows_empty_body_direct_article_link": 6633,
+    "rows_empty_body_album_link": 7447,
+    "rows_deferred": 11,
+    "judgments": 5986,
+    "unique_empty_body_direct_article_links": 6633,
+    "unique_empty_body_album_links": 687,
+    "articles_by_exclusion_reason": {
+      "sensational_unbounded_language": 114,
+      "sensitive_or_deterministic_claims": 134,
+      "no_condition_mechanism_structure": 102,
+      "candidate": 167,
+      "case_heavy_or_person_specific": 71,
+      "insufficient_reusable_structure": 41,
+      "body_too_short_after_marketing_cleanup": 165,
+      "empty_body": 14080,
+      "no_astrology_terms": 36,
+      "survey_or_call_to_action": 67,
+      "mixed_non_classical_system": 1
+    },
+    "judgments_by_exclusion_reason": {
+      "sensational_unbounded_language": 1133,
+      "sensitive_or_deterministic_claims": 1476,
+      "no_condition_mechanism_structure": 553,
+      "candidate": 1463,
+      "case_heavy_or_person_specific": 734,
+      "insufficient_reusable_structure": 207,
+      "body_too_short_after_marketing_cleanup": 86,
+      "empty_body": 0,
+      "no_astrology_terms": 18,
+      "survey_or_call_to_action": 306,
+      "mixed_non_classical_system": 10
+    }
+  },
+  "status_policy": {
+    "candidate": "passes current structural and safety extraction gate; still C; modern_extension rows remain non-runtime until separately verified",
+    "deferred": "timing material; record only, never activate dates without explicit timing workflow",
+    "quarantined": "judgment-looking span preserved for audit but blocked by safety, sensational, case, CTA, mixed-system or quality gate",
+    "excluded_no_reusable_judgment": "article accounted for, but no structured condition-mechanism judgment survived extraction",
+    "empty_body_direct_article_link": "正文为空但保留了直接文章链接；抽样访问触发微信验证时停止，不绕过",
+    "empty_body_album_link": "正文为空但保留了合集链接；可在公开合集页按分页继续抓取",
+    "empty_body_other_link": "正文为空且链接类型未列入直接文章/合集",
+    "empty_body_no_link": "正文和链接均为空"
+  },
+  "promotion_gate": "No promotion without source locator, independent support, counterexample, Chart Facts regression and safety gate."
+}

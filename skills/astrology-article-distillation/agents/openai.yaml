@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astrology article distillation"
+  short_description: "Extract bounded candidate knowledge from astrology article tables"
+  default_prompt: "Use $astrology-article-distillation to distill structured astrology article bodies into source-traceable candidate cards, skipping empty or unsafe material."

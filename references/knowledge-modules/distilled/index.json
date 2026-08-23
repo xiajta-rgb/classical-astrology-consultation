@@ -1,0 +1,36 @@
+{
+  "schema_version": "ARTICLE-DISTILLATION-0.1",
+  "version": "WECHAT-ARTICLE-DISTILL-2026-08-23-1",
+  "source_id": "R60",
+  "source_file": "(公众号数据)表格视图.xlsx",
+  "source_sha256": "ddc87742039cbc139ed987f231fa31a052831070f400d38f21f06a7b27f06c4a",
+  "canonical_store": "distilled/cards.jsonl",
+  "retrieval_index": "distilled/retrieval-index.json",
+  "exclusions": "distilled/exclusions.jsonl",
+  "counts": {
+    "rows_seen": 14978,
+    "nonempty_body": 898,
+    "candidate_cards": 167,
+    "modern_extension_cards": 63,
+    "timing_deferred_cards": 11
+  },
+  "exclusion_counts": {
+    "sensational_unbounded_language": 114,
+    "sensitive_or_deterministic_claims": 134,
+    "no_condition_mechanism_structure": 102,
+    "case_heavy_or_person_specific": 71,
+    "insufficient_reusable_structure": 41,
+    "body_too_short_after_marketing_cleanup": 165,
+    "empty_body": 14080,
+    "no_astrology_terms": 36,
+    "survey_or_call_to_action": 67,
+    "mixed_non_classical_system": 1
+  },
+  "policy": {
+    "minimum_body_chars": 80,
+    "selection": "at least one reusable condition-mechanism span and two spans or explicit structure marker",
+    "status": "candidate; timing claims are deferred",
+    "grade_cap": "C",
+    "promotion": "requires source-level verification, independent support, counterexample and machine regression; no automatic promotion"
+  }
+}

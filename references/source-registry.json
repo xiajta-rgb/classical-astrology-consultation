@@ -531,6 +531,18 @@
       "status": "auxiliary",
       "limits": "secondary traditional synthesis; use for Mars significations and rulership context, not as a standalone aspect rule"
     },
+    "R60": {
+      "layer": "secondary_user_provided_corpus",
+      "work": "(公众号数据)表格视图.xlsx",
+      "version": "user-provided local workbook, accessed 2026-08-23",
+      "locator": "sheet 表格视图; rows 2-14979; source URLs retained per candidate card",
+      "local_path": "C:/Users/xiajt/Downloads/(公众号数据)表格视图.xlsx",
+      "sha256": "ddc87742039cbc139ed987f231fa31a052831070f400d38f21f06a7b27f06c4a",
+      "status": "auxiliary",
+      "limits": "公众号二手语料；作者、版本、样本和原典定位不统一；只保留有结构正文的候选片段，不能直接升级古典核心、生成诊断、事件保证或时限日期",
+      "fulltext_status": "retrieved_local_and_candidate_distilled",
+      "upgrade_stop_condition": "no promotion without source-level verification, independent support, counterexamples and machine regression"
+    },
     "house-matrix": {
       "layer": "internal_rule",
       "work": "Classical Astrology Consultation house responsibility matrix",

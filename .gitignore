@@ -6,3 +6,5 @@ __pycache__/
 references/research-loop/*state*.json
 references/research-loop/**/*.state.json
 references/research-loop/daemon-loop.log.jsonl
+# Public-repo safety: keep raw retrieved WeChat article bodies local.
+references/knowledge-modules/distilled/retrieval/article-bodies.jsonl

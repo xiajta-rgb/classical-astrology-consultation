@@ -1,0 +1,441 @@
+{
+  "schema_version": "ARTICLE-DISTILLATION-MODULE-DRAFTS-0.1",
+  "method": "cluster_policy_plus_ranked_representative_cards",
+  "status": "candidate_only",
+  "grade_cap": "C",
+  "source_id": "R60",
+  "source_concentration_warning": "All module drafts inherit the single-account limitation of the article corpus.",
+  "modules": [
+    {
+      "id": "timing_deferred",
+      "title": "时限与激活边界候选",
+      "layer": "deferred_research",
+      "include_boundary": "只登记行运、返照、推运、法达、校时等方法的条件与资料需求。",
+      "exclude_boundary": "不从本命候选卡直接生成年份、月份、日期或确定事件。",
+      "next_test": "用户明确时间问题后，锁定出生时间精度、方法版本、计算数据，并加入反例。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 11,
+      "representative_cards": [
+        {
+          "card_id": "AAD-00335",
+          "title": "“最限制身高”的本命配置",
+          "review_score": -3,
+          "review_status": "deferred_timing",
+          "quality_flags": [
+            "sensational_title",
+            "timing_deferred"
+          ]
+        },
+        {
+          "card_id": "AAD-01826",
+          "title": "不可忽视的合盘冲相位",
+          "review_score": -3,
+          "review_status": "deferred_timing",
+          "quality_flags": [
+            "timing_deferred"
+          ]
+        },
+        {
+          "card_id": "AAD-00912",
+          "title": "水星逆行者的八点优势",
+          "review_score": -4,
+          "review_status": "deferred_timing",
+          "quality_flags": [
+            "timing_deferred"
+          ]
+        },
+        {
+          "card_id": "AAD-01755",
+          "title": "有关“秘密”的十大本命要点",
+          "review_score": -4,
+          "review_status": "deferred_timing",
+          "quality_flags": [
+            "modern_extension",
+            "timing_deferred"
+          ]
+        },
+        {
+          "card_id": "AAD-01659",
+          "title": "大格局人到底强在哪里？",
+          "review_score": -5,
+          "review_status": "deferred_timing",
+          "quality_flags": [
+            "timing_deferred"
+          ]
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "modern_extension",
+      "title": "现代外行星与小行星扩展候选",
+      "layer": "research_extension",
+      "include_boundary": "保留天王、海王、冥王、凯龙、莉莉丝、小行星等现代术语的来源片段。",
+      "exclude_boundary": "不并入古典核心，不用现代标签覆盖宫主、尊贵、sect 或相位责任链。",
+      "next_test": "为每类现代对象补至少两份独立来源，并与古典基线做隔离对照。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 56,
+      "representative_cards": [
+        {
+          "card_id": "AAD-01679",
+          "title": "再说灶神星",
+          "review_score": 1,
+          "review_status": "candidate_modern_review",
+          "quality_flags": [
+            "modern_extension"
+          ]
+        },
+        {
+          "card_id": "AAD-01781",
+          "title": "《星言星语》：十二月第一辑",
+          "review_score": 1,
+          "review_status": "candidate_modern_review",
+          "quality_flags": [
+            "sensational_title",
+            "modern_extension"
+          ]
+        },
+        {
+          "card_id": "AAD-01796",
+          "title": "深陷暗恋的五大本命配置",
+          "review_score": 1,
+          "review_status": "candidate_modern_review",
+          "quality_flags": [
+            "modern_extension"
+          ]
+        },
+        {
+          "card_id": "AAD-00032",
+          "title": "月亮与原谅",
+          "review_score": -1,
+          "review_status": "candidate_modern_review",
+          "quality_flags": [
+            "modern_extension"
+          ]
+        },
+        {
+          "card_id": "AAD-00076",
+          "title": "婚神星：\"婚姻幸福指数大排名\"！",
+          "review_score": -1,
+          "review_status": "candidate_modern_review",
+          "quality_flags": [
+            "modern_extension"
+          ]
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "house_rulership",
+      "title": "宫位、轴点与宫主责任链候选",
+      "layer": "candidate_structure",
+      "include_boundary": "把宫位、角点、宫主和飞宫片段整理为责任主体—承载宫位的待验证链条。",
+      "exclude_boundary": "宫位标签不能单独推出身份、健康、灾难或社会结果；不混用未锁定宫制。",
+      "next_test": "用至少两份独立来源和合成 Chart Facts 检验责任链、重复计数与反例。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 39,
+      "representative_cards": [
+        {
+          "card_id": "AAD-00160",
+          "title": "本命盘“木星”的八个秘密",
+          "review_score": 8,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00333",
+          "title": "本命盘中的“日月合壁”",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00344",
+          "title": "本命盘中的“第一尊贵星”",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "single_claim",
+            "low_information",
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-00593",
+          "title": "“胖”星 与 “瘦”星",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-01249",
+          "title": "《你可能不知道系列》之下降篇",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "aspect_synthesis",
+      "title": "相位、接纳与组合机制候选",
+      "layer": "candidate_structure",
+      "include_boundary": "保留相位组合、接纳和状态互动作为待验证机制入口。",
+      "exclude_boundary": "单一刑、拱、冲或‘正负相位’不能直接转成固定人格或事件结论。",
+      "next_test": "锁定相位容许度、应用/分离、sect、尊贵与接纳类型，并进行正反例回归。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 24,
+      "representative_cards": [
+        {
+          "card_id": "AAD-00128",
+          "title": "本命盘第一“英雄”相位！",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-00324",
+          "title": "本命盘中的“小人之星”！",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00367",
+          "title": "土星的这一神奇功效，你可能不知道……",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00380",
+          "title": "没有刑相的人生，不值一提！",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00811",
+          "title": "相位与颜色",
+          "review_score": 6,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "planet_sign_translation",
+      "title": "行星—星座符号翻译候选",
+      "layer": "candidate_signification",
+      "include_boundary": "把行星和星座词组作为初步符号翻译，等待宫位责任和状态补全。",
+      "exclude_boundary": "星座或行星单标签不能覆盖宫主责任、落宫、尊贵、可见性和现实观察。",
+      "next_test": "加入完整 Chart Facts、行星状态、宫主链和反向案例，检查泛化程度。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 14,
+      "representative_cards": [
+        {
+          "card_id": "AAD-00039",
+          "title": "四大“极端星座”",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00473",
+          "title": "五大“反内卷”星座，有你吗？",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00017",
+          "title": "最会撩的男性“火星”！",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-00029",
+          "title": "最有后劲的三种火星",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-00609",
+          "title": "本命盘里的三种“纯金”",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "relationship_adapter",
+      "title": "关系、家庭与合盘适配候选",
+      "layer": "domain_adapter",
+      "include_boundary": "将关系、家庭、伴侣和合盘词汇作为领域适配入口，不改变底层责任链。",
+      "exclude_boundary": "不输出伴侣定性、必然婚姻/分离或家庭身份判断；敏感关系内容继续受门禁约束。",
+      "next_test": "至少区分双方 Chart Facts、七宫/宫主、金星/月亮等责任，并加入不支持案例。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 14,
+      "representative_cards": [
+        {
+          "card_id": "AAD-01898",
+          "title": "从本命盘探知手足关系",
+          "review_score": 4,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00252",
+          "title": "头号关系杀手 —— “月水刑”",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-01676",
+          "title": "谈恋爱最应该谈什么？",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-01774",
+          "title": "值得挖掘的星体相位优势—水星篇",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00080",
+          "title": "最容易“师生恋”的金星落座！",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    },
+    {
+      "id": "career_money_adapter",
+      "title": "事业、工作与资源适配候选",
+      "layer": "domain_adapter",
+      "include_boundary": "把事业、工作、收入和资产词汇作为主题检索入口，拆分取得、交付与持续性。",
+      "exclude_boundary": "不把财富、晋升、成名或房产表述升级为保证式结果。",
+      "next_test": "用宫主链、行星能力、现实条件和正负对照盘检验资源取得与持续性的区分。",
+      "status": "candidate_only",
+      "grade_cap": "C",
+      "card_count": 9,
+      "representative_cards": [
+        {
+          "card_id": "AAD-01062",
+          "title": "木海相位的八大魔力",
+          "review_score": 4,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00085",
+          "title": "打开女性格局的“第一星座”！",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": [
+            "sensational_title"
+          ]
+        },
+        {
+          "card_id": "AAD-01556",
+          "title": "揭秘日月合",
+          "review_score": 2,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00287",
+          "title": "关于“水星”的八点重要建议",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        },
+        {
+          "card_id": "AAD-00332",
+          "title": "命盘“中天”与事业“瓶颈”",
+          "review_score": 1,
+          "review_status": "pending_manual_review",
+          "quality_flags": []
+        }
+      ],
+      "source_constraint": "all retained cards currently come from one user-provided公众号 account; independent-source support is absent",
+      "promotion_gate": [
+        "source locator and original span remain auditable",
+        "at least two independent sources support the mechanism",
+        "a disconfirming case or counterexample is recorded",
+        "Chart Facts, house system, aspect version and sensitive-topic gate pass",
+        "machine regression confirms no duplicate counting or runtime leakage"
+      ]
+    }
+  ]
+}
