@@ -8,3 +8,4 @@ references/research-loop/**/*.state.json
 references/research-loop/daemon-loop.log.jsonl
 # Public-repo safety: keep raw retrieved WeChat article bodies local.
 references/knowledge-modules/distilled/retrieval/article-bodies.jsonl
+references/knowledge-modules/distilled/retrieval/batch-summary.json
